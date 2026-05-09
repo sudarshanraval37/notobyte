@@ -1,0 +1,1431 @@
+/* ================================================================
+   style.css — StudyVault Notes Platform
+   Author  : StudyVault Team
+   Purpose : All styling, animations, glassmorphism effects,
+             responsive design, and theme variables.
+================================================================ */
+
+
+/* ================================================================
+   1. CSS VARIABLES (THEME SYSTEM)
+   Dark theme is default. Light theme overrides these values
+   when <html data-theme="light"> is set by the JS toggle.
+================================================================ */
+:root {
+    /* Backgrounds */
+    --bg: #0a0a1a;
+    --bg2: #0f0f2a;
+
+    /* Glassmorphism */
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-hover: rgba(255, 255, 255, 0.09);
+
+    /* Text */
+    --text: #e8e8ff;
+    --text2: #a0a0c0;
+
+    /* Accent Colors */
+    --accent: #7c6fe0;
+    /* Purple  */
+    --accent2: #00bbff;
+    /* Pink    */
+    --accent3: #00e5ff;
+    /* Cyan    */
+
+    /* Shadows & Shape */
+    --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --radius: 16px;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+    --bg: #f0f0ff;
+    --bg2: #e8e8ff;
+    --glass: rgba(255, 255, 255, 0.55);
+    --glass-border: rgba(124, 111, 224, 0.25);
+    --glass-hover: rgba(255, 255, 255, 0.75);
+    --text: #1a1a3a;
+    --text2: #4a4a7a;
+    --card-shadow: 0 8px 32px rgba(124, 111, 224, 0.15);
+}
+
+
+/* ================================================================
+   2. RESET & BASE STYLES
+================================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background var(--transition), color var(--transition);
+}
+
+
+/* ================================================================
+   3. CUSTOM SCROLLBAR
+================================================================ */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+
+/* ================================================================
+   4. LOADING SCREEN
+   Full-screen overlay shown on page load.
+   Fades out and becomes invisible after JS removes the class.
+================================================================ */
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+/* Hidden state — added by JavaScript after loading */
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.loader-bar {
+    width: 200px;
+    height: 3px;
+    background: var(--glass-border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.loader-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    border-radius: 2px;
+    animation: loadFill 1.8s ease forwards;
+}
+
+@keyframes loadFill {
+    to {
+        width: 100%;
+    }
+}
+
+
+/* ================================================================
+   5. FLOATING PARTICLES BACKGROUND
+   Individual particles are created as <div class="particle">
+   by JavaScript and appended into #particles container.
+================================================================ */
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent), transparent);
+    opacity: 0.15;
+    animation: float linear infinite;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(110vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+
+/* ================================================================
+   6. ANIMATED GRADIENT BLOBS
+   Three large blurred circles that float behind all content.
+================================================================ */
+.blobs {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.18;
+    animation: blobMove 12s ease-in-out infinite alternate;
+}
+
+.blob1 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent);
+    top: -100px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.blob2 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent2);
+    bottom: -100px;
+    right: -50px;
+    animation-delay: -4s;
+}
+
+.blob3 {
+    width: 300px;
+    height: 300px;
+    background: var(--accent3);
+    top: 40%;
+    left: 40%;
+    animation-delay: -8s;
+}
+
+@keyframes blobMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(60px, 40px) scale(1.1);
+    }
+}
+
+
+/* ================================================================
+   7. NAVBAR
+   Sticky top bar with glassmorphism backdrop blur.
+================================================================ */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 14px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(10, 10, 26, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    transition: background var(--transition);
+}
+
+[data-theme="light"] nav {
+    background: rgba(240, 240, 255, 0.6);
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i {
+    font-size: 1.3rem;
+    background: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Desktop Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text2);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--text);
+    background: var(--glass);
+}
+
+/* Navbar Right Side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+}
+
+.theme-btn:hover {
+    background: var(--glass-hover);
+    transform: scale(1.05);
+}
+
+/* Hamburger Icon (Mobile Only) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Mobile Dropdown Menu */
+.mobile-menu {
+    display: none;
+    /* shown as flex when .open is added */
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(10, 10, 26, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+[data-theme="light"] .mobile-menu {
+    background: rgba(240, 240, 255, 0.95);
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: var(--text2);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.mobile-menu a:hover {
+    color: var(--text);
+    background: var(--glass);
+}
+
+
+/* ================================================================
+   8. MAIN CONTENT WRAPPER
+   z-index:1 ensures it appears above background blobs/particles.
+================================================================ */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ================================================================
+   9. HERO SECTION
+================================================================ */
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 5% 80px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+/* Live Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 28px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-badge i {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Main Title */
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    letter-spacing: -1px;
+}
+
+/* Gradient Text Utility */
+.grad-text {
+    background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Subtitle */
+.hero-sub {
+    font-size: 1.1rem;
+    color: var(--text2);
+    max-width: 540px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+/* CTA Buttons Row */
+.hero-btns {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Hero Statistics Row */
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-num {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: .8rem;
+    color: var(--text2);
+    margin-top: 4px;
+}
+
+
+/* ================================================================
+   10. REUSABLE BUTTON STYLES
+================================================================ */
+.btn {
+    padding: 13px 28px;
+    border-radius: 12px;
+    font-size: .95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all var(--transition);
+    border: none;
+}
+
+/* Filled Gradient Button */
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(124, 111, 224, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(124, 111, 224, 0.5);
+}
+
+/* Outlined Glass Button */
+.btn-outline {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+    backdrop-filter: blur(10px);
+}
+
+.btn-outline:hover {
+    background: var(--glass-hover);
+    transform: translateY(-2px);
+}
+
+
+/* ================================================================
+   11. SECTION COMMON STYLES
+================================================================ */
+section {
+    padding: 90px 5%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(124, 111, 224, .15), rgba(224, 64, 251, .15));
+    border: 1px solid var(--glass-border);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.section-sub {
+    color: var(--text2);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* ================================================================
+   12. GLASS CARD UTILITY CLASS
+   Applied to cards, panels, and sections for the frosted effect.
+================================================================ */
+.glass {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+}
+
+
+/* ================================================================
+   13. NOTES SECTION
+================================================================ */
+#notes {
+    padding-top: 70px;
+}
+
+/* Search + Filter Row */
+.notes-controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Search Bar Wrapper */
+.search-wrap {
+    flex: 1;
+    min-width: 220px;
+    position: relative;
+}
+
+.search-wrap i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text2);
+    font-size: .9rem;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 14px 12px 40px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    color: var(--text);
+    font-size: .9rem;
+    backdrop-filter: blur(10px);
+    outline: none;
+    transition: all var(--transition);
+}
+
+#searchInput::placeholder {
+    color: var(--text2);
+}
+
+#searchInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(124, 111, 224, .15);
+}
+
+/* Filter Buttons Row */
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: .82rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+    background: var(--glass);
+    color: var(--text2);
+    transition: all var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(124, 111, 224, .35);
+}
+
+/* Notes Cards Grid */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 22px;
+}
+
+/* Individual Note Card */
+.note-card {
+    padding: 26px;
+    border-radius: var(--radius);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--card-shadow);
+    transition: all var(--transition);
+    position: relative;
+    overflow: hidden;
+    /* Scroll reveal — starts hidden, JS adds .visible to animate in */
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Gradient overlay on hover */
+
+/* Prevent overlay layers from blocking clicks */
+.note-card::before,
+.upload-card::before {
+    pointer-events: none;
+}
+
+/* Keep all actual content above overlays */
+.note-card>*,
+.upload-card>*,
+.contributor-card>* {
+    position: relative;
+    z-index: 2;
+}
+
+.note-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(124, 111, 224, .06), rgba(224, 64, 251, .06));
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.note-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(124, 111, 224, .4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+}
+
+.note-card:hover::before {
+    opacity: 1;
+}
+
+/* Scroll reveal visible state — added by JavaScript */
+.note-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card Top Row */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Subject Icon Box */
+.subject-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+/* Note Meta (Semester + Size) */
+.note-meta {
+    text-align: right;
+}
+
+.note-sem {
+    font-size: .75rem;
+    color: var(--accent);
+    font-weight: 600;
+    background: rgba(124, 111, 224, .12);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.note-size {
+    font-size: .72rem;
+    color: var(--text2);
+    margin-top: 4px;
+}
+
+.note-subject {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.note-desc {
+    font-size: .85rem;
+    color: var(--text2);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Contributor Info Row */
+.note-contributor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .8rem;
+    color: var(--text2);
+    margin-bottom: 18px;
+}
+
+.contrib-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    color: #fff;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Card Footer Row */
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.note-category {
+    font-size: .75rem;
+    font-weight: 600;
+    background: var(--glass-border);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: var(--text2);
+}
+
+/* Download Button */
+.download-btn {
+
+    padding: 9px 18px;
+    border-radius: 10px;
+    font-size: .82rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all var(--transition);
+    box-shadow: 0 4px 15px rgba(124, 111, 224, .3);
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 111, 224, .45);
+}
+
+/* Empty State */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text2);
+    grid-column: 1 / -1;
+}
+
+.no-results i {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    opacity: 0.4;
+}
+
+
+/* ================================================================
+   14. UPLOAD SECTION
+================================================================ */
+#upload {
+    background: transparent;
+}
+
+.upload-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle inner gradient layer */
+.upload-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(124, 111, 224, .1), rgba(224, 64, 251, .1));
+    pointer-events: none;
+}
+
+.upload-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 auto 24px;
+    box-shadow: 0 10px 30px rgba(124, 111, 224, .4);
+}
+
+.upload-card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.upload-card p {
+    color: var(--text2);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 450px;
+    margin: 0 auto 32px;
+}
+
+.upload-features {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+}
+
+.upload-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .85rem;
+    color: var(--text2);
+}
+
+.upload-feature i {
+    color: var(--accent);
+}
+
+
+/* ================================================================
+   15. TOP CONTRIBUTORS SECTION
+================================================================ */
+#contributors {
+    padding-top: 0;
+}
+
+.contributors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.contributor-card {
+    padding: 24px;
+    text-align: center;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+    /* Scroll reveal */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.contributor-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 111, 224, .4);
+}
+
+.contributor-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contrib-big-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 auto 14px;
+    box-shadow: 0 6px 20px rgba(124, 111, 224, .35);
+}
+
+.contrib-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.contrib-role {
+    font-size: .8rem;
+    color: var(--text2);
+    margin-bottom: 12px;
+}
+
+.contrib-count {
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(124, 111, 224, .12);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+
+/* ================================================================
+   16. ABOUT SECTION
+================================================================ */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.about-text p {
+    color: var(--text2);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.about-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .95rem;
+    flex-shrink: 0;
+}
+
+/* Visual Stats Card */
+.about-visual {
+    padding: 40px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.about-visual .big-icon {
+    font-size: 5rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.about-num {
+    text-align: center;
+}
+
+.about-num-val {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-num-label {
+    font-size: .75rem;
+    color: var(--text2);
+}
+
+
+/* ================================================================
+   17. FOOTER
+================================================================ */
+footer {
+    background: rgba(0, 0, 0, .3);
+    border-top: 1px solid var(--glass-border);
+    padding: 60px 5% 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-brand p {
+    color: var(--text2);
+    font-size: .88rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text2);
+    text-decoration: none;
+    font-size: .9rem;
+    transition: all var(--transition);
+}
+
+.social-link:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.footer-col h4 {
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--text);
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: var(--text2);
+    text-decoration: none;
+    font-size: .85rem;
+    transition: color var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--glass-border);
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-bottom p {
+    color: var(--text2);
+    font-size: .82rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-links a {
+    color: var(--text2);
+    text-decoration: none;
+    font-size: .82rem;
+    transition: color var(--transition);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--accent);
+}
+
+/* DEVELOPERS SECTION */
+
+.developers-section{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.dev-title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.developers-grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.developer-card{
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s ease;
+}
+
+.developer-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,153,255,0.25);
+}
+
+.dev-img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 3px solid #3b82f6;
+}
+
+.developer-card h3{
+    color: white;
+    margin-bottom: 8px;
+}
+
+.developer-card p{
+    color: #a1a1aa;
+    margin-bottom: 20px;
+}
+
+.dev-socials{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dev-socials a{
+    color: #60a5fa;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.dev-socials a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+/* ================================================================
+   18. TOAST NOTIFICATION
+   Slides up from bottom when a download is triggered.
+================================================================ */
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: .9rem;
+    font-weight: 600;
+    z-index: 9998;
+    box-shadow: 0 8px 30px rgba(124, 111, 224, .5);
+    transition: transform 0.4s cubic-bezier(.4, 0, .2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+/* Visible state — added/removed by JavaScript */
+#toast.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+
+/* ================================================================
+   19. BACK TO TOP BUTTON
+================================================================ */
+#backTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 200;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(124, 111, 224, .4);
+    /* Hidden by default — JS adds .show when scrolled */
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+}
+
+#backTop.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#backTop:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(124, 111, 224, .5);
+}
+
+
+/* ================================================================
+   20. RESPONSIVE DESIGN
+================================================================ */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-visual {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+    .nav-links {
+        display: none;
+    }
+
+    /* Hide desktop nav */
+    .hamburger {
+        display: block;
+    }
+
+    /* Show hamburger icon */
+
+    .upload-card {
+        padding: 40px 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-stats {
+        gap: 24px;
+    }
+}

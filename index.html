@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotoByte — Share & Download Notes</title>
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+       Shown while the page is loading. Auto-hides after 2 seconds.
+  ============================================================ -->
+  <div id="loader">
+    <div class="loader-logo">
+      <i class="fas fa-book-open"></i> NotoByte
+    </div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p style="color:var(--text2); font-size:.85rem">Loading your notes platform... |
+      Developed by Sudarshan Raval
+    </p>
+  </div>
+
+  <!-- ============================================================
+       FLOATING PARTICLES BACKGROUND
+       Particles are generated dynamically via JavaScript.
+  ============================================================ -->
+  <div id="particles"></div>
+
+  <!-- ============================================================
+       ANIMATED GRADIENT BLOBS BACKGROUND
+       Three blobs float and animate behind all content.
+  ============================================================ -->
+  <div class="blobs">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+       Sticky top navigation with logo, links, theme toggle,
+       and a hamburger menu for mobile devices.
+  ============================================================ -->
+  <nav id="navbar">
+    <!-- Logo -->
+    <a href="#home" class="logo">
+      <i class="fas fa-book-open"></i> NotoByte
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#contributors">Contributors</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right Side: Theme Toggle + Hamburger -->
+    <div class="nav-right">
+      <!-- Dark / Light Mode Toggle Button -->
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <!-- Hamburger Icon for Mobile -->
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MOBILE MENU
+       Shown when hamburger is clicked on small screens.
+       Each link calls closeMobile() to collapse the menu.
+  ============================================================ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#notes" onclick="closeMobile()">Notes</a>
+    <a href="#upload" onclick="closeMobile()">Upload Notes</a>
+    <a href="#contributors" onclick="closeMobile()">Contributors</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       MAIN PAGE CONTENT
+  ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         HERO SECTION
+         Full-viewport landing area with heading, description,
+         CTA buttons, and platform statistics.
+    ========================================================== -->
+    <section id="home">
+      <div class="hero-content">
+
+        <!-- Badge -->
+        <div class="hero-badge">
+          <i class="fas fa-circle fa-xs"></i> Developed at G.P Banka by Sudarshan & Vinit
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="hero-title">
+          Share Knowledge,<br>
+          <span class="grad-text">Empower Students</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-sub">
+          Access thousands of well-organised study notes, PYQs, and
+          resources shared by students — for students.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="hero-btns">
+          <a href="#notes" class="btn btn-primary"><i class="fas fa-search"></i> Browse Notes</a>
+          <a href="#upload" class="btn btn-outline"><i class="fas fa-upload"></i> Upload Notes</a>
+        </div>
+
+        <!-- Platform Statistics -->
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">1.2K+</div>
+            <div class="stat-label">Notes Available</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">350+</div>
+            <div class="stat-label">Contributors</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">8.5K+</div>
+            <div class="stat-label">Downloads</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Subjects Covered</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         NOTES SECTION
+         Displays all note cards with search bar and category filters.
+         Cards are rendered dynamically by JavaScript (script.js).
+    ========================================================== -->
+    <section id="notes">
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-tag">📚 Study Materials</div>
+        <h2 class="section-title">Browse <span class="grad-text">Notes</span></h2>
+        <p class="section-sub">High-quality notes contributed by top students across universities.</p>
+      </div>
+
+      <!-- Search Bar + Category Filter Buttons -->
+      <div class="notes-controls">
+
+        <!-- Search Input -->
+        <div class="search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search notes by subject, topic..." oninput="filterNotes()" />
+        </div>
+
+        <!-- Filter Buttons
+             Each button calls setFilter(category, buttonElement)
+             The 'all' filter shows every note. -->
+        <div class="filters" id="filters">
+          <button class="filter-btn active" onclick="setFilter('all',        this)">All</button>
+          <button class="filter-btn" onclick="setFilter('engineering', this)">Engineering</button>
+          <button class="filter-btn" onclick="setFilter('science',     this)">Science</button>
+          <button class="filter-btn" onclick="setFilter('commerce',    this)">Commerce</button>
+          <button class="filter-btn" onclick="setFilter('arts',        this)">Arts</button>
+          <button class="filter-btn" onclick="setFilter('assignment',    this)">Assignment</button>
+        </div>
+
+      </div>
+
+      <!-- Notes Grid — populated by renderNotes() in script.js -->
+      <div class="notes-grid" id="notesGrid"></div>
+
+    </section>
+
+    <!-- ==========================================================
+         UPLOAD NOTES SECTION
+         Encourages students to contribute their notes.
+         The Upload button opens a Google Form in a new tab.
+
+         HOW TO UPDATE THE GOOGLE FORM LINK:
+         1. Open your Google Form
+         2. Click "Send" → copy the short link (e.g. https://forms.gle/yourFormId)
+         3. Replace the href below with your actual link
+    ========================================================== -->
+    <section id="upload">
+      <div class="upload-card glass">
+
+        <!-- Upload Icon -->
+        <div class="upload-icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+
+        <!-- Heading & Description -->
+        <h2>Share Your <span class="grad-text">Knowledge</span></h2>
+        <p>
+          Help thousands of students by sharing your notes. Every contribution
+          makes a difference in someone's academic journey.
+        </p>
+
+        <!-- Feature Highlights -->
+        <div class="upload-features">
+          <div class="upload-feature"><i class="fas fa-check-circle"></i> Quick &amp; Easy</div>
+          <div class="upload-feature"><i class="fas fa-star"></i> Get Credit</div>
+          <div class="upload-feature"><i class="fas fa-users"></i> Help Students</div>
+          <div class="upload-feature"><i class="fas fa-shield-alt"></i> Reviewed by Admin</div>
+        </div>
+
+        <!--
+          GOOGLE FORM UPLOAD BUTTON
+          ─────────────────────────
+          Replace the href below with your real Google Form URL.
+          Example: href="https://forms.gle/abc123XYZ"
+
+          The form should collect:
+            - Student name
+            - Subject name
+            - Semester / class
+            - PDF file upload
+
+          target="_blank" opens the form in a new browser tab.
+        -->
+        <a href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank" class="btn btn-primary"
+          style="margin: 0 auto; display: inline-flex;">
+          <i class="fas fa-upload"></i> Upload Your Notes
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         TOP CONTRIBUTORS SECTION
+         Displays contributor cards rendered by JavaScript.
+         Contributor data is defined in script.js → contributorsData[]
+    ========================================================== -->
+    <section id="contributors">
+
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-tag">🏆 Community</div>
+        <h2 class="section-title">Top <span class="grad-text">Contributors</span></h2>
+        <p class="section-sub">Meet the amazing students who make this platform great.</p>
+      </div>
+
+      <!-- Contributors Grid — populated by renderContributors() in script.js -->
+      <div class="contributors-grid" id="contributorsGrid"></div>
+
+    </section>
+
+    <!-- ==========================================================
+         ABOUT SECTION
+         Explains the purpose of the platform with feature highlights
+         and an animated visual card.
+    ========================================================== -->
+    <section id="about">
+      <div class="about-grid">
+
+        <!-- Left: Text & Feature List -->
+        <div class="about-text">
+          <div class="section-tag">ℹ️ About Us</div>
+          <h2>Why <span class="grad-text">NotoByte</span>?</h2>
+          <p>
+            NotoByte is a free, student-run platform designed to make quality
+            study materials accessible to everyone. We believe that knowledge
+            should be shared, not hoarded.
+          </p>
+          <p>
+            Whether you're preparing for exams or building on your understanding,
+            our curated notes from top-performing students will give you the edge
+            you need.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-lock-open"></i></div>
+              <div>
+                <strong>100% Free</strong><br>
+                <span style="color:var(--text2); font-size:.85rem">No paywalls. Ever.</span>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-medal"></i></div>
+              <div>
+                <strong>Quality Verified</strong><br>
+                <span style="color:var(--text2); font-size:.85rem">Admin-reviewed notes only.</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <strong>Community Driven</strong><br>
+                <span style="color:var(--text2); font-size:.85rem">Built by students, for students.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Stats Card -->
+        <div class="about-visual glass">
+          <i class="fas fa-graduation-cap big-icon"></i>
+          <p style="color:var(--text2); font-size:.9rem">Empowering students since 2023</p>
+          <div class="about-numbers">
+            <div class="about-num">
+              <div class="about-num-val">50+</div>
+              <div class="about-num-label">Universities</div>
+            </div>
+            <div class="about-num">
+              <div class="about-num-val">100%</div>
+              <div class="about-num-label">Free</div>
+            </div>
+            <div class="about-num">
+              <div class="about-num-val">24/7</div>
+              <div class="about-num-label">Access</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="developers-section">
+
+  <h2 class="dev-title">Meet The Developers</h2>
+
+  <div class="developers-grid">
+
+    <!-- Developer 1 -->
+    <div class="developer-card">
+      <img src="assets/images/sudarshan.jpeg" alt="Sudarshan" class="dev-img">
+
+      <h3>Sudarshan Raval</h3>
+      <p>Web Developer</p>
+
+      <div class="dev-socials">
+        <a href="https://github.com/sudarshanraval37"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/raval.2908/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Developer 2 -->
+    <div class="developer-card">
+      <img src="assets/images/vinit.jpeg" alt="Vinit" class="dev-img">
+
+      <h3>Vinit Raj</h3>
+      <p>UI Designer</p>
+
+      <div class="dev-socials">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/vinit_5610/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/vinit-raj-49b3a7311/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER / CONTACT SECTION
+       Contains brand info, social links, quick links, and copyright.
+  ============================================================ -->
+  <footer id="contact">
+    <div class="footer-grid">
+
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <a href="#home" class="logo" style="margin-bottom:14px; display:inline-flex;">
+          <i class="fas fa-book-open"></i> NotoByte
+        </a>
+        <p>
+          A free student notes platform built to empower learners everywhere.
+          Share knowledge, grow together.
+        </p>
+        <!-- Social Media Icons — replace # with your real profile URLs -->
+        <div class="social-links">
+          <a href="https://www.instagram.com/raval.2908?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/" class="social-link"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sudarshanraval37" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#notes">Browse Notes</a></li>
+          <li><a href="#upload">Upload Notes</a></li>
+          <li><a href="#contributors">Contributors</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Subjects Column -->
+      <div class="footer-col">
+        <h4>Subjects</h4>
+        <ul class="footer-links">
+          <li><a href="#">Engineering</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Commerce</a></li>
+          <li><a href="#">Arts</a></li>
+          <li><a href="#">assignment</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="sudarshanraval4@gmail.com">
+              <i class="fas fa-envelope" style="margin-right:6px"></i>sudarshanraval4@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-telegram" style="margin-right:6px"></i>Telegram Group
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-bug" style="margin-right:6px"></i>Report Issue
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-question-circle" style="margin-right:6px"></i>FAQ
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2026 NotoByte. Developed by Sudarshan Raval & Vinit Raj for Students.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       TOAST NOTIFICATION
+       Shown at the bottom of the screen when a download starts.
+       Controlled by showToast() in script.js
+  ============================================================ -->
+  <div id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Download started!</span>
+  </div>
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+       Appears after scrolling 400px. Scrolls back to top on click.
+  ============================================================ -->
+  <button id="backTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

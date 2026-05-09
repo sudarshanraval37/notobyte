@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>StudyVault — Share & Download Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ========== CSS VARIABLES ========== */
+        :root {
+            --bg: #0a0a1a;
+            --bg2: #0f0f2a;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --glass-hover: rgba(255, 255, 255, 0.09);
+            --text: #e8e8ff;
+            --text2: #a0a0c0;
+            --accent: #7c6fe0;
+            --accent2: #e040fb;
+            --accent3: #00e5ff;
+            --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --radius: 16px;
+            --transition: 0.3s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        [data-theme="light"] {
+            --bg: #f0f0ff;
+            --bg2: #e8e8ff;
+            --glass: rgba(255, 255, 255, 0.55);
+            --glass-border: rgba(124, 111, 224, 0.25);
+            --glass-hover: rgba(255, 255, 255, 0.75);
+            --text: #1a1a3a;
+            --text2: #4a4a7a;
+            --card-shadow: 0 8px 32px rgba(124, 111, 224, 0.15);
+        }
+
+        /* ========== RESET & BASE ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background var(--transition), color var(--transition);
+        }
+
+        /* ========== CUSTOM SCROLLBAR ========== */
+        ::-webkit-scrollbar {
+            width: 6px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg)
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 3px
+        }
+
+        /* ========== LOADING SCREEN ========== */
+        #loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        #loader.hide {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .loader-logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .loader-bar {
+            width: 200px;
+            height: 3px;
+            background: var(--glass-border);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .loader-fill {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            border-radius: 2px;
+            animation: loadFill 1.8s ease forwards;
+        }
+
+        @keyframes loadFill {
+            to {
+                width: 100%
+            }
+        }
+
+        /* ========== PARTICLES ========== */
+        #particles {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--accent), transparent);
+            opacity: 0.15;
+            animation: float linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(110vh) scale(0)
+            }
+
+            100% {
+                transform: translateY(-10vh) scale(1)
+            }
+        }
+
+        /* ========== GRADIENT BLOBS ========== */
+        .blobs {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.18;
+            animation: blobMove 12s ease-in-out infinite alternate;
+        }
+
+        .blob1 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s
+        }
+
+        .blob2 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent2);
+            bottom: -100px;
+            right: -50px;
+            animation-delay: -4s
+        }
+
+        .blob3 {
+            width: 300px;
+            height: 300px;
+            background: var(--accent3);
+            top: 40%;
+            left: 40%;
+            animation-delay: -8s
+        }
+
+        @keyframes blobMove {
+            0% {
+                transform: translate(0, 0) scale(1)
+            }
+
+            100% {
+                transform: translate(60px, 40px) scale(1.1)
+            }
+        }
+
+        /* ========== NAVBAR ========== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 14px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 10, 26, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            transition: background var(--transition);
+        }
+
+        [data-theme="light"] nav {
+            background: rgba(240, 240, 255, 0.6)
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo i {
+            font-size: 1.3rem;
+            background: inherit;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none
+        }
+
+        .nav-links a {
+            color: var(--text2);
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: .9rem;
+            font-weight: 500;
+            transition: all var(--transition);
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text);
+            background: var(--glass)
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .theme-btn {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text);
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition);
+        }
+
+        .theme-btn:hover {
+            background: var(--glass-hover);
+            transform: scale(1.05)
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text);
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            background: rgba(10, 10, 26, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        [data-theme="light"] .mobile-menu {
+            background: rgba(240, 240, 255, 0.95)
+        }
+
+        .mobile-menu.open {
+            display: flex
+        }
+
+        .mobile-menu a {
+            color: var(--text2);
+            text-decoration: none;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all var(--transition);
+        }
+
+        .mobile-menu a:hover {
+            color: var(--text);
+            background: var(--glass)
+        }
+
+        /* ========== MAIN CONTENT ========== */
+        main {
+            position: relative;
+            z-index: 1
+        }
+
+        /* ========== HERO ========== */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 5% 80px;
+        }
+
+        .hero-content {
+            max-width: 750px
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--accent);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: .85rem;
+            font-weight: 600;
+            margin-bottom: 28px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-badge i {
+            animation: pulse 2s infinite
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .4
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 22px;
+            letter-spacing: -1px;
+        }
+
+        .grad-text {
+            background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 1.1rem;
+            color: var(--text2);
+            max-width: 540px;
+            margin: 0 auto 40px;
+            line-height: 1.7
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 13px 28px;
+            border-radius: 12px;
+            font-size: .95rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(124, 111, 224, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(124, 111, 224, 0.5)
+        }
+
+        .btn-outline {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            color: var(--text);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: var(--glass-hover);
+            transform: translateY(-2px)
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center
+        }
+
+        .stat-num {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+
+        .stat-label {
+            font-size: .8rem;
+            color: var(--text2);
+            margin-top: 4px
+        }
+
+        /* ========== SECTION COMMON ========== */
+        section {
+            padding: 90px 5%
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(124, 111, 224, .15), rgba(224, 64, 251, .15));
+            border: 1px solid var(--glass-border);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: .8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 12px
+        }
+
+        .section-sub {
+            color: var(--text2);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto
+        }
+
+        /* ========== GLASS CARD ========== */
+        .glass {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+        }
+
+        /* ========== NOTES SECTION ========== */
+        #notes {
+            padding-top: 70px
+        }
+
+        .notes-controls {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 36px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-wrap {
+            flex: 1;
+            min-width: 220px;
+            position: relative;
+        }
+
+        .search-wrap i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text2);
+            font-size: .9rem;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 12px 14px 12px 40px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text);
+            font-size: .9rem;
+            backdrop-filter: blur(10px);
+            outline: none;
+            transition: all var(--transition);
+        }
+
+        #searchInput::placeholder {
+            color: var(--text2)
+        }
+
+        #searchInput:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(124, 111, 224, .15)
+        }
+
+        .filters {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .filter-btn {
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: .82rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            color: var(--text2);
+            transition: all var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(124, 111, 224, .35);
+        }
+
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 22px;
+        }
+
+        .note-card {
+            padding: 26px;
+            border-radius: var(--radius);
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--card-shadow);
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .note-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(124, 111, 224, .06), rgba(224, 64, 251, .06));
+            opacity: 0;
+            transition: opacity var(--transition);
+        }
+
+        .note-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(124, 111, 224, .4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .4)
+        }
+
+        .note-card:hover::before {
+            opacity: 1
+        }
+
+        .note-card.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px
+        }
+
+        .subject-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .note-meta {
+            text-align: right
+        }
+
+        .note-sem {
+            font-size: .75rem;
+            color: var(--accent);
+            font-weight: 600;
+            background: rgba(124, 111, 224, .12);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .note-size {
+            font-size: .72rem;
+            color: var(--text2);
+            margin-top: 4px
+        }
+
+        .note-subject {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px
+        }
+
+        .note-desc {
+            font-size: .85rem;
+            color: var(--text2);
+            line-height: 1.6;
+            margin-bottom: 18px
+        }
+
+        .note-contributor {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .8rem;
+            color: var(--text2);
+            margin-bottom: 18px;
+        }
+
+        .contrib-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .7rem;
+            color: #fff;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .note-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .note-category {
+            font-size: .75rem;
+            font-weight: 600;
+            background: var(--glass-border);
+            padding: 4px 12px;
+            border-radius: 20px;
+            color: var(--text2);
+        }
+
+        .download-btn {
+            padding: 9px 18px;
+            border-radius: 10px;
+            font-size: .82rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            transition: all var(--transition);
+            box-shadow: 0 4px 15px rgba(124, 111, 224, .3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 111, 224, .45)
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text2);
+            grid-column: 1/-1;
+        }
+
+        .no-results i {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            opacity: .4
+        }
+
+        /* ========== UPLOAD SECTION ========== */
+        #upload {
+            background: transparent;
+        }
+
+        .upload-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upload-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(124, 111, 224, .1), rgba(224, 64, 251, .1));
+        }
+
+        .upload-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            margin: 0 auto 24px;
+            box-shadow: 0 10px 30px rgba(124, 111, 224, .4);
+        }
+
+        .upload-card h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 14px
+        }
+
+        .upload-card p {
+            color: var(--text2);
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 450px;
+            margin: 0 auto 32px
+        }
+
+        .upload-features {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 36px;
+            flex-wrap: wrap;
+        }
+
+        .upload-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .85rem;
+            color: var(--text2);
+        }
+
+        .upload-feature i {
+            color: var(--accent)
+        }
+
+        /* ========== CONTRIBUTORS ========== */
+        #contributors {
+            padding-top: 0
+        }
+
+        .contributors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .contributor-card {
+            padding: 24px;
+            text-align: center;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            border-radius: var(--radius);
+            transition: all var(--transition);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .contributor-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(124, 111, 224, .4)
+        }
+
+        .contributor-card.visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        .contrib-big-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+            margin: 0 auto 14px;
+            box-shadow: 0 6px 20px rgba(124, 111, 224, .35);
+        }
+
+        .contrib-name {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 4px
+        }
+
+        .contrib-role {
+            font-size: .8rem;
+            color: var(--text2);
+            margin-bottom: 12px
+        }
+
+        .contrib-count {
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--accent);
+            background: rgba(124, 111, 224, .12);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        /* ========== ABOUT ========== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 16px
+        }
+
+        .about-text p {
+            color: var(--text2);
+            line-height: 1.8;
+            margin-bottom: 16px
+        }
+
+        .about-features {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 24px
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px;
+            border-radius: 12px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: .95rem;
+            flex-shrink: 0;
+        }
+
+        .about-visual {
+            padding: 40px;
+            text-align: center;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+        }
+
+        .about-visual .big-icon {
+            font-size: 5rem;
+            background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .about-numbers {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px
+        }
+
+        .about-num {
+            text-align: center
+        }
+
+        .about-num-val {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+
+        .about-num-label {
+            font-size: .75rem;
+            color: var(--text2)
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: rgba(0, 0, 0, .3);
+            border-top: 1px solid var(--glass-border);
+            padding: 60px 5% 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 14px;
+            display: inline-flex
+        }
+
+        .footer-brand p {
+            color: var(--text2);
+            font-size: .88rem;
+            line-height: 1.7;
+            margin-bottom: 20px
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px
+        }
+
+        .social-link {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text2);
+            text-decoration: none;
+            font-size: .9rem;
+            transition: all var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-2px)
+        }
+
+        .footer-col h4 {
+            font-size: .9rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--text)
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        .footer-links a {
+            color: var(--text2);
+            text-decoration: none;
+            font-size: .85rem;
+            transition: color var(--transition)
+        }
+
+        .footer-links a:hover {
+            color: var(--accent)
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--glass-border);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom p {
+            color: var(--text2);
+            font-size: .82rem
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px
+        }
+
+        .footer-bottom-links a {
+            color: var(--text2);
+            text-decoration: none;
+            font-size: .82rem;
+            transition: color var(--transition)
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--accent)
+        }
+
+        /* ========== TOAST ========== */
+        #toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: .9rem;
+            font-weight: 600;
+            z-index: 9998;
+            box-shadow: 0 8px 30px rgba(124, 111, 224, .5);
+            transition: transform 0.4s cubic-bezier(.4, 0, .2, 1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+        }
+
+        #toast.show {
+            transform: translateX(-50%) translateY(0)
+        }
+
+        /* ========== BACK TO TOP ========== */
+        #backTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 200;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(124, 111, 224, .4);
+            opacity: 0;
+            pointer-events: none;
+            transition: all var(--transition);
+        }
+
+        #backTop.show {
+            opacity: 1;
+            pointer-events: all
+        }
+
+        #backTop:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(124, 111, 224, .5)
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media(max-width:900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr
+            }
+
+            .about-visual {
+                display: none
+            }
+        }
+
+        @media(max-width:650px) {
+            .nav-links {
+                display: none
+            }
+
+            .hamburger {
+                display: block
+            }
+
+            .upload-card {
+                padding: 40px 24px
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .hero-stats {
+                gap: 24px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo"><i class="fas fa-book-open"></i> StudyVault</div>
+        <div class="loader-bar">
+            <div class="loader-fill"></div>
+        </div>
+        <p style="color:var(--text2);font-size:.85rem">Loading your notes platform...</p>
+    </div>
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- GRADIENT BLOBS -->
+    <div class="blobs">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#home" class="logo"><i class="fas fa-book-open"></i> StudyVault</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#upload">Upload</a></li>
+            <li><a href="#contributors">Contributors</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeBtn" title="Toggle theme"><i class="fas fa-moon"
+                    id="themeIcon"></i></button>
+            <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobile()">Home</a>
+        <a href="#notes" onclick="closeMobile()">Notes</a>
+        <a href="#upload" onclick="closeMobile()">Upload Notes</a>
+        <a href="#contributors" onclick="closeMobile()">Contributors</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section id="home">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-circle fa-xs"></i> Free Notes for Every Student</div>
+                <h1 class="hero-title">Share Knowledge,<br><span class="grad-text">Empower Students</span></h1>
+                <p class="hero-sub">Access thousands of well-organised study notes, past papers, and resources shared by
+                    students — for students.</p>
+                <div class="hero-btns">
+                    <a href="#notes" class="btn btn-primary"><i class="fas fa-search"></i> Browse Notes</a>
+                    <a href="#upload" class="btn btn-outline"><i class="fas fa-upload"></i> Upload Notes</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-num">1.2K+</div>
+                        <div class="stat-label">Notes Available</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">350+</div>
+                        <div class="stat-label">Contributors</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">8.5K+</div>
+                        <div class="stat-label">Downloads</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">40+</div>
+                        <div class="stat-label">Subjects Covered</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTES SECTION -->
+        <section id="notes">
+            <div class="section-header">
+                <div class="section-tag">📚 Study Materials</div>
+                <h2 class="section-title">Browse <span class="grad-text">Notes</span></h2>
+                <p class="section-sub">High-quality notes contributed by top students across universities.</p>
+            </div>
+            <div class="notes-controls">
+                <div class="search-wrap">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search notes by subject, topic..."
+                        oninput="filterNotes()" />
+                </div>
+                <div class="filters" id="filters">
+                    <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+                    <button class="filter-btn" onclick="setFilter('engineering',this)">Engineering</button>
+                    <button class="filter-btn" onclick="setFilter('science',this)">Science</button>
+                    <button class="filter-btn" onclick="setFilter('commerce',this)">Commerce</button>
+                    <button class="filter-btn" onclick="setFilter('arts',this)">Arts</button>
+                    <button class="filter-btn" onclick="setFilter('medicine',this)">Medicine</button>
+                </div>
+            </div>
+            <div class="notes-grid" id="notesGrid"></div>
+        </section>
+
+        <!-- UPLOAD SECTION -->
+        <section id="upload">
+            <div class="upload-card glass">
+                <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h2>Share Your <span class="grad-text">Knowledge</span></h2>
+                <p>Help thousands of students by sharing your notes. Every contribution makes a difference in someone's
+                    academic journey.</p>
+                <div class="upload-features">
+                    <div class="upload-feature"><i class="fas fa-check-circle"></i> Quick & Easy</div>
+                    <div class="upload-feature"><i class="fas fa-star"></i> Get Credit</div>
+                    <div class="upload-feature"><i class="fas fa-users"></i> Help Students</div>
+                    <div class="upload-feature"><i class="fas fa-shield-alt"></i> Reviewed by Admin</div>
+                </div>
+                <a href="https://forms.gle/JaQjuTMH7rKjMHYQ7" target="_blank" class="btn btn-primary"
+                    style="margin:0 auto;display:inline-flex">
+                    <i class="fas fa-upload"></i> Upload Your Notes
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTRIBUTORS -->
+        <section id="contributors">
+            <div class="section-header">
+                <div class="section-tag">🏆 Community</div>
+                <h2 class="section-title">Top <span class="grad-text">Contributors</span></h2>
+                <p class="section-sub">Meet the amazing students who make this platform great.</p>
+            </div>
+            <div class="contributors-grid" id="contributorsGrid"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-tag">ℹ️ About Us</div>
+                    <h2>Why <span class="grad-text">StudyVault</span>?</h2>
+                    <p>StudyVault is a free, student-run platform designed to make quality study materials accessible to
+                        everyone. We believe that knowledge should be shared, not hoarded.</p>
+                    <p>Whether you're preparing for exams or building on your understanding, our curated notes from
+                        top-performing students will give you the edge you need.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-lock-open"></i></div>
+                            <div><strong>100% Free</strong><br><span style="color:var(--text2);font-size:.85rem">No
+                                    paywalls. Ever.</span></div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                            <div><strong>Quality Verified</strong><br><span
+                                    style="color:var(--text2);font-size:.85rem">Admin-reviewed notes only.</span></div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                            <div><strong>Community Driven</strong><br><span
+                                    style="color:var(--text2);font-size:.85rem">Built by students, for students.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual glass">
+                    <i class="fas fa-graduation-cap big-icon"></i>
+                    <p style="color:var(--text2);font-size:.9rem">Empowering students since 2023</p>
+                    <div class="about-numbers">
+                        <div class="about-num">
+                            <div class="about-num-val">50+</div>
+                            <div class="about-num-label">Universities</div>
+                        </div>
+                        <div class="about-num">
+                            <div class="about-num-val">100%</div>
+                            <div class="about-num-label">Free</div>
+                        </div>
+                        <div class="about-num">
+                            <div class="about-num-val">24/7</div>
+                            <div class="about-num-label">Access</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / FOOTER -->
+        <footer id="contact">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo"><i class="fas fa-book-open"></i> StudyVault</a>
+                    <p>A free student notes platform built to empower learners everywhere. Share knowledge, grow
+                        together.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#notes">Browse Notes</a></li>
+                        <li><a href="#upload">Upload Notes</a></li>
+                        <li><a href="#contributors">Contributors</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Subjects</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Commerce</a></li>
+                        <li><a href="#">Arts</a></li>
+                        <li><a href="#">Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@studyvault.com"><i class="fas fa-envelope"
+                                    style="margin-right:6px"></i>hello@studyvault.com</a></li>
+                        <li><a href="#"><i class="fab fa-telegram" style="margin-right:6px"></i>Telegram Group</a></li>
+                        <li><a href="#"><i class="fas fa-bug" style="margin-right:6px"></i>Report Issue</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle" style="margin-right:6px"></i>FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 StudyVault. Made with <i class="fas fa-heart" style="color:#e040fb"></i> for students
+                    everywhere.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- TOAST -->
+    <div id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg">Download started!</span></div>
+
+    <!-- BACK TO TOP -->
+    <button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        /* ========== DATA ========== */
+        const notesData = [
+            { id: 1, subject: "Data Structures & Algorithms", sem: "Sem 3 | B.Tech", desc: "Complete DSA notes covering arrays, linked lists, trees, graphs, sorting algorithms, and complexity analysis.", size: "4.2 MB", contributor: "Rahul Kumar", initials: "RK", category: "engineering", icon: "fas fa-code", pdfUrl: "#" },
+            { id: 2, subject: "Organic Chemistry", sem: "Sem 2 | B.Sc", desc: "Detailed organic chemistry notes with reactions, mechanisms, and IUPAC nomenclature for all key chapters.", size: "3.8 MB", contributor: "Priya Singh", initials: "PS", category: "science", icon: "fas fa-flask", pdfUrl: "#" },
+            { id: 3, subject: "Financial Accounting", sem: "Sem 1 | B.Com", desc: "Comprehensive accounting notes covering journal entries, ledger, trial balance, and final accounts.", size: "2.9 MB", contributor: "Amit Sharma", initials: "AS", category: "commerce", icon: "fas fa-calculator", pdfUrl: "#" },
+            { id: 4, subject: "Operating Systems", sem: "Sem 4 | B.Tech", desc: "Complete OS notes on process management, memory management, file systems, deadlocks and scheduling algorithms.", size: "5.1 MB", contributor: "Neha Patel", initials: "NP", category: "engineering", icon: "fas fa-server", pdfUrl: "#" },
+            { id: 5, subject: "World History", sem: "Sem 2 | B.A", desc: "Detailed notes on modern world history from the Renaissance period to the 21st century global events.", size: "3.3 MB", contributor: "Arjun Mehta", initials: "AM", category: "arts", icon: "fas fa-globe", pdfUrl: "#" },
+            { id: 6, subject: "Human Anatomy", sem: "Sem 1 | MBBS", desc: "Illustrated anatomy notes covering all body systems with diagrams, clinical notes, and mnemonics.", size: "7.5 MB", contributor: "Dr. Riya Sen", initials: "RS", category: "medicine", icon: "fas fa-heartbeat", pdfUrl: "#" },
+            { id: 7, subject: "Computer Networks", sem: "Sem 5 | B.Tech", desc: "TCP/IP, OSI model, routing protocols, network security, and wireless networking — all covered in detail.", size: "4.6 MB", contributor: "Vikram Joshi", initials: "VJ", category: "engineering", icon: "fas fa-network-wired", pdfUrl: "#" },
+            { id: 8, subject: "Marketing Management", sem: "Sem 3 | BBA", desc: "4Ps of marketing, consumer behavior, branding strategies, digital marketing basics and case studies.", size: "2.7 MB", contributor: "Sneha Roy", initials: "SR", category: "commerce", icon: "fas fa-bullhorn", pdfUrl: "#" },
+            { id: 9, subject: "Cell Biology", sem: "Sem 2 | B.Sc", desc: "Complete cell biology notes covering cell structure, organelles, cell division, and molecular mechanisms.", size: "3.9 MB", contributor: "Kavya Nair", initials: "KN", category: "science", icon: "fas fa-dna", pdfUrl: "#" },
+        ];
+
+        const contributorsData = [
+            { name: "Rahul Kumar", role: "Engineering Student | DTU", initials: "RK", notes: "12 Notes", badge: "⭐ Top Contributor" },
+            { name: "Priya Singh", role: "B.Sc Chemistry | DU", initials: "PS", notes: "9 Notes", badge: "🔬 Science Expert" },
+            { name: "Amit Sharma", role: "B.Com Finance | IGNOU", initials: "AS", notes: "7 Notes", badge: "📊 Commerce Pro" },
+            { name: "Dr. Riya Sen", role: "MBBS | AIIMS", initials: "RS", notes: "6 Notes", badge: "🩺 Medical Expert" },
+            { name: "Arjun Mehta", role: "B.A History | JNU", initials: "AM", notes: "8 Notes", badge: "📖 Arts Scholar" },
+            { name: "Neha Patel", role: "M.Tech CS | IIT", initials: "NP", notes: "11 Notes", badge: "💻 Tech Guru" },
+        ];
+
+        /* ========== STATE ========== */
+        let activeFilter = 'all';
+        let searchQuery = '';
+
+        /* ========== RENDER NOTES ========== */
+        function renderNotes() {
+            const grid = document.getElementById('notesGrid');
+            const filtered = notesData.filter(n => {
+                const matchCat = activeFilter === 'all' || n.category === activeFilter;
+                const q = searchQuery.toLowerCase();
+                const matchSearch = !q || n.subject.toLowerCase().includes(q) || n.desc.toLowerCase().includes(q) || n.contributor.toLowerCase().includes(q);
+                return matchCat && matchSearch;
+            });
+            if (!filtered.length) {
+                grid.innerHTML = `<div class="no-results"><i class="fas fa-search-minus"></i><br><h3>No notes found</h3><p>Try a different search or category.</p></div>`;
+                return;
+            }
+            grid.innerHTML = filtered.map(n => `
+    <div class="note-card" data-id="${n.id}">
+      <div class="card-top">
+        <div class="subject-icon"><i class="${n.icon}"></i></div>
+        <div class="note-meta">
+          <div class="note-sem">${n.sem}</div>
+          <div class="note-size"><i class="fas fa-file-pdf"></i> ${n.size}</div>
+        </div>
+      </div>
+      <div class="note-subject">${n.subject}</div>
+      <div class="note-desc">${n.desc}</div>
+      <div class="note-contributor">
+        <div class="contrib-avatar">${n.initials}</div>
+        <span>Contributed by <strong>${n.contributor}</strong></span>
+      </div>
+      <div class="note-footer">
+        <span class="note-category">${n.category.charAt(0).toUpperCase() + n.category.slice(1)}</span>
+        <button class="download-btn" onclick="downloadNote('${n.subject}','${n.pdfUrl}')">
+          <i class="fas fa-download"></i> Download
+        </button>
+      </div>
+    </div>
+  `).join('');
+            // Trigger scroll reveal for new cards
+            setTimeout(() => {
+                document.querySelectorAll('.note-card').forEach((el, i) => {
+                    setTimeout(() => el.classList.add('visible'), i * 60);
+                });
+            }, 50);
+        }
+
+        /* ========== RENDER CONTRIBUTORS ========== */
+        function renderContributors() {
+            document.getElementById('contributorsGrid').innerHTML = contributorsData.map(c => `
+    <div class="contributor-card">
+      <div class="contrib-big-avatar">${c.initials}</div>
+      <div class="contrib-name">${c.name}</div>
+      <div class="contrib-role">${c.role}</div>
+      <div class="contrib-count"><i class="fas fa-book"></i> ${c.notes}</div>
+      <div style="margin-top:10px;font-size:.75rem;color:var(--text2)">${c.badge}</div>
+    </div>
+  `).join('');
+            setTimeout(() => {
+                document.querySelectorAll('.contributor-card').forEach((el, i) => {
+                    setTimeout(() => el.classList.add('visible'), i * 80);
+                });
+            }, 100);
+        }
+
+        /* ========== FILTER ========== */
+        function setFilter(cat, btn) {
+            activeFilter = cat;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderNotes();
+        }
+        function filterNotes() {
+            searchQuery = document.getElementById('searchInput').value;
+            renderNotes();
+        }
+
+        /* ========== DOWNLOAD ========== */
+        function downloadNote(subject, url) {
+            showToast(`📥 Downloading "${subject}"...`);
+            // In production, replace '#' with actual PDF URLs
+            if (url && url !== '#') {
+                const a = document.createElement('a');
+                a.href = url; a.download = subject + '.pdf';
+                a.click();
+            }
+        }
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 3200);
+        }
+
+        /* ========== THEME TOGGLE ========== */
+        const themeBtn = document.getElementById('themeBtn');
+        const themeIcon = document.getElementById('themeIcon');
+        themeBtn.addEventListener('click', () => {
+            const html = document.documentElement;
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
+        /* ========== HAMBURGER ========== */
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        });
+        function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+        /* ========== PARTICLES ========== */
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 25; i++) {
+                const p = document.createElement('div');
+                p.className = 'particle';
+                const size = Math.random() * 6 + 3;
+                p.style.cssText = `
+      width:${size}px;height:${size}px;
+      left:${Math.random() * 100}%;
+      animation-duration:${Math.random() * 20 + 15}s;
+      animation-delay:${Math.random() * 15}s;
+      opacity:${Math.random() * 0.15 + 0.05};
+    `;
+                container.appendChild(p);
+            }
+        }
+
+        /* ========== SCROLL EVENTS ========== */
+        window.addEventListener('scroll', () => {
+            // Back to top
+            document.getElementById('backTop').classList.toggle('show', window.scrollY > 400);
+            // Sticky nav highlight
+            const sections = ['home', 'notes', 'upload', 'contributors', 'about', 'contact'];
+            let current = '';
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el && window.scrollY >= el.offsetTop - 100) current = id;
+            });
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+            // Scroll reveal contributors
+            document.querySelectorAll('.contributor-card:not(.visible)').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 60) el.classList.add('visible');
+            });
+        });
+
+        /* ========== LOADER ========== */
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hide');
+            }, 2000);
+        });
+
+        /* ========== INIT ========== */
+        createParticles();
+        renderNotes();
+        renderContributors();
+    </script>
+</body>
+
+</html>
