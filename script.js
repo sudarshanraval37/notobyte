@@ -56,35 +56,35 @@ const notesData = [
     size: "4.2 MB",
     contributor: "Vikki Kumar",
     initials: "V.K",
-    category: "engineering",
-    icon: "fas fa-code",
+    category: "Notes",
+    icon: "fas fa-book",
     pdfUrl: "assets/pdfs/ev-ad-notes.pdf"
     /* HOW TO DOWNLOAD: When the user clicks Download, this path is used.
        Make sure the file exists at: assets/pdfs/dsa-notes.pdf */
   },
   {
     id: 2,
-    subject: "ESU",
+    subject: "ESU 2023 PYQ",
     sem: "Sem 6 | Diploma",
-    desc: "ESU PYQ 2023 with answer",
+    desc: "Entrepreneurship & Startups Previous year question of year 2023 with answer",
     size: "51 KB",
     contributor: "Sudarshan Raval",
     initials: "SR",
-    category: "engineering",
-    icon: "fas fa-code",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
     pdfUrl: "assets/pdfs/ESU PYQ 2023.pdf"
   },
   {
     id: 3,
-    subject: "Financial Accounting",
-    sem: "Sem 1 | B.Com",
-    desc: "Comprehensive accounting notes covering journal entries, ledger, trial balance, and final accounts.",
-    size: "2.9 MB",
-    contributor: "Amit Sharma",
-    initials: "AS",
-    category: "commerce",
-    icon: "fas fa-calculator",
-    pdfUrl: "assets/pdfs/financial-accounting.pdf"
+    subject: "ESU 2024 PYQ",
+    sem: "Sem 6 | Diploma",
+    desc: "Entrepreneurship & Startups 2024 pyq",
+    size: "1.1 MB",
+    contributor: "Annu Priya",
+    initials: "AP",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/Entrepreneurship_&_Startup_2024 EVEN.pdf"
   },
   {
     id: 4,
@@ -124,39 +124,39 @@ const notesData = [
   },
   {
     id: 7,
-    subject: "Computer Networks",
-    sem: "Sem 5 | B.Tech",
-    desc: "TCP/IP, OSI model, routing protocols, network security, and wireless networking — all covered in detail.",
-    size: "4.6 MB",
-    contributor: "Vikram Joshi",
-    initials: "VJ",
-    category: "engineering",
-    icon: "fas fa-network-wired",
-    pdfUrl: "assets/pdfs/computer-networks.pdf"
+    subject: "E-Governance PYQ 2024",
+    sem: "Sem 6 | Diploma",
+    desc: "Previous year question of Introduction to E-governance (2018604B) of year 2024",
+    size: "3.5 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/e-governance_pyq_2024.pdf"
   },
   {
     id: 8,
-    subject: "Marketing Management",
-    sem: "Sem 3 | BBA",
-    desc: "4Ps of marketing, consumer behavior, branding strategies, digital marketing basics and case studies.",
-    size: "2.7 MB",
-    contributor: "Sneha Roy",
+    subject: "Software Engineering 2024 PYQ",
+    sem: "Sem 6 | Diploma",
+    desc: "Previous year question of Software Engineering of year 2024",
+    size: "2.9 MB",
+    contributor: "Sudarshan Raval",
     initials: "SR",
-    category: "commerce",
-    icon: "fas fa-bullhorn",
-    pdfUrl: "assets/pdfs/marketing-management.pdf"
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/se_pyq_2024.pdf"
   },
   {
     id: 9,
-    subject: "Cell Biology",
-    sem: "Sem 2 | B.Sc",
-    desc: "Complete cell biology notes covering cell structure, organelles, cell division, and molecular mechanisms.",
-    size: "3.9 MB",
-    contributor: "Kavya Nair",
-    initials: "KN",
-    category: "science",
-    icon: "fas fa-dna",
-    pdfUrl: "assets/pdfs/cell-biology.pdf"
+    subject: "ESU Full notes",
+    sem: "Sem 6 | Diploma",
+    desc: "Complete notes of Entreprenuership & Start-ups",
+    size: "17.9 MB",
+    contributor: "Annu Priya",
+    initials: "AP",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/ESU_full_notes.pdf"
   },
 
   {
@@ -172,6 +172,20 @@ const notesData = [
     pdfUrl: "assets/pdfs/EV AD(1).pdf"
     /* HOW TO DOWNLOAD: When the user clicks Download, this path is used.
        Make sure the file exists at: assets/pdfs/dsa-notes.pdf */
+  },
+
+
+    {
+    id: 11,
+    subject: "Software Engineering 2023 PYQ",
+    sem: "Sem 6 | Diploma",
+    desc: "Previous year question of Software Engineering of year 2023",
+    size: "3.3 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/se_pyq_2023.pdf"
   },
 
   /* ──────────────────────────────────────────────────────────────
