@@ -188,6 +188,71 @@ const notesData = [
     pdfUrl: "assets/pyq/se_pyq_2023.pdf"
   },
 
+      {
+    id: 12,
+    subject: "Electrical concept | BULLET Volume-2",
+    sem: "Competitive Book | SSC JE",
+    desc: "Electrical Engineering book for all competitive exam in English and Hindi",
+    size: "33 MB",
+    contributor: "Pankaj Kumar",
+    initials: "PK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/Electrical_book_volume-2.pdf"
+  },
+
+      {
+    id: 13,
+    subject: "Advance Surveying PYQ",
+    sem: "Civil Sem 4 | Diploma",
+    desc: "Previous year question of Advance Surveying of year 2024",
+    size: "2.9 MB",
+    contributor: "Md Ashfak",
+    initials: "MA",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/Advance_surveying_pyq_2024.pdf"
+  },
+
+    {
+    id: 14,
+    subject: "Python Programming",
+    sem: "All semester | Diploma",
+    desc: "Complete Python Programming notes of Technical Classes",
+    size: "38.8 MB",
+    contributor: "Rahul Kumar",
+    initials: "RK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/python_full_notes.pdf"
+  },
+  
+      {
+    id: 15,
+    subject: "Communication Skills Guess questions",
+    sem: "Sem 4 | Diploma",
+    desc: "Guess Questions of communication skills for exam",
+    size: "5 KB",
+    contributor: "Himanshu Kumar",
+    initials: "HK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/communication_skills_guess_question_2026.pdf"
+  },
+
+        {
+    id: 16,
+    subject: "Soil Mechanics & Foundation",
+    sem: "Civil Sem 4 | Diploma",
+    desc: "Overview of Soil mechanics UNIT 1",
+    size: "14.5 MB",
+    contributor: "Piyush Kumar",
+    initials: "PK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/soil_mech_notes.pdf"
+  },
+
   /* ──────────────────────────────────────────────────────────────
      ADD YOUR NEW NOTES BELOW THIS LINE
      Copy the template above, fill in the fields, and save.
@@ -267,6 +332,17 @@ const contributorsData = [
     notes: "6 Notes",
     badge: "CSE Engg"
   },
+
+    {
+    name: "Supriya Sargam",
+    role: "Diploma Student | G.P Banka",
+    initials: "SS",
+    notes: "2 Notes",
+    badge: "Electrical Engg"
+  },
+
+  
+
 ];
 
 
