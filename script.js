@@ -48,6 +48,31 @@
    button in index.html inside the <div class="filters"> section.
 ================================================================ */
 const notesData = [
+          {
+    id: 17,
+    subject: "Entrepreneurship & Start-ups full notes",
+    sem: "Common paper 6th sem | Diploma",
+    desc: "Full notes of Entrepreneurship & Start-ups by CTH Education",
+    size: "3 MB",
+    contributor: "Ankush Kumar",
+    initials: "AK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/enterpreneurship_and_startup_full_notes.pdf"
+  },
+
+            {
+    id: 18,
+    subject: "Entrepreneurship & Start-ups Top 50+ MCQ",
+    sem: "Common paper 6th sem | Diploma",
+    desc: "Top 50+ most expected MCQ of Entrepreneurship & Start-ups by JRS Mantra",
+    size: "10 MB",
+    contributor: "Ankush Kumar",
+    initials: "AK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/50+_IMPORTANT_MCQ _2026.pdf"
+  },
   {
     id: 1,
     subject: "E.V Advance",
@@ -252,6 +277,10 @@ const notesData = [
     icon: "fas fa-book",
     pdfUrl: "assets/pdfs/soil_mech_notes.pdf"
   },
+
+
+
+
 
   /* ──────────────────────────────────────────────────────────────
      ADD YOUR NEW NOTES BELOW THIS LINE
