@@ -48,7 +48,7 @@
    button in index.html inside the <div class="filters"> section.
 ================================================================ */
 const notesData = [
-    
+
   {
     id: 20,
     subject: "Web Technology PYQ 2024",
