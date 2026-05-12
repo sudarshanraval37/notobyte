@@ -48,7 +48,34 @@
    button in index.html inside the <div class="filters"> section.
 ================================================================ */
 const notesData = [
-          {
+    
+  {
+    id: 20,
+    subject: "Web Technology PYQ 2024",
+    sem: "CSE 2nd sem | Diploma",
+    desc: "Full solved pyq of year 2024 by NotoByte",
+    size: "50 KB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/web_technology_pyq_2024_solved.pdf"
+  },
+
+
+  {
+    id: 19,
+    subject: "Web Technology PYQ 2022",
+    sem: "CSE 2nd sem | Diploma",
+    desc: "Full solved pyq of year 2022 by Polytechnic Academy",
+    size: "1.4 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/web_technology_pyq_2022.pdf"
+  },
+  {
     id: 17,
     subject: "Entrepreneurship & Start-ups full notes",
     sem: "Common paper 6th sem | Diploma",
@@ -61,7 +88,7 @@ const notesData = [
     pdfUrl: "assets/pdfs/enterpreneurship_and_startup_full_notes.pdf"
   },
 
-            {
+  {
     id: 18,
     subject: "Entrepreneurship & Start-ups Top 50+ MCQ",
     sem: "Common paper 6th sem | Diploma",
@@ -200,7 +227,7 @@ const notesData = [
   },
 
 
-    {
+  {
     id: 11,
     subject: "Software Engineering 2023 PYQ",
     sem: "Sem 6 | Diploma",
@@ -213,7 +240,7 @@ const notesData = [
     pdfUrl: "assets/pyq/se_pyq_2023.pdf"
   },
 
-      {
+  {
     id: 12,
     subject: "Electrical concept | BULLET Volume-2",
     sem: "Competitive Book | SSC JE",
@@ -226,7 +253,7 @@ const notesData = [
     pdfUrl: "assets/pdfs/Electrical_book_volume-2.pdf"
   },
 
-      {
+  {
     id: 13,
     subject: "Advance Surveying PYQ",
     sem: "Civil Sem 4 | Diploma",
@@ -239,7 +266,7 @@ const notesData = [
     pdfUrl: "assets/pyq/Advance_surveying_pyq_2024.pdf"
   },
 
-    {
+  {
     id: 14,
     subject: "Python Programming",
     sem: "All semester | Diploma",
@@ -251,8 +278,8 @@ const notesData = [
     icon: "fas fa-book",
     pdfUrl: "assets/pdfs/python_full_notes.pdf"
   },
-  
-      {
+
+  {
     id: 15,
     subject: "Communication Skills Guess questions",
     sem: "Sem 4 | Diploma",
@@ -265,7 +292,7 @@ const notesData = [
     pdfUrl: "assets/pdfs/communication_skills_guess_question_2026.pdf"
   },
 
-        {
+  {
     id: 16,
     subject: "Soil Mechanics & Foundation",
     sem: "Civil Sem 4 | Diploma",
@@ -354,7 +381,7 @@ const contributorsData = [
     notes: "4 Notes",
     badge: "Mech Engg"
   },
-    {
+  {
     name: "Varsa Kumari",
     role: "Diploma Student | G.P Banka",
     initials: "VK",
@@ -362,7 +389,7 @@ const contributorsData = [
     badge: "CSE Engg"
   },
 
-    {
+  {
     name: "Supriya Sargam",
     role: "Diploma Student | G.P Banka",
     initials: "SS",
@@ -370,7 +397,7 @@ const contributorsData = [
     badge: "Electrical Engg"
   },
 
-  
+
 
 ];
 
