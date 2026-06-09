@@ -49,6 +49,49 @@
 ================================================================ */
 const notesData = [
 
+
+      {
+    id: 22,
+    subject: "Applied Chemistry A Model Set",
+    sem: "Civil 1st sem | Diploma",
+    desc: "Solved Model Set of Applied Chemistry-A",
+    size: "1.8 MB",
+    contributor: "Supriya Kumari",
+    initials: "SK",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/Applied Chemistry-A Bihar 1st Sem Model Set-1 - Supriya.pdf"
+  },
+
+
+    {
+    id: 22,
+    subject: "Basic Engg. Mathematics Model Set",
+    sem: "Civil 1st sem | Diploma",
+    desc: "Solved Model Set of Basic Engg. Mathematics",
+    size: "2.2 MB",
+    contributor: "Supriya Kumari",
+    initials: "SK",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/Basic Engineering Mathematics Bihar 1st Semester Model set-1 - Supriya.pdf"
+  },
+
+
+  {
+    id: 21,
+    subject: "Basic Engg. Mathematics VVI Question",
+    sem: "Civil 1st sem | Diploma",
+    desc: "All important Questions of Basic Engg. Mathematics Objective + Subjective",
+    size: "6.5 MB",
+    contributor: "Supriya Kumari",
+    initials: "SK",
+    category: "Notes",
+    icon: "fas fa-book",
+    pdfUrl: "assets/pdfs/Basic Engg. Mathematics VVI Question - Supriya.pdf"
+  },
+
+
   {
     id: 20,
     subject: "Web Technology PYQ 2024",
