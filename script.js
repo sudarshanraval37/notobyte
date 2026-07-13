@@ -49,9 +49,21 @@
 ================================================================ */
 const notesData = [
 
+    {
+    id: 23,
+    subject: "Energy Conservation & Audit PYQ 2024",
+    sem: "Mech 6th sem | Diploma",
+    desc: "Previous year question of ECA of year 2024",
+    size: "3.2 MB",
+    contributor: "Raghav Kumar",
+    initials: "RK",
+    category: "PYQs",
+    icon: "fas fa-file-signature",
+    pdfUrl: "assets/pyq/ECA-PYQ-2024.pdf"
+  },
 
       {
-    id: 22,
+    id: 23,
     subject: "Applied Chemistry A Model Set",
     sem: "Civil 1st sem | Diploma",
     desc: "Solved Model Set of Applied Chemistry-A",
