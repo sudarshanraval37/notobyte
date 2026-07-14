@@ -38,7 +38,7 @@
       - initials    → 2-letter initials for the avatar (e.g. "RK")
       - category    → Must match a filter button. Options:
                        "engineering" | "science" | "commerce" |
-                       "arts"        | "assignment"
+                       "Important Downloads"        | "assignment"
       - icon        → Font Awesome icon class for the subject
                        Browse icons at: https://fontawesome.com/icons
       - pdfUrl      → Path to the PDF file
@@ -50,7 +50,20 @@
 const notesData = [
 
     {
-    id: 23,
+    id: 25,
+    subject: "Application Format For PLC and TC",
+    sem: "All Branch Passout Students | Diploma",
+    desc: "Application format for Polytechnic/College Leaving Certificate and Transfer Certificate",
+    size: "0.5 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    category: "Important Downloads",
+    icon: "fas fa-file-download",
+    pdfUrl: "assets/pdfs/Application-for-PLC&TC.pdf"
+  },
+
+    {
+    id: 24,
     subject: "Energy Conservation & Audit PYQ 2024",
     sem: "Mech 6th sem | Diploma",
     desc: "Previous year question of ECA of year 2024",
@@ -213,7 +226,7 @@ const notesData = [
     size: "3.3 MB",
     contributor: "Arjun Mehta",
     initials: "AM",
-    category: "arts",
+    category: "Important Downloads",
     icon: "fas fa-globe",
     pdfUrl: "assets/pdfs/world-history.pdf"
   },
