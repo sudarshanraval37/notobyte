@@ -11,6 +11,8 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quiz.css">
+
 </head>
 
 <body>
@@ -62,6 +64,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#notes">Notes</a></li>
+      <li><a href="#quiz">Quiz Zone</a></li>
       <li><a href="#upload">Upload</a></li>
       <li><a href="#contributors">Contributors</a></li>
       <li><a href="#about">About</a></li>
@@ -185,7 +188,8 @@
           <button class="filter-btn" onclick="setFilter('engineering', this)">Engineering</button>
           <button class="filter-btn" onclick="setFilter('Notes',     this)">Notes</button>
           <button class="filter-btn" onclick="setFilter('PYQs',    this)">PYQs</button>
-          <button class="filter-btn" onclick="setFilter('Important Downloads',        this)">Important Downloads</button>
+          <button class="filter-btn" onclick="setFilter('Important Downloads',        this)">Important
+            Downloads</button>
           <button class="filter-btn" onclick="setFilter('assignment',    this)">Assignment</button>
         </div>
 
@@ -195,6 +199,100 @@
       <div class="notes-grid" id="notesGrid"></div>
 
     </section>
+
+
+    <!-- Quiz Section -->
+
+    <section id="quiz">
+
+      <!-- Section Header (matches existing .section-header pattern) -->
+      <div class="section-header">
+        <div class="section-tag">🧠 Test Yourself</div>
+        <h2 class="section-title">Quiz <span class="grad-text">Zone</span></h2>
+        <p class="section-sub">Sharpen your concepts with subject-wise, semester-wise MCQ quizzes — instant feedback
+          included.</p>
+      </div>
+
+      <!-- ============================================================
+       VIEW 1 — DASHBOARD
+       Grid of subject cards. Populated by quizRenderDashboard().
+  ============================================================ -->
+      <div class="quiz-view active" id="quizDashboard">
+        <div class="quiz-subjects-grid" id="quizSubjectsGrid">
+          <!-- Subject cards injected here by quiz.js -->
+        </div>
+      </div>
+
+      <!-- ============================================================
+       VIEW 2 — SUBJECT VIEW
+       Shows semester tabs (if any) + the list of quizzes.
+  ============================================================ -->
+      <div class="quiz-view" id="quizSubjectView">
+        <button class="quiz-back-btn" onclick="quizBackToDashboard()">
+          <i class="fas fa-arrow-left"></i> Back to Subjects
+        </button>
+
+        <div class="quiz-subject-header" id="quizSubjectHeader">
+          <!-- Subject icon + name + description injected here -->
+        </div>
+
+        <div class="quiz-semester-tabs" id="quizSemesterTabs">
+          <!-- Semester tab buttons injected here (hidden for flat subjects) -->
+        </div>
+
+        <div class="quiz-list-grid" id="quizListGrid">
+          <!-- Quiz cards for the selected semester injected here -->
+        </div>
+      </div>
+
+      <!-- ============================================================
+       VIEW 3 — QUIZ PLAY VIEW
+       One question at a time, with progress bar and nav buttons.
+  ============================================================ -->
+      <div class="quiz-view" id="quizPlayView">
+
+        <div class="quiz-play-topbar">
+          <button class="quiz-exit-btn" onclick="quizExitToSubject()" title="Exit quiz">
+            <i class="fas fa-xmark"></i>
+          </button>
+          <div class="quiz-play-title" id="quizPlayTitle">Quiz Title</div>
+          <div class="quiz-progress-text" id="quizProgressText">Question 1 / 20</div>
+        </div>
+
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgressFill"></div>
+        </div>
+
+        <div class="quiz-question-card glass" id="quizQuestionCard">
+          <h3 class="quiz-question-text" id="quizQuestionText"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <div class="quiz-explanation" id="quizExplanation"></div>
+        </div>
+
+        <div class="quiz-nav-row">
+          <button class="btn btn-outline" id="quizPrevBtn" onclick="quizPrevQuestion()">
+            <i class="fas fa-arrow-left"></i> Previous
+          </button>
+          <button class="btn btn-primary" id="quizNextBtn" onclick="quizNextQuestion()" disabled>
+            Next <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ============================================================
+       VIEW 4 — RESULT VIEW
+       Score card shown after the 20th question is answered.
+  ============================================================ -->
+      <div class="quiz-view" id="quizResultView">
+        <div class="quiz-result-card glass" id="quizResultCard">
+          <!-- Score summary injected here by quizRenderResult() -->
+        </div>
+      </div>
+
+    </section>
+
+
+
 
     <!-- ==========================================================
          UPLOAD NOTES SECTION
@@ -493,6 +591,9 @@
 
   <!-- Main JavaScript File -->
   <script src="script.js"></script>
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+
 
 </body>
 
