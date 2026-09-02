@@ -143,19 +143,7 @@ const notesData = [
     icon: "fas fa-file-signature",
     pdfUrl: "assets/pyq/web_technology_pyq_2022.pdf"
   },
-  {
-    id: 17,
-    subject: "Entrepreneurship & Start-ups full notes",
-    sem: "Common paper 6th sem | Diploma",
-    desc: "Full notes of Entrepreneurship & Start-ups by CTH Education",
-    size: "3 MB",
-    contributor: "Ankush Kumar",
-    initials: "AK",
-    category: "Notes",
-    icon: "fas fa-book",
-    pdfUrl: "assets/pdfs/enterpreneurship_and_startup_full_notes.pdf"
-  },
-
+  
   {
     id: 18,
     subject: "Entrepreneurship & Start-ups Top 50+ MCQ",
