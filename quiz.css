@@ -22,8 +22,15 @@
 }
 
 @keyframes quizFadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -56,7 +63,9 @@
 .quiz-subject-card::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     background: var(--card-color);
 }
@@ -538,6 +547,7 @@
    6. RESPONSIVE DESIGN
 ================================================================ */
 @media (max-width: 650px) {
+
     .quiz-subjects-grid,
     .quiz-list-grid {
         grid-template-columns: 1fr;

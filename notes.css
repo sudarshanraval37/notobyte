@@ -1,0 +1,383 @@
+/* ================================================================
+   notes.css — NotoByte Notes Section (Hierarchical Navigation)
+   Purpose : Styling for the Program/Branch/Year/Semester/Type/
+             Subject picker screens. Reuses the CSS variables
+             already defined in style.css (--bg, --glass, --accent,
+             --radius, --transition, --text2, --card-shadow, etc.)
+             so it matches the rest of the site exactly — no new
+             theme is introduced. The final resource cards reuse
+             the existing .notes-grid / .note-card classes as-is.
+================================================================ */
+
+
+/* ================================================================
+   1. VIEW SWITCHING
+   Only one .notes-view is visible at a time (same pattern as
+   quiz.css .quiz-view). notes.js toggles the .active class.
+================================================================ */
+.notes-view {
+    display: none;
+    animation: notesFadeIn .35s ease;
+}
+
+.notes-view.active {
+    display: block;
+}
+
+@keyframes notesFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================================================================
+   2. BREADCRUMB
+================================================================ */
+.notes-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 24px;
+    font-size: .82rem;
+}
+
+.notes-crumb {
+    color: var(--text2);
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 6px;
+    transition: all var(--transition);
+    white-space: nowrap;
+}
+
+.notes-crumb:hover {
+    color: var(--accent);
+    background: var(--glass);
+}
+
+.notes-crumb-current {
+    color: var(--text);
+    font-weight: 700;
+    cursor: default;
+}
+
+.notes-crumb-current:hover {
+    background: none;
+}
+
+.notes-crumb-sep {
+    font-size: .65rem;
+    color: var(--text2);
+    opacity: .6;
+}
+
+
+/* ================================================================
+   3. BACK BUTTON (reused across every level view)
+================================================================ */
+.notes-back-btn {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    transition: all var(--transition);
+}
+
+.notes-back-btn:hover {
+    background: var(--glass-hover);
+    transform: translateX(-3px);
+}
+
+
+/* ================================================================
+   4. STEP 1 — PROGRAM CARDS (B.Tech / Diploma)
+================================================================ */
+.notes-program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.notes-program-card {
+    padding: 34px 26px;
+    border-radius: var(--radius);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all var(--transition);
+    cursor: pointer;
+    text-align: center;
+}
+
+.notes-program-card:hover {
+    transform: translateY(-6px);
+    background: var(--glass-hover);
+    border-color: var(--accent);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, .35);
+}
+
+.notes-program-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+
+.notes-program-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.notes-program-card p {
+    color: var(--text2);
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+.notes-program-card-alt .notes-program-icon {
+    background: var(--glass-border);
+    color: var(--text2);
+}
+
+
+/* ================================================================
+   5. STEPS 2–5 — GENERIC LEVEL LIST (Branch / Year / Semester /
+   Resource Type / Subject). Rendered into #notesLevelGrid.
+================================================================ */
+#notesLevelTitle {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+#notesLevelSub {
+    color: var(--text2);
+    font-size: .88rem;
+    margin-bottom: 22px;
+}
+
+.notes-card-list-header {
+    margin-bottom: 22px;
+}
+
+.notes-level-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.notes-option-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.notes-option-card:hover {
+    transform: translateY(-4px);
+    background: var(--glass-hover);
+    border-color: var(--accent);
+}
+
+.notes-option-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+
+.notes-option-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.notes-option-text h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.notes-option-text p {
+    font-size: .78rem;
+    color: var(--text2);
+}
+
+.notes-option-arrow {
+    color: var(--text2);
+    font-size: .8rem;
+    flex-shrink: 0;
+}
+
+
+/* ================================================================
+   6. STEP 6 — FINAL RESOURCES HEADER
+   (the cards themselves reuse .notes-grid / .note-card from
+   style.css so downloads/contributor rows/etc. look identical)
+================================================================ */
+.notes-resource-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.notes-resource-header h2 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* Small tag showing full hierarchy path — used on search results */
+.notes-path-tag {
+    font-size: .74rem;
+    color: var(--accent);
+    background: rgba(124, 111, 224, .12);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================================================
+   7. SEARCH RESULTS VIEW
+================================================================ */
+#notesSearchResultsCount {
+    color: var(--text2);
+    font-size: .85rem;
+    margin-bottom: 20px;
+}
+
+/* ================================================================
+   SEARCH BAR
+   ================================================================ */
+
+.notes-controls {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.search-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.search-wrap>i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text2);
+    font-size: 1rem;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#notesSearchInput {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px 0 48px;
+    border-radius: 14px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass);
+    color: var(--text);
+    font-family: inherit;
+    font-size: .92rem;
+    outline: none;
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all var(--transition);
+    box-shadow: var(--card-shadow);
+}
+
+#notesSearchInput::placeholder {
+    color: var(--text2);
+    opacity: .85;
+}
+
+#notesSearchInput:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(124, 111, 224, .12),
+        var(--card-shadow);
+}
+
+#notesSearchInput:hover {
+    border-color: var(--accent);
+}
+
+/* ================================================================
+   8. RESPONSIVE / MOBILE (incl. Android WebView)
+================================================================ */
+@media (max-width: 650px) {
+    .notes-program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-level-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .notes-option-card {
+        padding: 16px;
+    }
+
+    .notes-breadcrumb {
+        font-size: .76rem;
+    }
+
+    .notes-resource-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #notesSearchInput {
+        height: 48px;
+        font-size: .85rem;
+        padding-left: 44px;
+    }
+
+    .search-wrap>i {
+        left: 16px;
+        font-size: .9rem;
+    }
+}

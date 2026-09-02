@@ -11,7 +11,9 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="notes.css">
   <link rel="stylesheet" href="quiz.css">
+
 
 </head>
 
@@ -21,7 +23,7 @@
        LOADING SCREEN
        Shown while the page is loading. Auto-hides after 2 seconds.
   ============================================================ -->
-  <div id="loader">
+  <!-- <div id="loader">
     <div class="loader-logo">
       <i class="fas fa-book-open"></i> NotoByte
     </div>
@@ -31,7 +33,7 @@
     <p style="color:var(--text2); font-size:.85rem">Loading your notes platform... |
       Developed by Sudarshan Raval
     </p>
-  </div>
+  </div> -->
 
   <!-- ============================================================
        FLOATING PARTICLES BACKGROUND
@@ -172,32 +174,65 @@
         <p class="section-sub">High-quality notes contributed by top students across universities.</p>
       </div>
 
-      <!-- Search Bar + Category Filter Buttons -->
+      <!-- Search Bar — searches across the entire Notes hierarchy -->
       <div class="notes-controls">
-
-        <!-- Search Input -->
         <div class="search-wrap">
           <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search notes by subject, topic..." oninput="filterNotes()" />
+          <input type="text" id="notesSearchInput" placeholder="Search resources by subject, title, PYQ, notes..."
+            oninput="notesHandleSearch()" />
         </div>
-
-        <!-- Filter Buttons
-             Each button calls setFilter(category, buttonElement)
-             The 'all' filter shows every note. -->
-        <div class="filters" id="filters">
-          <button class="filter-btn active" onclick="setFilter('all',        this)">All</button>
-          <button class="filter-btn" onclick="setFilter('engineering', this)">Engineering</button>
-          <button class="filter-btn" onclick="setFilter('Notes',     this)">Notes</button>
-          <button class="filter-btn" onclick="setFilter('PYQs',    this)">PYQs</button>
-          <button class="filter-btn" onclick="setFilter('Important Downloads',        this)">Important
-            Downloads</button>
-          <button class="filter-btn" onclick="setFilter('assignment',    this)">Assignment</button>
-        </div>
-
       </div>
 
-      <!-- Notes Grid — populated by renderNotes() in script.js -->
-      <div class="notes-grid" id="notesGrid"></div>
+      <!-- Breadcrumb — updates dynamically as the user navigates -->
+      <div class="notes-breadcrumb" id="notesBreadcrumb"></div>
+
+      <!-- ==========================================================
+           SEARCH RESULTS VIEW
+           Shown whenever the search box has text in it.
+      ========================================================== -->
+      <div class="notes-view" id="notesSearchView">
+        <div id="notesSearchResultsCount"></div>
+        <div class="notes-grid" id="notesSearchResults"></div>
+      </div>
+
+      <!-- ==========================================================
+           STEP 1 — PROGRAM SELECTION (B.Tech / Diploma)
+      ========================================================== -->
+      <div class="notes-view active" id="notesProgramView">
+        <div class="notes-program-grid" id="notesProgramGrid"></div>
+      </div>
+
+      <!-- ==========================================================
+           STEPS 2–5 — GENERIC LEVEL VIEW
+           Reused for Branch, Year, Semester, Resource Type and
+           Subject selection — notes.js swaps its content each time.
+      ========================================================== -->
+      <div class="notes-view" id="notesLevelView">
+        <button class="notes-back-btn" id="notesLevelBackBtn" onclick="notesGoToPrograms()">
+          <i class="fas fa-arrow-left"></i> <span id="notesLevelBackLabel">Back to Programs</span>
+        </button>
+        <div class="notes-card-list-header">
+          <h2 id="notesLevelTitle"></h2>
+          <p id="notesLevelSub"></p>
+        </div>
+        <div class="notes-level-grid" id="notesLevelGrid"></div>
+      </div>
+
+      <!-- ==========================================================
+           STEP 6 — FINAL RESOURCES
+           Reuses the existing .notes-grid / .note-card markup and
+           the existing downloadNote() function — nothing about
+           downloading changes.
+      ========================================================== -->
+      <div class="notes-view" id="notesResourceView">
+        <button class="notes-back-btn" id="notesResourceBackBtn" onclick="notesGoToSubjects()">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+        <div class="notes-resource-header">
+          <h2 id="notesResourceTitle"></h2>
+        </div>
+        <div class="notes-grid" id="notesResourceGrid"></div>
+      </div>
 
     </section>
 
@@ -592,6 +627,8 @@
 
   <!-- Main JavaScript File -->
   <script src="script.js"></script>
+  <script src="notes-data.js"></script>
+  <script src="notes.js"></script>
   <script src="questions.js"></script>
   <script src="quiz.js"></script>
 
