@@ -757,12 +757,29 @@ const notesResources = [
 
 
 
-// Diploma 
+  // Diploma 
 
 
-    
+
 
   // CSE 1st year
+
+{
+    id: 40,
+    title: "Syllabus 1st Semester",
+    program: "Diploma",
+    branch: "CSE",
+    year: "1st Year",
+    semester: "Semester 1",
+    type: "Syllabus",
+    subject: "Syllabus 1st Sem",
+    desc: "Complete Syllabus of Diploma 1st sem for Batch (2026-2029)",
+    size: "1.7 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "assets/notes/cse/sem1/1st-Sem-Syllabus-Diploma-in-Computer-Science-&-Engineering.pdf"
+  },
 
   {
     id: 40,
@@ -799,6 +816,23 @@ const notesResources = [
   },
 
   // CSE 2nd Year
+
+  {
+    id: 40,
+    title: "Syllabus 3rd Semester",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "Syllabus",
+    subject: "Syllabus 3rd Sem",
+    desc: "Complete Syllabus of Diploma 3rd sem for Batch (2025-2028)",
+    size: "2.2 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "assets/notes/cse/sem3/3rd-Sem-Syllabus-Diploma-in-Computer-Science-&-Engineering.pdf"
+  },
 
   {
     id: 40,
@@ -869,7 +903,7 @@ const notesResources = [
     icon: "fas fa-book",
     pdfUrl: "assets/notes/c-programming.pdf"
   },
-  
+
 
   // Electronics 1st year
 
@@ -1094,19 +1128,36 @@ const notesResources = [
 
   {
     id: 43,
-    title: "C Programming Notes",
+    title: "Syllabus of 1st Semester",
+    program: "Diploma",
+    branch: "Mechanical",
+    year: "1st Year",
+    semester: "Semester 1",
+    type: "Syllabus",
+    subject: "Syllabus",
+    desc: "Mechanical Engineering Syllabus (2026-2029) Batch",
+    size: "2.4 MB",
+    contributor: "Roshan Kumar",
+    initials: "RK",
+    icon: "fas fa-book",
+    pdfUrl: "assets/notes/mech/sem1/Mech-syllabus-sem1.pdf"
+  },
+
+  {
+    id: 43,
+    title: "AI Unit 1 Lab",
     program: "Diploma",
     branch: "Mechanical",
     year: "1st Year",
     semester: "Semester 1",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
+    subject: "Introduction to Artificial Intelligence",
+    desc: "Lab Question of Unit 1 of AI & ML",
     size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    contributor: "Roshan Kumar",
+    initials: "RK",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "assets/notes/mech/sem1/AI-Unit-1-Lab.pdf"
   },
 
   {
@@ -1166,7 +1217,7 @@ const notesResources = [
 
   {
     id: 43,
-    title: "C Programming Notes",
+    title: "AI Unit 1 Lab",
     program: "Diploma",
     branch: "Mechanical",
     year: "3rd Year",
