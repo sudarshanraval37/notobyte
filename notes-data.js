@@ -778,7 +778,7 @@ const notesResources = [
     contributor: "Sudarshan Raval",
     initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/cse/sem1/1st-Sem-Syllabus-Diploma-in-Computer-Science-&-Engineering.pdf"
+    pdfUrl: "assets/notes/cse/Sem1/1st-Sem-Syllabus-Diploma-in-Computer-Science-&-Engineering.pdf"
   },
 
   {
