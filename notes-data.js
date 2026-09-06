@@ -764,7 +764,7 @@ const notesResources = [
 
   // CSE 1st year
 
-{
+  {
     id: 40,
     title: "Syllabus 1st Semester",
     program: "Diploma",
@@ -1368,16 +1368,16 @@ const notesResources = [
 const notesUncategorized = [
   {
     "id": 5,
-    "title": "World History",
-    "sem": "Sem 2 | B.A",
-    "desc": "Detailed notes on modern world history from the Renaissance period to the 21st century global events.",
-    "size": "3.3 MB",
-    "contributor": "Arjun Mehta",
-    "initials": "AM",
+    "title": "RRB ZONE",
+    "sem": "Passout",
+    "desc": "Catergory wise post list with Zone name of RRB JE 2026 Notification",
+    "size": "200 KB",
+    "contributor": "Sudarshan Raval",
+    "initials": "SR",
     "category": "Important Downloads",
     "icon": "fas fa-globe",
-    "pdfUrl": "assets/pdfs/world-history.pdf",
-    "reason": "Not a B.Tech/Diploma engineering resource (B.A course) — needs its own category."
+    "pdfUrl": "https://drive.google.com/file/d/1n5j0L5OnsfhncprZmRTsI1d-DqtTJpJV/view?usp=drive_link",
+    "reason": "This is not realted to any course"
   },
   {
     "id": 12,
