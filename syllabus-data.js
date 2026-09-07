@@ -142,7 +142,7 @@ const syllabusData = {
 
             semesters.sem1.theory = [
               {
-                name: "Mathematics", // T2600101[cite: 1]
+                name: "Basic Engg. Mathematics ", // T2600101[cite: 1]
                 code: "2600101", //[cite: 1]
                 units: [
                   {
