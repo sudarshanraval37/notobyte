@@ -29,7 +29,13 @@ const quizState = {
 function quizShowView(viewId) {
     document.querySelectorAll('.quiz-view').forEach(v => v.classList.remove('active'));
     document.getElementById(viewId).classList.add('active');
-    document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* Colored breadcrumb bar shown at the top of the Quiz screen,
+   matching the app design's "SECTION > STEP" bars. */
+function quizSetBreadcrumb(text) {
+    const el = document.getElementById('quizBreadcrumb');
+    if (el) el.textContent = text;
 }
 
 
@@ -37,15 +43,15 @@ function quizShowView(viewId) {
    2. DASHBOARD — RENDER SUBJECT CARDS
 ---------------------------------------------------------------- */
 function quizRenderDashboard() {
+    quizSetBreadcrumb('QUIZ ZONE > SELECT BRANCH');
     const grid = document.getElementById('quizSubjectsGrid');
     grid.innerHTML = quizData.subjects.map(subject => `
-        <div class="quiz-subject-card" style="--card-color:${subject.color || 'var(--accent)'}">
+        <div class="quiz-subject-card" onclick="quizOpenSubject('${subject.id}')">
             <div class="quiz-subject-icon"><i class="${subject.icon}"></i></div>
-            <h3>${subject.name}</h3>
-            <p>${subject.desc}</p>
-            <button class="btn btn-primary" onclick="quizOpenSubject('${subject.id}')">
-                <i class="fas fa-play"></i> Start Quiz
-            </button>
+            <div class="notes-option-text">
+                <h3>${subject.name}</h3>
+                <p>${subject.desc}</p>
+            </div>
         </div>
     `).join('');
 }
@@ -60,6 +66,8 @@ function quizOpenSubject(subjectId) {
 
     quizState.subjectId = subjectId;
     quizState.semesterId = subject.semesters ? subject.semesters[0].id : null;
+
+    quizSetBreadcrumb(`QUIZ > ${subject.name.toUpperCase()} - SELECT SEMESTER`);
 
     // Header
     document.getElementById('quizSubjectHeader').innerHTML = `
@@ -155,6 +163,8 @@ function quizStartQuiz(quizId) {
     quizState.answers = new Array(quiz.questions.length).fill(null);
 
     document.getElementById('quizPlayTitle').textContent = quiz.title;
+    const subject = quizData.subjects.find(s => s.id === quizState.subjectId);
+    quizSetBreadcrumb(`QUIZ > ${subject ? subject.name.toUpperCase() : ''} > ${quiz.title.toUpperCase()}`);
 
     quizRenderQuestion();
     quizShowView('quizPlayView');
@@ -258,6 +268,7 @@ function quizFinishQuiz() {
 
     const wrong = attempted - correct;
     const percentage = Math.round((correct / total) * 100);
+    quizSetBreadcrumb('QUIZ > RESULT');
 
     let emoji = '💪', message = 'Needs Improvement';
     if (percentage >= 90) { emoji = '🎉'; message = 'Excellent'; }

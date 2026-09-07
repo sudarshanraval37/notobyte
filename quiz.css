@@ -19,6 +19,19 @@
 
 .quiz-view.active {
     display: block;
+    padding: 20px 16px;
+}
+
+/* Colour bar at the top of the Quiz screen, matching the app design's
+   "SECTION > STEP" bars used by Notes/Syllabus. */
+.quiz-breadcrumb {
+    background: var(--magenta);
+    color: #fff;
+    padding: 14px 18px;
+    font-weight: 800;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .3px;
 }
 
 @keyframes quizFadeIn {
@@ -39,72 +52,58 @@
 ================================================================ */
 .quiz-subjects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 22px;
+    grid-template-columns: 1fr;
+    gap: 14px;
 }
 
 .quiz-subject-card {
     --card-color: var(--accent);
-    padding: 28px 24px;
-    border-radius: var(--radius);
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    box-shadow: var(--card-shadow);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    padding: 16px 18px;
+    border-radius: var(--radius-pill);
+    background: var(--mint);
+    border: none;
     transition: all var(--transition);
     display: flex;
-    flex-direction: column;
-    gap: 14px;
+    align-items: center;
+    gap: 16px;
     position: relative;
-    overflow: hidden;
-}
-
-.quiz-subject-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--card-color);
 }
 
 .quiz-subject-card:hover {
-    transform: translateY(-6px);
-    background: var(--glass-hover);
-    box-shadow: 0 14px 40px rgba(0, 0, 0, .35);
+    transform: translateY(-3px);
+    filter: brightness(0.97);
 }
 
 .quiz-subject-icon {
-    width: 54px;
-    height: 54px;
-    border-radius: 14px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
-    color: #fff;
-    background: var(--card-color);
+    font-size: 1.1rem;
+    color: var(--mint-dark);
+    background: var(--card);
+    border: 1.5px solid var(--mint-dark);
+    flex-shrink: 0;
 }
 
 .quiz-subject-card h3 {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 700;
+    color: var(--mint-dark);
 }
 
 .quiz-subject-card p {
-    color: var(--text2);
-    font-size: .88rem;
-    line-height: 1.6;
+    color: var(--mint-dark);
+    opacity: .75;
+    font-size: .8rem;
+    line-height: 1.5;
     flex: 1;
 }
 
 .quiz-subject-card .btn {
-    align-self: flex-start;
-    padding: 10px 20px;
-    font-size: .85rem;
-    margin-top: 4px;
+    display: none;
 }
 
 
@@ -112,18 +111,18 @@
    3. SUBJECT VIEW — HEADER, SEMESTER TABS, QUIZ LIST
 ================================================================ */
 .quiz-back-btn {
-    background: var(--glass);
+    background: var(--card-soft);
     border: 1px solid var(--glass-border);
     color: var(--text);
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-size: .85rem;
-    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: var(--radius-pill);
+    font-size: .8rem;
+    font-weight: 700;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     transition: all var(--transition);
 }
 
@@ -166,42 +165,39 @@
 }
 
 .quiz-sem-tab {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: .85rem;
-    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    font-size: .82rem;
+    font-weight: 700;
     cursor: pointer;
-    border: 1px solid var(--glass-border);
-    background: var(--glass);
-    color: var(--text2);
+    border: none;
+    background: var(--mint);
+    color: var(--mint-dark);
     transition: all var(--transition);
 }
 
 .quiz-sem-tab:hover,
 .quiz-sem-tab.active {
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    background: var(--magenta);
     color: #fff;
-    border-color: transparent;
-    box-shadow: 0 4px 15px rgba(124, 111, 224, .35);
 }
 
 /* Quiz Cards List */
 .quiz-list-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 14px;
 }
 
 .quiz-card {
-    padding: 22px;
-    border-radius: var(--radius);
-    background: var(--glass);
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: var(--card-soft);
     border: 1px solid var(--glass-border);
-    box-shadow: var(--card-shadow);
     transition: all var(--transition);
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .quiz-card:not(.quiz-card-locked):hover {
@@ -325,16 +321,19 @@
 
 /* Question Card */
 .quiz-question-card {
-    padding: 32px;
-    border-radius: var(--radius);
-    margin-bottom: 24px;
+    padding: 24px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: #fbe9f4;
+    border: 1.5px dashed var(--magenta);
 }
 
 .quiz-question-text {
-    font-size: 1.2rem;
+    font-size: 1.08rem;
     font-weight: 700;
     line-height: 1.5;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    color: var(--text);
 }
 
 /* Options */
@@ -347,33 +346,26 @@
 .quiz-option {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 16px 18px;
-    border-radius: 12px;
-    background: var(--glass);
-    border: 1.5px solid var(--glass-border);
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: var(--radius-pill);
+    background: #fff;
+    border: 1.5px dashed rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    font-size: .95rem;
+    font-size: .92rem;
     transition: all var(--transition);
     text-align: left;
+    color: var(--text);
 }
 
 .quiz-option:hover:not(.quiz-option-disabled) {
-    background: var(--glass-hover);
-    border-color: var(--accent);
+    border-color: var(--magenta);
     transform: translateX(4px);
 }
 
 .quiz-option-letter {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    background: var(--glass-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 700;
-    font-size: .82rem;
+    font-size: .92rem;
     flex-shrink: 0;
 }
 
@@ -415,13 +407,13 @@
 /* Explanation Box */
 .quiz-explanation {
     display: none;
-    margin-top: 22px;
-    padding: 16px 18px;
-    border-radius: 12px;
-    background: var(--glass);
+    margin-top: 18px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #fff;
     border: 1px solid var(--glass-border);
-    border-left: 3px solid var(--accent);
-    font-size: .88rem;
+    border-left: 3px solid var(--magenta);
+    font-size: .85rem;
     color: var(--text2);
     line-height: 1.6;
 }
@@ -453,11 +445,13 @@
    5. RESULT VIEW
 ================================================================ */
 .quiz-result-card {
-    max-width: 640px;
+    max-width: 460px;
     margin: 0 auto;
-    padding: 44px 36px;
+    padding: 36px 24px;
     border-radius: 24px;
     text-align: center;
+    background: var(--card-soft);
+    border: 1px solid var(--glass-border);
 }
 
 .quiz-result-emoji {

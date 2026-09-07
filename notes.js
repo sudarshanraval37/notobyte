@@ -73,7 +73,7 @@ function notesGetSubject(programId, branchId, yearId, semId, typeId, subjectId) 
    Quiz Zone (see quiz.js / quiz.css .quiz-view).
 ---------------------------------------------------------------- */
 function notesShowView(viewId) {
-  document.querySelectorAll('#notes .notes-view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('#notesScreen .notes-view').forEach(v => v.classList.remove('active'));
   document.getElementById(viewId).classList.add('active');
 }
 
@@ -85,7 +85,7 @@ function notesShowView(viewId) {
 ---------------------------------------------------------------- */
 function notesRenderBreadcrumb() {
   const wrap = document.getElementById('notesBreadcrumb');
-  const crumbs = [{ label: 'Notes', onclick: 'notesGoToPrograms()' }];
+  const crumbs = [{ label: 'Notes', onclick: "appShowScreen('home')" }];
 
   const program = notesState.program ? notesGetProgram(notesState.program) : null;
   const branch = program && notesState.branch ? notesGetBranch(notesState.program, notesState.branch) : null;
@@ -124,6 +124,10 @@ function notesRenderCardList(items, onSelectFnName, opts = {}) {
   subEl.textContent = opts.sub || '';
   subEl.style.display = opts.sub ? 'block' : 'none';
 
+  grid.className = 'notes-level-grid' +
+    (opts.variant === 'pill' ? ' notes-level-grid-pill' : '') +
+    (opts.cols === 1 ? ' notes-level-grid-pill-1col' : '');
+
   if (!items.length) {
     grid.innerHTML = `
       <div class="no-results">
@@ -134,6 +138,16 @@ function notesRenderCardList(items, onSelectFnName, opts = {}) {
     return;
   }
 
+  /* Pill variant — plain bold centered pills, no icon/arrow (used for
+     Semesters and the final Notes/PYQs category picker, matching the
+     provided app design). */
+  if (opts.variant === 'pill') {
+    grid.innerHTML = items.map(item => `
+      <div class="notes-pill-card" onclick="${onSelectFnName}('${item.id}')">${item.title}</div>
+    `).join('');
+    return;
+  }
+
   grid.innerHTML = items.map(item => `
     <div class="notes-option-card" onclick="${onSelectFnName}('${item.id}')">
       <div class="notes-option-icon"><i class="${item.icon || opts.fallbackIcon || 'fas fa-folder'}"></i></div>
@@ -141,7 +155,6 @@ function notesRenderCardList(items, onSelectFnName, opts = {}) {
         <h3>${item.title}</h3>
         ${item.desc ? `<p>${item.desc}</p>` : (opts.countLabel ? `<p>${notesCountLabel(item, opts.countLabel)}</p>` : '')}
       </div>
-      <i class="fas fa-chevron-right notes-option-arrow"></i>
     </div>
   `).join('');
 }
@@ -217,8 +230,8 @@ function notesGoToBranches() {
     fallbackIcon: 'fas fa-diagram-project',
     countLabel: 'branches'
   });
-  document.getElementById('notesLevelBackBtn').setAttribute('onclick', 'notesGoToPrograms()');
-  document.getElementById('notesLevelBackLabel').textContent = 'Back to Programs';
+  document.getElementById('notesLevelBackBtn').setAttribute('onclick', "appShowScreen('home')");
+  document.getElementById('notesLevelBackLabel').textContent = 'Back to Home';
 
   notesRenderBreadcrumb();
   notesShowView('notesLevelView');
@@ -271,8 +284,7 @@ function notesGoToSemesters() {
 
   notesRenderCardList(year.semesters, 'notesSelectSemester', {
     title: `${year.title} — Choose Semester`,
-    fallbackIcon: 'fas fa-layer-group',
-    countLabel: 'semesters'
+    variant: 'pill'
   });
   document.getElementById('notesLevelBackBtn').setAttribute('onclick', 'notesGoToYears()');
   document.getElementById('notesLevelBackLabel').textContent = 'Back to Years';
@@ -298,8 +310,8 @@ function notesGoToTypes() {
 
   notesRenderCardList(sem.resourceTypes, 'notesSelectType', {
     title: `${sem.title} — Choose Category`,
-    fallbackIcon: 'fas fa-folder',
-    countLabel: 'types'
+    variant: 'pill',
+    cols: 1
   });
   document.getElementById('notesLevelBackBtn').setAttribute('onclick', 'notesGoToSemesters()');
   document.getElementById('notesLevelBackLabel').textContent = 'Back to Semesters';
@@ -418,11 +430,11 @@ function notesRenderResourceCards(resources, gridEl, pathLookup) {
 ---------------------------------------------------------------- */
 function notesShowUncategorized() {
   document.getElementById('notesResourceTitle').textContent = 'Uncategorized Resources';
-  document.getElementById('notesResourceBackBtn').setAttribute('onclick', 'notesGoToPrograms()');
+  document.getElementById('notesResourceBackBtn').setAttribute('onclick', "appShowScreen('home')");
   notesRenderResourceCards(notesTree.uncategorized, document.getElementById('notesResourceGrid'));
 
   const wrap = document.getElementById('notesBreadcrumb');
-  wrap.innerHTML = `<span class="notes-crumb" onclick="notesGoToPrograms()">Notes</span>
+  wrap.innerHTML = `<span class="notes-crumb" onclick="appShowScreen('home')">Notes</span>
     <i class="fas fa-chevron-right notes-crumb-sep"></i>
     <span class="notes-crumb notes-crumb-current">Uncategorized</span>`;
 
@@ -471,7 +483,6 @@ function notesHandleSearch() {
   const query = document.getElementById('notesSearchInput').value.trim().toLowerCase();
 
   if (!query) {
-    document.getElementById('notesSearchView').classList.remove('active');
     notesGoToPrograms();
     return;
   }
@@ -496,12 +507,6 @@ function notesHandleSearch() {
       return found ? found.path : '';
     }
   );
-
-  document.querySelectorAll('#notes .notes-view').forEach(v => v.classList.remove('active'));
-  document.getElementById('notesSearchView').classList.add('active');
-
-  document.getElementById('notesBreadcrumb').innerHTML =
-    `<span class="notes-crumb notes-crumb-current">Search Results</span>`;
 }
 
 

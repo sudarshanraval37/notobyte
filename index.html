@@ -1,654 +1,366 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
   <title>NotoByte - Free Study Notes, PYQs & Study Materials</title>
 
   <meta name="description"
-    content="NotoByte is a free study notes platform for students to share, browse and download notes, previous year questions, assignments and study materials." />
-
+    content="NotoByte is a free study notes platform for students to share, browse and download notes, previous year questions, syllabus and study materials." />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://notobyte.vercel.app/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="NotoByte - Free Study Notes & PYQs" />
-
   <meta property="og:description"
-    content="Free study notes, PYQs, Diploma, Bihar Polytechnic, assignments and educational resources for students." />
-
+    content="Free study notes, PYQs, syllabus, Diploma, Bihar Polytechnic, assignments and educational resources for students." />
   <meta property="og:url" content="https://notobyte.vercel.app/" />
-
   <meta property="og:type" content="website" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- Main Stylesheets -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="notes.css" />
+  <link rel="stylesheet" href="syllabus.css" />
   <link rel="stylesheet" href="quiz.css" />
 </head>
 
 <body>
 
-  <!-- ============================================================
-       LOADING SCREEN
-       Shown while the page is loading. Auto-hides after 2 seconds.
-  ============================================================ -->
-  <!-- <div id="loader">
-    <div class="loader-logo">
-      <i class="fas fa-book-open"></i> NotoByte
-    </div>
-    <div class="loader-bar">
-      <div class="loader-fill"></div>
-    </div>
-    <p style="color:var(--text2); font-size:.85rem">Loading your notes platform... |
-      Developed by Sudarshan Raval
-    </p>
-  </div> -->
+  <div class="app">
 
-  <!-- ============================================================
-       FLOATING PARTICLES BACKGROUND
-       Particles are generated dynamically via JavaScript.
-  ============================================================ -->
-  <div id="particles"></div>
-
-  <!-- ============================================================
-       ANIMATED GRADIENT BLOBS BACKGROUND
-       Three blobs float and animate behind all content.
-  ============================================================ -->
-  <div class="blobs">
-    <div class="blob blob1"></div>
-    <div class="blob blob2"></div>
-    <div class="blob blob3"></div>
-  </div>
-
-  <!-- ============================================================
-       NAVBAR
-       Sticky top navigation with logo, links, theme toggle,
-       and a hamburger menu for mobile devices.
-  ============================================================ -->
-  <nav id="navbar">
-    <!-- Logo -->
-    <a href="#home" class="logo">
-      <i class="fas fa-book-open"></i> NotoByte
-    </a>
-
-    <!-- Desktop Navigation Links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#notes">Notes</a></li>
-      <li><a href="#quiz">Quiz Zone</a></li>
-      <li><a href="#upload">Upload</a></li>
-      <li><a href="#contributors">Contributors</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <!-- Right Side: Theme Toggle + Hamburger -->
-    <div class="nav-right">
-      <!-- Dark / Light Mode Toggle Button -->
-      <button class="theme-btn" id="themeBtn" title="Toggle theme">
-        <i class="fas fa-moon" id="themeIcon"></i>
+    <!-- ============================================================
+         APP HEADER
+    ============================================================ -->
+    <header class="app-header">
+      <button class="app-logo" onclick="appShowScreen('home')">
+        <span class="app-logo-icon"><i class="fas fa-book-open"></i></span>
+        NotoByte
       </button>
-      <!-- Hamburger Icon for Mobile -->
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
+
+      <button class="app-menu-btn" id="appMenuBtn" onclick="appToggleMenu()">
+        <i class="fas fa-ellipsis-vertical"></i>
       </button>
-    </div>
-  </nav>
+    </header>
 
-  <!-- ============================================================
-       MOBILE MENU
-       Shown when hamburger is clicked on small screens.
-       Each link calls closeMobile() to collapse the menu.
-  ============================================================ -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home" onclick="closeMobile()">Home</a>
-    <a href="#notes" onclick="closeMobile()">Notes</a>
-    <a href="#quiz" onclick="closeMobile()">Quiz Zone</a>
-    <a href="#upload" onclick="closeMobile()">Upload Notes</a>
-    <a href="#contributors" onclick="closeMobile()">Contributors</a>
-    <a href="#about" onclick="closeMobile()">About</a>
-    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <!-- Header dropdown menu -->
+    <div class="app-menu" id="appMenu">
+      <button onclick="appToggleTheme()"><i class="fas fa-moon" id="appThemeIcon"></i> Toggle Theme</button>
+      <a href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank"><i class="fas fa-upload"></i> Upload Notes</a>
+      <a href="mailto:sudarshanraval4@gmail.com"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="https://github.com/sudarshanraval37" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+
+    <!-- ============================================================
+         APP SCREENS (one visible at a time — see app.js)
+    ============================================================ -->
+    <main class="app-main">
+
+      <!-- ==========================================================
+           HOME SCREEN
+      ========================================================== -->
+      <section id="homeScreen" class="app-screen active">
+
+        <!-- Search -->
+        <div class="app-search-row">
+          <div class="app-search-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="notesSearchInput" placeholder="Search notes" oninput="appHandleHomeSearch()" />
+          </div>
+          <button class="app-filter-btn" onclick="appFilterTap()" title="Filters">
+            <i class="fas fa-sliders"></i>
+          </button>
+        </div>
+
+        <!-- Live search results (shown instead of the sections below
+             while the search box has text in it) -->
+        <div id="homeSearchResults" style="display:none">
+          <div class="notes-body-pad">
+            <div id="notesSearchResultsCount" style="margin-bottom:14px; color:var(--text2); font-size:.85rem;"></div>
+            <div class="notes-grid" id="notesSearchResults"></div>
+          </div>
+        </div>
+
+        <div id="homeSections">
+
+          <!-- Notes & PYQ Section -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-orange">Your Notes &amp; PYQ Section</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenNotes('btech')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenNotes('diploma')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenNotes('other')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-box-archive"></i></div>
+                  <span>Other</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Syllabus Hub -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-pink">Syllabus Hub</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenSyllabus('btech')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenSyllabus('diploma')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenSyllabus('competitive')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-trophy"></i></div>
+                  <span>Competitive Exams</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contribute Notes Banner -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-green">Contribute Notes To Help More Students</div>
+            <div class="app-section-body">
+              <a class="app-upload-banner" href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank">
+                <span class="app-upload-banner-icon"><i class="fas fa-file-arrow-up"></i></span>
+                Click here to upload your notes here and get a shoutout!
+              </a>
+            </div>
+          </div>
+
+          <!-- Quiz Zone -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-magenta">Quiz Zone</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenQuiz('btech')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenQuiz('diploma')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenQuiz('competitive')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-trophy"></i></div>
+                  <span>Competitive Exams</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meet The Developers -->
+          <div class="app-section-card" style="margin-bottom: 24px;">
+            <div class="app-section-header app-section-blue">Meet The Developers</div>
+            <div class="app-section-body">
+              <div class="app-dev-row">
+                <div class="developer-card">
+                  <img src="assets/images/sudarshan.jpeg" alt="Sudarshan Raval" class="dev-img"
+                    onerror="this.style.display='none'">
+                  <h3>Sudarshan Raval</h3>
+                  <p>Developer</p>
+                  <div class="dev-socials">
+                    <a href="https://sudarshanraval37.github.io/Personal-Portfolio-/" target="_blank"><i
+                        class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.instagram.com/_ravvall_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="developer-card">
+                  <img src="assets/images/vinit.jpeg" alt="Vinit Raj" class="dev-img"
+                    onerror="this.style.display='none'">
+                  <h3>Vinit Raj</h3>
+                  <p>UI Designer</p>
+                  <div class="dev-socials">
+                    <a href="https://www.instagram.com/vinit_5610/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vinit-raj-49b3a7311/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /homeSections -->
+
+      </section>
+
+      <!-- ==========================================================
+           NOTES SCREEN
+           (Program -> Branch -> Year -> Semester -> Category ->
+           Subject -> Resources. Rendered/driven by notes.js.)
+      ========================================================== -->
+      <section id="notesScreen" class="app-screen">
+
+        <div class="notes-breadcrumb notes-breadcrumb-orange" id="notesBreadcrumb"></div>
+
+        <div class="notes-body-pad">
+
+          <!-- Program picker (kept for internal reset fallback; Home
+               tiles jump straight past this into Branch selection) -->
+          <div class="notes-view active" id="notesProgramView">
+            <div class="notes-program-grid" id="notesProgramGrid"></div>
+          </div>
+
+          <!-- Generic level view: Branch / Year / Semester / Category / Subject -->
+          <div class="notes-view" id="notesLevelView">
+            <button class="notes-back-btn" id="notesLevelBackBtn" onclick="appShowScreen('home')">
+              <i class="fas fa-arrow-left"></i> <span id="notesLevelBackLabel">Back to Home</span>
+            </button>
+            <div class="notes-card-list-header">
+              <h2 id="notesLevelTitle"></h2>
+              <p id="notesLevelSub"></p>
+            </div>
+            <div class="notes-level-grid" id="notesLevelGrid"></div>
+          </div>
+
+          <!-- Final resources (downloadable cards) -->
+          <div class="notes-view" id="notesResourceView">
+            <button class="notes-back-btn" id="notesResourceBackBtn" onclick="notesGoToSubjects()">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <div class="notes-resource-header">
+              <h2 id="notesResourceTitle"></h2>
+            </div>
+            <div class="notes-grid" id="notesResourceGrid"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           SYLLABUS SCREEN
+           (Program -> Branch -> Semester -> Subject list with
+           expandable Units. Rendered/driven by syllabus.js.)
+      ========================================================== -->
+      <section id="syllabusScreen" class="app-screen">
+
+        <div class="notes-breadcrumb notes-breadcrumb-pink" id="syllabusBreadcrumb"></div>
+
+        <div class="notes-body-pad">
+
+          <!-- Branch list / Semester grid (same view, re-rendered by syllabus.js) -->
+          <div class="notes-view active" id="syllabusLevelView">
+            <button class="notes-back-btn" id="syllabusBackBtn" onclick="appShowScreen('home')">
+              <i class="fas fa-arrow-left"></i> <span id="syllabusBackLabel">Back to Home</span>
+            </button>
+            <div class="notes-card-list-header">
+              <h2 id="syllabusLevelTitle"></h2>
+              <p id="syllabusLevelSub" style="display:none"></p>
+            </div>
+            <div class="notes-level-grid" id="syllabusLevelGrid"></div>
+          </div>
+
+          <!-- Subject list with expandable Units -->
+          <div class="notes-view" id="syllabusSubjectView">
+            <button class="notes-back-btn" id="syllabusSubjectBackBtn" onclick="syllabusGoToSemesters()">
+              <i class="fas fa-arrow-left"></i> Back to Semesters
+            </button>
+            <h2 id="syllabusSubjectTitle" style="display:none"></h2>
+            <div id="syllabusSubjectList"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           QUIZ SCREEN
+           (Branch -> Semester tabs + quiz list -> Play -> Result.
+           Rendered/driven by quiz.js.)
+      ========================================================== -->
+      <section id="quizScreen" class="app-screen">
+
+        <div class="quiz-breadcrumb" id="quizBreadcrumb"></div>
+
+        <!-- VIEW 1 — BRANCH DASHBOARD -->
+        <div class="quiz-view active" id="quizDashboard">
+          <button class="quiz-back-btn" onclick="appShowScreen('home')">
+            <i class="fas fa-arrow-left"></i> Back to Home
+          </button>
+          <div class="quiz-subjects-grid" id="quizSubjectsGrid"></div>
+        </div>
+
+        <!-- VIEW 2 — SUBJECT VIEW (semester tabs + quiz list) -->
+        <div class="quiz-view" id="quizSubjectView">
+          <button class="quiz-back-btn" onclick="quizBackToDashboard()">
+            <i class="fas fa-arrow-left"></i> Back to Branches
+          </button>
+
+          <div class="quiz-subject-header" id="quizSubjectHeader"></div>
+          <div class="quiz-semester-tabs" id="quizSemesterTabs"></div>
+          <div class="quiz-list-grid" id="quizListGrid"></div>
+        </div>
+
+        <!-- VIEW 3 — QUIZ PLAY -->
+        <div class="quiz-view" id="quizPlayView">
+          <div class="quiz-play-topbar">
+            <button class="quiz-exit-btn" onclick="quizExitToSubject()" title="Exit quiz">
+              <i class="fas fa-xmark"></i>
+            </button>
+            <div class="quiz-play-title" id="quizPlayTitle">Quiz Title</div>
+            <div class="quiz-progress-text" id="quizProgressText">Question 1 / 20</div>
+          </div>
+
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quizProgressFill"></div>
+          </div>
+
+          <div class="quiz-question-card" id="quizQuestionCard">
+            <h3 class="quiz-question-text" id="quizQuestionText"></h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-explanation" id="quizExplanation"></div>
+          </div>
+
+          <div class="quiz-nav-row">
+            <button class="btn btn-outline" id="quizPrevBtn" onclick="quizPrevQuestion()">
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button class="btn btn-primary" id="quizNextBtn" onclick="quizNextQuestion()" disabled>
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- VIEW 4 — RESULT -->
+        <div class="quiz-view" id="quizResultView">
+          <div class="quiz-result-card" id="quizResultCard"></div>
+        </div>
+
+      </section>
+
+    </main>
   </div>
-
-  <!-- ============================================================
-       MAIN PAGE CONTENT
-  ============================================================ -->
-  <main>
-
-    <!-- ==========================================================
-         HERO SECTION
-         Full-viewport landing area with heading, description,
-         CTA buttons, and platform statistics.
-    ========================================================== -->
-    <section id="home">
-      <div class="hero-content">
-
-        <!-- Badge -->
-        <div class="hero-badge">
-          <i class="fas fa-circle fa-xs"></i> Developed at G.P Banka by Sudarshan & Vinit
-        </div>
-
-        <!-- Main Heading -->
-        <h1 class="hero-title">
-          Share Knowledge,<br>
-          <span class="grad-text">Empower Students</span>
-        </h1>
-
-        <!-- Subtitle -->
-        <p class="hero-sub">
-          Access thousands of well-organised study notes, PYQs, and
-          resources shared by students — for students.
-        </p>
-
-        <!-- Call-to-Action Buttons -->
-        <div class="hero-btns">
-          <a href="#notes" class="btn btn-primary"><i class="fas fa-search"></i> Browse Notes</a>
-          <a href="https://forms.gle/VyvHuYuyFqNsittHA" class="btn btn-outline"><i class="fas fa-upload"></i> Upload
-            Notes</a>
-        </div>
-
-        <!-- Platform Statistics -->
-        <div class="hero-stats">
-          <div class="stat">
-            <div class="stat-num">1.2K+</div>
-            <div class="stat-label">Notes Available</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">350+</div>
-            <div class="stat-label">Contributors</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">8.5K+</div>
-            <div class="stat-label">Downloads</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">40+</div>
-            <div class="stat-label">Subjects Covered</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================
-         NOTES SECTION
-         Displays all note cards with search bar and category filters.
-         Cards are rendered dynamically by JavaScript (script.js).
-    ========================================================== -->
-    <section id="notes">
-
-      <!-- Section Header -->
-      <div class="section-header">
-        <div class="section-tag">📚 Study Materials</div>
-        <h2 class="section-title">Browse <span class="grad-text">Notes</span></h2>
-        <p class="section-sub">High-quality notes contributed by top students across universities.</p>
-      </div>
-
-      <!-- Search Bar — searches across the entire Notes hierarchy -->
-      <div class="notes-controls">
-        <div class="search-wrap">
-          <i class="fas fa-search"></i>
-          <input type="text" id="notesSearchInput" placeholder="Search resources by subject, title, PYQ, notes..."
-            oninput="notesHandleSearch()" />
-        </div>
-      </div>
-
-      <!-- Breadcrumb — updates dynamically as the user navigates -->
-      <div class="notes-breadcrumb" id="notesBreadcrumb"></div>
-
-      <!-- ==========================================================
-           SEARCH RESULTS VIEW
-           Shown whenever the search box has text in it.
-      ========================================================== -->
-      <div class="notes-view" id="notesSearchView">
-        <div id="notesSearchResultsCount"></div>
-        <div class="notes-grid" id="notesSearchResults"></div>
-      </div>
-
-      <!-- ==========================================================
-           STEP 1 — PROGRAM SELECTION (B.Tech / Diploma)
-      ========================================================== -->
-      <div class="notes-view active" id="notesProgramView">
-        <div class="notes-program-grid" id="notesProgramGrid"></div>
-      </div>
-
-      <!-- ==========================================================
-           STEPS 2–5 — GENERIC LEVEL VIEW
-           Reused for Branch, Year, Semester, Resource Type and
-           Subject selection — notes.js swaps its content each time.
-      ========================================================== -->
-      <div class="notes-view" id="notesLevelView">
-        <button class="notes-back-btn" id="notesLevelBackBtn" onclick="notesGoToPrograms()">
-          <i class="fas fa-arrow-left"></i> <span id="notesLevelBackLabel">Back to Programs</span>
-        </button>
-        <div class="notes-card-list-header">
-          <h2 id="notesLevelTitle"></h2>
-          <p id="notesLevelSub"></p>
-        </div>
-        <div class="notes-level-grid" id="notesLevelGrid"></div>
-      </div>
-
-      <!-- ==========================================================
-           STEP 6 — FINAL RESOURCES
-           Reuses the existing .notes-grid / .note-card markup and
-           the existing downloadNote() function — nothing about
-           downloading changes.
-      ========================================================== -->
-      <div class="notes-view" id="notesResourceView">
-        <button class="notes-back-btn" id="notesResourceBackBtn" onclick="notesGoToSubjects()">
-          <i class="fas fa-arrow-left"></i> Back
-        </button>
-        <div class="notes-resource-header">
-          <h2 id="notesResourceTitle"></h2>
-        </div>
-        <div class="notes-grid" id="notesResourceGrid"></div>
-      </div>
-
-    </section>
-
-
-    <!-- Quiz Section -->
-
-    <section id="quiz">
-
-      <!-- Section Header (matches existing .section-header pattern) -->
-      <div class="section-header">
-        <div class="section-tag">🧠 Test Yourself</div>
-        <h2 class="section-title">Quiz <span class="grad-text">Zone</span></h2>
-        <p class="section-sub">Sharpen your concepts with subject-wise, semester-wise MCQ quizzes — instant feedback
-          included.</p>
-      </div>
-
-      <!-- ============================================================
-       VIEW 1 — DASHBOARD
-       Grid of subject cards. Populated by quizRenderDashboard().
-  ============================================================ -->
-      <div class="quiz-view active" id="quizDashboard">
-        <div class="quiz-subjects-grid" id="quizSubjectsGrid">
-          <!-- Subject cards injected here by quiz.js -->
-        </div>
-      </div>
-
-      <!-- ============================================================
-       VIEW 2 — SUBJECT VIEW
-       Shows semester tabs (if any) + the list of quizzes.
-  ============================================================ -->
-      <div class="quiz-view" id="quizSubjectView">
-        <button class="quiz-back-btn" onclick="quizBackToDashboard()">
-          <i class="fas fa-arrow-left"></i> Back to Subjects
-        </button>
-
-        <div class="quiz-subject-header" id="quizSubjectHeader">
-          <!-- Subject icon + name + description injected here -->
-        </div>
-
-        <div class="quiz-semester-tabs" id="quizSemesterTabs">
-          <!-- Semester tab buttons injected here (hidden for flat subjects) -->
-        </div>
-
-        <div class="quiz-list-grid" id="quizListGrid">
-          <!-- Quiz cards for the selected semester injected here -->
-        </div>
-      </div>
-
-      <!-- ============================================================
-       VIEW 3 — QUIZ PLAY VIEW
-       One question at a time, with progress bar and nav buttons.
-  ============================================================ -->
-      <div class="quiz-view" id="quizPlayView">
-
-        <div class="quiz-play-topbar">
-          <button class="quiz-exit-btn" onclick="quizExitToSubject()" title="Exit quiz">
-            <i class="fas fa-xmark"></i>
-          </button>
-          <div class="quiz-play-title" id="quizPlayTitle">Quiz Title</div>
-          <div class="quiz-progress-text" id="quizProgressText">Question 1 / 20</div>
-        </div>
-
-        <div class="quiz-progress-bar">
-          <div class="quiz-progress-fill" id="quizProgressFill"></div>
-        </div>
-
-        <div class="quiz-question-card glass" id="quizQuestionCard">
-          <h3 class="quiz-question-text" id="quizQuestionText"></h3>
-          <div class="quiz-options" id="quizOptions"></div>
-          <div class="quiz-explanation" id="quizExplanation"></div>
-        </div>
-
-        <div class="quiz-nav-row">
-          <button class="btn btn-outline" id="quizPrevBtn" onclick="quizPrevQuestion()">
-            <i class="fas fa-arrow-left"></i> Previous
-          </button>
-          <button class="btn btn-primary" id="quizNextBtn" onclick="quizNextQuestion()" disabled>
-            Next <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- ============================================================
-       VIEW 4 — RESULT VIEW
-       Score card shown after the 20th question is answered.
-  ============================================================ -->
-      <div class="quiz-view" id="quizResultView">
-        <div class="quiz-result-card glass" id="quizResultCard">
-          <!-- Score summary injected here by quizRenderResult() -->
-        </div>
-      </div>
-
-    </section>
-
-
-
-
-    <!-- ==========================================================
-         UPLOAD NOTES SECTION
-         Encourages students to contribute their notes.
-         The Upload button opens a Google Form in a new tab.
-
-         HOW TO UPDATE THE GOOGLE FORM LINK:
-         1. Open your Google Form
-         2. Click "Send" → copy the short link (e.g. https://forms.gle/yourFormId)
-         3. Replace the href below with your actual link
-    ========================================================== -->
-    <section id="upload">
-      <div class="upload-card glass">
-
-        <!-- Upload Icon -->
-        <div class="upload-icon">
-          <i class="fas fa-cloud-upload-alt"></i>
-        </div>
-
-        <!-- Heading & Description -->
-        <h2>Share Your <span class="grad-text">Knowledge</span></h2>
-        <p>
-          Help thousands of students by sharing your notes. Every contribution
-          makes a difference in someone's academic journey.
-        </p>
-
-        <!-- Feature Highlights -->
-        <div class="upload-features">
-          <div class="upload-feature"><i class="fas fa-check-circle"></i> Quick &amp; Easy</div>
-          <div class="upload-feature"><i class="fas fa-star"></i> Get Credit</div>
-          <div class="upload-feature"><i class="fas fa-users"></i> Help Students</div>
-          <div class="upload-feature"><i class="fas fa-shield-alt"></i> Reviewed by Admin</div>
-        </div>
-
-        <!--
-          GOOGLE FORM UPLOAD BUTTON
-          ─────────────────────────
-          Replace the href below with your real Google Form URL.
-          Example: href="https://forms.gle/abc123XYZ"
-
-          The form should collect:
-            - Student name
-            - Subject name
-            - Semester / class
-            - PDF file upload
-
-          target="_blank" opens the form in a new browser tab.
-        -->
-        <a href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank" class="btn btn-primary"
-          style="margin: 0 auto; display: inline-flex;">
-          <i class="fas fa-upload"></i> Upload Your Notes
-        </a>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================
-         TOP CONTRIBUTORS SECTION
-         Displays contributor cards rendered by JavaScript.
-         Contributor data is defined in script.js → contributorsData[]
-    ========================================================== -->
-    <section id="contributors">
-
-      <!-- Section Header -->
-      <div class="section-header">
-        <div class="section-tag">🏆 Community</div>
-        <h2 class="section-title">Top <span class="grad-text">Contributors</span></h2>
-        <p class="section-sub">Meet the amazing students who make this platform great.</p>
-      </div>
-
-      <!-- Contributors Grid — populated by renderContributors() in script.js -->
-      <div class="contributors-grid" id="contributorsGrid"></div>
-
-    </section>
-
-    <!-- ==========================================================
-         ABOUT SECTION
-         Explains the purpose of the platform with feature highlights
-         and an animated visual card.
-    ========================================================== -->
-    <section id="about">
-      <div class="about-grid">
-
-        <!-- Left: Text & Feature List -->
-        <div class="about-text">
-          <div class="section-tag">ℹ️ About Us</div>
-          <h2>Why <span class="grad-text">NotoByte</span>?</h2>
-          <p>
-            NotoByte is a free, student-run platform designed to make quality
-            study materials accessible to everyone. We believe that knowledge
-            should be shared, not hoarded.
-          </p>
-          <p>
-            Whether you're preparing for exams or building on your understanding,
-            our curated notes from top-performing students will give you the edge
-            you need.
-          </p>
-
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="feature-icon"><i class="fas fa-lock-open"></i></div>
-              <div>
-                <strong>100% Free</strong><br>
-                <span style="color:var(--text2); font-size:.85rem">No paywalls. Ever.</span>
-              </div>
-            </div>
-
-            <div class="about-feature">
-              <div class="feature-icon"><i class="fas fa-medal"></i></div>
-              <div>
-                <strong>Quality Verified</strong><br>
-                <span style="color:var(--text2); font-size:.85rem">Admin-reviewed notes only.</span>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon"><i class="fas fa-heart"></i></div>
-              <div>
-                <strong>Community Driven</strong><br>
-                <span style="color:var(--text2); font-size:.85rem">Built by students, for students.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Visual Stats Card -->
-        <div class="about-visual glass">
-          <i class="fas fa-graduation-cap big-icon"></i>
-          <p style="color:var(--text2); font-size:.9rem">Empowering students since 2026</p>
-          <div class="about-numbers">
-            <div class="about-num">
-              <div class="about-num-val">50+</div>
-              <div class="about-num-label">Universities</div>
-            </div>
-            <div class="about-num">
-              <div class="about-num-val">100%</div>
-              <div class="about-num-label">Free</div>
-            </div>
-            <div class="about-num">
-              <div class="about-num-val">24/7</div>
-              <div class="about-num-label">Access</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <div class="developers-section">
-
-      <h2 class="dev-title">Meet The Developers</h2>
-
-      <div class="developers-grid">
-
-        <!-- Developer 1 -->
-        <div class="developer-card">
-          <img src="assets/images/sudarshan.jpeg" alt="Sudarshan" class="dev-img">
-
-          <h3>Sudarshan Raval</h3>
-          <p>Web Developer</p>
-
-          <div class="dev-socials">
-            <a href="https://sudarshanraval37.github.io/Personal-Portfolio-/"><i class="fa-solid fa-globe"></i></a>
-            <a href="https://www.instagram.com/_ravvall_/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-
-        <!-- Developer 2 -->
-        <div class="developer-card">
-          <img src="assets/images/vinit.jpeg" alt="Vinit" class="dev-img">
-
-          <h3>Vinit Raj</h3>
-          <p>UI Designer</p>
-
-          <div class="dev-socials">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/vinit_5610/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/vinit-raj-49b3a7311/"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </main>
-
-  <!-- ============================================================
-       FOOTER / CONTACT SECTION
-       Contains brand info, social links, quick links, and copyright.
-  ============================================================ -->
-  <footer id="contact">
-    <div class="footer-grid">
-
-      <!-- Brand Column -->
-      <div class="footer-brand">
-        <a href="#home" class="logo" style="margin-bottom:14px; display:inline-flex;">
-          <i class="fas fa-book-open"></i> NotoByte
-        </a>
-        <p>
-          A free student notes platform built to empower learners everywhere.
-          Share knowledge, grow together.
-        </p>
-        <!-- Social Media Icons — replace # with your real profile URLs -->
-        <div class="social-links">
-          <a href="https://www.instagram.com/_ravvall_/" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/" class="social-link"><i
-              class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/sudarshanraval37" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links Column -->
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#notes">Browse Notes</a></li>
-          <li><a href="#upload">Upload Notes</a></li>
-          <li><a href="#contributors">Contributors</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-
-      <!-- Subjects Column -->
-      <div class="footer-col">
-        <h4>Subjects</h4>
-        <ul class="footer-links">
-          <li><a href="#">Engineering</a></li>
-          <li><a href="#">Notes</a></li>
-          <li><a href="#">PYQs</a></li>
-          <li><a href="#">Important Downloads</a></li>
-          <li><a href="#">assignment</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Column -->
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul class="footer-links">
-          <li>
-            <a href="sudarshanraval4@gmail.com">
-              <i class="fas fa-envelope" style="margin-right:6px"></i>sudarshanraval4@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-telegram" style="margin-right:6px"></i>Telegram Group
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-bug" style="margin-right:6px"></i>Report Issue
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-question-circle" style="margin-right:6px"></i>FAQ
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <p>© 2026 NotoByte. Developed by Sudarshan Raval & Vinit Raj for Students.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Sitemap</a>
-      </div>
-    </div>
-  </footer>
 
   <!-- ============================================================
        TOAST NOTIFICATION
-       Shown at the bottom of the screen when a download stImportant Downloads.
-       Controlled by showToast() in script.js
   ============================================================ -->
   <div id="toast">
     <i class="fas fa-check-circle"></i>
     <span id="toastMsg">Download started!</span>
   </div>
 
-  <!-- ============================================================
-       BACK TO TOP BUTTON
-       Appears after scrolling 400px. Scrolls back to top on click.
-  ============================================================ -->
-  <button id="backTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- Main JavaScript File -->
+  <!-- Scripts -->
   <script src="script.js"></script>
   <script src="notes-data.js"></script>
   <script src="notes.js"></script>
+  <script src="syllabus-data.js"></script>
+  <script src="syllabus.js"></script>
   <script src="questions.js"></script>
   <script src="quiz.js"></script>
-
+  <script src="app.js"></script>
 
 </body>
 

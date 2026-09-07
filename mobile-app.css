@@ -1,0 +1,447 @@
+/* ================================================================
+   mobile-app.css — NotoByte Mobile-App UI Layer
+   ─────────────────────────────────────────────────────────────
+   Purpose : Restyles the existing NotoByte site into a modern
+             mobile-app-style interface, based on the supplied
+             design reference (colour-coded section bands, pill
+             option rows with circular icons, bottom tab bar,
+             touch-friendly sizing).
+
+   IMPORTANT : This file is ADDITIVE ONLY.
+   - It does not remove or rewrite any rule in style.css / notes.css
+     / quiz.css. It loads AFTER them (see index.html) and layers
+     mobile-app visuals on top of the exact same markup, classes,
+     ids and JS hooks already used by script.js / notes.js / quiz.js.
+   - Every colour still reads from the site's existing --accent /
+     --glass / --text variables so light & dark mode (themeBtn)
+     keep working exactly as before. The only new tokens are the
+     five "band" accent colours used to colour-code each section,
+     matching the reference PDF (Notes=orange, Syllabus/Quiz=pink,
+     Contribute=teal, Developers=blue).
+================================================================ */
+
+:root {
+    /* Section identity colours (from design reference) */
+    --band-notes: #ff7a29;
+    --band-notes-soft: rgba(255, 122, 41, .14);
+    --band-quiz: #d6006d;
+    --band-quiz-soft: rgba(214, 0, 109, .14);
+    --band-upload: #00a97b;
+    --band-upload-soft: rgba(0, 169, 123, .14);
+    --band-contrib: #2f5fff;
+    --band-contrib-soft: rgba(47, 95, 255, .14);
+    --band-about: var(--accent);
+    --band-about-soft: rgba(124, 111, 224, .14);
+
+    /* App-shell metrics */
+    --bottom-nav-h: 64px;
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-top: env(safe-area-inset-top, 0px);
+    --app-radius: 22px;
+}
+
+
+/* ================================================================
+   1. GLOBAL APP-SHELL FEEL
+   Keep every existing rule, just make touch targets, radii and
+   spacing feel like a native app instead of a squeezed desktop site.
+================================================================ */
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    /* room for the fixed bottom tab bar so content never hides under it */
+    padding-bottom: calc(var(--bottom-nav-h) + var(--safe-bottom));
+}
+
+@media (min-width: 651px) {
+    body {
+        padding-bottom: 0;
+    }
+}
+
+/* Bigger, calmer press feedback everywhere instead of only hover-lift,
+   so the UI reads as touch-first rather than mouse-first. */
+.btn:active,
+.notes-program-card:active,
+.notes-option-card:active,
+.quiz-subject-card:active,
+.quiz-card:not(.quiz-card-locked):active,
+.note-card:active,
+.quick-card:active,
+.bottom-nav-link:active {
+    transform: scale(.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .001ms !important;
+        transition-duration: .001ms !important;
+    }
+}
+
+
+/* ================================================================
+   2. NAVBAR — compact app top bar
+================================================================ */
+@media (max-width: 650px) {
+    nav {
+        padding: calc(10px + var(--safe-top)) 4.5% 10px;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .theme-btn,
+    .hamburger {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* ================================================================
+   3. HERO — trim to app-dashboard proportions on mobile
+================================================================ */
+@media (max-width: 650px) {
+    #home {
+        min-height: auto;
+        padding: calc(90px + var(--safe-top)) 5% 40px;
+    }
+
+    .hero-stats {
+        gap: 18px;
+        margin-top: 36px;
+    }
+
+    .stat-num {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ================================================================
+   4. HOME QUICK-ACCESS DASHBOARD
+   New block injected in index.html right under the hero. Mirrors
+   the reference PDF's home-screen shortcut bar — but only links to
+   sections/features that genuinely exist in the codebase (Notes &
+   PYQ, Quiz Zone, Contribute, Meet the Developers). Pure navigation:
+   every card is a plain <a href="#id"> to an existing section id,
+   so it reuses the same anchor/scroll behaviour as the navbar links.
+================================================================ */
+.quick-dashboard {
+    max-width: 1000px;
+    margin: 44px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+}
+
+.quick-card {
+    --qc-color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 18px;
+    border-radius: var(--app-radius);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--card-shadow);
+    text-decoration: none;
+    color: var(--text);
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition);
+}
+
+.quick-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--qc-color);
+}
+
+.quick-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--qc-color);
+}
+
+.quick-card .quick-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background: var(--qc-color);
+}
+
+.quick-card .quick-label {
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.quick-card .quick-sub {
+    font-size: .76rem;
+    color: var(--text2);
+    line-height: 1.4;
+}
+
+@media (max-width: 650px) {
+    .quick-dashboard {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 32px;
+    }
+}
+
+
+/* ================================================================
+   5. COLOUR-CODED SECTION BANDS
+   A slim, full-bleed-feeling coloured bar sits above each section's
+   existing header (".section-header" / upload card heading). This
+   is a NEW small element added just before the existing markup —
+   nothing inside the current header/section is touched or wrapped.
+================================================================ */
+.app-band {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto 26px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 800;
+    font-size: .82rem;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    justify-content: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+}
+
+.app-band i {
+    font-size: .95rem;
+}
+
+.app-band-notes {
+    background: linear-gradient(135deg, var(--band-notes), #ffa15c);
+}
+
+.app-band-quiz {
+    background: linear-gradient(135deg, var(--band-quiz), #ff4fa3);
+}
+
+.app-band-upload {
+    background: linear-gradient(135deg, var(--band-upload), #33d19c);
+}
+
+.app-band-contrib {
+    background: linear-gradient(135deg, var(--band-contrib), #6f8dff);
+}
+
+@media (max-width: 650px) {
+    .app-band {
+        font-size: .74rem;
+        padding: 12px 16px;
+    }
+}
+
+
+/* ================================================================
+   6. PILL-STYLE OPTION ROWS
+   Restyles the *existing* option-card classes (already rendered by
+   notes.js / quiz.js with these exact class names) into rounded
+   pill rows with a circular icon badge, matching the reference's
+   "Select Branch" / "Select Category" screens. No class names or
+   markup change — CSS only.
+================================================================ */
+.notes-program-card,
+.notes-option-card,
+.quiz-subject-card {
+    border-radius: 20px;
+}
+
+.notes-option-card {
+    border-radius: 50px;
+    padding: 14px 20px 14px 14px;
+}
+
+.notes-option-icon,
+.notes-program-icon {
+    border-radius: 50%;
+}
+
+.quiz-sem-tab {
+    border-radius: 50px;
+}
+
+/* Colour-code the Notes hierarchy and Quiz hierarchy option rows so
+   they visually belong to their section band, instead of every level
+   of the app using one identical accent colour. */
+#notes .notes-option-icon,
+#notes .notes-program-icon {
+    background: linear-gradient(135deg, var(--band-notes), #ffa15c);
+}
+
+#quiz .quiz-subject-icon,
+#quiz .quiz-card-icon {
+    background: var(--band-quiz);
+}
+
+#quiz .quiz-sem-tab:hover,
+#quiz .quiz-sem-tab.active {
+    background: linear-gradient(135deg, var(--band-quiz), #ff4fa3);
+    box-shadow: 0 4px 15px var(--band-quiz-soft);
+}
+
+#quiz .quiz-subject-card::before {
+    background: var(--band-quiz);
+}
+
+
+/* ================================================================
+   7. NOTE / RESOURCE CARDS — app list-item feel
+================================================================ */
+.note-card {
+    border-radius: var(--app-radius);
+}
+
+.subject-icon {
+    background: linear-gradient(135deg, var(--band-notes), #ffa15c);
+    border-radius: 14px;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, var(--band-notes), #ffa15c);
+    box-shadow: 0 4px 15px var(--band-notes-soft);
+    min-height: 40px;
+}
+
+
+/* ================================================================
+   8. UPLOAD / CONTRIBUTE CARD
+================================================================ */
+.upload-icon {
+    background: linear-gradient(135deg, var(--band-upload), #33d19c);
+    box-shadow: 0 10px 30px var(--band-upload-soft);
+}
+
+#upload .btn-primary {
+    background: linear-gradient(135deg, var(--band-upload), #33d19c);
+    box-shadow: 0 4px 20px var(--band-upload-soft);
+}
+
+
+/* ================================================================
+   9. CONTRIBUTORS / DEVELOPERS
+================================================================ */
+.contrib-big-avatar,
+.dev-img {
+    box-shadow: 0 6px 20px var(--band-contrib-soft);
+}
+
+#contributors .contrib-count {
+    color: var(--band-contrib);
+    background: var(--band-contrib-soft);
+}
+
+
+/* ================================================================
+   10. BOTTOM TAB BAR (mobile app navigation)
+   New fixed nav, mobile-only. Every link points at an id that
+   already exists (#home #notes #quiz #upload #contributors) so it
+   reuses the exact same in-page navigation already used by the
+   desktop navbar and mobile hamburger menu — no new routing logic.
+================================================================ */
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 150;
+        justify-content: space-around;
+        align-items: center;
+        height: var(--bottom-nav-h);
+        padding-bottom: var(--safe-bottom);
+        background: rgba(10, 10, 26, .85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid var(--glass-border);
+    }
+
+    [data-theme="light"] .bottom-nav {
+        background: rgba(240, 240, 255, .9);
+    }
+
+    .bottom-nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        color: var(--text2);
+        text-decoration: none;
+        font-size: .65rem;
+        font-weight: 600;
+        flex: 1;
+        padding: 8px 0;
+        transition: color var(--transition);
+    }
+
+    .bottom-nav-link i {
+        font-size: 1.05rem;
+    }
+
+    .bottom-nav-link.active,
+    .bottom-nav-link:hover {
+        color: var(--accent);
+    }
+}
+
+
+/* ================================================================
+   11. BACK-TO-TOP — lift above the bottom tab bar on mobile
+================================================================ */
+@media (max-width: 650px) {
+    #backTop {
+        bottom: calc(var(--bottom-nav-h) + var(--safe-bottom) + 16px);
+        right: 18px;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+
+/* ================================================================
+   12. SECTION SPACING — tighter, more app-like rhythm on mobile
+================================================================ */
+@media (max-width: 650px) {
+    section {
+        padding: 56px 5%;
+    }
+
+    .section-header {
+        margin-bottom: 34px;
+    }
+
+    .btn {
+        min-height: 48px;
+    }
+}
