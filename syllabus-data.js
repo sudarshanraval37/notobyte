@@ -506,14 +506,438 @@ const syllabusData = {
             ];
 
             semesters.sem1.lab = [
-              { name: "Digital Electronics Lab", code: "G-2018013" },
-              { name: "OOP using JAVA Lab", code: "G-2018013" },
-              { name: "Operating System Lab", code: "G-2018013" }
+              {
+                name: "Applied Physics",
+                code: "P2600102B",
+                units: [
+                  {
+                    title: "Practical/Lab Session Outcomes (LSOs)",
+                    points: [
+                      "LSO 1.1. Use Vernier caliper to measure the known and unknown dimensions of a given small object.",
+                      "LSO 1.2. Estimate the mean absolute error up to two significant figures.",
+                      "LSO 2.1. Use screw gauge to measure the diameter/thickness of a given object.",
+                      "LSO 2.2. Estimate the mean absolute, relative and percentage errors up to three significant figures.",
+                      "LSO 3.1. Use Spherometer to measure radius of curvature of given convex and concave mirror/surface.",
+                      "LSO 3.2. Estimate errors in the measurement.",
+                      "LSO 4.1. Measure the variation of Time period with Mass of a given spring Oscillator.",
+                      "LSO 4.2. Determine the spring constant of a given spring.",
+                      "LSO 5.1. Determine the time period of oscillation of given bar pendulum.",
+                      "LSO 6.1. Determine the V-I characteristics of a given p-n junction device.",
+                      "LSO 7.1. Determine the capacitance of a given parallel plate capacitor.",
+                      "LSO 8.1. Determine the inverse square law relation between the distance of photocell and light source v/s intensity of light source.",
+                      "LSO 9.1. Determine the Numerical Aperture (NA) of a given step index optical fiber.",
+                      "LSO 10.1. Measure wavelength of a He-Ne/diode laser by using a plane diffraction grating.",
+                      "LSO 11.1. Determine the V-I characteristics of given solar cell under various illumination condition.",
+                      "LSO 12.1. Determine the V-I characteristics of a given p-n junction device under various temperature conditions.",
+                      "LSO 13.1. Plot the graph between KE of Photo electron v/s frequency of incident light.",
+                      "LSO 13.2. Determine the value of Plank's Constant (h) from the graph between KE v/s frequency of incident light.",
+                      "LSO 13.3. Determine the variation of stopping potential w.r.t frequency of incident photon.",
+                      "LSO 14.1. Determine the wavelength of different spectral lines of Hydrogen spectra.",
+                      "LSO 15.1. Find the variation in magnitude and direction of emf induced in a coil due to change in magnetic flux."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Fundamentals of Electrical and Electronic Engg.",
+                code: "P2620103",
+                units: [
+                  {
+                    title: "Practical/Lab Session Outcomes (LSOs)",
+                    points: [
+                      "LSO 1.1 Classify given electrical components in to Resistor, Inductor and Capacitor.",
+                      "LSO 1.2 Plot the terminal voltage of a source starting from no load to different load (Current) conditions.",
+                      "LSO 1.3 Measure current and voltage in a branch of the given electric circuit.",
+                      "LSO 1.4 Verify the zero Phase difference between current and voltage waveform for a resistor connected to an AC source with respect to time (using CRO).",
+                      "LSO 1.5 Calculate the value of color-coded resistor and verify it by measuring the value of resistor using digital multimeter.",
+                      "LSO 1.6 Measure resistance inan series and parallel combination of resistors using digital multimeter.",
+                      "LSO 1.7 Calculate the value of equivalent capacitance in series and parallel combination and verify by measuring the value of capacitance using digital multimeter.",
+                      "LSO 2.1 Apply ohm's law to calculate voltage across each element in a given circuit.",
+                      "LSO 2.2 Determine currents using KCL in a given electric circuit and verify it by conducting experiment.",
+                      "LSO 2.3 Determine voltages using KVL in a given electric circuit and verify it by conducting experiment.",
+                      "LSO 2.4 Verify the Phase difference (Lag)between current and voltage waveform for an inductor connected to an AC source with respect to time using CRO.",
+                      "LSO 2.5 Verify the Phase difference (lead) between current and voltage waveform for a capacitor connected to an AC source with respect to time using CRO.",
+                      "LSO 2.6 Perform experiment to plot BH curve in a magnetic material.",
+                      "LSO 3.1. Perform experiment to demonstrate statically and dynamically induced emf.",
+                      "LSO 3.2. Perform experiment to demonstrate self and mutual inductance.",
+                      "LSO 3.3. Perform experiment to demonstrate Faraday's laws of electromagnetism.",
+                      "LSO 3.4. Perform experiment to demonstrate Flemings right hand and left-hand rules.",
+                      "LSO 3.5. Perform experiment to demonstrate Lenz's law.",
+                      "LSO 4.1 Test the working of a given diode, and plot the labelled V-I characteristics.",
+                      "LSO 4.2 Test the working of a given BJT and plot the labelled V-I characteristics.",
+                      "LSO 4.3 Test the working of a given FET and plot the labelled V-I characteristics.",
+                      "LSO 5.1 Build and verify the truth tables for all logic gates - NOT, OR, NOR, AND, NAND."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Introduction to Artificial Intelligence",
+                code: "P2600100",
+                units: [
+                  {
+                    title: "Practical/Lab Session Outcomes (LSOs)",
+                    points: [
+                      "LSO 1.1 Use basic computer hardware and operating system utilities.",
+                      "LSO 1.2 Use internet services and cloud-based applications safely.",
+                      "LSO 2.1 Train visual machine learning concepts and map linear data patterns using zero-code tools.",
+                      "LSO 3.1 Apply object detection bounding boxes and analyze errors in engineering image data.",
+                      "LSO 4.1 Construct structured prompts and deploy zero-code generative design applications.",
+                      "LSO 5.1 Use variables, data types, arithmetic operators, input/output statements, and type casting in Python programs.",
+                      "LSO 5.2 Apply conditional statements and looping constructs to develop simple Python programs.",
+                      "LSO 5.3 Develop menu-driven programs and use Python lists for storing and processing data."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Engineering Workshop Practice",
+                code: "P2620105",
+                units: [
+                  {
+                    title: "Practical/Lab Session Outcomes (LSOs)",
+                    points: [
+                      "LSO 1.1. List various measuring tools and instruments.",
+                      "LSO 1.2. Use suitable measuring unit and its conversion.",
+                      "LSO 1.3. Select suitable measuring devices in a given situation.",
+                      "LSO 1.4. Measure the given job using suitable instruments.",
+                      "LSO 2.1 List various wood working tools with major specifications.",
+                      "LSO 2.2 Select wood working tools as per given job.",
+                      "LSO 2.3 Perform various wood working operations as per given drawing/sketch.",
+                      "LSO 2.4 Follow the right procedure to prepare given type of joint.",
+                      "LSO 3.1 Choose appropriate joining method in a given situation.",
+                      "LSO 3.2 Select suitable welding method as per job requirement.",
+                      "LSO 3.3 Carryout suitable welding procedure as per given sketch / drawing.",
+                      "LSO 3.4 Perform brazing operation in a given situation.",
+                      "LSO 4.1 Select various electrical and electronic components.",
+                      "LSO 4.2 Identify various given electrical tools and measuring instruments.",
+                      "LSO 4.3 Describe the steps to use the given type of meters.",
+                      "LSO 4.4 Test the given components using Multimeter.",
+                      "LSO 4.5 Use the suitable procedure of mounting electrical and electronic components on given PCB.",
+                      "LSO 4.6 Identify terminals of a given transistor using suitable measuring instrument.",
+                      "LSO 4.7 Perform soldering operation in a given situation.",
+                      "LSO 5.1 Select the fire extinguisher to extinguish the given type of fire.",
+                      "LSO 5.2 Describe the procedure to use the given firefighting equipment.",
+                      "LSO 5.3 List the materials used for first Aid.",
+                      "LSO 5.4 Describe the ways to maintain good housekeeping in the given situation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "ICT Tools",
+                code: "P2618107",
+                units: [
+                  {
+                    title: "Practical/Lab Session Outcomes (LSOs)",
+                    points: [
+                      "LSO 1.1. Perform fundamental word processing operations to create a document.",
+                      "LSO 2.1. Work with images/shapes in a document.",
+                      "LSO 3.1. Organize data in tabular form in a document.",
+                      "LSO 4.1. Perform Document proofing operations in a document.",
+                      "LSO 5.1. Organize and print Document.",
+                      "LSO 6.1. Create batch of documents with tailored variable information using mail merge.",
+                      "LSO 7.1. Create a worksheet.",
+                      "LSO 7.2. Format sheet/cell.",
+                      "LSO 8.1. Perform fundamental calculation operations in a worksheet.",
+                      "LSO 9.1. Filter the given data set.",
+                      "LSO 9.2. Validate data based on criteria.",
+                      "LSO 9.3. Sort the data in given order.",
+                      "LSO 10.1. Create various types of charts to represent data in graphical form.",
+                      "LSO 11.1. Print worksheet as per given layout.",
+                      "LSO 12.1. Create electronic slide show containing text, image, shape, table, charts objects.",
+                      "LSO 13.1. Run slide presentation in different modes.",
+                      "LSO 13.2. Print slide presentation.",
+                      "LSO 14.1. Apply given animation effects to the text and slides.",
+                      "LSO 15.1. Add audio and video files in the presentation.",
+                      "LSO 16.1. Configure internet and browser setting.",
+                      "LSO 17.1. Use different internet services.",
+                      "LSO 18.1. Work with Google Doc.",
+                      "LSO 19.1. Work with google sheet.",
+                      "LSO 20.1. Work with google slides.",
+                      "LSO 21.1. Create google form."
+                    ]
+                  }
+                ]
+              }
+            ];
+            semesters.sem3.theory = [
+              {
+                name: "Data Structures and Algorithms",
+                code: "T2418301",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Algorithms and its Analysis",
+                    points: [
+                      "1.1. Data Types: System defines data types, User defined data types",
+                      "1.2. Basic concept of data structure: Linear data structure, Non-linear data structure, Abstract data types",
+                      "1.3. Algorithm and its analysis: Introduction of algorithm, Time Complexity of algorithm, Space Complexity of algorithm, Worst case analysis, Best case analysis, Average case analysis",
+                      "1.4. Asymptotic Notation: Big-O Notation, Omega- Ω Notation, Theta Notation",
+                      "1.5 Time complexity of recursive algorithm: Basic concept of recursion, Time complexity analysis using Master theorem"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Linear Data Structures",
+                    points: [
+                      "2.1 Array and String: Concept of arrays, Single and Multidimensional-arrays, Dynamic arrays, Array operations, Time and space complexity of array operations, Introduction to string, String manipulation",
+                      "2.2 Linked List: Introduction to linked list, Singly Linked List, circular Linked List, Basic operation on Linked List: Traversing List, Insertion, deletion, and modification in Linked List",
+                      "2.3 Stacks and Queue: Introduction to Stack, Stack operations, Implementation of Stack using simple array, dynamic array, and Linked List, Application of stack for evaluating Infix or Postfix Expression, balancing the symbols, function calls, Introduction to Queue, Queue operations, Implementation of Queue using simple array, dynamic array, and Linked List, Application of Queue"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Non-linear Data Structure",
+                    points: [
+                      "3.1 Tree: Basic terminologies: tree, Degree of a node, Degree of tree, level of node, Depth/height of tree, In-degree, Out-degree, Path, Ancestor & Descendent node; Types of trees: Binary Tree, Binary Search tree (BST), Balance tree, B-tree; Traversal of Binary tree: In order, pred order, post order traversal",
+                      "3.2 Priority Queue and Heaps: Introduction to priority queue, Different operations in priority queue, Implementation of priority queue using BST; Basics of Min heap, Max heap, and Binary heap, Basic operation on Binary heap, Heapifying the elements of binary heap",
+                      "3.3 Graphs: Basics terminologies: Vertex and edge of graph, weighted and unweighted Graph, directed and undirected graph, Degree, in-degree and out-degree of a node (vertex), Articulation point; Graph representation: Adjacency Matrix, Adjacency List, Adjacency Set; Graph Traversal: BFS, DFS; Shortest Path in unweighted, weighted, and negative edge graph, Shortest Path algorithm in weighted graph [Dijkstra's], Shortest Path algorithm in negative edge graph [Bellman-Ford Algorithm], Shortest Path algorithm in weighted directed graph [Floyd-Warshall algorithm]; Spanning tree in graph, Minimum Spanning tree algorithm: Prim's algorithm, Kruskal's algorithm"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Sorting and Searching Techniques",
+                    points: [
+                      "4.1 Sorting techniques: bubble sort, selection sort, insertion sort, quicksort, merge sort",
+                      "4.2 Searching techniques: Linear search, Binary search",
+                      "4.3 Hash Table: Introduction to Hash Table, Hash Function, Hash Collision resolution Techniques: Direct chaining, Open addressing"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Algorithm Design Techniques",
+                    points: [
+                      "5.1 Element of Greedy algorithm: Greedy choice property, Optimal substructure, Huffman coding algorithm",
+                      "5.2 Divide and Conquer Techniques: Divide and Conquer Visualization",
+                      "5.3 Dynamic Programming Approaches: Top-down and button-up Dynamic programming, Basics of Overlapping subproblem and Memorization techniques",
+                      "5.4 Dynamic Programming Problem: Longest common subsequence, Knapsack problem, Matrix chain multiplication"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Operating Systems",
+                code: "T2418302",
+                units: [
+                  {
+                    title: "Unit-1.0: Operating System Concepts",
+                    points: [
+                      "1.1 Operating System - Concept, Components of OS, System Software",
+                      "1.2 Functions of O.S: Program Management, Resource management, File Management, Device Management, Security and protection.",
+                      "1.3 Views of OS: User view, System View",
+                      "1.4 Types of Operating Systems and their characteristics: Batch operating system, Multi Programming, Time Shared OS, Multiprocessing OS, Distributed OS, Real-time systems, Mobile OS.",
+                      "1.5 Services of Operating System.",
+                      "1.6 System Calls- Concept, types of system calls"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0: Process Management",
+                    points: [
+                      "2.1 Process-: process states, Process Control Block (PCB).",
+                      "2.2 Process Scheduling- Scheduling Queues, Schedulers, Context switch.",
+                      "2.3 Inter-process communication (IPC): Introduction, shared memory system & message passing system.",
+                      "2.4 Threads - Benefits, users and kernel threads, Multithreading Models - Many to One, One to One, Many to Many."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: CPU Scheduling and Algorithm",
+                    points: [
+                      "3.1 Scheduling types - scheduling Objectives, CPU and I/O burst cycles, Pre-emptive, Non- Pre-emptive Scheduling, Scheduling criteria.",
+                      "3.2 Types of Scheduling algorithms - First come first served (FCFS), Shortest Job First (SJF), Shortest Remaining Time First (SRTF), Round Robin (RR), Priority scheduling, multilevel queue scheduling.",
+                      "3.3 Deadlock - System Models, Necessary Conditions leading to Deadlocks, Deadlock Handling - Preventions, avoidance."
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0: Memory Management",
+                    points: [
+                      "4.1 Basic Memory Management - Partitioning, Fixed and Variable, Free Space management Techniques - Bitmap, Linked List.",
+                      "4.2 Virtual Memory - Introduction to Paging, Segmentation, Fragmentation, and Page fault.",
+                      "4.3 Page Replacement Algorithms: FIFO, LRU, Optimal."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: File Management",
+                    points: [
+                      "5.1 File Concepts, Attributes, Operations, types and File System Structure.",
+                      "5.2 Access Methods - Sequential, Direct, Swapping, File Allocation Methods- Contiguous, Linked, Indexed.",
+                      "5.3 Directory structure- Single level, two levels, tree-structured directory, Disk Organization and disk Structure- Physical structure, Logical structure."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Discrete Mathematics",
+                code: "T2418303",
+                units: [
+                  {
+                    title: "Unit-1.0 Logic and Proof Techniques",
+                    points: [
+                      "1.1 Propositional logic: Connectives and Truth Tables, Tautologies and Contradictions, Logical Equivalences.",
+                      "1.2 Predicate logic: Quantifiers, Nested Quantifiers, Inference rules for predicate logic.",
+                      "1.3 Mathematical proofs: Basic proof techniques: Direct proofs, Proof by contrapositive, proof by contradiction and Proof by mathematical induction"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Set Theory and Relation",
+                    points: [
+                      "2.1 Set and subsets.",
+                      "2.2 Operations on sets.",
+                      "2.3 Venn diagrams and De Morgan's law.",
+                      "2.4 Relations and their properties.",
+                      "2.5 Equivalence relation."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Combinatorics",
+                    points: [
+                      "3.1 Basics counting principles.",
+                      "3.2 Permutations and Combinations.",
+                      "3.3 Pigeonhole principle (without proof and its application).",
+                      "3.4 Binomial theorem.",
+                      "3.5 Generating functions."
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 Graph Theory",
+                    points: [
+                      "4.1 Basic concepts and definition.",
+                      "4.2 Types of Graph and degree of vertex.",
+                      "4.3 Sub graph and Isomorphic Graphs.",
+                      "4.4 Walks, Paths, Cycle.",
+                      "4.5 Eulerian Graph (without proof) and its application.",
+                      "4.6 Connectivity and Components"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Introduction to Fuzzy Set Theory",
+                    points: [
+                      "5.1 Basics of Fuzzy set theory.",
+                      "5.2 Membership functions and degrees of membership.",
+                      "5.3 Fuzzy set theoretic operations.",
+                      "5.4 Fuzzy propositions and truth values."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Digital Electronics and Microprocessors",
+                code: "T2418304",
+                units: [
+                  {
+                    title: "Unit-1.0 Number Systems, Boolean Algebra and Logic Gates",
+                    points: [
+                      "1.1 Different number systems: Binary, Octal, Decimal, Hexadecimal; Conversion from one number system to another number systems.",
+                      "1.2 Arithmetic operation of Binary, Octal, Hexadecimal number systems.",
+                      "1.3 Complements: 1's and 2's complement.",
+                      "1.4 Data Representation: Representation of negative number in 1's and 2's complement, Subtraction using 1's and 2's complement",
+                      "1.5 Boolean Algebra: Rules and laws of Boolean Algebra, De-Morgan's Theorem",
+                      "1.6 Standard Boolean Representation: Sum of Product (SOP), Product of Sum (POS)",
+                      "1.7 Minimization: Karnaugh's Map (K-map) up to three variables, Simplification of Boolean expressions using Boolean laws and K-map.",
+                      "1.8 Logic Gates and applications: AND, OR, NOT, Buffer, NAND, NOR, XOR, XNOR (Symbol, Truth table, Logic expression and its applications)",
+                      "1.9 Implementation of Boolean expressions using basic gates"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Combinational and Sequential Logic Circuits",
+                    points: [
+                      "2.1 Arithmetic Circuits: Half Adder and Full Adder, Half Subtractor and Full Subtractor",
+                      "2.2 Multiplexer: 2 to 1 MUX, 4 to 1 MUX, Applications",
+                      "2.3 De-multiplexer: 1 to 2 DEMUX, 1 to 4 DEMUX, Applications",
+                      "2.4 Encoder and Decoder",
+                      "2.5 Flip-Flops: SR, JK, T, D, and JK, Master Slave JK flip-flop",
+                      "2.6 Shift Registers: Serial In Serial Out, Serial In Parallel Out, Parallel In Serial Out, Parallel In Parallel Out",
+                      "2.7 Counters: Modulus of counter, Asynchronous Counter: Ripple up/down counter, Synchronous Counter: Ring Counter"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Converters and Memory Devices",
+                    points: [
+                      "3.1 Data Converters: Op-Amp: Introduction (Inverting and Non inverting), Digital to analog and Analog to digital converter: Uses",
+                      "3.2 Random Access Memory: Introduction and its types",
+                      "3.3 Read Only Memory: Introduction and its types"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Basics, Instruction Set and Programming of 8085 Microprocessor",
+                    points: [
+                      "4.1 Basics of Microprocessor: Evolution of Microprocessors, Architecture and Pin diagram of 8085, Timing Diagram and Memory Organization, Interrupts",
+                      "4.2 Instruction Set: Data Transfer Instructions, Control instructions, Arithmetic instructions",
+                      "4.3 Logical instructions, Branching instructions",
+                      "4.4 Different types of Addressing Modes: Immediate Addressing Mode, Register Addressing Mode, Direct Addressing Mode, Indirect Addressing Mode, Indexed Addressing Mode; Assembly Language Programming"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Interfacing with 8085 Microprocessor",
+                    points: [
+                      "5.1 Programmable Peripheral Interface (PPI)- Intel 8255 (Generation of I/O Ports)",
+                      "5.2 Programmable Interval timers (Intel 8253/8254)",
+                      "5.3 Overview of Memory chips and their interfaces",
+                      "5.4 Overview of other interfacing chips (Name and Application(s) only)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programming in Python",
+                code: "T2418305",
+                units: [
+                  {
+                    title: "Unit 1: Fundamentals of Python Programming Syntax",
+                    points: [
+                      "1.1 Introduction to Python Character Set, Python Tokens, Variables, Lvalue and Rvalue Concepts, and the Use of Comments.",
+                      "1.2 Overview of Data Types: Number Types: Integer, Floating Point, Complex; Boolean Type; Sequence Types: String, List, Tuple; None Type; Mapping Type: Dictionary; Distinction between Mutable and Immutable Data Types",
+                      "1.3 Understanding Operators: Arithmetic Operators, Relational Operators, Logical Operators, Assignment Operator, Augmented Assignment Operators, Expressions and Statements, Type Conversion and Input/Output Mechanisms, Precedence of Operators, Expression Evaluation"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Conditional and Iterative statements",
+                    points: [
+                      "2.1 Conditional statements: simple if statement, if- else statement, if-elif-else statement",
+                      "2.2 Iterative statements: while loop, for loop, range function, break and continue statements, nested loops"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 String, List, Tuples, set and Dictionary",
+                    points: [
+                      "3.1 String: Indexing, string operations (concatenation, repetition, membership & slicing), traversing a string using loops, built-in functions.",
+                      "3.2 Lists: Introduction, Indexing in list, list operations: concatenation, repetition, membership & slicing, traversing a list, built-in list functions, linear search on list of numbers and counting the frequency of elements in a list",
+                      "3.3 Tuples: Creating, initializing, accessing elements, tuple assignment, performing operations on tuples, tuple methods and built-in functions, nested tuples",
+                      "3.4 Set: Creating set, traversing, adding, removing data in set, performing set operations like join, Union intersection, difference",
+                      "3.5 Dictionary: accessing items in a dictionary using keys, mutability of dictionary: adding a new item, modifying an existing item, built-in dictionary functions."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Python Functions, Modules and packages",
+                    points: [
+                      "4.1 Functions: types of function (built-in functions, functions defined in module, user defined functions), creating user defined function, arguments and parameters, default parameters, positional parameters, Lambda functions, returning value, scope of a variable: global scope, local scope",
+                      "4.2 Modules and Packages: Importing module using 'import', Regular Expressions, Exception Handling, PyPI Python Package Index, Pip Python package manager, Importing Libraries and Functions"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Numpy",
+                    points: [
+                      "5.1 Introduction to NumPy",
+                      "5.2 Installation of NumPy",
+                      "5.3 NumPy Arrays: Understanding the NumPy array, The fundamental data structure in NumPy, Creation of arrays using different methods: np.array(), np.zeros(), np.ones(), etc., Exploring array attributes like shape, size, and dimensions.",
+                      "5.4 Array Indexing and Slicing: Accessing elements and subarrays in NumPy arrays using indexing and slicing, Demonstration of the difference between one-dimensional and multi-dimensional array indexing.",
+                      "5.5 Array Operations: Performing element-wise operations on NumPy arrays, Exploring universal functions (ufuncs) for mathematical operations.",
+                      "5.6 Linear Algebra with NumPy: Introduction to linear algebra operations using NumPy, Matrix multiplication, determinant, inverse, and solving linear equations.",
+                      "5.7 File input and output with Numpy",
+                      "5.8 Broadcasting in Numpy"
+                    ]
+                  },
+                  {
+                    title: "Unit 6: Exception and File Handling in Python",
+                    points: [
+                      "6.1 Exception Handling: syntax errors, exceptions, need of exception handling, user-defined exceptions, raising exceptions, handling exceptions, catching exceptions, Try - except - else clause, Try finally clause, recovering and continuing with finally, built-in exception classes.",
+                      "6.2 File Handling: text file and binary file, file types, open and close files, reading and writing text files, reading and writing binary files, file access modes"
+                    ]
+                  }
+                ]
+              }
             ];
 
             return semesters;
           })()
         },
+
+
         {
           id: "electrical",
           title: "Electrical Engineering",
