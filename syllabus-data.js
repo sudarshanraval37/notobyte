@@ -128,6 +128,9 @@ const syllabusData = {
         }
       ]
     },
+
+
+
     {
       id: "diploma",
       title: "Diploma",
@@ -215,8 +218,8 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Applied Physics",
-                code: "T2600102B",
+                name: "Applied Physics-B",
+                code: "2600102B",
                 units: [
                   {
                     title: "Unit-1.0 : Unit and Measurements",
@@ -663,8 +666,8 @@ const syllabusData = {
             ];
             semesters.sem3.theory = [
               {
-                name: "Data Structures and Algorithms",
-                code: "T2418301",
+                name: "Data Structures and Algorithm",
+                code: "2418301",
                 units: [
                   {
                     title: "Unit-1.0 Fundamentals of Algorithms and its Analysis",
@@ -712,8 +715,8 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Operating Systems",
-                code: "T2418302",
+                name: "Operating System",
+                code: "2418302",
                 units: [
                   {
                     title: "Unit-1.0: Operating System Concepts",
@@ -762,8 +765,8 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Discrete Mathematics",
-                code: "T2418303",
+                name: "Discrete Structures or Discrete Mathematics",
+                code: "2418303",
                 units: [
                   {
                     title: "Unit-1.0 Logic and Proof Techniques",
@@ -816,8 +819,8 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Digital Electronics and Microprocessors",
-                code: "T2418304",
+                name: "Digital Electronics and Microprocessor",
+                code: "2418304",
                 units: [
                   {
                     title: "Unit-1.0 Number Systems, Boolean Algebra and Logic Gates",
@@ -874,8 +877,8 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Programming in Python",
-                code: "T2418305",
+                name: "Python Programming ",
+                code: "2418305",
                 units: [
                   {
                     title: "Unit 1: Fundamentals of Python Programming Syntax",
@@ -930,19 +933,1483 @@ const syllabusData = {
                     ]
                   }
                 ]
-              }
+              },
+
+
+              {
+                name: "Summer Internship - I",
+                code: "2418306",
+                units: [
+                  {
+                    title: "Internship after 2nd Semester for all branches",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+            ];
+
+            semesters.sem5.theory = [
+              {
+                name: "Data Communication and Computer Network",
+                code: "2418501",
+                units: [
+                  {
+                    title: "Unit-1.0 Data Communications and Transmission Media",
+                    points: [
+                      "1.1 Process of data communication and its components: Transmitter, Receiver, Medium, Message, Protocol.",
+                      "1.2 Protocol, Standard, Standard organization.",
+                      "1.3 Bandwidth, Data Transmission Rate, Baud Rate and Bits per second",
+                      "1.4 Models of Communication (Simplex, Half Duplex, Full Duplex)",
+                      "1.5 Analog Signal and Digital Signal Transmission: Analog to Digital, Digital to Analog Conversion",
+                      "1.6 Fundamentals of Computer Network: Definition and Need of Computer Network, Application, Network Benefits.",
+                      "1.7 Classification of Network: LAN and WAN, Network Architecture: Peer to peer, Client Server Network",
+                      "1.8 Communication Media: Guided Transmission Media, Twisted-Pair Cable, Coaxial Cable, Fiber-optic Cable",
+                      "1.9 Unguided Transmission Media: Radio Waves, Microwaves, Infrared, Satellite",
+                      "1.10 Multiplexing: Frequency-Division Multiplexing, Time-Division Multiplexing."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Data Link Layer",
+                    points: [
+                      "2.1 Introduction: Types of Errors, Redundancy, Detection Versus Correction, Coding",
+                      "2.2 Block coding: Error Detection, Error Correction, Hamming Distance, Minimum Hamming Distance",
+                      "2.3 Cyclic codes: Cyclic Redundancy Check, Polynomials, Cyclic Code Analysis, CHECKSUM",
+                      "2.4 Framing: Fixed-Size Framing, Variable-Size Framing",
+                      "2.5 Flow and error control: Flow Control, Error Control",
+                      "2.6 Noiseless channels: Simplest Protocol, Stop-and-Wait Protocol",
+                      "2.7 Noisy channels: Stop-and-Wait Automatic Repeat Request, Go-Back-N Automatic Repeat Request, Selective Repeat Automatic Repeat Request, Piggybacking.",
+                      "2.8 Point-to-point protocol",
+                      "2.9 Random access: ALOHA, Carrier Sense Multiple Access (CSMA), Carrier Sense Multiple Access with Collision Detection (CSMACD), Carrier Sense Multiple Access with Collision Avoidance (CSMACA)",
+                      "2.10 Channelization: Frequency-Division Multiple Access (FDMA), Time-Division Multiple Access (TDMA), Code-Division Multiple Access (CDMA)",
+                      "2.11 Ethernet: Bridged Ethernet, Switched Ethernet, Fast Ethernet, Gigabit Ethernet",
+                      "2.12 Connecting devices: HUBs, Two-Layer Switches, Routers, Three-Layer Switches, Gateway"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Network Layer",
+                    points: [
+                      "3.1 IPv4 addresses: Address Space, Notations, Classful Addressing, special case IP addresses, subnet, supernet, Classless Addressing, Network Address Translation (NAT), Datagram Fragmentation, Checksum, Options",
+                      "3.2 Introduction to IPV6: Advantages, Tunneling",
+                      "3.3 Address mapping: Logical to Physical Address: ARP, Mapping Physical to Logical Address: RARP.",
+                      "3.4 Router Forwarding table, and Routing: Function of unicast and multicast routing protocols"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Transport Layer",
+                    points: [
+                      "4.1 Process to Process Delivery: Client/Server Paradigm, Multiplexing and Demultiplexing, Connectionless Versus Connection-Oriented Service, Reliable Versus Unreliable",
+                      "4.2 User datagram protocol (UDP): Well-Known Ports for UDP, User Datagram, Checksum, UDP Operation, Use of UDP",
+                      "4.3 TCP: TCP Services Features, Segment, A TCP Connection, Flow Control, Error Control",
+                      "4.4 Congestion Control: Open-Loop Congestion Control, Closed-Loop Congestion Control"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Application Layer",
+                    points: [
+                      "5.1 Distribution of name space: Hierarchy of Name Servers, Root Server, Primary and Secondary Servers",
+                      "5.2 DNS in the internet: Generic Domains, Country Domains, Inverse Domain",
+                      "5.3 Resolution: Resolver, Mapping Names to Addresses, Mapping Address to Names, Recursive Resolution, Iterative Resolution, Caching",
+                      "5.4 WWW: ARCHITECTURE, Client (Browser), Server, Uniform Resource Locator, Cookies",
+                      "5.5 HTTP: HTTP Transaction, Persistent Versus Nonpersistent Connection, Proxy Server",
+                      "5.6 Dynamic Host Configuration Protocol (DHCP)",
+                      "5.7 Remote logging: TELNET",
+                      "5.8 Electronic mail: ELECTRONIC MAIL, Architecture, User Agent, Message Transfer Agent: SMTP, Message Access Agent: POP and IMAP, Web-Based Mail",
+                      "5.9 File transfer: File Transfer Protocol (FTP)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Software Engineering",
+                code: "2418502",
+                units: [
+                  {
+                    title: "Unit 1.0 - Software Development Process",
+                    points: [
+                      "1.1 Type of software, need for software engineering, software engineering as layered approach, its characteristics.",
+                      "1.2 Software development framework.",
+                      "1.3 Software process framework, process models: perspective process models, specialized process models.",
+                      "1.4 Agile software development: agile process and its importance, extreme programming, adaptive software development, scrum, dynamics system development method (DSDM), crystal",
+                      "1.5 Selection criteria for software process model."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Software Requirement Engineering",
+                    points: [
+                      "2.1 Software engineering practices and its importance, core Principles.",
+                      "2.2 Communication practices, planning practices, modeling Practices. Construction practices, software deployment (Statement and meaning of each Principles for each practice).",
+                      "2.3 Requirement Engineering: Requirement gathering and Analysis, type of requirement (functional, product, organizational, external requirements), Electing requirements models, developing use cases building requirements models, requirement negotiation, validation.",
+                      "2.4 Software Requirements Specification (SRS): need of SRS, Format, and its characteristic"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Software Modeling and Design",
+                    points: [
+                      "3.1 Translating requirement model into design model: data Modelling.",
+                      "3.2 Analysis Modelling: Elements of Analysis model.",
+                      "3.3 Design modelling: Fundamental design concept (Abstraction, Information hiding, structure, modularity, concurrency, verification, Aesthetics)",
+                      "3.4 Design notations: Data Flow Diagram (DFD), Structure Flowcharts, Decision Tables."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Software Project Estimation",
+                    points: [
+                      "4.1 The management spectrum-4P's",
+                      "4.2 Metrics for size Estimation: Line of Code (LoC), Function Points (FP).",
+                      "4.3 Project cost Estimation Approaches: Overview of Heuristic, Analytical, and Empirical Estimation.",
+                      "4.4 COCOMO (Constructive Cost Model), COCOMO II.",
+                      "4.5 Risk Management: Risk Identification, Risk Assessment, Risk Containment, RMMM Strategy."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Software Testing and Quality Assurance",
+                    points: [
+                      "5.1 Testing-Meaning and purpose, testing methods- Black-box and White box, level of testing-Unit testing.",
+                      "5.2 Test Documentation- Test case Template, test plan, Introduction to defect Report, test summary report.",
+                      "5.3 Test planning and management: Test Strategy, Test Plan, Test Estimation, Test Case Design, Test Data Preparation, Test Progress Monitoring and Reporting.",
+                      "5.4 Software Quality Management vs. Software Quality Assurance. Phases of Software Quality Assurance: Planning, Activities Audit, and review.",
+                      "5.5 Quality Evaluation standards: Six sigma, ISO for software, CMMI: Levels, process areas."
+                    ]
+                  },
+                  {
+                    title: "Unit 6.0 Software Project Management",
+                    points: [
+                      "6.1 Overview of project management activities, tasks, resources, Project Scheduling: Basic principle work breakdown structure, activity network and critical path method, scheduling Techniques (CPM, PERT).",
+                      "6.2 Project Tracking: Timeline Charts, Earned value analysis, Gantt charts."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Data Science and Analytics",
+                code: "2418503A",
+                units: [
+                  {
+                    title: "Unit-1.0 Data Science: Concepts and Techniques",
+                    points: [
+                      "1.1 Concepts and Importance",
+                      "1.2 Data Types and Data Structures in Data Science",
+                      "1.3 Data Collection and Data Sources in Data Science",
+                      "1.4 Exploratory Data Analysis (EDA)",
+                      "1.5 Statistical Methods for Data Analysis in Data Science: Descriptive Analysis, Exploratory Analysis, Inferential Analysis, Predictive Analysis, Linear Regression, Logistic Regression",
+                      "1.6 Probability and Probability Distributions in Data Science",
+                      "1.7 Hypothesis Testing",
+                      "1.8 Forecasting Techniques: Delphi, Input Output Analysis, Extrapolation, Time Series analysis",
+                      "1.9 Data Ethics and Privacy in Data Science"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Data Warehousing and On-Line Analytical Processing",
+                    points: [
+                      "2.1 Definition of Data Warehouse",
+                      "2.2 Need for separate data warehouse",
+                      "2.3 Data Warehouse Models: Enterprise Warehouse, Data Mart, Virtual Warehouse",
+                      "2.4 Difference between Operational Database System and Data Warehouse",
+                      "2.5 Conceptual Modeling of Data Warehouse",
+                      "2.6 Data warehouse architecture",
+                      "2.7 Benefits of data warehousing",
+                      "2.8 Introduction to Online Analytical Processing (OLAP): 2.8.1 OLAP applications, 2.8.2 Features of OLAP, 2.8.3 Benefits of OLAP, 2.8.4 Strengths of OLAP, 2.8.5 Comparison between OLTP and OLAP, 2.8.6 Differences between OLAP and data mining",
+                      "2.9 OLAP Operations (Roll-up, Drill down, Slice and dice)",
+                      "2.10 Data Cube Computation",
+                      "2.11 Data warehouses versus OLTP: similarities and distinction"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Introduction to Data Mining",
+                    points: [
+                      "3.1 Introduction",
+                      "3.2 Data Mining as Evolution of Information Technology",
+                      "3.3 Types of data for mining: Database Data, Data Warehouses, Transactional Data, Other types of data",
+                      "3.4 Need of Data Mining",
+                      "3.5 Data Mining Application",
+                      "3.6 Data Preprocessing: 3.6.1 Need for Data Preprocessing, 3.6.2 Major Tasks in Data Preprocessing, 3.6.3 Data Preprocessing Methods (Data cleaning, Data integration, Data transformation, Data reduction, Data Discretization)",
+                      "3.7 Data Mining Techniques: Predictive modeling Database segmentation, Link analysis, Deviation detection",
+                      "3.8 Integration of a Data Mining System with Database",
+                      "3.9 Major Issues in Data Mining"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Classification Methods",
+                    points: [
+                      "4.1 Introduction to Classification",
+                      "4.2 Approach to solve classification problems",
+                      "4.3 Evaluation of Classifiers",
+                      "4.4 Classification Metrics",
+                      "4.5 Types of Classification: 4.5.1 Posteriori Classification, 4.5.2 Priori Classification, 4.5.3 Binary Classification, 4.5.4 Multi-class Classification",
+                      "4.6 Classification Techniques: 4.6.1 Bayesian Classification, 4.6.2 Support Vector Machine, 4.6.3 Decision Tree, 4.6.4 Dimensionality Reduction",
+                      "4.7 Pattern Based Classification",
+                      "4.8 Over-fitting and Under-fitting",
+                      "4.9 Lazy Learners",
+                      "4.10 Applications of Classification"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0: Cluster Analysis and Web Mining",
+                    points: [
+                      "5.1 Introduction to Cluster Analysis",
+                      "5.2 Requirements for cluster analysis",
+                      "5.3 Applications of Cluster Analysis",
+                      "5.4 Overview of basic clustering methods",
+                      "5.5 Major Clustering Methods: 5.5.1 Partitioning Based (k-Means Clustering- A Centroid-Based Technique), 5.5.2 Hierarchical Based (Agglomerative, Divisive), 5.5.3 Density Based (DBSCAN: Density-Based Clustering Based on Connected)",
+                      "5.6 Agglomerative versus Divisive Hierarchical Clustering",
+                      "5.7 Distance Measures in Algorithmic Methods",
+                      "5.8 Applications of Cluster Analysis",
+                      "5.9 Identifying and handling of outliers",
+                      "5.10 Outlier Detection Techniques",
+                      "5.11 WEB MINING: Basic concepts",
+                      "5.12 PAGE RANK Algorithm",
+                      "5.13 HITS Algorithm"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Advanced JAVA Programming",
+                code: "2418503B",
+                units: [
+                  {
+                    title: "Unit-1.0 JAVA Applet",
+                    points: [
+                      "1.1 Applet: Local and remote applets, Difference between applet and application, Applet life cycle, Developing executing applet code",
+                      "1.2 Web page design: Applet tag, Adding applet to HTML file, Passing parameter to applet, Various methods and component classes to develop basic applet, Running applet.",
+                      "1.3 Applet graphics: Drawing shapes and text, Handling graphics in applets, Animation with applets."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Abstract Window Toolkit (AWT)",
+                    points: [
+                      "2.1 Abstract Window Toolkit: Class hierarchy, Window fundamentals",
+                      "2.2 Frame Window: Creating a frame window in the applet, Canvas, Creating a window program",
+                      "2.3 Graphics-AWT Controls: Labels, TextField, Pushbuttons",
+                      "2.4 Layout Managers: Flow Layout, Border Layout, Grid Layout, Card Layout",
+                      "2.5 Developing Graphical User Interface using Swing: JApplet, JLabel, JTextField, JButton, JCheckBox, JRadioButton, JComboBox, Menus",
+                      "2.6 Event Classes: MouseEvent Class, ActionEvent Class, WindowEvent Class",
+                      "2.7 Event Listener Interface: MouseListener, WindowListener and ActionListener, KeyListener"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Java Data Base Connectivity (JDBC)",
+                    points: [
+                      "3.1 JDBC Architecture: Two-Tier Database Design, Three-Tier Database Design",
+                      "3.2 The JDBC API: The API components, Database operation: creating tables, CRUD (Create, Read, Update, and Delete) operations using SQL.",
+                      "3.3 Establishing a JDBC Connection: JDBC Data Types, JDBC drivers, Connection management and resource cleanup, JDBC- Statements, PreparedStatement and CallableStatement, JDBC- ResultSet, JDBC- Transactions, JDBC- Exception Handling.",
+                      "3.4 JDBC-Advantages and Disadvantages"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Servlets Programming",
+                    points: [
+                      "4.1 Servlet API: javax.servlet Package, The javax.servlet.HTTP Package",
+                      "4.2 The life cycle of a servlet",
+                      "4.3 The Java Servlet Development Kit",
+                      "4.4 The Simple Servlet: Create and compile servlet source code, Start a web browser and request the servlet, Example of echo servlet, Deployment in Tomcat server, Handling HTTP Requests and Responses"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Java Server Pages (JSP)",
+                    points: [
+                      "5.1 Relation of Applets and Servlets with JSP",
+                      "5.2 Lifecycle of JSP",
+                      "5.3 JSP Scripting Elements",
+                      "5.4 JSP Implicit Objects: Implicit objects- example of out and request, Response implicit object, PageContext, page and exception implicit object",
+                      "5.5 JSP Expressions",
+                      "5.6 JSP Action Tags",
+                      "5.7 JSP Declarations",
+                      "5.8 JSP-Standard Tag Library (JSTL)",
+                      "5.9 Difference between JSP and Servlet",
+                      "5.10 Simple JSP program to fetch database records"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Elective | Introduction to Electric Vehicle",
+                code: "2400504G",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1 Review of Conventional Vehicle Engine System, Electric Vehicle (EV), The necessity of Electric Vehicle",
+                      "1.2 Types of Electric Vehicles: Plug-in hybrid, Battery electric vehicle, Hybrid electric vehicle, Fuel Cell Electric Vehicle",
+                      "1.3 Advantages of Electric Vehicles",
+                      "1.4 Electric Vehicle Components: Motor, Motor Controller, Battery, Battery Management System, and Charging System."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electric Motors used in EVs",
+                    points: [
+                      "2.1 Electric Motors for EV applications: General Characteristics of motors",
+                      "2.2 Types of Motors: DC, Brushless DC, Induction, Permanent Magnet Synchronous Motors, Switched Reluctance Motors",
+                      "2.3 Rating of Motors, Selection Criteria, Physical Location",
+                      "2.4 Connection of Motors: Mechanical Connections and Electrical Connections"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Batteries and Energy Storages",
+                    points: [
+                      "3.1 Types of Batteries: Lead Acid, Nickel Based, Lithium Based",
+                      "3.2 Battery Parameters, Charging (AC) and Discharging (DC) Process",
+                      "3.3 Lithium Ion Batteries, Fuel Cells, Fuel Cell Storage System",
+                      "3.4 Battery Condition Monitoring, Battery Management System (BMS), Need of BMS",
+                      "3.5 Block Diagram of BMS, Battery Disposal and Recycling"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 EV Charging Systems",
+                    points: [
+                      "4.1 Power electronics in EV, Power electronics components, Rectifiers",
+                      "4.2 DC to DC Converter, DC to AC Converter",
+                      "4.3 Charging System, Types of charging Systems",
+                      "4.4 Components of Charging Systems, Single line Diagram of Charging System"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 Regulatory Requirements and Policies for EV Industry",
+                    points: [
+                      "5.1 Rules and Regulations set by the Indian government for the designer/manufacturer of EVs.",
+                      "5.2 Policies in India, Global Policies for E- Vehicles.",
+                      "5.3 Carbon Footprint Issues"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Entrepreneurship Development & Start-ups ",
+                code: "2400505",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
+                      "1.2Innovate products and services using creativity and innovation techniques.",
+                      "1.3 Manage critical resources from support institutions.",
+                      "1.4 Prepare sustainable small business plans. "
+                    ]
+                  },
+                ]
+              },
+              {
+                name: "Summer Internship - II",
+                code: "2418305",
+                units: [
+                  {
+                    title: "(After 4th Sem) / Industrial Training / Common for all programmes)",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
             ];
 
             return semesters;
           })()
         },
 
+        // Diploma Electrical
 
         {
-          id: "electrical",
+          id: "Electrical",
           title: "Electrical Engineering",
           icon: "fas fa-bolt",
-          semesters: syllabusEmptySemesters(8)
+          semesters: (() => {
+            const semesters = syllabusEmptySemesters(6);
+
+            semesters.sem1.theory = [
+              {
+                name: "Basic Engg. Mathematics ", // T2600101[cite: 1]
+                code: "2600101",
+                units: [
+                  {
+                    title: "Unit-1.0 : Algebra",
+                    points: [
+                      "1.1 Concept and properties of determinant.",
+                      "1.2 Solutions of simultaneous equations in three Unknowns by Cramer's rule.",
+                      "1.3 Algebra of matrices (Addition, Subtraction, Multiplication by Scalar, and Multiplication of Two matrices).",
+                      "1.4 Transpose, Adjoint and Inverse of Matrix.",
+                      "1.5 Solutions of simultaneous equations of a Matrix of order 3 x 3 by Inversion method.",
+                      "1.6 Position vector.",
+                      "1.7 Algebra of Vectors (Addition, Subtraction, Scalar Multiplication with vector).",
+                      "1.8 Scalar product.",
+                      "1.9 Vector product.",
+                      "1.10 Algebra in Indian Knowledge System: Solution of simultaneous equations (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 : Differential Calculus",
+                    points: [
+                      "2.1 Concept of function.",
+                      "2.2 Different type of functions.",
+                      "2.3 Domain and Range of Function.",
+                      "2.4 Concept of Limits and its evaluation.",
+                      "2.5 Concept of continuity with simple problems.",
+                      "2.6 Differentiation by First Principle.",
+                      "2.7 Differentiation of Algebraic, trigonometric, Exponential, and Logarithmic functions.",
+                      "2.8 Differentiation of sum, product, and quotient of two functions.",
+                      "2.9 Differentiation of composite functions by Chain Rule.",
+                      "2.10 Logarithmic differentiation.",
+                      "2.11 Implicit differentiation.",
+                      "2.12 Differentiation of Parametric Functions.",
+                      "2.13 Calculus in Indian Knowledge System: The Discovery of Calculus by Indian Astronomers. (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 : Application of Differential Calculus",
+                    points: [
+                      "3.1 Successive differentiation up to second order.",
+                      "3.2 Rolle's Theorem and Mean Value Theorem (without proof) with examples.",
+                      "3.3 Rate of change of quantities.",
+                      "3.4 Equation of Tangent and Normal.",
+                      "3.5 Maxima and Minima.",
+                      "3.6 Radius of curvature."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 : Co-ordinate Geometry",
+                    points: [
+                      "4.1 Introduction of Co-ordinate Systems.",
+                      "4.2 Slope of a line, the angle between two lines.",
+                      "4.3 Various forms of Straight Lines: Point-slope form, Two-point form, Slope intercept form, Intercept form, Normal form, General form.",
+                      "4.4 Perpendicular distance of a line from a point, perpendicular distance between two parallel lines.",
+                      "4.5 Geometry in Sulabasutras in Indian Knowledge System (construction of the square, circling the square). (Indian Mathematics).",
+                      "4.6 Introduction of Conic-Section.",
+                      "4.7 Equation of Circle in standard form.",
+                      "4.8 Standard equation of parabola, ellipse, and hyperbola."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 : Probability and Statistics",
+                    points: [
+                      "5.1 Concept of Probability.",
+                      "5.2 Addition and multiplication theorems of Probability.",
+                      "5.3 Mean, Median, Mode (The measure of Central Tendency).",
+                      "5.4 Range, Variance, Standard Deviation (Measure of Dispersion).",
+                      "5.5 Coefficient of Variation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Applied Physics-B",
+                code: "2600102B",
+                units: [
+                  {
+                    title: "Unit-1.0 : Unit and Measurements",
+                    points: [
+                      "1.1 Physical quantities, fundamentals and derived units and system of units",
+                      "1.2 Accuracy, precision and errors (systematic and random) in measurements, Method of estimation of errors (absolute and relative) in measurement, propagation of errors, significant figures",
+                      "1.3 Dimensions and dimensional formulae of physical quantities, Principle of homogeneity of dimension in an equation",
+                      "1.4 Applications of dimensions: conversion from one system of units to other, corrections of equations and derivation of simple equations.",
+                      "1.5 Ancient astronomical instruments: Chakra, Dhanuryatra, Yasti and Phalaka yantra."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 : Simple Harmonic and Wave Motion",
+                    points: [
+                      "2.1 Periodic and Oscillatory Motion",
+                      "2.2 Simple Harmonic Motion (SHM): Displacement, velocity, acceleration, time period, frequency and their interrelation",
+                      "2.3 Types of waves: Mechanical and Electromagnetic, Transverse and longitudinal waves, wave velocity, frequency and wave length and their relationship, wave equation, amplitude, phase, phase difference, Superposition of waves"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 : Electrostatics, Electromagnetism and Electric Current",
+                    points: [
+                      "3.1 Electric Charge, Coulomb's law, Electric field, Electric lines of force and their properties, Electric flux, Electric potential and potential difference, Electric dipole",
+                      "3.2 Gauss' law, electric field intensity due to straight charged conductor, charged plane sheet and charged sphere",
+                      "3.3 Dielectric, Capacitance of capacitor (parallel plate), Factor affecting capacitance of capacitors",
+                      "3.4 Magnetic field and its units, Biot Savart Law, Magnetic field due to current caring wire: straight and circular wire, Lorentz force (force on moving charge in magnetic field)",
+                      "3.5 Magnetic flux, Faraday's law of electromagnetic induction, Lenz's law, Self and Mutual induction, eddy current, motional emf",
+                      "3.6 DC and AC currents, Average, rms and Peak value of AC current"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 : Semiconductor Physics",
+                    points: [
+                      "4.1 Energy band and band gap, insulator, semi-conductor, conductor",
+                      "4.2 Intrinsic and Extrinsic semiconductors, Drift velocity, drift and diffusion current, Mobility, current density, law of mass action.",
+                      "4.3 Depletion layer and barrier Potential, p-n junction and V-I characteristics, Half wave and full wave rectifier",
+                      "4.4 Photocells, Solar cells; working principle and engineering applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 : Modern Physics",
+                    points: [
+                      "5.1 Photoelectric effect; threshold frequency, work function, Stopping Potential, Einstein's photoelectric equation.",
+                      "5.2 Lasers: Energy levels, ionization and excitation potentials; spontaneous and stimulated emission; population inversion, pumping methods, types of lasers: He-Ne Laser, p-n junction diode laser, engineering and medical applications of lasers.",
+                      "5.3 Optical fibers: Total internal reflection, acceptance angle and numerical aperture, Optical fiber types, applications in telecommunication, medical and sensors.",
+                      "5.4 Nanotechnology: Properties (optical, magnetic and dielectric properties) of Nanomaterials and its application, Bhasma (Ancient Ayurveda, IKS)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Basic Electrical Engineering",
+                code: "2620104",
+                units: [
+                  {
+                    title: "Unit-1.0 Basic Concepts of Electrical Engineering",
+                    points: [
+                      "1.1 Electrical Charge and flow of Charges",
+                      "1.2 Current (D.C/A.C): Concept of Ideal & Practical current sources",
+                      "1.3 Voltage (D.C/A.C): Concept of E.M.F., Potential difference, Terminal voltage, Concept of Ideal & Practical voltage sources",
+                      "1.4 Resistor: Properties, Classification of resistors, Practical application of resistors, Commonly used resistance material, Effect of temperature on resistance, Series and parallel combination of resistances",
+                      "1.5 Heating Effect, Magnetic effect, Chemical effect of electric current.",
+                      "1.6 Electrical work, power and Energy"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Energy Storing Elements",
+                    points: [
+                      "2.1 Capacitors: Capacitance formation, Expression for capacitance",
+                      "2.2 Capacitive reactance.",
+                      "2.3 Energy stored in a Capacitor.",
+                      "2.4 Voltage and Current equation for capacitor.",
+                      "2.5 Series & Parallel combination of capacitors.",
+                      "2.6 Effect of dielectric media on capacitance, Electric field strength, Electric flux density, Permittivity.",
+                      "2.7 Charging and discharging of capacitors.",
+                      "2.8 Initial and Final Conditions in a capacitor - rise of current and voltage (No derivation, numerical only)",
+                      "2.9 Leading power factor behavior of a capacitor",
+                      "2.10 A.C./D.C. capacitors and Applications.",
+                      "2.11 Inductors: Self and mutual inductance, Inductive Reactance",
+                      "2.12 Behavior of inductor to AC and DC sources",
+                      "2.13 Energy stored in an inductor.",
+                      "2.14 Voltage and current equations of inductor.",
+                      "2.15 Initial and final conditions in an Inductor - rise of current and voltage (No derivation, numerical only).",
+                      "2.16 Inductor types and their applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Basics of D.C & A.C Circuits",
+                    points: [
+                      "3.1 D.C Circuits: Ohm's Law",
+                      "3.2 Internal resistance of source",
+                      "3.3 Internal voltage drops, Terminal voltage.",
+                      "3.4 Active & Passive elements.",
+                      "3.5 Linear & Non-linear circuit.",
+                      "3.6 Unilateral and Bilateral circuit element.",
+                      "3.7 Node, Branch, Loop, Mesh",
+                      "3.8 Kirchhoff's Current Law (KCL).",
+                      "3.9 Kirchhoff's Voltage law (KVL).",
+                      "3.10 A.C Circuits: Frequency, Time period, Amplitude, Angular Velocity, RMS Value, Average Value, Form factor, Peak factor, power factor.",
+                      "3.11 Representation of AC quantities in rectangular and polar form and conversion.",
+                      "3.12 Phasor representation of alternating quantities.",
+                      "3.13 Phasor representation of sinusoidal quantities.",
+                      "3.14 Voltage and current response in R-L and R-C circuit."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Magnetic Circuits",
+                    points: [
+                      "4.1 Terms related to magnetic circuit: Magnetic flux, Magnetomotive force, Magnetic field strength, Permeability, Reluctance, Magnetic leakage, leakage coefficient (Simple numerical on above)",
+                      "4.2 Magnetic circuits: Uniform magnetic circuits, Series & parallel circuits",
+                      "4.3 Magnetic Hysteresis, Hysteresis loop.",
+                      "4.4 Magnetization (B-H) Curve and its Applications.",
+                      "4.5 Comparison of Electric and Magnetic circuits"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Electromagnetism",
+                    points: [
+                      "5.1 Electromagnetic induction, Induced e.m.f and current.",
+                      "5.2 Statically and dynamically induced emf.",
+                      "5.3 Faraday's Laws of Electromagnetic Induction.",
+                      "5.4 Lenz's Law, Fleming's R.H. rule; direction of induced E.M.F, Fleming's L.H. rule, Ampere's Law.",
+                      "5.5 Self and mutual inductances.",
+                      "5.6 Coefficient of mutual inductance (M), Co-efficient of coupling.",
+                      "5.7 Interaction between two or more magnetic field."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Engineering Drawing & Graphics",
+                code: "2615105",
+                units: [
+                  {
+                    title: "Unit-1.0 Basic Elements of Drawing",
+                    points: [
+                      "1.1 Methods to use different Drawing Instruments and supporting materials.",
+                      "1.2 Different lines and conventions in engineering drawing.",
+                      "1.3 Engineering scales and applications: Reduced, enlarged & full size (only Plain scale)",
+                      "1.4 Dimensioning techniques: types and applications of chain, parallel and coordinate dimensioning as per SP-46.",
+                      "1.5 Regular Geometrical figures, Tangency constructions.",
+                      "1.6 Engineering Curves: only Ellipse and Parabola using concentric circle method, rectangular method and Eccentricity method when focus and directrix are given."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Orthographic Projections",
+                    points: [
+                      "2.1 Concept and applications of Orthographic, Perspective, Isometric and Oblique Projections.",
+                      "2.2 Orthographic Projection: First and Third angle",
+                      "2.3 Draw orthographic views of simple 3D entities containing lines, circles and arcs with axis/orientation parallel and/or perpendicular to the projection planes only. Problems should be restricted up to three views Front view/Elevation, Top view/Plan and Side views only using First Angle Method only.",
+                      "2.4 Conversion of simple pictorial views into orthographic views. (Domain specific illustrative problems to be given by the teacher)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Isometric Projection",
+                    points: [
+                      "3.1 Introduction to isometric projection.",
+                      "3.2 Isometric scale and Natural Scale.",
+                      "3.3 Isometric view and isometric projection.",
+                      "3.4 Illustrative problems limited to Isometric projection of objects containing rectangular, circular, cylindrical shapes and slots on sloping and plane surfaces.",
+                      "3.5 Conversion of orthographic views into isometric View/projection."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Free Hand Sketches of Engineering Elements",
+                    points: [
+                      "4.1 Materials for Sketching.",
+                      "4.2 General Guidelines for Freehand Sketching.",
+                      "4.3 Freehand sketching of straight lines, square, rectangle, circles and arcs.",
+                      "4.4 Free hand sketches of orthographic views.",
+                      "4.5 Free hand sketches of isometric views.",
+                      "4.6 Freehand sketching of domain specific engineering elements/components (e.g. Bolt, Nut, Washer, Stud, Screw, simple machine parts, etc. in case of mechanical, production, automobile, electrical engineering)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Basic Computer aided Drafting",
+                    points: [
+                      "5.1 Basics of AutoCAD or any other drafting software-interface, screen layout, starting commands from menus, command line.",
+                      "5.2 Coordinate system, Angular measurements, Point specification.",
+                      "5.3 Drawing aids - Grid, Snap, Ortho, Osnap, Units, Limits, Layers, Linetype.",
+                      "5.4 Opening and Saving drawing files.",
+                      "5.5 Creating User Defined Templates.",
+                      "5.6 Methods of Selecting and deleting Objects.",
+                      "5.7 Undo and Redo.",
+                      "5.8 Creating basic drawings objects - lines, arc, circles, ellipses, polyline and polygons."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Advanced Computer aided Drafting",
+                    points: [
+                      "6.1 Modify commands - erase, copy, move, rotate, scale, stretch,",
+                      "6.2 Array: concept and applications.",
+                      "6.3 Controlling Drawing display",
+                      "6.4 Text and Dimensioning",
+                      "6.5 Layers: concept and application",
+                      "6.6 Drawing orthographic views using drafting software with principles mentioned in Unit 2.",
+                      "6.7 Drawing isometric views using drafting software with principles mentioned in Unit 3.",
+                      "6.8 Printing and plotting of drawings."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Introduction to Artificial Intelligence",
+                code: "2600100",
+                units: [
+                  {
+                    title: "Unit-1.0 : Introduction to IT Systems and Digital Technologies",
+                    points: [
+                      "1.1 Introduction to Digital Systems and Internet Technology: Introduction to Digital Systems, Data and Information, Role of Information Technology in Engineering, Fundamentals of the Internet, Web Browsers and Secure Web Navigation, Search Engines and Effective Information Retrieval.",
+                      "1.2 Computer Hardware Components and Internet Technology: CPU, Memory, Storage Devices, Input and Output Devices",
+                      "1.3 Operating Systems: Basic functions of operating systems (Windows, Linux, and Mobile OS). Working with local files, folders, and system directories.",
+                      "1.4 Cloud Computing and Collaboration: Introduction to Cloud Ecosystems. Working with Cloud Storage (Google Drive, OneDrive), and collaborative digital environments (Real-time document editing, sharing links, and setting Viewer, Commenter, Editor access permissions).",
+                      "1.5 Cybersecurity Fundamentals: Introduction to Computer Networks, Safe internet practices, password hygiene, and basic digital safety awareness."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 : Fundamentals of Artificial Intelligence",
+                    points: [
+                      "2.1 Introduction to AI: Defining Intelligence (Human vs. Artificial), History, evolution, and major milestones of Artificial Intelligence.",
+                      "2.2 Core Paradigms: 2.2.1-Brief overview of Machine Learning (ML)- Supervised, Unsupervised and Reinforcement Learning, 2.2.2- Overview of Artificial Neural Network (ANN), 2.2.3- Brief Overview of Deep Learning (DL)",
+                      "2.3 Fundamentals of AI Learning Process: Introduction to AI Models, Input, Processing and Output Stages, Pattern Recognition and Learning, Training Data and Testing Data, Model Building Lifecycle",
+                      "2.4 The Role of Data: Types of data (Structured vs. Unstructured), Importance of data quality, Concept of splitting data into Training and Testing sets.",
+                      "2.5 Visual Pattern Recognition: Understanding Patterns in Data, Identifying Trends and Relationships, Introduction to basic mathematical ideas in AI (Euclidean Distance)",
+                      "2.6 Capabilities and Limitations of AI: Core Capabilities of AI, Strengths of AI Systems, Industrial Applications and Scalability, Human-AI Collaboration"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 : Core AI Applications - Computer Vision & NLP",
+                    points: [
+                      "3.1 Introduction to Computer Vision: Concept of machine sight; processing digital images and modern industrial use cases.",
+                      "3.2 Image Processing Concepts: Basics of Image Segmentation, pixel analysis, object scaling, and structural similarity indices.",
+                      "3.3 Object Detection and Identification: Concepts of identifying and tracking target boundaries within images.",
+                      "3.4 Optical Character Recognition (OCR): Digitizing text logs from blueprints, machine maintenance logbooks, and engineering data sheets.",
+                      "3.5 Natural Language Processing (NLP): Introduction to how machines process, tokenize, and interpret human language."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 : Conversational AI and Generative Systems",
+                    points: [
+                      "4.1 Chatbot Architecture: Introduction to AI-based Chatbots, Large Language Models (LLMs), and their basic internal operational blocks.",
+                      "4.2 Next-Word Prediction Concept: Next-Word Prediction Mechanism, Probability-Based Word Selection, Context and Meaning in Text Generation, Simple Examples of Next-Word Prediction.",
+                      "4.3 Prompt Engineering Foundations: Introduction to Prompt Engineering, Components of an Effective Prompt, Writing Clear and Specific Instructions, Context and Constraints in Prompts, Zero-Shot Prompting.",
+                      "4.4 Industrial Applications of Generative AI: Technical document summarization, automated code scaffolding generation, and cross-disciplinary engineering workflow ideation.",
+                      "4.5 Zero-Code Generative Design Principles: Prompt-Based Design Generation, Zero-Code AI Design Tools (Examples of Zero-Code Generative Design Tools)",
+                      "4.6 Limitations, Risks, and Responsible Use of AI: AI Hallucinations and Bias, Fact Verification and Source Validation, Data Privacy and Copyright Awareness, Responsible Use of Generative AI."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 : Programming Logic & Computational Thinking using Python",
+                    points: [
+                      "5.1 Computational Logic Introduction: Step-wise problem solving, logical flowcharts, algorithmic layouts, and Python's role in modern automation ecosystems.",
+                      "5.2 Variables and Data Types: Declaration of variables, Working with primary data types: Integers (int), Floats (float), Strings (string), and Booleans (boolean), Explicit Type Casting.",
+                      "5.3 Expression Evaluation: Utilizing Arithmetic, Relational, Logical, and Assignment operators inside standard engineering formulas.",
+                      "5.4 Interactive Input/Output: Capturing console input values via input() and rendering clean output streams via formatted string methods (f-strings).",
+                      "5.5 Conditional Control Blocks: Implementing selective execution paths using if, if-else, and nested if statements (e.g., Automating threshold trigger safety alarms for critical structural pressure, engine temperature, or grid voltage levels).",
+                      "5.6 Iterative Looping Structures: Automating repetitive calculation sequences using definite for loops, indefinite while loops, and the range() function (e.g., Generating engineering conversion metric tables or multi-interval sensor grids).",
+                      "5.7 Sequential Data Storage (Lists): Introduction to Python Lists, basic list index tracking, appending data, and processing sequential engineering logs (e.g., finding minimum, maximum, and running mean values from a sensor array)."
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Open Educational Resources",
+                code: "2600009",
+                units: [
+                  {
+                    title: "Unit-1.0 : Open Educational Resources",
+                    points: [
+                      "1.1 OER-definition",
+                      "1.2 What is NOT OER.",
+                      "1.3 Benefits of using OER - Benefits to Students - Access to Quality Education",
+                      "1.4 OER-Benefits to Faculty - Use, Improve and Share, Network and collaborate with peers, Lower Cost, Improve access to information",
+                      "1.5 Challenges of Using OER - Subject Availability, Format and Material type availability, Time and Support availability",
+                      "1.6 Evaluating OER - a) Clarity, Comprehensibility, and Readability, b) Content and Technical Accuracy, c) Adaptability and Modularity, d) Appropriateness and Fit, e) Accessibility",
+                      "1.7 Finding Open Content - OER Search Scenario Filter by Usage Rights in Google, Repositories and Search Tools, Subject-specific Repositories"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 : Copyright and Open Licensing",
+                    points: [
+                      "2.1 Copyright and what it does protect, benefits of copyright protection for creators, duration of copyright protection last, rights granted to copyright holders.",
+                      "2.2 Exceptions and limitations to copyright law, fair use/fair dealing apply to copyright",
+                      "2.3 Public domain and its relation to copyright.",
+                      "2.4 Penalties for copyright infringement",
+                      "2.5 Apply copyright to digital content and the internet",
+                      "2.6 Use of copyrighted works in education.",
+                      "2.7 Open Licenses - GNU - Free Documentation license, Free Art License",
+                      "2.8 Why Free Licenses - Retain, Reuse, Revise, Remix, Redistribute"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 : Creative Common Licenses",
+                    points: [
+                      "3.1 Alternatives to copyright as Creative Commons licenses.",
+                      "3.2 Four components of creative common Licenses - Attribution, Share-Alike, Non - commercial, No Derivatives",
+                      "3.3 Choosing a Creative common licenses Wiley's 5 Rs and Creative Common Licenses",
+                      "3.4 Four Open CC Licenses and Their Strengths and Weaknesses - (a) CC BY (b) CC BY SA (c) CC BY NC (d) CC BY NC SA",
+                      "3.5 Attribution Vs Citation - Creative Commons licensed work without giving attribution",
+                      "3.6 Apply a CC License - choose the right Creative Commons license for work, apply a Creative Commons license to existing work, Creative Commons licenses be used for commercial purposes, modify a work licensed under Creative Commons, revoke a Creative Commons license, combine works with different Creative Commons licenses"
+                    ]
+                  }
+                ]
+              },
+
+            ];
+
+            // Diploma Electrical Sem 3 
+
+            semesters.sem3.theory = [
+              {
+                name: "Electrical Circuit and Networks",
+                code: "2420301",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Electrical Circuits",
+                    points: [
+                      "1.1 Definition of: Linear and non-linear, Active and passive components, Unilateral and bilateral, Lumped and distributed parameters, Independent and dependent source",
+                      "1.2 Concept of open circuit, closed circuit and short circuit, node, branch, mesh and loop",
+                      "1.3 Star/Delta transformation of passive network",
+                      "1.4 Source transformation",
+                      "1.5 Kirchoff's Current Law (KCL) and Kirchoff's Voltage Law (KVL), Applications",
+                      "1.6 Mesh Analysis and Nodal analysis of networks",
+                      "1.7 Transient & steady state",
+                      "1.8 Concept of initial and final conditions in switching circuits, Meaning of t=0, t=0+, and t = infinite. R, L and C at initial and final conditions"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Network Theorems:",
+                    points: [
+                      "2.1 Superposition theorem and its applications",
+                      "2.2 Thevenin's theorem and its applications",
+                      "2.3 Norton'stheorem and its applications",
+                      "2.4 Reciprocity theorem and its applications",
+                      "2.5 Maximum power transfer theorem",
+                      "2.6 Application of theorems to solve DC networks"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Single Phase AC Circuits:",
+                    points: [
+                      "3.1 Generation of an alternating EMF",
+                      "3.2 AC circuit quantities: Peak value, RMS and Average value of a Sinusoidal voltage waveform",
+                      "3.3 Vector representation of an alternating quantity, addition, subtraction, multiplication and division, Conversion from rectangular to polar and vice versa and exponential form",
+                      "3.4 Waveforms, phasor diagram and expression of voltage, current and power in pure: Resistance, Inductance, Capacitance",
+                      "3.5 AC Series and parallel circuits, Phasor diagrams and impedance triangle",
+                      "3.6 Active, reactive, apparent power with examples, Power factor, lagging, leading and unity power factor, effects of poor power factor, power triangle"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Resonance and Two Port Network:",
+                    points: [
+                      "4.1 Resonance and its importance in electrical circuit",
+                      "4.2 Series & Parallel resonance: Resonant frequency, Quality factor, bandwidth and selectivity in series & Parallel RLC circuit.",
+                      "4.3 Magnification in series and parallel resonant circuit",
+                      "4.4 Comparison of series and parallel resonance and its applications",
+                      "4.5 Significance of two port network and its types",
+                      "4.6 Open Circuit (Z) parameter, Short Circuit (Y) parameter & Transmission parameter",
+                      "4.7 T and Pie representation of circuits, Symmetry and reciprocity of two port network"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Three phase AC circuits",
+                    points: [
+                      "5.1 Generation of threephase voltage",
+                      "5.2 Three phase three wire source and three phase four wire source, Phase sequence and phasor diagram",
+                      "5.3 Line and phase relationship: Star/Delta",
+                      "5.4 Three phase load-balanced and unbalanced Load",
+                      "5.5 Measurement of power in three phase circuits"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electrical Measurements and Instrumentation",
+                code: "2420302",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Measurement and Instrumentation",
+                    points: [
+                      "1.1 Measuring systems and requirements: Block diagram",
+                      "1.2 Deflecting, controlling and damping torque",
+                      "1.3 Accuracy, precision, Resolution, tolerance, sensitivity and repeatability",
+                      "1.4 Errors in measurement: Types of errors- Limiting error, Gross error, systematic Error, Random Error, Guaranteed accuracy error",
+                      "1.5 Classification of basic instruments - Indicating, Recording and Integrating type"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Measurement of Voltage and Current",
+                    points: [
+                      "2.1 Current and voltage measurement: Principle Galvanometer, Ammeter, Voltmeter",
+                      "2.2 Calibration of ammeter and voltmeter",
+                      "2.3 Range Extension of ammeter and voltmeter using: Shunts and Multipliers, Current Transformer (CT) and Potential Transformer (PT)",
+                      "2.4 Permanent Magnet Moving Coil (PMMC), Moving iron, Induction, Dynamometers type instruments: Working principle, construction, applications, merits and demerits",
+                      "2.5 Essentials and advantages of electronic instruments",
+                      "2.6 True RMS reading voltmeter.",
+                      "2.7 Digital Voltmeters (DVM) and its types",
+                      "2.8 Digital multimeters- Block diagram"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0-Measurement of Power and Energy",
+                    points: [
+                      "3.1 Power and energy Measurement: Principle",
+                      "3.2 Measurement of single and three phase power using wattmeter - one wattmeter and two wattmeter method",
+                      "3.3 Effect of power factor variation on wattmeter reading in two wattmeter method",
+                      "3.4 Measurement of energy using single phase and three phase watt-hour/Energy meter",
+                      "3.5 Errors and compensation in energy meter, Cripping and phantom loading in energy meter",
+                      "3.6 Calibration of watt meters and energy meters",
+                      "3.7 Digital energy meter: Block diagram, Working"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0-Measurement using Bridges/Meters",
+                    points: [
+                      "4.1 Classification of resistances - Low, Medium and High",
+                      "4.2 Concept of bridge, balancing",
+                      "4.3 Resistance measurement - Kelvins double bridge (Low), voltmeter - ammeter method, Wheatstone bridge, ohmmeter (Medium) and Megger (High).",
+                      "4.4 Earth resistance",
+                      "4.5 Inductance measurement - Anderson, Maxwell inductance capacitance bridge",
+                      "4.6 Capacitance Measurement- Schering bridge.",
+                      "4.7 Frequency Measurement - Wein Bridge, Weston Frequency meter."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0- Measurement of Other Electrical Parameters",
+                    points: [
+                      "5.1 Dynamometer, Power Factor meter",
+                      "5.2 Phase sequence indicator: rotating type",
+                      "5.3 Synchro scope",
+                      "5.4 CRO-basic clock diagram, Cathode Ray Tube, Electrostatic and magnetic deflection, X & Y Amplifiers, Controls on CRO and their functions, Lissajous pattern",
+                      "5.5 Measurement of voltage, amplitude, time period, frequency and phase angle",
+                      "5.6 Digital Storage Oscilloscope- Basic block diagram and working",
+                      "5.7 Q/LCR meter, Digital LCR meter-Block diagram, Working principle",
+                      "5.8 Analog/Digital recorders, Graphic recorder, Strip Chart recorder, XY recorder (Only block diagram), Applications of Recorders."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "DC Machines and Transformers",
+                code: "2420303",
+                units: [
+                  {
+                    title: "Unit-1.0 DC Generators",
+                    points: [
+                      "1.1 DC Machine: Construction",
+                      "1.2 DC Generator: Working Principle",
+                      "1.3 Types of DC generators: Shunt, Series and Compound and their applications",
+                      "1.4 EMF equation",
+                      "1.5 Armature reaction and its effects.",
+                      "1.6 Commutation.",
+                      "1.7 Voltage build-up in DC Generators",
+                      "1.8 Internal and External Characteristics.",
+                      "1.9 Losses and Efficiency"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 DC Motors",
+                    points: [
+                      "2.1 Working Principle.",
+                      "2.2 EMF equation, significance of Back EMF",
+                      "2.3 Torque and Speed",
+                      "2.4 Characteristics of DC motors: Torque vs Speed, Flux vs Current, Torque vs current, Speed vs Current",
+                      "2.5 Need of Starters - 3-point and 4-point starters.",
+                      "2.6 Losses and Efficiency",
+                      "2.7 Speed Control of DC motors: Armature Control Method, Field Flux Control Method",
+                      "2.8 Selection of DC Motors.",
+                      "2.9 Applications of different types of DC motors"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Single Phase Transformer",
+                    points: [
+                      "3.1 Construction.",
+                      "3.2 Types - Shell type and core type.",
+                      "3.3 Working Principle, Useful and leakage flux",
+                      "3.4 EMF Equation, Transformation Ratio.",
+                      "3.5 Losses - Core and copper",
+                      "3.6 Ideal and Practical transformer.",
+                      "3.7 Equivalent circuit and phasor diagram",
+                      "3.8 Per Unit (pu) system in transformers",
+                      "3.9 Voltage Regulation - Condition for maximum, zero and minimum regulation.",
+                      "3.10 Efficiency - Condition for Maximum Efficiency, All day efficiency and its significance",
+                      "3.11 Polarity test, Open circuit, Short Circuit Test",
+                      "3.12 Parallel operation of two single transformers.",
+                      "3.13 Autotransformers - Construction, application, Inductive and conductive power transfer, Copper saving.",
+                      "3.14 Energy efficient Amorphous Metal Transformer (AMT)."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Three Phase Transformer",
+                    points: [
+                      "4.1 Bank of three single phase transformer and single unit of 3-phase transformer",
+                      "4.2 Different parts of 3-phase transformers",
+                      "4.3 Phasor groups of 3-phase transformers",
+                      "4.4 Open Delta transformer",
+                      "4.5 Parallel Operations of two 3-phase transformers",
+                      "4.6 Magnetization phenomenon in Transformer."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Special Purpose Transformers",
+                    points: [
+                      "5.1 Isolation Transformer",
+                      "5.2 Grounding Transformer",
+                      "5.3 Instrument transformer",
+                      "5.4 Current Transformer",
+                      "5.5 Potential Transformer",
+                      "5.6 Welding transformer"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electrical Power Generation Transmission and Distribution",
+                code: "2420304",
+                units: [
+                  {
+                    title: "Unit-1.0 Generation of Electrical Power",
+                    points: [
+                      "1.1 Thermal Power Plant: Lay out, working and Site selection, Major Auxiliaries: Functions, Properties of conventional fuels used in Thermal Power Plants",
+                      "1.2 Hydro Power Plants: Elements of Hydro power plant, Energy conversion process, Layout, and Site selection, Classification",
+                      "1.3 Nuclear power Plant: Lay out, working and site selection, Properties of conventional fuels used in nuclear power plants, safe practices in nuclear power plants, Types of nuclear reactors, Disposal of nuclear waste and nuclear shielding.",
+                      "1.4 Gas power plant: Lay out, working and site selection",
+                      "1.5 Other features of Power generation Plants: Connected load, firm power, cold reserve, hot reserve, spinning reserve.",
+                      "1.6 Factors affecting cost of generation: Average demand, maximum demand, demand factor, plant capacity factor, plant use factor, diversity factor, load factor and plant load factor. Base load and peak load plants; Load curve, load duration curve, integrated duration curve."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Renewable Energy Sources",
+                    points: [
+                      "2.1 Types of Renewable Energy Sources.",
+                      "2.2 Solar Energy: Potential of solar energy, Photovoltaic effect, Construction & materials used in solar photo-voltaic cells, working & applications of solar energy.",
+                      "2.3 Wind Energy: Selection of site for wind mills, Working Principle, Block diagram, Applications",
+                      "2.4 Bio-Mass & Bio-Gas Energy: Composition of Bio-Gas & its calorific value, Traditional and non-traditional Biogas plants, Bio-mass based power generation plants, their capacities and applications",
+                      "2.5 Geo-thermal Energy: Working Principle, Block Diagram and applications.",
+                      "2.6 Ocean Energy: Ocean Thermal Electric Conversion, Energy from Tides, Site requirements, Advantages and Limitations of Tidal power generation.",
+                      "2.7 Fuel Cells: Construction, working types and applications"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Transmission of Electrical Power",
+                    points: [
+                      "3.1 Transmission Line Parameters: Resistances, Inductances and Capacitances",
+                      "3.2 Classification of Transmission Lines: short, medium and long",
+                      "3.3 Comparison of different types of transmission systems.",
+                      "3.4 Types of Conductors - Copper, Aluminum: Solid, stranded and bundled conductors.",
+                      "3.5 Line Insulators - requirements, types, Failure of insulator.",
+                      "3.6 String Efficiency, string efficiency improvement method: By using longer cross arm, By grading the insulator and By using guard ring",
+                      "3.7 Spacing between Conductors, span length and sag calculation.",
+                      "3.8 Corona - corona formation, advantages & disadvantages, factors affecting corona",
+                      "3.9 Skin effect, proximity effect, Ferranti effect and Transposition of conductors.",
+                      "3.10 Losses, efficiency, regulation and Effect of load power factor",
+                      "3.11 Load dispatch Centre",
+                      "3.12 Issues of Distributed Generation Integrated to distribution Grid.",
+                      "3.13 Requirement of EHV transmission: HVAC Transmission, HVDC Transmission"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Electrical Power Distribution System",
+                    points: [
+                      "4.1 Distribution system and its Requirements.",
+                      "4.2 Connection schemes of distribution system.",
+                      "4.3 A.C. distribution: Voltage drop, sending end voltage, receiving end voltage, point of minimum potential, minimum potential value and power loss",
+                      "4.4 Power factor referred to receiving end voltage and power factor referred to respective load voltage.",
+                      "4.5 Substation: Classification of substations based on; voltage level and Type of installation.",
+                      "4.6 Selection and location of site for substation.",
+                      "4.7 Installation of substation equipment.",
+                      "4.8 Underground Cables: Requirements, classification, construction, comparison with overhead lines.",
+                      "4.9 Laying of underground cable: Direct laying, Draw in system and Solid system"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Deregulated Power system",
+                    points: [
+                      "5.1 Introduction.",
+                      "5.2 Reasons for restructuring/deregulation of power system.",
+                      "5.3 Objectives of deregulation of various power system across the world.",
+                      "5.4 Restructuring process",
+                      "5.5 Ancillary services: Frequency support ancillary services, voltage control ancillary services and black start ancillary services",
+                      "5.6 Issues involved in deregulation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Python Programming ",
+                code: "2418305",
+                units: [
+                  {
+                    title: "Unit 1.0 Fundamentals of Python Programming Syntax",
+                    points: [
+                      "1.1 Introduction to Python Character Set, Python Tokens, Variables, Lvalue and Rvalue Concepts, and the Use of Comments.",
+                      "1.2 Overview of Data Types: Number Types: Integer, Floating Point, Complex; Boolean Type; Sequence Types: String, List, Tuple; None Type; Mapping Type: Dictionary; Distinction between Mutable and Immutable Data Types",
+                      "1.3 Understanding Operators: Arithmetic Operators, Relational Operators, Logical Operators, Assignment Operator, Augmented Assignment Operators, Expressions and Statements, Type Conversion and Input/Output Mechanisms, Precedence of Operators, Expression Evaluation"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Conditional and Iterative statements",
+                    points: [
+                      "2.1 Conditional statements: simple if statement, if- else statemen, if-elif-else statement",
+                      "2.2 Iterative statements: while loop, for loop, range function, break and continue statements, nested loops"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 String, List, Tuples, set and Dictionary",
+                    points: [
+                      "3.1 String: Indexing, string operations (concatenation, repetition, membership & slicing), traversing a string using loops, Built-in functions.",
+                      "3.2 Lists: Introduction, Indexing in list, list operations: concatenation, repetition, membership & slicing, traversing a list, built- in list functions, linear search on list of numbers and counting the frequency of elements in a list",
+                      "3.3 Tuples: Creating, initializing, accessing elements, tuple assignment, performing operations on tuples, tuple methods and built-in functions, nested tuples",
+                      "3.4 Set: Creating set, traversing, adding, removing data in set, performing set operations like join, Union intersection, difference",
+                      "3.5 Dictionary: accessing items in a dictionary using keys, mutability of dictionary: adding a new item, modifying an existing item, built-in dictionary functions."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Python Functions, Modules and packages",
+                    points: [
+                      "4.1 Functions: types of function (built-in functions, functions defined in module, user defined functions), creating user defined function, arguments and parameters, default parameters, positional parameters, Lambda functions, returning value, scope of a variable: global scope, local scope",
+                      "4.2 Modules and Packages: Importing module using 'import' Regular Expressions, Exception Handling, PyPI Python Package Index, Pip Python package manager, Importing Libraries and Functions"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Numpy",
+                    points: [
+                      "5.1 Introduction to NumPy",
+                      "5.2 Installation of NumPy",
+                      "5.3 NumPy Arrays: Understanding the NumPy array, The fundamental data structure in NumPy, Creation of arrays using different methods: np.array(), np.zeros(), np.ones(), etc., Exploring array attributes like shape, size, and dimensions.",
+                      "5.4 Array Indexing and Slicing: Accessing elements and subarrays in NumPy arrays using indexing and slicing, Demonstration of the difference between one-dimensional and multi-dimensional array indexing.",
+                      "5.5 Array Operations: Performing element-wise operations on NumPy arrays, Exploring universal functions (ufuncs) for mathematical operations.",
+                      "5.6 Linear Algebra with NumPy: Introduction to linear algebra operations using NumPy, Matrix multiplication, determinant, inverse, and solving linear equations.",
+                      "5.7 File input and output with Numpy",
+                      "5.8 Broadcasting in Numpy"
+                    ]
+                  },
+                  {
+                    title: "Unit 6: Exception and File Handling in Python",
+                    points: [
+                      "6.1 Exception Handling: syntax errors, exceptions, need of exception handling, userdefined-exceptions, raising exceptions, handling exceptions, catching exceptions, Try - except - else clause, Try - finally clause, recovering and continuing with finally, built-in exception classes.",
+                      "6.2 File Handling: text file and binary file, file types, open and close files, reading and writing text files, reading and writing binary files, file access modes"
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Summer Internship - I",
+                code: "2418306",
+                units: [
+                  {
+                    title: "Internship after 2nd Semester for all branches",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+            ];
+
+            semesters.sem5.theory = [
+              {
+                name: "Data Communication and Computer Network",
+                code: "2418501",
+                units: [
+                  {
+                    title: "Unit-1.0 Data Communications and Transmission Media",
+                    points: [
+                      "1.1 Process of data communication and its components: Transmitter, Receiver, Medium, Message, Protocol.",
+                      "1.2 Protocol, Standard, Standard organization.",
+                      "1.3 Bandwidth, Data Transmission Rate, Baud Rate and Bits per second",
+                      "1.4 Models of Communication (Simplex, Half Duplex, Full Duplex)",
+                      "1.5 Analog Signal and Digital Signal Transmission: Analog to Digital, Digital to Analog Conversion",
+                      "1.6 Fundamentals of Computer Network: Definition and Need of Computer Network, Application, Network Benefits.",
+                      "1.7 Classification of Network: LAN and WAN, Network Architecture: Peer to peer, Client Server Network",
+                      "1.8 Communication Media: Guided Transmission Media, Twisted-Pair Cable, Coaxial Cable, Fiber-optic Cable",
+                      "1.9 Unguided Transmission Media: Radio Waves, Microwaves, Infrared, Satellite",
+                      "1.10 Multiplexing: Frequency-Division Multiplexing, Time-Division Multiplexing."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Data Link Layer",
+                    points: [
+                      "2.1 Introduction: Types of Errors, Redundancy, Detection Versus Correction, Coding",
+                      "2.2 Block coding: Error Detection, Error Correction, Hamming Distance, Minimum Hamming Distance",
+                      "2.3 Cyclic codes: Cyclic Redundancy Check, Polynomials, Cyclic Code Analysis, CHECKSUM",
+                      "2.4 Framing: Fixed-Size Framing, Variable-Size Framing",
+                      "2.5 Flow and error control: Flow Control, Error Control",
+                      "2.6 Noiseless channels: Simplest Protocol, Stop-and-Wait Protocol",
+                      "2.7 Noisy channels: Stop-and-Wait Automatic Repeat Request, Go-Back-N Automatic Repeat Request, Selective Repeat Automatic Repeat Request, Piggybacking.",
+                      "2.8 Point-to-point protocol",
+                      "2.9 Random access: ALOHA, Carrier Sense Multiple Access (CSMA), Carrier Sense Multiple Access with Collision Detection (CSMACD), Carrier Sense Multiple Access with Collision Avoidance (CSMACA)",
+                      "2.10 Channelization: Frequency-Division Multiple Access (FDMA), Time-Division Multiple Access (TDMA), Code-Division Multiple Access (CDMA)",
+                      "2.11 Ethernet: Bridged Ethernet, Switched Ethernet, Fast Ethernet, Gigabit Ethernet",
+                      "2.12 Connecting devices: HUBs, Two-Layer Switches, Routers, Three-Layer Switches, Gateway"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Network Layer",
+                    points: [
+                      "3.1 IPv4 addresses: Address Space, Notations, Classful Addressing, special case IP addresses, subnet, supernet, Classless Addressing, Network Address Translation (NAT), Datagram Fragmentation, Checksum, Options",
+                      "3.2 Introduction to IPV6: Advantages, Tunneling",
+                      "3.3 Address mapping: Logical to Physical Address: ARP, Mapping Physical to Logical Address: RARP.",
+                      "3.4 Router Forwarding table, and Routing: Function of unicast and multicast routing protocols"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Transport Layer",
+                    points: [
+                      "4.1 Process to Process Delivery: Client/Server Paradigm, Multiplexing and Demultiplexing, Connectionless Versus Connection-Oriented Service, Reliable Versus Unreliable",
+                      "4.2 User datagram protocol (UDP): Well-Known Ports for UDP, User Datagram, Checksum, UDP Operation, Use of UDP",
+                      "4.3 TCP: TCP Services Features, Segment, A TCP Connection, Flow Control, Error Control",
+                      "4.4 Congestion Control: Open-Loop Congestion Control, Closed-Loop Congestion Control"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Application Layer",
+                    points: [
+                      "5.1 Distribution of name space: Hierarchy of Name Servers, Root Server, Primary and Secondary Servers",
+                      "5.2 DNS in the internet: Generic Domains, Country Domains, Inverse Domain",
+                      "5.3 Resolution: Resolver, Mapping Names to Addresses, Mapping Address to Names, Recursive Resolution, Iterative Resolution, Caching",
+                      "5.4 WWW: ARCHITECTURE, Client (Browser), Server, Uniform Resource Locator, Cookies",
+                      "5.5 HTTP: HTTP Transaction, Persistent Versus Nonpersistent Connection, Proxy Server",
+                      "5.6 Dynamic Host Configuration Protocol (DHCP)",
+                      "5.7 Remote logging: TELNET",
+                      "5.8 Electronic mail: ELECTRONIC MAIL, Architecture, User Agent, Message Transfer Agent: SMTP, Message Access Agent: POP and IMAP, Web-Based Mail",
+                      "5.9 File transfer: File Transfer Protocol (FTP)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Software Engineering",
+                code: "2418502",
+                units: [
+                  {
+                    title: "Unit 1.0 - Software Development Process",
+                    points: [
+                      "1.1 Type of software, need for software engineering, software engineering as layered approach, its characteristics.",
+                      "1.2 Software development framework.",
+                      "1.3 Software process framework, process models: perspective process models, specialized process models.",
+                      "1.4 Agile software development: agile process and its importance, extreme programming, adaptive software development, scrum, dynamics system development method (DSDM), crystal",
+                      "1.5 Selection criteria for software process model."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Software Requirement Engineering",
+                    points: [
+                      "2.1 Software engineering practices and its importance, core Principles.",
+                      "2.2 Communication practices, planning practices, modeling Practices. Construction practices, software deployment (Statement and meaning of each Principles for each practice).",
+                      "2.3 Requirement Engineering: Requirement gathering and Analysis, type of requirement (functional, product, organizational, external requirements), Electing requirements models, developing use cases building requirements models, requirement negotiation, validation.",
+                      "2.4 Software Requirements Specification (SRS): need of SRS, Format, and its characteristic"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Software Modeling and Design",
+                    points: [
+                      "3.1 Translating requirement model into design model: data Modelling.",
+                      "3.2 Analysis Modelling: Elements of Analysis model.",
+                      "3.3 Design modelling: Fundamental design concept (Abstraction, Information hiding, structure, modularity, concurrency, verification, Aesthetics)",
+                      "3.4 Design notations: Data Flow Diagram (DFD), Structure Flowcharts, Decision Tables."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Software Project Estimation",
+                    points: [
+                      "4.1 The management spectrum-4P's",
+                      "4.2 Metrics for size Estimation: Line of Code (LoC), Function Points (FP).",
+                      "4.3 Project cost Estimation Approaches: Overview of Heuristic, Analytical, and Empirical Estimation.",
+                      "4.4 COCOMO (Constructive Cost Model), COCOMO II.",
+                      "4.5 Risk Management: Risk Identification, Risk Assessment, Risk Containment, RMMM Strategy."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Software Testing and Quality Assurance",
+                    points: [
+                      "5.1 Testing-Meaning and purpose, testing methods- Black-box and White box, level of testing-Unit testing.",
+                      "5.2 Test Documentation- Test case Template, test plan, Introduction to defect Report, test summary report.",
+                      "5.3 Test planning and management: Test Strategy, Test Plan, Test Estimation, Test Case Design, Test Data Preparation, Test Progress Monitoring and Reporting.",
+                      "5.4 Software Quality Management vs. Software Quality Assurance. Phases of Software Quality Assurance: Planning, Activities Audit, and review.",
+                      "5.5 Quality Evaluation standards: Six sigma, ISO for software, CMMI: Levels, process areas."
+                    ]
+                  },
+                  {
+                    title: "Unit 6.0 Software Project Management",
+                    points: [
+                      "6.1 Overview of project management activities, tasks, resources, Project Scheduling: Basic principle work breakdown structure, activity network and critical path method, scheduling Techniques (CPM, PERT).",
+                      "6.2 Project Tracking: Timeline Charts, Earned value analysis, Gantt charts."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Data Science and Analytics",
+                code: "2418503A",
+                units: [
+                  {
+                    title: "Unit-1.0 Data Science: Concepts and Techniques",
+                    points: [
+                      "1.1 Concepts and Importance",
+                      "1.2 Data Types and Data Structures in Data Science",
+                      "1.3 Data Collection and Data Sources in Data Science",
+                      "1.4 Exploratory Data Analysis (EDA)",
+                      "1.5 Statistical Methods for Data Analysis in Data Science: Descriptive Analysis, Exploratory Analysis, Inferential Analysis, Predictive Analysis, Linear Regression, Logistic Regression",
+                      "1.6 Probability and Probability Distributions in Data Science",
+                      "1.7 Hypothesis Testing",
+                      "1.8 Forecasting Techniques: Delphi, Input Output Analysis, Extrapolation, Time Series analysis",
+                      "1.9 Data Ethics and Privacy in Data Science"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Data Warehousing and On-Line Analytical Processing",
+                    points: [
+                      "2.1 Definition of Data Warehouse",
+                      "2.2 Need for separate data warehouse",
+                      "2.3 Data Warehouse Models: Enterprise Warehouse, Data Mart, Virtual Warehouse",
+                      "2.4 Difference between Operational Database System and Data Warehouse",
+                      "2.5 Conceptual Modeling of Data Warehouse",
+                      "2.6 Data warehouse architecture",
+                      "2.7 Benefits of data warehousing",
+                      "2.8 Introduction to Online Analytical Processing (OLAP): 2.8.1 OLAP applications, 2.8.2 Features of OLAP, 2.8.3 Benefits of OLAP, 2.8.4 Strengths of OLAP, 2.8.5 Comparison between OLTP and OLAP, 2.8.6 Differences between OLAP and data mining",
+                      "2.9 OLAP Operations (Roll-up, Drill down, Slice and dice)",
+                      "2.10 Data Cube Computation",
+                      "2.11 Data warehouses versus OLTP: similarities and distinction"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Introduction to Data Mining",
+                    points: [
+                      "3.1 Introduction",
+                      "3.2 Data Mining as Evolution of Information Technology",
+                      "3.3 Types of data for mining: Database Data, Data Warehouses, Transactional Data, Other types of data",
+                      "3.4 Need of Data Mining",
+                      "3.5 Data Mining Application",
+                      "3.6 Data Preprocessing: 3.6.1 Need for Data Preprocessing, 3.6.2 Major Tasks in Data Preprocessing, 3.6.3 Data Preprocessing Methods (Data cleaning, Data integration, Data transformation, Data reduction, Data Discretization)",
+                      "3.7 Data Mining Techniques: Predictive modeling Database segmentation, Link analysis, Deviation detection",
+                      "3.8 Integration of a Data Mining System with Database",
+                      "3.9 Major Issues in Data Mining"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Classification Methods",
+                    points: [
+                      "4.1 Introduction to Classification",
+                      "4.2 Approach to solve classification problems",
+                      "4.3 Evaluation of Classifiers",
+                      "4.4 Classification Metrics",
+                      "4.5 Types of Classification: 4.5.1 Posteriori Classification, 4.5.2 Priori Classification, 4.5.3 Binary Classification, 4.5.4 Multi-class Classification",
+                      "4.6 Classification Techniques: 4.6.1 Bayesian Classification, 4.6.2 Support Vector Machine, 4.6.3 Decision Tree, 4.6.4 Dimensionality Reduction",
+                      "4.7 Pattern Based Classification",
+                      "4.8 Over-fitting and Under-fitting",
+                      "4.9 Lazy Learners",
+                      "4.10 Applications of Classification"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0: Cluster Analysis and Web Mining",
+                    points: [
+                      "5.1 Introduction to Cluster Analysis",
+                      "5.2 Requirements for cluster analysis",
+                      "5.3 Applications of Cluster Analysis",
+                      "5.4 Overview of basic clustering methods",
+                      "5.5 Major Clustering Methods: 5.5.1 Partitioning Based (k-Means Clustering- A Centroid-Based Technique), 5.5.2 Hierarchical Based (Agglomerative, Divisive), 5.5.3 Density Based (DBSCAN: Density-Based Clustering Based on Connected)",
+                      "5.6 Agglomerative versus Divisive Hierarchical Clustering",
+                      "5.7 Distance Measures in Algorithmic Methods",
+                      "5.8 Applications of Cluster Analysis",
+                      "5.9 Identifying and handling of outliers",
+                      "5.10 Outlier Detection Techniques",
+                      "5.11 WEB MINING: Basic concepts",
+                      "5.12 PAGE RANK Algorithm",
+                      "5.13 HITS Algorithm"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Advanced JAVA Programming",
+                code: "2418503B",
+                units: [
+                  {
+                    title: "Unit-1.0 JAVA Applet",
+                    points: [
+                      "1.1 Applet: Local and remote applets, Difference between applet and application, Applet life cycle, Developing executing applet code",
+                      "1.2 Web page design: Applet tag, Adding applet to HTML file, Passing parameter to applet, Various methods and component classes to develop basic applet, Running applet.",
+                      "1.3 Applet graphics: Drawing shapes and text, Handling graphics in applets, Animation with applets."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Abstract Window Toolkit (AWT)",
+                    points: [
+                      "2.1 Abstract Window Toolkit: Class hierarchy, Window fundamentals",
+                      "2.2 Frame Window: Creating a frame window in the applet, Canvas, Creating a window program",
+                      "2.3 Graphics-AWT Controls: Labels, TextField, Pushbuttons",
+                      "2.4 Layout Managers: Flow Layout, Border Layout, Grid Layout, Card Layout",
+                      "2.5 Developing Graphical User Interface using Swing: JApplet, JLabel, JTextField, JButton, JCheckBox, JRadioButton, JComboBox, Menus",
+                      "2.6 Event Classes: MouseEvent Class, ActionEvent Class, WindowEvent Class",
+                      "2.7 Event Listener Interface: MouseListener, WindowListener and ActionListener, KeyListener"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Java Data Base Connectivity (JDBC)",
+                    points: [
+                      "3.1 JDBC Architecture: Two-Tier Database Design, Three-Tier Database Design",
+                      "3.2 The JDBC API: The API components, Database operation: creating tables, CRUD (Create, Read, Update, and Delete) operations using SQL.",
+                      "3.3 Establishing a JDBC Connection: JDBC Data Types, JDBC drivers, Connection management and resource cleanup, JDBC- Statements, PreparedStatement and CallableStatement, JDBC- ResultSet, JDBC- Transactions, JDBC- Exception Handling.",
+                      "3.4 JDBC-Advantages and Disadvantages"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Servlets Programming",
+                    points: [
+                      "4.1 Servlet API: javax.servlet Package, The javax.servlet.HTTP Package",
+                      "4.2 The life cycle of a servlet",
+                      "4.3 The Java Servlet Development Kit",
+                      "4.4 The Simple Servlet: Create and compile servlet source code, Start a web browser and request the servlet, Example of echo servlet, Deployment in Tomcat server, Handling HTTP Requests and Responses"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Java Server Pages (JSP)",
+                    points: [
+                      "5.1 Relation of Applets and Servlets with JSP",
+                      "5.2 Lifecycle of JSP",
+                      "5.3 JSP Scripting Elements",
+                      "5.4 JSP Implicit Objects: Implicit objects- example of out and request, Response implicit object, PageContext, page and exception implicit object",
+                      "5.5 JSP Expressions",
+                      "5.6 JSP Action Tags",
+                      "5.7 JSP Declarations",
+                      "5.8 JSP-Standard Tag Library (JSTL)",
+                      "5.9 Difference between JSP and Servlet",
+                      "5.10 Simple JSP program to fetch database records"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Elective | Introduction to Electric Vehicle",
+                code: "2400504G",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1 Review of Conventional Vehicle Engine System, Electric Vehicle (EV), The necessity of Electric Vehicle",
+                      "1.2 Types of Electric Vehicles: Plug-in hybrid, Battery electric vehicle, Hybrid electric vehicle, Fuel Cell Electric Vehicle",
+                      "1.3 Advantages of Electric Vehicles",
+                      "1.4 Electric Vehicle Components: Motor, Motor Controller, Battery, Battery Management System, and Charging System."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electric Motors used in EVs",
+                    points: [
+                      "2.1 Electric Motors for EV applications: General Characteristics of motors",
+                      "2.2 Types of Motors: DC, Brushless DC, Induction, Permanent Magnet Synchronous Motors, Switched Reluctance Motors",
+                      "2.3 Rating of Motors, Selection Criteria, Physical Location",
+                      "2.4 Connection of Motors: Mechanical Connections and Electrical Connections"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Batteries and Energy Storages",
+                    points: [
+                      "3.1 Types of Batteries: Lead Acid, Nickel Based, Lithium Based",
+                      "3.2 Battery Parameters, Charging (AC) and Discharging (DC) Process",
+                      "3.3 Lithium Ion Batteries, Fuel Cells, Fuel Cell Storage System",
+                      "3.4 Battery Condition Monitoring, Battery Management System (BMS), Need of BMS",
+                      "3.5 Block Diagram of BMS, Battery Disposal and Recycling"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 EV Charging Systems",
+                    points: [
+                      "4.1 Power electronics in EV, Power electronics components, Rectifiers",
+                      "4.2 DC to DC Converter, DC to AC Converter",
+                      "4.3 Charging System, Types of charging Systems",
+                      "4.4 Components of Charging Systems, Single line Diagram of Charging System"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 Regulatory Requirements and Policies for EV Industry",
+                    points: [
+                      "5.1 Rules and Regulations set by the Indian government for the designer/manufacturer of EVs.",
+                      "5.2 Policies in India, Global Policies for E- Vehicles.",
+                      "5.3 Carbon Footprint Issues"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Entrepreneurship Development & Start-ups ",
+                code: "2400505",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
+                      "1.2Innovate products and services using creativity and innovation techniques.",
+                      "1.3 Manage critical resources from support institutions.",
+                      "1.4 Prepare sustainable small business plans. "
+                    ]
+                  },
+                ]
+              },
+              {
+                name: "Summer Internship - II",
+                code: "2418305",
+                units: [
+                  {
+                    title: "(After 4th Sem) / Industrial Training / Common for all programmes)",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+            ];
+
+            return semesters;
+          })()
         },
         {
           id: "mechanical",
