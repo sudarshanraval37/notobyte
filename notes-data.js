@@ -817,6 +817,41 @@ const notesResources = [
 
   {
     id: 40,
+    title: "Applied Physics-II PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "1st Year",
+    semester: "Semester 1",
+    type: "PYQ",
+    subject: "Applied Physics-II",
+    desc: "Previous year questions of Applied Physics-II year 2023",
+    size: "0.6 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1arTjeEcvkq6apGgRlNnhpZhiVN0aUcFD/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "FOEEE PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "1st Year",
+    semester: "Semester 1",
+    type: "PYQ",
+    subject: "Fundamentals of Electrical and Electronic Engg.",
+    desc: "Previous year questions of Fundamentals of Electrical and Electronic Engg. year 2023",
+    size: "0.8 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1S-CBavRwJyCkLE9vC1zGdsXU-Z5UJSHp/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
     title: "C Programming Notes",
     program: "Diploma",
     branch: "CSE",
