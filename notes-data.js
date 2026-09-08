@@ -757,14 +757,14 @@ const notesResources = [
 
 
 
-  // Diploma 
+  // Diploma CSE
 
 
 
 
   // CSE 1st year
 
-{
+  {
     id: 40,
     title: "Syllabus 1st Semester",
     program: "Diploma",
@@ -783,19 +783,19 @@ const notesResources = [
 
   {
     id: 40,
-    title: "C Programming Notes",
+    title: "Mathematics-I PYQ 2022",
     program: "Diploma",
     branch: "CSE",
     year: "1st Year",
     semester: "Semester 1",
-    type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    type: "PYQ",
+    subject: "Basic Engg. Mathematics",
+    desc: "Previous year questions of Mathematics-I year 2022",
+    size: "0.8 MB",
+    contributor: "Sudarshan Raval",
+    initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "https://drive.google.com/file/d/1LFQeC5pI1P5j1AW1O_SD5-Miao8ToyOs/view?usp=drive_link"
   },
 
   {
