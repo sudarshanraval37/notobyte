@@ -1311,6 +1311,298 @@ const syllabusData = {
               },
             ];
 
+            // Diploma CSE sem 6
+
+            semesters.sem6.theory = [
+              {
+                name: "Cloud Computing",
+                code: "2418601",
+                units: [
+                  {
+                    title: "Unit1.0 -Introduction to Cloud Computing",
+                    points: [
+                      "1.1 Definition and evolution of Cloud Computing and Cloud -Enabling Technologies,",
+                      "1.2 Service and Deployment Models",
+                      "1.3 Popular Cloud Stacks (commercial/paid and open sourced) and Use Cases",
+                      "1.4 Benefits, Risks, and Challenges of Cloud Computing",
+                      "1.5 Economic Models and SLA"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Cloud Infrastructure",
+                    points: [
+                      "2.1 Historical Perspective of Data Centers",
+                      "2.2 Datacenter Components: IT Equipment and Facilities",
+                      "2.3 Design Considerations: Networking, Requirements, Power, Efficiency, & Redundancy",
+                      "2.4 Power Calculations, PUE and Challenges in Cloud Data Centers",
+                      "2.5 Cloud Management and Cloud Software Deployment Considerations"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Introduction to Virtualization",
+                    points: [
+                      "3.1 Definition and basic concepts of virtualization.",
+                      "3.2 Understanding the need for virtualization in IT environments.",
+                      "3.3 Types of Virtualizations: Full virtualization vs. para-virtualization, Hardware virtualization vs. software virtualization.",
+                      "3.4 Hypervisors: Types of hypervisors: Type 1 (bare-metal) and Type 2 (hosted), Role of Hypervisor, Popular hypervisors: VMware, Xen.",
+                      "3.5 Virtual Machines (VMs): Creating, configuring, and managing virtual machines, Understanding VM snapshots and cloning.",
+                      "3.6 Storage Virtualization: Virtualized storage concepts, Understanding storage virtualization technologies and methods."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Cloud Storage",
+                    points: [
+                      "4.1 Introduction to Storage Systems",
+                      "4.2 Cloud Storage Concepts",
+                      "4.3 Cloud Databases (MongoDB)",
+                      "4.4 Cloud Object Storage (Amazon S3, OpenStack Swift, Google Cloud Storage object: cold line)"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Security in Cloud Computing",
+                    points: [
+                      "5.1 Cloud Security Fundamentals",
+                      "5.2 Cloud Risk, Cloud Risk division: Policy and Organizational Risks, Technical Risks, Legal Risks",
+                      "5.3 Technologies for Data Security risk.",
+                      "5.4 Digital identity and access management,",
+                      "5.5 Content level security",
+                      "5.6 Security-AS-A-Cloud Service"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Computer Network with Linux and Windows",
+                code: "2418602",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Computer Networks",
+                    points: [
+                      "1.1 Introduction to Computer Networks, Advantages of Computer Networks, Types of Computer Networks",
+                      "1.2 Basic Network services: File sharing, device sharing, Internet Connection Sharing",
+                      "1.3 Network Communication Models: OSI Reference Model and function of each layer, TCP/IP Model, and mapping of OSI layers with TC/IP model",
+                      "1.4 Network Topologies: Bus Topology, Ring Topology, Star Topology, Mesh Topology, Tree Topology"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Transmission media, mode, and Network Device:",
+                    points: [
+                      "2.1 Wired Media - Coaxial, UTP, STP, Fiber Optic Cables",
+                      "2.2 Wireless Media- Electromagnetic spectrum, Radio Transmission, Microwave Transmission, Infrared Transmission, Satellite Communication",
+                      "2.3 Mode of Communication: Simplex, Half Duplex, Full Duplex",
+                      "2.4 Network connecting Devices: Network Interface Cards (NICs), Modem, Switches- Layer2 and Layer3, Routers, Gateways, RJ45 & RJ11 connectors",
+                      "2.5 Concept of Firewall and its use in Networking"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Network Computing Models and Network Layer",
+                    points: [
+                      "3.1 Network Computing Models: Architecture and functionality of Client-server, peer-to-peer, distributed computing",
+                      "3.2 Internet Protocol: Logical Addressing, IPv4 Address, Address Space, Notations, Classful Addressing: Net-id, Host-id, Subnet Mask, Subnetting, Classless Addressing: Super netting, Network Address Translation (NAT), Introduction to IPv6 Address, Role and functions of network gateways",
+                      "3.3 Address Mapping, Error Reporting"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Networking with Linux",
+                    points: [
+                      "4.1 Configuring IP addresses manually and through DHCP on a Linux system.",
+                      "4.2 Configure network interfaces/devices/links, Configuration of different network services/protocols: Domain Name System (DNS), Dynamic Host Configuration Protocol (DHCP), File Transfer Protocol (FTP), web server for hosting websites, Hypertext Transfer Protocol (HTTP)",
+                      "4.3 Network Interface Bonding",
+                      "4.4 Internetworking on Linux Systems: Bridging",
+                      "4.5 Remote Access",
+                      "4.6 Network troubleshooting tool"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Networking with Windows",
+                    points: [
+                      "5.1 Network Configuration",
+                      "5.2 Configuration of different network services: Domain Name System (DNS), Dynamic Host Configuration Protocol (DHCP), File Transfer Protocol (FTP), web server for hosting websites, Hypertext Transfer Protocol (HTTP)",
+                      "5.3 Network Security",
+                      "5.4 Remote Access",
+                      "5.5 Network Troubleshooting"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Introduction to Machine Learning",
+                code: "2418603A",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Machine Learning (ML)",
+                    points: [
+                      "1.1 Overview of Artificial Intelligence (AI): Introduction to ML, Relationship between AI & ML, Difference between AI & ML",
+                      "1.2 Datasets: Type of datasets, Text Datasets, Image Datasets, Time Series Datasets, Spatial Datasets, Graph Datasets",
+                      "1.3 Preprocessing and normalization: Data Cleaning, Data Transformation, Feature Encoding, Dimensionality Reduction, Feature Selection, Data Normalization",
+                      "1.4 Dataset division: test, train, and validation sets, Cross-validation."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fundamental Elements of Machine Learning",
+                    points: [
+                      "2.1 Applications of Machine Learning, processes involved in Machine Learning.",
+                      "2.2 Machine Learning Techniques: Supervised Learning, Unsupervised Learning, Reinforcement Learning",
+                      "2.3 Real life examples of Machine Learning."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Supervised Learning",
+                    points: [
+                      "3.1 Classification and Regression, K-Nearest Neighbor, Linear Regression, Logistic Regression",
+                      "3.2 Evaluation Measures: Sum of squares error (SSE), Mean squares error (MME), R-square, confusion matrix, precision, recall, F-Score, ROC-Curve"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Unsupervised Learning",
+                    points: [
+                      "4.1 Introduction to Clustering: Types of Clustering, Hierarchical, Agglomerative Clustering, Divisive clustering",
+                      "4.2 Evaluation measures for clustering: Extrinsic Measures, Intrinsic Measures"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Dimensionality Reduction Techniques",
+                    points: [
+                      "5.1 Principal component Analysis (PCA), Linear discriminant Analysis (LDA),",
+                      "5.2 Independent component Analysis (ICA)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Programme Electives | Mobile Application Development",
+                code: "2418603B",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Mobile Application Architecture",
+                    points: [
+                      "1.1 Overview of mobile applications and ecosystems (iOS, Android, etc.)",
+                      "1.2 Introduction to mobile phone generations - 1G to 5G",
+                      "1.3 Mobile OS Architectures",
+                      "1.4 Smart phone architecture - ARM (Advance RISC Machine): 1.4.1 Kernel structure, 1.4.2 Intel architectures, 1.4.3 iOS and Windows",
+                      "1.5 Mobile Application Architectures: Client-Server: 1.5.1 Connection Types",
+                      "1.6 The Mobile Application Development Lifecycle",
+                      "1.7 Android Stack",
+                      "1.8 Android Applications Structure"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Content Providers and Data Sharing",
+                    points: [
+                      "2.1 Using preferences: 2.1.1. Working with Shared Preferences, 2.1.2. Preference access permissions",
+                      "2.2 Using the filesystem: 2.2.1. Creating files, 2.2.2. Accessing files, 2.2.3. Files as raw resources, 2.2.4. XML file resources, 2.2.5. External storage via an SD card",
+                      "2.3 Persisting data to a database: 2.3.1. Building and accessing a database, 2.3.2. Using the sqlite3 tool",
+                      "2.4 Working with Content Provider classes: 2.4.1. Using an existing Content Provider, 2.4.2. Creating a Content Provider",
+                      "2.5 Overview of Android Layouts: 2.5.1 Introduction to Layouts, 2.5.2 Understanding the purpose of layouts Android apps.",
+                      "2.6 Types of Layouts: Linear Layout, Relative Layout, Constraint Layout, Frame Layout",
+                      "2.7 Adaptive Layouts with Fragments"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Interface and Layout in Android",
+                    points: [
+                      "3.1 Creating the Activity: 3.1.1 Creating an Activity class, 3.1.2 Exploring the Activity lifecycle",
+                      "3.2 Working with views: 3.2.1 Exploring common views, 3.2.2 Using a List View, 3.2.3 Multitasking with Handler and Message, 3.2.4 Creating custom views, 3.2.5 Understanding layout, 3.2.6 Handling focus, 3.2.7 Grasping events",
+                      "3.3 Using Resources: 3.3.1 Supported resource types, 3.3.2 Referencing resources in Java, 3.3.3 Defining views and layouts through XML resources, 3.3.4 Externalizing values, 3.3.5 Providing animations",
+                      "3.4 Exploring the Android Manifest File"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Android User Interface Components",
+                    points: [
+                      "4.1 Basics of Android UI Components: 4.1.1 Introduction to Android UI Components: Overview of Views and View Groups, 4.1.2 Understanding Android XML Layout Files: Structure and usage of XML for defining UIs.",
+                      "4.2 Commonly Used UI Components: 4.2.1 Text Views and Edit Texts: Displaying and editing text, 4.2.2 Buttons and Image Buttons: Handling clicks and actions, 4.2.3 Image Views: Displaying images.",
+                      "4.3 Advanced UI Components: 4.3.1 Recycler View: Displaying lists and grids efficiently, 4.3.2 Card View: Presenting information in a card format, 4.3.3 Navigation View: Implementing navigation drawers.",
+                      "4.4 Menu and Dialogs: 4.4.1 Menus and Context Menus: Adding options and context menus, 4.4.2 Dialogs and Toasts: Displaying alerts, confirmations, and quick messages."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Design and Implementation of Database-Driven Applications",
+                    points: [
+                      "5.1 Introduction to SQLite Database: 5.1.1 Creating and opening a database, 5.1.2 Creating tables, 5.1.3 Inserting retrieving and deleting data, 5.1.4 Choosing the Right Database, 5.1.5 Comparison of SQLite, Room, Firebase Realtime Database, and other NoSQL databases, 5.1.6 SQLite Database Integration",
+                      "5.2 Registering Content Providers: 5.2.1 Using content Providers (Insert, delete, retrieve and update).",
+                      "5.3 Understanding SQLite: 5.3.1 Basics of SQLite database, 5.3.2 Role and integration in Android applications.",
+                      "5.4 Implementing a Database-Driven Application: 5.4.1 Designing the Database Schema, 5.4.2 Integrating the Database with UI, 5.4.3 Database Testing"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Elective | Electric Vehicle (Advanced)",
+                code: "2400604G",
+                units: [
+                  {
+                    title: "Unit-1.0 Vehicle Dynamics",
+                    points: [
+                      "1.1 Vehicle Movement",
+                      "1.2 Rolling Resistance: Equation, Coefficient, factor affecting rolling resistance, typical values of rolling resistance",
+                      "1.3 Grading resistance",
+                      "1.4 Road resistance",
+                      "1.5 Acceleration resistance",
+                      "1.6 Total driving resistance",
+                      "1.7 Aerodynamic drag: Equation, typical values of the drag coefficient.",
+                      "1.8 Vehicle dynamics: Hybrid and Electric Vehicles, DC Motor Dynamics and Control, AC Motor Dynamics and Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Elements of Automobile",
+                    points: [
+                      "2.1 Suspension and Damping systems",
+                      "2.2 Brake system: Half-step braking, Full step Braking",
+                      "2.3 Transaxle",
+                      "2.4 Elements of Noise Vibration and Harshness Control",
+                      "2.5 Body balancing",
+                      "2.6 Tyre Technology",
+                      "2.7 AC/DC motor",
+                      "2.8 Air-conditioning and Heating System",
+                      "2.9 Lighting System",
+                      "2.10 Automotive wiring system",
+                      "2.11 Earthing and Insulation",
+                      "2.12 Charging stations - Installation and Commissioning",
+                      "2.13 Vehicle control unit"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Power Transmission System",
+                    points: [
+                      "3.1 Transmission System: Single and Multi-transmission system",
+                      "3.2 EV Power Train",
+                      "3.3 EV Power Train Components: Battery Pack, DC-AC Converter, Electric Motor, On-Board Charger.",
+                      "3.4 Battery Parameters: Voltage, Current, Charging rate, efficiency, energy density, power density, State of Charge (SoC), Depth of Discharge (DoD), State of Health (SoH), Operating Temperature, specific energy, specific power, life cycle and cost.",
+                      "3.5 Battery Assembly and Dismantling.",
+                      "3.6 Gear and Differential Assembly",
+                      "3.7 Safe disposal of used battery"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Vehicle Control Unit (VCU)",
+                    points: [
+                      "4.1 Electronic Control Unit: Battery Management System, DC-DC Converter, Thermal Management System and Body Control Module.",
+                      "4.2 Predefined functions",
+                      "4.3 Connections with EV subsystem",
+                      "4.4 Controller Area Network (CAN) communication",
+                      "4.5 Interaction of CAN Communication with VCU.",
+                      "4.6 Troubleshooting and Assessment",
+                      "4.7 Dynamometers: Introduction",
+                      "4.8 Environmental Chambers"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 EV Charging Technologies",
+                    points: [
+                      "5.1 Charging Technology: Classification",
+                      "5.2 Grid-to-Vehicle (G2V)",
+                      "5.3 Vehicle to Grid (V2G) or Vehicle to Buildings (V2B) or Vehicle to Home (V2H).",
+                      "5.4 Bi-directional EV Charging Systems.",
+                      "5.5 Energy Management Strategies.",
+                      "5.6 Wireless Power Transfer (WPT) technique for EV Charging."
+                    ]
+                  }
+                ]
+              },
+
+            ];
+
             return semesters;
           })()
         },
@@ -2333,6 +2625,475 @@ const syllabusData = {
                   },
                 ]
               },
+            ];
+
+            // Diploma Electrical sem 6
+
+            semesters.sem6.theory = [
+              {
+                name: "Utilization of Electrical Energy",
+                code: "2420601",
+                units: [
+                  {
+                    title: "Unit 1.0 Illumination",
+                    points: [
+                      "1.1 Definition of Illumination",
+                      "1.2 Light, Luminous flux, Luminous intensity, Lumen, Candle power, Lux or Meter candle, mean horizontal candle power (MHCP), Mean spherical candle power (MSCP), Mean hemispherical candle Power (MHSCP), Reduction factor, Lamp efficiency, Utilization factor, Depreciation factor, Space height ratio, Solid angle, Absorption factor, Reflection factor.",
+                      "1.3 Laws of Illumination - Inverse square law, Lamberts Cosine law.",
+                      "1.4 LED light; Working Principle.",
+                      "1.5 Types of LED lights, features and its applications: Gallium Phosphide (GaP), Aluminum Gallium Phosphide (AlGaP), Gallium Nitride (GaN), Gallium Arsenide (GaAs), Gallium Arsenide Phosphide (GaAsP), Aluminum Gallium Arsenide Phosphide (AlGaAsP), Gallium Indium Nitride (GaInN), Silicon Carbide (SiC), Zinc Selenide (ZnSe)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electrical Heating and Welding",
+                    points: [
+                      "2.1 Need and significance of Electrical heating; Essential requirements of a good heating element,",
+                      "2.2 Materials of heating element - Nickel chromium alloy, Iron chromium aluminum alloy, Molybdenum disilicide and silicon carbide",
+                      "2.3 Causes of failure of heating element.",
+                      "2.4 Methods of Electric heating: Resistance heating, Arc heating, High frequency heating: Induction heating, Dielectric heating.",
+                      "2.5 Electric arc furnace, types, working and applications of: Direct, Indirect",
+                      "2.6 Welding, types, working and applications of: Resistance welding, Electric arc welding",
+                      "2.7 Welding transformers and rectifiers.",
+                      "2.8 Safety precautions followed during heating and welding."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Electrical Drives",
+                    points: [
+                      "3.1 Block diagram: Source, Power modulator, Electric motor, Control unit, sensing unit and load.",
+                      "3.2 Motors used for Electrical drives; DC series, Shunt and Separately excited motors, three phase Induction motor.",
+                      "3.3 Torque/speed, Torque/Current and Speed/Current characteristics of DC series, Shunt and Separately excited motors, Induction motor.",
+                      "3.4 Comparison of AC, DC drives and Individual, group drive."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Electric Traction Drives",
+                    points: [
+                      "4.1 Requirement of Ideal traction system",
+                      "4.2 Type of traction system used in India: Electric Traction, Diesel Traction",
+                      "4.3 System of track electrification: DC system, Single phase 25KV A.C., Composite system.",
+                      "4.4 Electrical Power supply in Traction system: Sub Sectioning and Parallel Post (SSP), Sectioning Post (SP), Traction sub station",
+                      "4.5 Block diagram of AC Electric locomotive and function of each part.",
+                      "4.6 Current collecting system: Overhead wire and conductor rail system, Current collector (Pantograph types).",
+                      "4.7 Traction services: Urban, Suburban, Main line services, Metro rail and Monorail."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Economics of Utilizing Electrical Energy",
+                    points: [
+                      "5.1 Economic Aspects of Utilizing Electrical Energy.",
+                      "5.2 Pricing of Electrical Energy: Fixed Charges, Semi Fixed Charges, Running Charges.",
+                      "5.3 Tariff, Formulation of Electrical Tariffs and Types - Domestic, Commercial and Industrial Consumers.",
+                      "5.4 Power Factor, Causes and disadvantages of Low Power Factor, Power Factor Improvement - using Static Capacitors, its locations, Most Economical Power Factor, Automatic Power Factor Controller",
+                      "5.5 Energy efficiency and Energy efficient equipment (Star labelling)",
+                      "5.6 Energy Conservation: Importance and need of Energy Conservation",
+                      "5.7 Measures for Energy Conservation in: (i) Electric Heating, (ii) Refrigeration and Air Conditioning, (iii) Illumination"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electrical Installation, Testing and Commissioning",
+                code: "2420602",
+                units: [
+                  {
+                    title: "Unit1.0 -Installation of Electrical Equipment",
+                    points: [
+                      "1.1 Unloading of electrical equipment at site.",
+                      "1.2 Inspection of electrical equipment at site.",
+                      "1.3 Storage of electrical equipment at site.",
+                      "1.4 Foundation of electrical equipment at site.",
+                      "1.5 Alignment of electrical machines.",
+                      "1.6 Technical report, Inspection, storage and handling of transformer, switchgear and motors.",
+                      "1.7 Tools/Instruments necessary for installation.",
+                      "1.8 Installation of electrical equipment."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Testing of Electrical Equipment",
+                    points: [
+                      "2.1 Testing: Need and standards, tolerances.",
+                      "2.2 Testing Types: Routine, Type and Special Tests, Methods of testing: Direct, indirect and regenerative with advantages and applications.",
+                      "2.3 Tests before commissioning of electrical equipment - Electrical and Mechanical test.",
+                      "2.4 Preparations before commissioning of power transformer.",
+                      "2.5 Testing (Routine, Type and Special Tests) of Transformer, Induction motor, alternator, synchronous motor and electrical power installation."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Commissioning of Electrical Equipment",
+                    points: [
+                      "3.1 Commissioning of power transformer, three phase induction motor and switchgears.",
+                      "3.2 Transformer oil: Properties, testing and filtering/purifying, standard tests as per IS code.",
+                      "3.3 Measurement of insulation resistance and Polarization Index, Factors affecting the insulation resistance of insulating materials.",
+                      "3.4 Drying the winding of electrical equipment.",
+                      "3.5 Test report on commissioning and test certificate.",
+                      "3.6 Gradually loading of electrical equipment.",
+                      "3.7 Final inspection after commissioning."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Maintenance and Troubleshooting of Electrical Equipment",
+                    points: [
+                      "4.1 Importance of maintenance, Reasons of failure of electrical equipment.",
+                      "4.2 Maintenance: routine, breakdown, preventive and predictive maintenance",
+                      "4.3 Recommended Maintenance Schedules: transformer, induction motor (single phase and three phase), three phase alternator, synchronous motor, circuit Breaker, overhead line, storage Battery.",
+                      "4.4 Probable faults due to poor maintenance in transformer, induction motor, circuit breaker, overhead lines and battery",
+                      "4.5 Causes of faults in electrical equipment (Internal and external).",
+                      "4.6 Instruments and tools for trouble shooting.",
+                      "4.7 Common troubles in electrical equipment - DC Machines, AC Machines, Transformers, Circuit-breaker, under-ground cable, electrical Installation.",
+                      "4.8 Need of trouble shooting chart, troubleshooting chart for DC Motor, DC Generator, Transformer, Synchronous Motor, Induction Motor, Circuit-breaker.",
+                      "4.9 Trouble shooting chart for Domestic appliances - electrical iron, ceiling fan, washing machine, Air cooler, Vacuum cleaner, fluorescent tube light: Construction, working and troubleshooting chart"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Electrical Accidents and Safety",
+                    points: [
+                      "5.1 Safe Practices: Safety, hazard, accident, major accident hazard, responsibility, authority, accountability, monitoring, I.E. Act & statutory regulations for safety of persons and equipment working with electrical installation, Dos & Don'ts for substation operators as listed in IS",
+                      "5.2 Electric Shocks: Meaning & causes of electrical accidents, factors on which severity of shock depends, Procedure for rescuing the person who has received an electric shock, methods of providing artificial respiration.",
+                      "5.3 Precautions to be taken to avoid fire due to electrical reasons, operation of fire extinguishers. Fire extinguishers - Fixed installation and portable devices.",
+                      "5.4 Earthing of electrical equipment (refer IS code IS 3043-1987): Objectives, classification of electrical equipment with regard to protection against electric shock: class 0 to III."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Data Communication",
+                code: "2420603A",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Data Communication and Network Topology",
+                    points: [
+                      "1.1 Data communication and its characteristics, Basic block diagram of data communication system, Components of data communication: Transmitter, Receiver, Medium, Message, error, noise, Protocol. Standards, Standard organizations",
+                      "1.2 Data Transmission: Serial, Parallel, Synchronous, Asynchronous, Isochronous transmission",
+                      "1.3 Transmission characteristics: Signaling rate, data rate, bit rate, baud rate",
+                      "1.4 Need of computer networks, Network criteria, advantages of networking, Schematic diagram, working",
+                      "1.5 Network topologies: Mesh, Star, Bus, Tree, Ring and Hybrid topologies: working, disadvantages and applications.",
+                      "1.6 Network Classification: Based on Transmission Technologies: Point to-point, Multipoint; Physical size (scale): PAN, BAN, LAN, MAN, WAN, VPN; Based on Architecture: Peer to Peer, Client Server, advantages of Client Sever over Peer-to-Peer Model"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Network Models",
+                    points: [
+                      "2.1 TCP/IP protocol suite with define protocols in respective Layers: Physical layer, Data Link Layer, Network Layer, Transport Layer, and Application Layer",
+                      "2.2 Addressing in TCP/IP: Physical, logical, Port and specific",
+                      "2.3 The ISO-OSI model: Physical layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Physical Layer",
+                    points: [
+                      "3.1 Multiplexing: Basic concept, Frequency- Division Multiplexing, Wavelength- Division Multiplexing, Synchronous Time-Division Multiplexing",
+                      "3.2 Transmission medium: classification based on electromagnetic wave spectrum",
+                      "3.3 Guided Media - Performance and applications: Twisted pair (UTP, STP) cable-connector, Coaxial cable-connector, Fiber-optic cable-connector",
+                      "3.4 Introduction of Unguided Media - Radio waves, microwaves, Infrared and their applications",
+                      "3.5 Modems classification: Broadband modem, DSL - ADSL, HDSL, VDSL",
+                      "3.6 Switching: Circuit-switched networks, Packet switched networks - Datagram approach, virtual circuit approach"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Data Link Layer",
+                    points: [
+                      "4.1 Framing",
+                      "4.2 Flow control",
+                      "4.3 Error control: Types of errors: Single bit and Burst errors, Error detection and correction",
+                      "4.4 Protocol: Sliding window protocol: One-bit sliding window protocol",
+                      "4.5 Point to Point Protocol: service provided by PPP, Frame format PPP and Transition phases of PPP",
+                      "4.6 Ethernet and IEEE 802.3",
+                      "4.7 MAC Addresses and Switching"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Network, Transport and Application Layer",
+                    points: [
+                      "5.1 Network devices: Repeater, Hub, Bridge, Switches, Router, Gateway",
+                      "5.2 Network layer Logical addressing: IPv4 Addresses: address space notations, class-full addressing, and class-less addressing",
+                      "5.3 Network Address Translation (NAT), IPv6 addresses, Need for IPv6, Structure and address space",
+                      "5.4 Network layer - Multicast Routing Protocols: Unicast, Multicast and Broadcast routing and applications of Transport Layer",
+                      "5.5 Internet Control Message Protocol (ICMP), Address Resolution Protocol (ARP), Reverse Address Resolution Protocol (RARP)",
+                      "5.6 Process to process delivery: UDP, TCP, RTP, SCTP, ports format and uses.",
+                      "5.7 Application Layer services: Concept of DNS, FTP, HTTP/HTTPS, FTP and SMTP, DNS and DHCP.",
+                      "5.8 Network Security Protocols (SSL/TLS)",
+                      "5.9 Security services: concepts of message and entity security service, Firewall"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Industrial Drives",
+                code: "2420603B",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Electric Drives",
+                    points: [
+                      "1.1 Need and significance of Electric Drives",
+                      "1.2 Functional Block diagrams of an electric drives",
+                      "1.3 Fundamental torque Equation",
+                      "1.4 Multi-quadrant operation",
+                      "1.5 Components of Load torque",
+                      "1.6 Nature and classification of Load torque",
+                      "1.7 Steady State Stability (derivation not required)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Basics of DC and AC Motors",
+                    points: [
+                      "2.1 DC Motors: Characteristics and speed control of Series, Shunt and Separately Excited DC Motors",
+                      "2.2 DC motor: Braking - Plugging, Rheostatic, and Regenerative",
+                      "2.3 3-phase induction Motor: Characteristics and speed control of Squirrel cage IM and Slip ring IM",
+                      "2.4 3-phase induction Motor: Braking - Plugging, Rheostatic, and Regenerative.",
+                      "2.5 Classes of motor duty",
+                      "2.6 Determination of Motor Rating"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 DC Drives",
+                    points: [
+                      "3.1 Single phase SCR Drives of DC separately excited motor: Half wave converter, Full wave converter, Semi-converter, Dual converter",
+                      "3.2 Three Phase SCR Drives of DC separately excited motor: Half wave converter, Full wave converter, Semi-converter",
+                      "3.3 Rectifier control of DC Series motor.",
+                      "3.4 Chopper Control of separately excited DC motor.",
+                      "3.5 Chopper Control of DC series motor",
+                      "3.6 Use of a chopper control drive in Solar and battery powered vehicles."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 AC Drives",
+                    points: [
+                      "4.1 Need, significance and working of soft starters",
+                      "4.2 Stator voltage control using AC voltage controller",
+                      "4.3 Cycloconverter",
+                      "4.4 Variable Frequency Control (VFD)",
+                      "4.5 Voltage Source Inverter Control",
+                      "4.6 AC drives using PWM technique",
+                      "4.7 Current Source Inverter Control",
+                      "4.8 Basics of Slip power recovery",
+                      "4.9 Rotor Resistance Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Advanced Techniques of Motor Control",
+                    points: [
+                      "5.1 AC/DC drive using microprocessor control",
+                      "5.2 AC/DC drive using microcontroller control.",
+                      "5.3 Stepper motor drives employing microcontroller"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Electrification of Building Complexes",
+                code: "2420603C",
+                units: [
+                  {
+                    title: "Unit-1.0 Elements of Electrification",
+                    points: [
+                      "1.1 Elements of Electrical installation and fittings",
+                      "1.2 Electrical Engineering Drawings: Symbols, Plans and wiring Diagrams.",
+                      "1.3 Electrical Accessories: Wires, Switch Board, Cable, Mains and Sub mains, circuit breakers (MCB, MCCB, ELCB, RCCB etc.).",
+                      "1.4 Earthing System (Pipe earthing, Plate earthing, Chemical earthing)",
+                      "1.5 Testing of wiring and installation",
+                      "1.6 Illumination requirements in residential, Commercial and public Building",
+                      "1.7 Economical illumination design"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electrification of Residential Buildings",
+                    points: [
+                      "2.1 Type of wiring - Concealed, Surface.",
+                      "2.2 Norms and guidelines for wiring and fittings.",
+                      "2.3 Wiring layout of a residential building.",
+                      "2.4 Calculation of total Electrical Loads.",
+                      "2.5 Calculation of number of circuits.",
+                      "2.6 Schedule of rates (SOR), Point Wiring System.",
+                      "2.7 Estimation of material requirements.",
+                      "2.8 Requirements of approval from electrical inspection department.",
+                      "2.9 Testing of wiring installation and preparation of test report."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Electrification of Commercial Complexes and Public Buildings",
+                    points: [
+                      "3.1 Commercial and Public Building.",
+                      "3.2 Residential, commercial and public building electrical Installations: Comparison",
+                      "3.3 Norms and guidelines for wiring and installations.",
+                      "3.4 Fundamental considerations for planning of an electrical installation system",
+                      "3.5 Wiring layout of a Commercial Complexes and Public Buildings",
+                      "3.6 Special requirements of hotels, theaters, library and cultural halls etc. from electrification points of view",
+                      "3.7 Illumination scheme for Interior Applications.",
+                      "3.8 Design considerations of illumination for Commercial and Public buildings.",
+                      "3.9 Different types of lighting arrangements",
+                      "3.10 Requirements of approval from electrical inspection department.",
+                      "3.11 Testing of wiring installation and preparation of test report."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Distribution System for Multistoried Buildings",
+                    points: [
+                      "4.1 Multistoried Buildings",
+                      "4.2 Different Methods of service connection",
+                      "4.3 Underground service connection of multistoried buildings.",
+                      "4.4 Distribution panels and Bus bar system, Rising Mains: Design",
+                      "4.5 Cables and Wiring system: Estimating and Costing",
+                      "4.6 Switchboards, Distribution boards, main switch: Mounting arrangements and Positioning",
+                      "4.7 Meter connection - bifurcation of metering - meters as per consumers demand, use of digital-meters for prevention of theft of power."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Electrical Safety and IE Rules",
+                    points: [
+                      "5.1 Importance of safety rules.",
+                      "5.2 Safety precaution in electrical installation of multistoried building.",
+                      "5.3 Safety devices in multistoried buildings: Fire Alarm System, Smoke Detection System, Safety for Lifts and Escalators, Earthing System, Lightning Arrestors arrangements, Use of ELCB and MCBs/MCCBs in an installation, Electronic safety locks at the entrance, DG system",
+                      "5.4 National Building Code",
+                      "5.5 Indian Electricity Act.",
+                      "5.6 IE rules"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Elective | Electric Vehicle (Advanced)",
+                code: "2400604G",
+                units: [
+                  {
+                    title: "Unit-1.0 Vehicle Dynamics",
+                    points: [
+                      "1.1 Vehicle Movement",
+                      "1.2 Rolling Resistance: Equation, Coefficient, factor affecting rolling resistance, typical values of rolling resistance",
+                      "1.3 Grading resistance",
+                      "1.4 Road resistance",
+                      "1.5 Acceleration resistance",
+                      "1.6 Total driving resistance",
+                      "1.7 Aerodynamic drag: Equation, typical values of the drag coefficient.",
+                      "1.8 Vehicle dynamics: Hybrid and Electric Vehicles, DC Motor Dynamics and Control, AC Motor Dynamics and Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Elements of Automobile",
+                    points: [
+                      "2.1 Suspension and Damping systems",
+                      "2.2 Brake system: Half-step braking, Full step Braking",
+                      "2.3 Transaxle",
+                      "2.4 Elements of Noise Vibration and Harshness Control",
+                      "2.5 Body balancing",
+                      "2.6 Tyre Technology",
+                      "2.7 AC/DC motor",
+                      "2.8 Air-conditioning and Heating System",
+                      "2.9 Lighting System",
+                      "2.10 Automotive wiring system",
+                      "2.11 Earthing and Insulation",
+                      "2.12 Charging stations – Installation and Commissioning",
+                      "2.13 Vehicle control unit"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Power Transmission System",
+                    points: [
+                      "3.1 Transmission System: Single and Multi-transmission system",
+                      "3.2 EV Power Train",
+                      "3.3 EV Power Train Components: Battery Pack, DC-AC Converter, Electric Motor, On-Board Charger.",
+                      "3.4 Battery Parameters: Voltage, Current, Charging rate, efficiency, energy density, power density, State of Charge (SoC), Depth of Discharge (DoD), State of Health (SoH), Operating Temperature, specific energy, specific power, life cycle and cost.",
+                      "3.5 Battery Assembly and Dismantling.",
+                      "3.6 Gear and Differential Assembly",
+                      "3.7 Safe disposal of used battery"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 Vehicle Control Unit (VCU)",
+                    points: [
+                      "4.1 Electronic Control Unit: Battery Management System, DC-DC Converter, Thermal Management System and Body Control Module.",
+                      "4.2 Predefined functions",
+                      "4.3 Connections with EV subsystem",
+                      "4.4 Controller Area Network (CAN) communication",
+                      "4.5 Interaction of CAN Communication with VCU.",
+                      "4.6 Troubleshooting and Assessment",
+                      "4.7 Dynamometers: Introduction",
+                      "4.8 Environmental Chambers"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 EV Charging Technologies",
+                    points: [
+                      "5.1 Charging Technology: Classification",
+                      "5.2 Grid-to-Vehicle (G2V)",
+                      "5.3 Vehicle to Grid (V2G) or Vehicle to Buildings (V2B) or Vehicle to Home(V2H).",
+                      "5.4 Bi-directional EV Charging Systems.",
+                      "5.5 Energy Management Strategies.",
+                      "5.6 Wireless Power Transfer (WPT) technique for EV Charging."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Employability Skills Development",
+                code: "2400408",
+                units: [
+                  {
+                    title: "Unit-1.0 Goal Setting",
+                    points: [
+                      "1.1 Career planning, SWOT",
+                      "1.2 Resume using Internet formats.",
+                      "1.3 Showcase portfolios.",
+                      "1.4 Personal grooming.",
+                      "1.5 Self-Introduction.",
+                      "1.6 Website Development."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Capacity Development",
+                    points: [
+                      "2.1 Interview Skills",
+                      "2.2 Group Discussion – Do’s & don’ts, leadership, Teamwork, how to interrupt, synthesis, and analysis of topics.",
+                      "2.3 Social Media for Personal Enrichment",
+                      "2.4 Body language",
+                      "2.5 Self-Management.",
+                      "2.6 Emotional Intelligence"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Utilizing Potential",
+                    points: [
+                      "3.1 Social Networking",
+                      "3.2 Social Engagements, Volunteering",
+                      "3.3 Collaboration& Team-work.",
+                      "3.4 QC-Tools – Check sheets, Fishbone Diagram, Histogram, Pareto chart, Control-chart, Scatter Diagram, Stratification,",
+                      "3.5 Lean Manufacturing, Kanban, Kaizen, Five S, Poka-yoke, Quality Circle"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Community/ Society Development",
+                code: "2400110",
+                units: [
+                  {
+                    title: "Unit-1.0 Community and Society Development Framework",
+                    points: [
+                      "1.1 Concept of Community/Society Development",
+                      "1.2 Difference between Rural and Urban Societies",
+                      "1.3 Characteristics of Underdevelopment and development",
+                      "1.4 Components of Community Development"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Community Development Initiatives",
+                    points: [
+                      "2.1 Community Development Programmes in India-Historical perspective",
+                      "2.2 Institutions Engaged in Community Development Programmes",
+                      "2.3 Contemporary Community Development Initiatives.",
+                      "2.4 Sustainable Community Development"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Community Development Schemes",
+                    points: [
+                      "3.1 Role of polytechnics in Community development.",
+                      "3.2 Scheme of Community Development through Polytechnics",
+                      "3.3 Unnat Bharat Abhiyan"
+                    ]
+                  }
+                ]
+              }
             ];
             return semesters;
           })()
@@ -3462,6 +4223,589 @@ const syllabusData = {
               },
             ];
 
+            // Diploma Mechanical sem 6
+
+            semesters.sem6.theory = [
+              {
+                name: "Design of Machine Elements",
+                code: "2425601",
+                units: [
+                  {
+                    title: "Unit1.0 -Fundamentals of Machine Design",
+                    points: [
+                      "1.1 Introduction to design, Machine Design philosophy and steps.",
+                      "1.2 Types of loads, concepts of Strength, Stress and Strain; Stress - Strain Diagram for Ductile and Brittle Materials.",
+                      "1.3 Recall of direct and principal stresses and strains. (Simple numerical)",
+                      "1.4 Creep, Creep strain and Creep Curve; (Introduction only)",
+                      "1.5 Cyclic loading, Fatigue; S-N curve; Endurance Limit; (Introduction only)",
+                      "1.6 Factor of Safety and factors governing selection of Factor of Safety;",
+                      "1.7 Stress Concentration: Causes & Remedies; Converting actual load or torque into design load or torque using design factors Like velocity factor, factor of safety & service factor",
+                      "1.8 Introduction to International standards; Advantages of standardization; Use of design data book; Use of standards in design and preferred numbers series",
+                      "1.9 Theories of Elastic Failures; Principal normal stress theory; Maximum shear stress theory & Maximum distortion energy theory."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Design of Simple Machine Part & Antifriction Bearing",
+                    points: [
+                      "2.1 Properties of Engineering materials; Designation of materials as per IS; Important mechanical properties of materials: Elasticity, Plasticity, Hardness, Ductility, Malleability, Brittleness, Resilience, Toughness,",
+                      "2.2 Design of simple machine parts: Cotter Joint; Knuckle Joint; Turnbuckle; Design of Levers: Hand/Foot Lever & Bell Crank Lever; Design of C- Clamp; Off-set links; Overhang Crank; Arm of Pulley.",
+                      "2.3 Antifriction Bearings: Classification of Bearings; Sliding contact & Rolling contact; Terminology of Ball bearings: Life Load relationship, Basic static load rating and Basic dynamic load rating, limiting speed; Selection of ball bearings using manufacturer's catalogue."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Design of Shaft, Key, Coupling & Spur Gear",
+                    points: [
+                      "3.1 Design of Shafts: Types of Shafts; Shaft materials; Standard Sizes; Design of Shafts (Hollow and Solid) using strength and rigidity criteria; ASME code of design for line shafts supported between bearings with one or two pulleys in between or one over-hung pulley;",
+                      "3.2 Design of Sunk Keys; Effect of Keyways on strength of shaft;",
+                      "3.3 Design of Couplings - Muff Coupling, Protected type Flange Coupling, Bush-pin type flexible coupling",
+                      "3.4 Spur gear design considerations; Lewis equation for static beam strength of spur gear teeth; Power transmission capacity of spur gears in bending."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Design of Power Screw, Spring & Leaf Spring",
+                    points: [
+                      "4.1 Design of Power Screws: Thread Profiles used for power Screws -Relative merits and de-merits of each; Torque required to overcome thread friction; Self-Locking and overhauling property; Efficiency of power screws; Types of stresses induced; Design of Screw Jack; Toggle Jack.",
+                      "4.2 Design of springs: Classification and Applications of Springs; Spring terminology; Materials and Specifications; Stresses in springs; Wahl's correction factor; Deflection of springs; Energy stored in springs; Design of Helical, Tension and Compression springs subjected to uniform applied loads like I.C. engine valves, Weighing balance, Railway buffers and Governor Springs",
+                      "4.3 Leaf springs: Construction and Application."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Design of Fasteners & Ergonomics",
+                    points: [
+                      "5.1 Design of Fasteners: Stresses in Screwed fasteners; Bolts of Uniform Strength; Design of Bolted Joints subjected to eccentric loading; Design of Parallel and Transverse fillet welds; Axially loaded symmetrical section; Merits and demerits of screwed and welded joints.",
+                      "5.2 Ergonomics & Aesthetic consideration in design: Ergonomics of Design: Man-Machine relationship; Design of Equipment for control, environment & safety; Aesthetic considerations regarding shape, size, color & surface finish."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Maintenance & Safety of Mechanical & Solar Appliances",
+                code: "2425602",
+                units: [
+                  {
+                    title: "Unit-1.0 Industrial Safety Equipment's",
+                    points: [
+                      "1.1 Introduction to Industrial Safety and Management, safety principal safe working condition and practices, Safety and productivity,",
+                      "1.2 Role of management and role of Govt. in Industrial safety, motivation for safety.",
+                      "1.3 Education and training in safety, Survey the plant for locations, Part of body to be protected, cause of accident& prevention, Housekeeping, Accident Preventions, Protective Equipment's and the Acts",
+                      "1.4 Personal protective equipment (PPE), PPE for solar industry-hard hats, safety glasses, respiration, gloves, fall protection equipment, hearing protection",
+                      "1.5 Medical emergency, introduction to first aid, first aid box, incident management, CPR, bleeding, shock, burns & Scaldes",
+                      "1.6 Fire, classification of fire, Firefighting equipment-Fire Extinguishers, types of fire extinguishers-Powder foam, CO2, wet chemical, water, uses of different types of fire extinguishers, symbols of fire extinguisher, fire safety sign, fire triangle and tetrahedral, Smoke detectors, Fire Alarm system.",
+                      "1.7 Accident, Measures in industry, Accident reporting, Investigations, Industrial psychology in accident prevention, accident record keeping. Occupational safety and health assessment (OSHA)",
+                      "1.8 Introduction to solar appliances, construction, working & function- Solar Water Heater, Photovoltaic Cell, Solar Distillation, solar drying, solar cooker, solar lighting"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Industrial Safety Acts",
+                    points: [
+                      "2.1 Features of Factory Act (1948), implementation of factory act(1948), Introduction of Explosive Act, Boiler Act(1923), Employee's state insurance Act(1948), Workman's compensation Act(1923),",
+                      "2.2 Industrial hygiene, Diseases prevention, Ergonomics& health, Occupational diseases, stress, fatigue, health, safety and the physical environment,",
+                      "2.3 Methods of controlling chemical hazards, safety and the physical environment, Control of industrial noise and protection against it",
+                      "2.4 Code and regulation for solar panel installation-Building codes, fire codes and Electrical Codes, Code and regulations for worker safety.",
+                      "2.5 Major solar policies in India."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Principles and Practices of Maintenance",
+                    points: [
+                      "3.1 Basic Principles of maintenance - Objectives, Benefit of Maintenance systems - Reliability and machine availability, Equipment Life cycle",
+                      "3.2 Need and type of Maintenance- Breakdown maintenance, Preventive Maintenance,",
+                      "3.3 Condition Based monitoring - on line -off line monitoring, visual, temperature, leakage & lubricant monitoring",
+                      "3.4 Introduction of Condition based Maintenance (CBM), Benefits, Principle and its Application (Temperature Readings, Pressure States and Oil Viscosity).",
+                      "3.5 Maintenance budget and its components",
+                      "3.6 Solar panel Maintenance- Preventive maintenance on major components of a solar system (Battery, Solar Panels, Charge Controller, Inverter and Wiring and connections), Maintenance contracts and agreements."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Maintenance Planning and Management",
+                    points: [
+                      "4.1 Role of maintenance planning and scheduling, planning and scheduling techniques, gantt chart and bar chart, types of maintenance strategies,",
+                      "4.2 Computerized maintenance Management Systems (CMMS)- Introduction to CMMS and its functions, Implementation and utilization of CMMS for efficient maintenance management, E-maintenance solution for industrial equipment, Introduction of Software maintenance (SM) (Software-Hippo CMMS, open MAINT), Need for SM, Type of SM, its Process& Advantages.",
+                      "4.3 Measures for Maintenance Performance: Equipment's breakdowns, Mean Time Between Failures and Repair, Factors of availability, Maintenance organization,",
+                      "4.4 Repair cycle, Principles and methods of lubrication, Fault Tree Analysis and trouble shooting",
+                      "4.5 Solar System Maintenance schedule, Solar Panel maintenance log sheet."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Application of Maintenance of Mechanical Equipment's & Solar Appliances",
+                    points: [
+                      "5.1 Maintenance checklist of Photovoltaic Cell, Solar Water Heater and Solar lighting.",
+                      "5.2 Preventive maintenance chart of Lathe machine, drill, refrigerator and four stroke IC Engine.",
+                      "5.3 Managing equipment warranties, guarantees and service agreements",
+                      "5.4 Policy and objective for maintenance, Decision levels for equipment maintenance.",
+                      "5.5 Calibration, need for calibration, standards and requirements, standard operating procedures for calibration.",
+                      "5.6 Record keeping need of record keeping, advantages of record keeping, types of record keeping- manual, automatic & computerized record keeping maintenance record format."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Heat and Mass Transfer",
+                code: "2425603A",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Heat Transfer",
+                    points: [
+                      "1.1 Modes of heat transfer: conduction, convection and radiation",
+                      "1.2 Combined mode of heat transfer, Overall heat transfer coefficient, thermal conductivity of solid, liquid and gasses, effects of temperature on thermal conductivity of materials.",
+                      "1.3 Fourier law of heat conduction, Differential equation of heat conduction",
+                      "1.4 Steady state one dimensional Heat conduction plane wall, sphere, cylinder, composite slab.",
+                      "1.5 Thermal contact resistance, Thermal diffusivity, critical radius of insulation."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fins",
+                    points: [
+                      "2.1 Types of fins, Heat flow through a rectangular fin, infinitely long fin, fin insulated at the tip and fin losing heat at tip.",
+                      "2.2 Effectiveness and efficiency of fin.",
+                      "2.3 Transient heat conduction, Lumped system analysis, Time constant, Unsteady state heat conduction in one dimension only, Biot number Heisler's chart"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Convection",
+                    points: [
+                      "3.1 Newton's law of cooling, Natural and forced convection",
+                      "3.2 Continuity, momentum and energy equation, Thermal and hydrodynamic boundary layer",
+                      "3.3 Free and Forced Convection during external flow over Plates and Cylinders and Internal flow through tubes.",
+                      "3.4 Heat transfer co-efficient and its interpretations",
+                      "3.5 Dimensional analysis applied to forced and natural convection",
+                      "3.6 Dimensionless number and their physical significance"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Heat Exchanger",
+                    points: [
+                      "4.1 Different Types of Heat exchangers, Parallel flow, counter flow, cross flow heat exchanger evaporator and condenser.",
+                      "4.2 Overall Heat transfer coefficient, Log mean temperature difference (LMTD), effectiveness of heat exchanger Number of transfer unit (NTU).",
+                      "4.3 fouling factor",
+                      "4.4 Design of heat-exchange equipment",
+                      "4.5 Mean temperature difference, calculating the outlet temperature of working fluids"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Thermal Radiation",
+                    points: [
+                      "5.1 Basic radiation concepts, Black body radiation, Grey body, emissive power, emissivity, reflectivity, transmissivity",
+                      "5.2 Law of radiation-Plank's, Wein's displacement, Stefan Boltzmann, Kirchoff's.",
+                      "5.3 Irradiation, Radiosity, Concept of shape factor, Radiation shield.",
+                      "5.4 Electrical Analogy,",
+                      "5.5 Radiation through gases."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Power Plant Engineering",
+                code: "2425603B",
+                units: [
+                  {
+                    title: "Unit-1.0 Coal Thermal Power Plant",
+                    points: [
+                      "1.1 General layout of modern coal thermal power plant and present scope of power generation in India.",
+                      "1.2 Working of Rankine cycle.",
+                      "1.3 Operation and Maintenance of Water treatment unit, Coal and ash handling unit and Natural Draught system.",
+                      "1.4 High Pressure Boilers - Classification; Construction and principle of working of Lamont boiler, Benson boiler, Loeffler boiler, Velox boiler, Schmidt Hartman boiler, Ramsin boiler;",
+                      "1.5 Fluidized bed combustion boilers (FBC): principle, need, types, various arrangement, control system and advantages over other boiler systems.",
+                      "1.6 Indian Boiler Regulation Act",
+                      "1.7 Maintenance procedure of major components of high pressure and FBC boilers.",
+                      "1.8 Operation and Maintenance of Steam turbine, Steam nozzle, Steam condenser, Cooling tower, Economizer, Heat exchanger."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Gas Turbine Power Plant",
+                    points: [
+                      "2.1 Classification, open and closed cycle gas turbine",
+                      "2.2 Gas turbine fuel",
+                      "2.3 Brayton cycle: Optimum pressure ratio for maximum efficiency, work ratio, air rate, specific fuel consumption rate",
+                      "2.4 Effect of operating variable on thermal efficiency and work.",
+                      "2.5 Operation and Maintenance of main components of Gas turbine power plant."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Nuclear Power Plant",
+                    points: [
+                      "3.1 Introduction to nuclear fission and fusion,",
+                      "3.2 Types of nuclear fuels, nuclear power plant fuels in India",
+                      "3.3 Components of nuclear reactor, pressurized water reactor and boiling water reactor",
+                      "3.4 Nuclear waste and its disposal"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Hydroelectric power plant and Solar power plant",
+                    points: [
+                      "4.1 Introduction of Hydro power plant and Solar power plant, and its location in India.",
+                      "4.2 Operation and Maintenance of Micro and Pico Hydro power plant components.",
+                      "4.3 Operation and Maintenance of Solar power plant components."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Safety, Maintenance cost, Economic and Environmental Aspects",
+                    points: [
+                      "5.1 Safety (protective) Equipment, safety training",
+                      "5.2 Types, schedule, and cost of maintenance for different power plant",
+                      "5.3 Load distribution parameter, load curve, comparison of site selection criteria",
+                      "5.4 Capital and operating cost of different power plant",
+                      "5.5 Pollution control technique and waste disposal option of different power plant"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Press Tool, Jigs and Fixtures.",
+                code: "2425603C",
+                units: [
+                  {
+                    title: "Unit-1.0 Press Tools",
+                    points: [
+                      "1.1 Introduction to press tools.",
+                      "1.2 Recent development in press tools.",
+                      "1.3 press tools and accessories",
+                      "1.4 Types of presses and Specifications",
+                      "1.5 Cutting tools, bending tools, drawing tools, punching tools, blanking tools, notching tools, lancing tools, Embossing and Coining tools.",
+                      "1.6 Effect of clearances and Stages of cutting operation.",
+                      "1.7 Methods of mounting punches and dies."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Press Working",
+                    points: [
+                      "2.1 Press working operations - Cutting, bending drawing, punching, blanking, notching, lancing, Embossing and Coining.",
+                      "2.2 Punch and die clearances for blanking and piercing, effect of clearance.",
+                      "2.3 blanking and piercing tools, load variation during blanking-Calculation of press tonnage for blanking and piercing.",
+                      "2.4 Bending allowances, bending methods.",
+                      "2.5 Bending pressure-calculation of blank size and press tonnage for drawing metal flow during drawing operations.",
+                      "2.6 Die set components- punch and die shoe, guide pin, bolster plate, stripper, stock guide, feed stock, pilot.",
+                      "2.7 Types of dies, simple, compound, combination and progressive dies."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Jigs and fixtures:",
+                    points: [
+                      "3.1 Necessity for jigs and fixtures.",
+                      "3.2 Definitions and concept of Jig and fixture.",
+                      "3.3 Advantages of jigs and fixtures.",
+                      "3.4 Elements of jigs and fixtures",
+                      "3.5 Types of jigs: leaf jig, box & handle jig template jig, plate jig, indexing jig universal jig, vice jig- constructional details, working and application of above jigs.",
+                      "3.6 Types of fixtures: vice fixtures, milling fixtures, boring fixtures, grinding fixtures- constructional details, working and application of above fixtures.",
+                      "3.7 Basic principles of location: locating methods and devices,",
+                      "3.8 Types of locators - pins and studs, V block, cup and cone location points, adjustable locating points, special adjustable stops, location from finished holes in the work, Diamond pin locator, Cam operated 'V' locator, Quick action 'V' locator, Six point location of a three legged object, Location of a cylinder on a v-block",
+                      "3.9 Basic principles of the clamping: types of clamps-lever clamp, hinged clamp, two-way clamp, swinging clamp, wedge clamp, eccentric clamping arrangement, quick action clamp, Cam operated clamp, strap clamps quarter turn screw, Toggle clamp, Pneumatic and hydraulic clamps, Washers - 'C' washer, spherical and flat washer"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Jig Boring:",
+                    points: [
+                      "4.1 Introduction to jig boring.",
+                      "4.2 Jig boring on vertical milling machine",
+                      "4.3 Types jig boring machines: Open front machine, Cross rail type machine - constructional details & their working.",
+                      "4.4 System of location of holes."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Design of Press tool, jigs and fixtures.",
+                    points: [
+                      "5.1 Design considerations and procedure for Die and punch.",
+                      "5.2 Design of simple, compound and progressive dies.",
+                      "5.3 Design considerations and procedure for following jigs- Template jig, plate jig, universal jig, leaf jig.",
+                      "5.4 Design considerations and procedure for following fixtures-turning fixture, milling fixture, grinding fixture, boring fixture, welding fixture."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Hydraulic & Pneumatic Controls",
+                code: "2425603D",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Hydraulic and Pneumatic Systems",
+                    points: [
+                      "1.1 Fluid power- history, concept and Definition, Fluid transport systems, Fluid power systems, merits and limitations",
+                      "1.2 Classification of Fluid Power Systems- Based on the control system and its type",
+                      "1.3 Concept of Hydrostatic and hydrodynamic",
+                      "1.4 Laws governing fluid flow- Pascal's law, Continuity equation, Bernoulli's theorem",
+                      "1.5 Flow through pipes-types, pressure drop in pipes.",
+                      "1.6 Hydraulic fluid - types ISO and SAE grades of oil and designations, properties, oil contamination and their advantages and limitations.",
+                      "1.7 General layout and ISO Symbols of hydraulic and pneumatic systems",
+                      "1.8 Hazard and safety in industrial hydraulics and pneumatics."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Pumps and Actuators",
+                    points: [
+                      "2.1 Classification of pumps.",
+                      "2.2 Construction and working of gear, vane, screw, lobe and piston pumps (axial and radial)",
+                      "2.3 Performance characteristics, specifications and selection criteria of pumps.",
+                      "2.4 Classification of hydraulic and pneumatic actuators.",
+                      "2.5 Construction and working of linear actuators - single acting and double acting cylinders, Cylinder-cushioning, stop tube",
+                      "2.6 Construction and working of rotary actuators (rotary Motors)-. Gear motors, Vane motors, Axial - in-line - swash plate piston motors",
+                      "2.7 Specifications and selection criteria of actuators",
+                      "2.8 Maintenance procedure for pumps and actuators"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Control Valves and Sensors",
+                    points: [
+                      "3.1 Classification of control valves",
+                      "3.2 Construction and working of: i. pressure control valves-relief, unloading, sequence, counter balance, pressure reducing valves; ii. Direction control valves- check valves, 2/2, 3/2, 4/2, 4/3, 5/2, 5/3 D.C. Valves used in hydraulics and pneumatics; iii. Servo valves and Flow control valves - Non-compensated, Pressure and temperature compensated.",
+                      "3.3 Standard centre positions, methods of actuation, Types of valve element",
+                      "3.4 Hydraulic and pneumatic sensors - Introduction, Unique features",
+                      "3.5 Types-Pressure and temperature monitoring sensors, hydraulic flow rate sensor, level sensor, Pneumatic Proximity Sensors, Back Pressure Sensor (Pilot tube), Reflex Sensor (Screen Nozzle) Air Barrier Sensor,"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Compressor, Components and Accessories",
+                    points: [
+                      "4.1 Pneumatic Control System-Introduction, Air Preparation-Primary and Secondary Air Treatment",
+                      "4.2 Pneumatic Power Source- Compressor, Classification, Air Receiver and Control Methods",
+                      "4.3 Compressors-Types, construction, working principle of Reciprocating Type Air Compressor-Single and Multi-stage Piston Pump, Rotary compressors, PV Diagram and Work Done",
+                      "4.4 Construction, working principle of FRL unit, Dual (twin) pressure valve, shuttle valve, Quick exhaust valve, Time delay valve.",
+                      "4.5 Accessories: Oil reservoir, pipes, hoses, fittings, oil filters, air filters, seals and gaskets, intensifiers, accumulators, heat exchanger, muffler, Air Dryer",
+                      "4.6 Hydraulic pipes and pneumatics pipes -Types, standards, designation methods and specifications, pressure ratings, applications and selection criteria"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Hydraulic and Pneumatic Circuits",
+                    points: [
+                      "5.1 Working and applications of basic Hydraulic Circuits, types - intensifier, regenerative, synchronizing, sequencing, speed components",
+                      "5.2 Design hydraulic circuits -single and double acting hydraulic cylinders, motors, circuit for speed control Meter-in, Meter-out, Bleed Off circuit",
+                      "5.3 Design hydraulic circuit for Regenerative, synchronizing counterbalance, Sequencing circuits, two pumps unloading",
+                      "5.4 Design hydraulic circuits for Milling, Grinding and Shaper machine",
+                      "5.5 Pneumatic circuits: Circuit diagram, components, working and applications. Analysis of Multiple Actuators",
+                      "5.6 Design pneumatic circuit by classic, cascade, step counter, karnaugh and combinational circuit design",
+                      "5.7 Design pneumatic circuits for- direct/indirect control of single and double acting air cylinders, motors, two step feed control, automatic cylinder reciprocation, time delay, sequencing circuits, Logic AND/OR circuits",
+                      "5.8 Design pneumatic circuits for Speed control of cylinders and motors.",
+                      "5.9 Analysis of Hydraulic and Pneumatic Circuits",
+                      "5.10 Use of simulation software for hydraulic and pneumatic circuits",
+                      "5.11 Selection of relevant components, fault detection, Remedies and Maintenance of hydraulic and pneumatic systems."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Electro Pneumatic System and Electro Hydraulic Systems",
+                    points: [
+                      "6.1 Introduction to Pneumatic servo system, Hydro-Pneumatics, Electro-Pneumatics, Electro-hydraulic",
+                      "6.2 Applications, Advantages and Disadvantages of above systems.",
+                      "6.3 Electro-pneumatic controls, operation of electric actuated valves, Pneumatic electrical transducers, Electric converters, signal processors. Relays and protection relays. Connections of direct and indirect management.",
+                      "6.4 Logic circuits- Time Tracking Control, Checking workflows, Proportional pneumatics, Proportional switching",
+                      "6.5 Electrohydraulic control, electro Hydraulic cylinders, Control of pneumatic and hydraulic processes using a PLC controller",
+                      "6.6 Design of basic electro-pneumatic and electrohydraulic circuits.",
+                      "6.7 Application of hydraulic and Electro Hydraulic System working principle, major elements of - Automotive hydraulic brake and power steering, Industrial Fork lift, Hydraulic jack, Hydraulic press, Rotary machining station",
+                      "6.8 Application of pneumatic and Electro pneumatic System- working principle, major elements of -Allocating device, sorting device, edge folding device, Foil welding, Feed rail separator, Input station for laser cuter, Drilling machine"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Renewable and Alternate Energy Sources",
+                code: "2425603E",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Energy Sources",
+                    points: [
+                      "1.1 Major sources of energy: Renewable and Non-renewable and comparison.",
+                      "1.2 Primary and secondary energy sources.",
+                      "1.3 Energy Scenario: - Prospects an Need of renewable and alternate energy sources.",
+                      "1.4 Hybrid energy systems, Distributed energy systems and dispersed generation (DG).",
+                      "1.5 Prospects and Achievements of renewable energy sources in India in general and Bihar state in particular.",
+                      "1.6 Issues related to power generation through renewable energy sources."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Solar Energy",
+                    points: [
+                      "2.1 Solar radiation: Beam and diffuse radiation, Solar constant, Solar Radiations at earth's surface Solar Radiation Geometry: Declination, hour angle, altitude angle, incident angle, zenith angle, solar azimuth angle attenuation and measurement of Solar radiation, local Solar time, derived Solar angles.",
+                      "2.2 Flat plate collectors, concentrating collectors, elements and working",
+                      "2.3 Solar air heaters-types, Solar driers, elements and working.",
+                      "2.4 Storage of Solar energy-thermal storage, Electrical storage, Chemical storage.",
+                      "2.5 Solar water heaters, Solar distillation, Solar still, Solar cooker, elements and working.",
+                      "2.6 Photovoltaic - Solar cells & its applications, Solar panels, Solar PV pump, Solar Home lighting systems, Solar street lights, elements and working. (no derivations and numerical)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Wind Energy",
+                    points: [
+                      "3.1 Basic Principle of wind energy conversion.",
+                      "3.2 Power in wind, Available wind power formulation, Power coefficient, Maximum power",
+                      "3.3 Main considerations in selecting a site for wind mills.",
+                      "3.4 Advantages and limitations of wind energy conversion.",
+                      "3.5 Classification of wind mills",
+                      "3.6 Construction and working of horizontal and vertical axis wind mills, their comparison",
+                      "3.7 Main applications of wind energy for power generation and pumping."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Energy from Biomass",
+                    points: [
+                      "4.1 Energy from Biomass: Common species recommended for biomass.",
+                      "4.2 Methods for obtaining energy from biomass",
+                      "4.3 Thermal classification of biomass a) Gasified, b) Fixed bed and fluidized",
+                      "4.4 Comparison of Biomass with conventional fuels",
+                      "4.5 Constructional details, site selection, filling a digester for starting, maintaining Biogas production, Fuel properties of Bio gas, and applications of Biogas.",
+                      "4.6 Maintenance of Biogas plants.",
+                      "4.7 Application of gasifier",
+                      "4.8 Biodiesel production and application",
+                      "4.9 Agriculture waste as a biomass",
+                      "4.10 Biomass digester",
+                      "4.11 Energy from wastes: Recycling of plastic and Tire/Rubber waste to produce fuel.",
+                      "4.12 Recycling of Mixed Solid Municipal waste to produce energy/Synthetic gases.",
+                      "4.13 Recycling of used Vegetable oil.",
+                      "4.14 Energy from flowing drain water, Energy from mass mobility of human and vehicles at Railway stations, Malls, Highways by modifying speed breakers, steps, stairs etc."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Geothermal Energy, Energy from Oceans",
+                    points: [
+                      "5.1 Introduction, geothermal sources, classification, compressed resources, exploration, environmental implications, applications, advantages and disadvantages.",
+                      "5.2 Geothermal plant.",
+                      "5.3 Ocean Thermal Electric Conversion (OTEC) systems like open cycle, closed cycle.",
+                      "5.4 Energy from tides, basic principle of tidal power, single basin and double basin tidal power plants, advantages, limitation."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Fuel Cells and Hydrogen Energy",
+                    points: [
+                      "6.1 Fuel Cells- Introduction, Classification :-proton exchange membrane fuel cells (PEMFCs), solid oxide fuel cells (SOFCs), and alkaline fuel cells, Principles, performance, application, advantages and limitations.",
+                      "6.2 Hydrogen Energy Introduction, production, storage, transportation, safety, utilization of hydrogen gas, comparison with other automobile fuels."
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Open Elective | Electric Vehicle (Advanced)",
+                code: "2400604G",
+                units: [
+                  {
+                    title: "Unit-1.0 Vehicle Dynamics",
+                    points: [
+                      "1.1 Vehicle Movement",
+                      "1.2 Rolling Resistance: Equation, Coefficient, factor affecting rolling resistance, typical values of rolling resistance",
+                      "1.3 Grading resistance",
+                      "1.4 Road resistance",
+                      "1.5 Acceleration resistance",
+                      "1.6 Total driving resistance",
+                      "1.7 Aerodynamic drag: Equation, typical values of the drag coefficient.",
+                      "1.8 Vehicle dynamics: Hybrid and Electric Vehicles, DC Motor Dynamics and Control, AC Motor Dynamics and Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Elements of Automobile",
+                    points: [
+                      "2.1 Suspension and Damping systems",
+                      "2.2 Brake system: Half-step braking, Full step Braking",
+                      "2.3 Transaxle",
+                      "2.4 Elements of Noise Vibration and Harshness Control",
+                      "2.5 Body balancing",
+                      "2.6 Tyre Technology",
+                      "2.7 AC/DC motor",
+                      "2.8 Air-conditioning and Heating System",
+                      "2.9 Lighting System",
+                      "2.10 Automotive wiring system",
+                      "2.11 Earthing and Insulation",
+                      "2.12 Charging stations – Installation and Commissioning",
+                      "2.13 Vehicle control unit"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Power Transmission System",
+                    points: [
+                      "3.1 Transmission System: Single and Multi-transmission system",
+                      "3.2 EV Power Train",
+                      "3.3 EV Power Train Components: Battery Pack, DC-AC Converter, Electric Motor, On-Board Charger.",
+                      "3.4 Battery Parameters: Voltage, Current, Charging rate, efficiency, energy density, power density, State of Charge (SoC), Depth of Discharge (DoD), State of Health (SoH), Operating Temperature, specific energy, specific power, life cycle and cost.",
+                      "3.5 Battery Assembly and Dismantling.",
+                      "3.6 Gear and Differential Assembly",
+                      "3.7 Safe disposal of used battery"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 Vehicle Control Unit (VCU)",
+                    points: [
+                      "4.1 Electronic Control Unit: Battery Management System, DC-DC Converter, Thermal Management System and Body Control Module.",
+                      "4.2 Predefined functions",
+                      "4.3 Connections with EV subsystem",
+                      "4.4 Controller Area Network (CAN) communication",
+                      "4.5 Interaction of CAN Communication with VCU.",
+                      "4.6 Troubleshooting and Assessment",
+                      "4.7 Dynamometers: Introduction",
+                      "4.8 Environmental Chambers"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 EV Charging Technologies",
+                    points: [
+                      "5.1 Charging Technology: Classification",
+                      "5.2 Grid-to-Vehicle (G2V)",
+                      "5.3 Vehicle to Grid (V2G) or Vehicle to Buildings (V2B) or Vehicle to Home(V2H).",
+                      "5.4 Bi-directional EV Charging Systems.",
+                      "5.5 Energy Management Strategies.",
+                      "5.6 Wireless Power Transfer (WPT) technique for EV Charging."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Professional Ethics",
+                code: "2400107",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Professional Ethics",
+                    points: [
+                      "1.1 Basic concepts: Ethics, Morals, Values and Integrity.",
+                      "1.2 Professional Ethics: Meaning, Need and Scope.",
+                      "1.3 Ethical Dilemmas: Concept and Resolution.",
+                      "1.4 Code of Conduct and Professional Responsibilities."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Engineering Ethics and Responsibilities",
+                    points: [
+                      "2.1 Engineering as Social Experimentation.",
+                      "2.2 Engineers' Responsibility for Safety, Risk, and Liability.",
+                      "2.3 Environmental Ethics and Sustainable Development.",
+                      "2.4 Global Issues in Engineering Ethics."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Employability Skills Development",
+                code: "2400408",
+                units: [
+                  {
+                    title: "Unit-1.0 Goal Setting",
+                    points: [
+                      "1.1 Career planning, SWOT",
+                      "1.2 Resume using Internet formats.",
+                      "1.3 Showcase portfolios.",
+                      "1.4 Personal grooming.",
+                      "1.5 Self-Introduction.",
+                      "1.6 Website Development."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Capacity Development",
+                    points: [
+                      "2.1 Interview Skills",
+                      "2.2 Group Discussion – Do’s & don’ts, leadership, Teamwork, how to interrupt, synthesis, and analysis of topics.",
+                      "2.3 Social Media for Personal Enrichment",
+                      "2.4 Body language",
+                      "2.5 Self-Management.",
+                      "2.6 Emotional Intelligence"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Utilizing Potential",
+                    points: [
+                      "3.1 Social Networking",
+                      "3.2 Social Engagements, Volunteering",
+                      "3.3 Collaboration& Team-work.",
+                      "3.4 QC-Tools – Check sheets, Fishbone Diagram, Histogram, Pareto chart, Control-chart, Scatter Diagram, Stratification,",
+                      "3.5 Lean Manufacturing, Kanban, Kaizen, Five S, Poka-yoke, Quality Circle"
+                    ]
+                  }
+                ]
+              }
+            ];
             return semesters;
           })()
         },
@@ -4435,6 +5779,474 @@ const syllabusData = {
 
             ];
 
+            // Diploma civil sem 6 
+
+            semesters.sem6.theory = [
+              {
+                name: "Environmental Engg.",
+                code: "2415601",
+                units: [
+                  {
+                    title: "Unit 1.0: Sources, Demand and Water Quality Assessment:",
+                    points: [
+                      "1.1 Sources of water: Surface and subsurface sources of water, Intake structures: Types, Purposes and its Location.",
+                      "1.2 Water demand: Importance and necessity for planned water supplies, Various types of Water demand, Per capita demand, factors affecting per capita demand, Water supply scheme and its flow diagram, Variations in demand.",
+                      "1.3 Population forecasting: Design period, Methods of population forecasting, (Simple problems on population forecasting).",
+                      "1.4 Characteristics and Testing of water: Necessity of water analysis, Characteristics of water: Physical, Chemical and Biological; Physical Testing of water - Turbidity &color, Chemical Testing of water - Total Solids (TS), Hardness, Chlorides, Dissolved oxygen (DO), pH, Fluoride, Nitrogen (N) and its compounds.",
+                      "1.5 Bacteriological/Biological tests: E-coli, B- coli index, MPN (Most probable number); Sampling of water, Guidelines, Specification of drinking water quality as per IS-10500:2012."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0: Purification of Water",
+                    points: [
+                      "2.1 Water Treatment: Water Treatment-Concept, Screening, settling operation, Sedimentation and its types, Sedimentation tank, Coagulation and its Mechanism, Coagulants, Flocculation, Mechanism of Flocculation, Sedimentation aided with coagulation.",
+                      "2.2 Filtration: Theory, Purposes and Types of Filters, Construction, Mechanism and Operation of Slow Sand, Rapid Sand and Pressure Filter.",
+                      "2.3 Disinfection: Methods of Disinfection, Kinetics of disinfection, Chlorination and Practices of Chlorination, Calculation of Doses of chlorine.",
+                      "2.4 Water treatment Plant: Purpose, Construction and its flow diagram."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Distribution and Conveyance of Water",
+                    points: [
+                      "3.1 Conveyance system: Need, Purposes and advantages, Pipes Material used for conveyance of water, Plumbing system, House Water Connection, Different Cocks and valves, pipe fixtures and fittings, Types of joints.",
+                      "3.2 Distribution System: Need, Purposes and Advantages, Methods of Distribution-Gravity, Pumping (Pressure) and Combined System.",
+                      "3.3 Layout of distribution networks-Need of distribution layout, Types- Dead end system, Grid iron system, Radial system and Circular System; Detection of leakage in the distribution pipes.",
+                      "3.4 Pipe network Analysis: Hardy-Cross method, equivalent pipe method, Appurtenances in the distribution system."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Domestic Sewages and Sewerage System:",
+                    points: [
+                      "4.1 Building Sanitation: Need and importance of sanitation, Definitions-Sewage, Sullage, Types of sewage, Definition of the terms related to building sanitation.",
+                      "4.2 Pipes for sewerage system: Soil pipe, Sullage pipe, Vent pipe.",
+                      "4.3 Building Sanitary Fittings: Water closets - Indian and European type, flushing cistern, washbasin, sinks, Urinals; Traps- types, qualities of good trap; Systems of plumbing one pipe, two pipe, single stack; Drainage systems: Principle, Need and Layout of drainage system.",
+                      "4.4 System of Sewerage and Sewer appurtenances: Types of Sewers, System and Layout of sewerage, self-cleansing velocity and non-scouring velocity, Laying.",
+                      "4.5 Testing and Maintenance of sewers: Inspection chambers and Manholes-component parts, location and spacing; Sewer Inlets, Street Inlets."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: Sewage Treatment and Waste Management-",
+                    points: [
+                      "5.1 Analysis of sewage: Characteristics of Sewage- B.O.D., C.O.D, and its Significance; Aerobic and Anaerobic Processes; Bihar state pollution control board norms for disposal of treated sewage, Objective of sewage treatment and flow diagram of conventional sewage treatment plant.",
+                      "5.2 Treatment of Sewage: Screening, Types of Screens, Grit removal, Skimming, Sedimentation of sewage, Aerobic and Anaerobic process, Sludge digestion, Trickling filters.",
+                      "5.3 Sludge and its treatment: Activated sludge process, Disposal of sewage, Oxidation-Pond, Oxidation ditch, Septic tank, Recycling and Reuse of domestic waste, Sludge characteristics, Sludge treatment process, disposal of sludge, Design of Septic tank.",
+                      "5.4 Solid waste disposal: composting, incineration, Introduction to sanitary landfill."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Steel Structure",
+                code: "2415602",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Steel Structure",
+                    points: [
+                      "1.1 Need and importance of steel structures with examples, Types of steel structures, Advantages and disadvantages of steel structure.",
+                      "1.2 Steel Sections and its types, Grades of steel sections, Mechanical properties of steel sections.",
+                      "1.3 Use of steel table and relevant standards IS: 808-1989 and IS Handbook No. 1/SP 6(1)-1964.",
+                      "1.4 Types of Loads acting on steel structures as per IS 875-1987 Part I to V.",
+                      "1.5 Methods of Design of Steel Structure: Working stress method and Limit state method, Advantages of limit state method over working stress method, Types of limit states- limit state of strength and limit state of serviceability, Partial factor of safety for loads and for materials as per IS: 800-2007."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Design of Connections (Limit State Method)",
+                    points: [
+                      "2.1 Types of Connections: Riveted, Bolted and Welded Connections.",
+                      "2.2 Bolted Connection: Types of bolts, Types of bolted joints, Failure of bolted joints, Assumptions in the analysis of bolted joint.",
+                      "2.3 Specification for bolted joint, Strength and efficiency of bolted joint, Design of bolted joints for axially loaded plates, single and double angle members as per IS: 800-2007.",
+                      "2.4 Welded Connection: Types of welds-Butt weld and fillet weld, Assumptions in the analysis of welded connections.",
+                      "2.5 Analysis and design of butt weld: Specifications for butt weld, Strength of butt weld, Design of butt weld for axially loaded plates as per IS: 800-2007.",
+                      "2.6 Analysis and design of fillet weld: Specifications for fillet weld, Strength of fillet weld, Design of fillet weld for axially loaded plates, single and double angle members as per IS: 800-2007."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Design of Tension Member (Limit State Method)",
+                    points: [
+                      "3.1 Types of sections used for tension members, Net sectional area for flats and plates, Effective net area for angles.",
+                      "3.2 Type of failure, Design strength of tension member governed by yielding of gross section, rupture of net section and block shear as per IS: 800-2007.",
+                      "3.3 Analysis and Design of axially loaded single and double angle tension members with bolted and welded connection as per IS: 800-2007.",
+                      "3.4 Introduction to gusset plate, lug angle and tension splice (meaning and purpose only)."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Design of Compression Member (Limit State Method)",
+                    points: [
+                      "4.1 Types of sections used for compression members, Effective length, radius of gyration and slenderness ratio. Permissible value of slenderness ratio, Calculation of Design compressive stress as per IS 800:2007.",
+                      "4.2 Analysis and Design of axially loaded compression members (single and double angles, single and double channel, I-section, I-section with cover plate on flanges) with bolted and welded connection as per IS: 800-2007.",
+                      "4.3 Introduction to built-up sections, column splice, lacing and battening (Meaning and purpose), Diagrams of single & double lacing and battening system. (No Numerical on lacing and battening)"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Design of Steel Beams (Limit State Method)",
+                    points: [
+                      "5.1 Types of sections used for steel beams, Classification of cross sections (plastic, compact, semi-compact and slender), Meanings of Laterally supported beams and laterally unsupported beams.",
+                      "5.2 Bending strength of laterally supported beam and laterally unsupported beam, Shear strength of beam as per IS: 800-2007.",
+                      "5.3 Analysis and design of laterally supported and unsupported beams (rolled I-sections only) with relevant checks as per IS: 800-2007.",
+                      "5.4 Introduction to element of the steel roof truss, built-up beam, plate girder and gantry girder (meaning and purpose only)."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Pre-Stress and Precast Concrete",
+                code: "2415603A",
+                units: [
+                  {
+                    title: "Unit-1.0: Introduction to Pre-stressed Concrete (PSC)",
+                    points: [
+                      "1.1 Principles of pre-stressed concrete and basic terminology.",
+                      "1.2 Applications, advantages and disadvantages of pre-stressed concrete.",
+                      "1.3 Materials used and their properties, Necessity of high-grade materials, Admixtures for concrete.",
+                      "1.4 Types of Pre-stressing steel - Wire, Cable, tendon, Merits-demerits and application."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0: Methods and Systems of Pre-Stressing",
+                    points: [
+                      "2.1 Methods of Pre-stressing - Internal and External pre-stressing, Pre and Post tensioning-applications.",
+                      "2.2 Systems for pre-tensioning process, applications, merits and demerits.",
+                      "2.3 Systems for post-tensioning process, applications, merits and demerits",
+                      "2.4 Losses of Pre-stress: loss due to elastic shortening of concrete, loss due to creep of concrete, loss due to shrinkage of concrete, loss due to relaxation of stress, loss due to friction and loss due to slip (simple numerical problems on determination of losses of Pre-stress).",
+                      "2.5 BIS recommendation for percentage loss in case of pre and post tensioning."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Design and Analysis of Pre-Stressed Rectangular Beam Section",
+                    points: [
+                      "3.1 Basic assumptions in analysis of pre-stressed concrete beams.",
+                      "3.2 Cable Profile in simply supported rectangular beam section concentric, eccentric, straight and parabolic. Effect of cable profile on maximum stresses at mid span and at support.",
+                      "3.3 Numerical problems on determination of maximum stresses at mid span with linear (concentric and eccentric) cable profiles only."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Precast Concrete Elements",
+                    points: [
+                      "4.1 Advantages and disadvantages of precast concrete members.",
+                      "4.2 Non-structural Precast elements: Paver blocks, Fencing Poles, Transmission Poles, Manhole Covers, Hollow and Solid Blocks, kerb stones as per relevant BIS specifications.",
+                      "4.3 Structural Precast elements: Canal lining, Box culvert, bridge panels, foundation",
+                      "4.4 Testing of Precast components as per BIS standards."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: Prefabricated Building Structure",
+                    points: [
+                      "5.1 Precast Structural Building components such as slab panels, beams, columns, footings, walls, lintels and chajjas, staircase elements.",
+                      "5.2 Prefabricated building using precast wall panels, floor systems: Material characteristics, Plans & Standard specifications.",
+                      "5.3 Prefab systems and structural schemes and their classification including design considerations."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Traffic Engineering and Pavement Design",
+                code: "2415603B",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Traffic Engineering:",
+                    points: [
+                      "1.1 Traffic engineering- Definition, objectives and scope.",
+                      "1.2 Relationship between speed, volume and density of traffic.",
+                      "1.3 Road users' characteristics- Physical, mental, emotional factors.",
+                      "1.4 Vehicular characteristics- Width, height, weight, speed, efficiency of brakes.",
+                      "1.5 Reaction time based on PIEV theory (Perception, Intellection, Emotion and Volition)."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Traffic Studies:",
+                    points: [
+                      "2.1 Traffic Studies- Types, purpose, information required for traffic studies.",
+                      "2.2 Methods of collection of traffic volume count data and analysis of data.",
+                      "2.3 Necessity of Origin and Destination study and its methods.",
+                      "2.4 Speed studies - Spot speed studies and its presentation.",
+                      "2.5 Types and Sources of Data (Road Side Interviews, Home Interview Surveys, Commercial Vehicle Surveys)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Traffic Signs and Pavement Markings:",
+                    points: [
+                      "3.1 Traffic control devices-definition, necessity, types.",
+                      "3.2 Importance, Necessity and objects of traffic signs.",
+                      "3.3 Classification of traffic signs as per Indian Road Congress (IRC) guidelines.",
+                      "3.4 Traffic markings- definition, Types of traffic markings- Carriage way, Kerb, object marking and reflector marking."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Pavement and its Components:",
+                    points: [
+                      "4.1 Objects and requirements of pavements.",
+                      "4.2 Types of Pavements: Flexible Pavement and Rigid Pavement.",
+                      "4.3 Pavement components: Sub-grade, Sub-base, Base Course and wearing course.",
+                      "4.4 Construction and maintenance of flexible and rigid pavements.",
+                      "4.5 Structural evaluation of flexible and rigid pavements."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Introduction to Pavement Design:",
+                    points: [
+                      "5.1 Factors affecting design of pavements.",
+                      "5.2 Flexible Pavement- Tyre pressure, Equivalent Single Wheel Load (ESWL), Terminologies used in flexible pavement design.",
+                      "5.3 Rigid Pavement- Wheel load stresses, temperature stresses and critical combination of stresses.",
+                      "5.4 Types of Joints of rigid pavement."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Green Building and Sustainability",
+                code: "2415603C",
+                units: [
+                  {
+                    title: "Unit 1.0: Introduction to Green Building and Sustainability.",
+                    points: [
+                      "1.1 Definition-Green Building, Benefits of Green Buildings, Concept of Green building and sustainable development.",
+                      "1.2 Objectives, Principles and Benefits of Green building design.",
+                      "1.3 Green building features and environmental design strategies."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0: Concept of Cost-Effective Construction Materials-",
+                    points: [
+                      "2.1 Uses of different types of materials and their availability-Stone and Laterite blocks, Burned Bricks, Concrete Blocks, Stabilized Mud Blocks, Lime Pozzolana Cement, Gypsum Board, Light Weight Beams, Fiber Reinforced Cement Components- Fiber",
+                      "2.2 Availability of different materials:- Reinforced Polymer Composites, Bamboo, Jute fiber, sisal fiber etc.",
+                      "2.3 Recycling of building materials: Brick- Concrete- Steel- Plastics"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Overview of Relevant Design Aspects for Green Building",
+                    points: [
+                      "3.1 Introduction, Reduction in Energy Demand, Onsite Sources and Sinks, Maximize System Efficiency.",
+                      "3.2 Steps to Reduce Energy Demand and Use Onsite Sources and Sinks.",
+                      "3.3 Use of Renewable Energy Sources. Ecofriendly captive power generation for factories and Buildings."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Heating, Ventilation, and Air Conditioning (HVAC) System",
+                    points: [
+                      "4.1 Design philosophy, Design interventions, Energy modeling, heating, ventilation, and air conditioning (HVAC) System.",
+                      "4.2 Components of heating, ventilation, and air conditioning (HVAC) System."
+                    ]
+                  },
+                  {
+                    title: "Unit-5: Rating system for Green Buildings.",
+                    points: [
+                      "5.1 Introduction to rating system, Different rating agencies in India and worldwide.",
+                      "5.2 Indian Green Building Council (IGBC).",
+                      "5.3 Leadership in energy and environmental design (LEED).",
+                      "5.4 Green Rating for integrated habitat assessment (GRIHA)."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Water and Waste Water Management",
+                code: "2415603D",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Water and Waste Water",
+                    points: [
+                      "1.1 Water and its characteristics- Surface water and Ground water.",
+                      "1.2 Drinking water quality requirements as per BIS and WHO. Water Quality Index.",
+                      "1.3 Sources of Water Pollution, Diseases and control",
+                      "1.4 Objective and necessity of treatment of water and waste water."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Water Management and Treatment",
+                    points: [
+                      "2.1 Water cycle and impact of human activity on water cycle.",
+                      "2.2 Water Conservation: Introduction, Importance and methods. Purpose of water conservation Drinking, Agriculture, Power generation, Industrial conservation.",
+                      "2.3 Treatment of water: Screening, Sedimentation, Coagulation and Flocculation, Disinfection, Softening.",
+                      "2.4 Water harvesting: Roof top rain water harvesting, subsurface barrier, Farm ponding.",
+                      "2.5 Ground water recharge: Need and Importance Methods and Design criteria."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Domestic Waste Water",
+                    points: [
+                      "3.1 General Conditions-Source of waste water and its characteristics.",
+                      "3.2 Flow of waste water: Types of sewerage system, factors affecting selection of sewerage system.",
+                      "3.3 Treatment of wastewater: Screening, Grit chamber, Coagulation and Flocculation, Filtration.",
+                      "3.4 Disinfection and Softening of treated water.",
+                      "3.5 Recycling of treated waste water for various recreational purposes"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Industrial Waste Water",
+                    points: [
+                      "4.1 Source of waste water and its characteristics- Waste Water from Pulp and Paper Industry, Sugar Industry, Rubber Industry.",
+                      "4.2 Physical Treatment of Waste Water- Screening, Grit Chamber, Oil and Grease removal, Primary and Secondary Settling Tank, Aeration.",
+                      "4.3 Biological Treatment by microorganism in Aerobic and Anaerobic condition.",
+                      "4.4 Natural method of waste water disposal -By Land treatment and by Dilution, Indian Standards for disposal of waste water.",
+                      "4.5 Self-purification capacity of stream/River -Self-purification zones, Factors affecting self-purification capacity of stream.",
+                      "4.6 Management of effluent after treatment within and outside industry - Cooling Tower, Boiler feed water, Irrigation, Landscape watering."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Advanced Water and Waste Water Treatment Technique",
+                    points: [
+                      "5.1 Water Treatment Technique-Reverse Osmosis; Membrane Filtration; Electrodialysis.",
+                      "5.2 Waste Water Treatment Technique: Phytorid technology; Enhanced Biological Phosphorous Removal; Air Stripping; Electro flocculation treatment; Activated Carbon Adsorption; SBR technique; Rotating Biological Contactor.",
+                      "5.3 Smart Water Supply and monitoring system: Purposes and advantages, IoT based smart water supply monitoring system and water Quality monitoring system."
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Open Elective | Electric Vehicle (Advanced)",
+                code: "2400604G",
+                units: [
+                  {
+                    title: "Unit-1.0 Vehicle Dynamics",
+                    points: [
+                      "1.1 Vehicle Movement",
+                      "1.2 Rolling Resistance: Equation, Coefficient, factor affecting rolling resistance, typical values of rolling resistance",
+                      "1.3 Grading resistance",
+                      "1.4 Road resistance",
+                      "1.5 Acceleration resistance",
+                      "1.6 Total driving resistance",
+                      "1.7 Aerodynamic drag: Equation, typical values of the drag coefficient.",
+                      "1.8 Vehicle dynamics: Hybrid and Electric Vehicles, DC Motor Dynamics and Control, AC Motor Dynamics and Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Elements of Automobile",
+                    points: [
+                      "2.1 Suspension and Damping systems",
+                      "2.2 Brake system: Half-step braking, Full step Braking",
+                      "2.3 Transaxle",
+                      "2.4 Elements of Noise Vibration and Harshness Control",
+                      "2.5 Body balancing",
+                      "2.6 Tyre Technology",
+                      "2.7 AC/DC motor",
+                      "2.8 Air-conditioning and Heating System",
+                      "2.9 Lighting System",
+                      "2.10 Automotive wiring system",
+                      "2.11 Earthing and Insulation",
+                      "2.12 Charging stations – Installation and Commissioning",
+                      "2.13 Vehicle control unit"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Power Transmission System",
+                    points: [
+                      "3.1 Transmission System: Single and Multi-transmission system",
+                      "3.2 EV Power Train",
+                      "3.3 EV Power Train Components: Battery Pack, DC-AC Converter, Electric Motor, On-Board Charger.",
+                      "3.4 Battery Parameters: Voltage, Current, Charging rate, efficiency, energy density, power density, State of Charge (SoC), Depth of Discharge (DoD), State of Health (SoH), Operating Temperature, specific energy, specific power, life cycle and cost.",
+                      "3.5 Battery Assembly and Dismantling.",
+                      "3.6 Gear and Differential Assembly",
+                      "3.7 Safe disposal of used battery"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 Vehicle Control Unit (VCU)",
+                    points: [
+                      "4.1 Electronic Control Unit: Battery Management System, DC-DC Converter, Thermal Management System and Body Control Module.",
+                      "4.2 Predefined functions",
+                      "4.3 Connections with EV subsystem",
+                      "4.4 Controller Area Network (CAN) communication",
+                      "4.5 Interaction of CAN Communication with VCU.",
+                      "4.6 Troubleshooting and Assessment",
+                      "4.7 Dynamometers: Introduction",
+                      "4.8 Environmental Chambers"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 EV Charging Technologies",
+                    points: [
+                      "5.1 Charging Technology: Classification",
+                      "5.2 Grid-to-Vehicle (G2V)",
+                      "5.3 Vehicle to Grid (V2G) or Vehicle to Buildings (V2B) or Vehicle to Home(V2H).",
+                      "5.4 Bi-directional EV Charging Systems.",
+                      "5.5 Energy Management Strategies.",
+                      "5.6 Wireless Power Transfer (WPT) technique for EV Charging."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Employability Skills Development",
+                code: "2400408",
+                units: [
+                  {
+                    title: "Unit-1.0 Goal Setting",
+                    points: [
+                      "1.1 Career planning, SWOT",
+                      "1.2 Resume using Internet formats.",
+                      "1.3 Showcase portfolios.",
+                      "1.4 Personal grooming.",
+                      "1.5 Self-Introduction.",
+                      "1.6 Website Development."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Capacity Development",
+                    points: [
+                      "2.1 Interview Skills",
+                      "2.2 Group Discussion – Do’s & don’ts, leadership, Teamwork, how to interrupt, synthesis, and analysis of topics.",
+                      "2.3 Social Media for Personal Enrichment",
+                      "2.4 Body language",
+                      "2.5 Self-Management.",
+                      "2.6 Emotional Intelligence"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Utilizing Potential",
+                    points: [
+                      "3.1 Social Networking",
+                      "3.2 Social Engagements, Volunteering",
+                      "3.3 Collaboration& Team-work.",
+                      "3.4 QC-Tools – Check sheets, Fishbone Diagram, Histogram, Pareto chart, Control-chart, Scatter Diagram, Stratification,",
+                      "3.5 Lean Manufacturing, Kanban, Kaizen, Five S, Poka-yoke, Quality Circle"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Educational Resources (OER)",
+                code: "2400009",
+                units: [
+                  {
+                    title: "Unit-1.0 Open Educational Resources",
+                    points: [
+                      "1.1 OER - definition",
+                      "1.2 What is NOT OER.",
+                      "1.3 Benefits of using OER – Benefits to Students - Access to Quality Education",
+                      "1.4 OER - Benefits to Faculty - Use, Improve and Share, Network and collaborate with peers, Lower Cost, Improve access to information",
+                      "1.5 Challenges of Using OER – Subject Availability, Format and Material type availability, Time and Support availability",
+                      "1.6 Evaluating OER – a) Clarity, Comprehensibility, and Readability, b) Content and Technical Accuracy, c) Adaptability and Modularity, d) Appropriateness and Fit, e) Accessibility",
+                      "1.7 Finding Open Content - OER Search Scenario Filter by Usage Rights in Google, Repositories and Search Tools, Subject-specific Repositories"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Copyright and Open Licensing",
+                    points: [
+                      "2.1 Copyright and what it does protect, benefits of copyright protection for creators, duration of copyright protection last, rights granted to copyright holders.",
+                      "2.2 Exceptions and limitations to copyright law, fair use/fair dealing apply to copyright",
+                      "2.3 Public domain and its relation to copyright.",
+                      "2.4 Penalties for copyright infringement",
+                      "2.5 Apply copyright to digital content and the internet",
+                      "2.6 Use of copyrighted works in education.",
+                      "2.7 Open Licenses – GNU – Free Documentation license, Free Art License",
+                      "2.8 Why Free Licenses – Retain, Reuse, Revise, Remix, Redistribute"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Creative Common Licenses",
+                    points: [
+                      "3.1 Alternatives to copyright as Creative Commons licenses.",
+                      "3.2 Four components of creative common Licenses – Attribution, Share- Alike, Non – commercial, No Derivatives",
+                      "3.3 Choosing a Creative common licenses – Wiley’s 5 Rs and Creative Common Licenses",
+                      "3.4 Four Open CC Licenses and Their Strengths and Weaknesses – (a) CC BY (b) CC BY SA (c) CC BY NC (d) CC BY NC SA",
+                      "3.5 Attribution Vs Citation - Creative Commons licensed work without giving attribution",
+                      "3.6 Apply a CC License - choose the right Creative Commons license for work, apply a Creative Commons license to existing work, Creative Commons licenses be used for commercial purposes, modify a work licensed under Creative Commons, revoke a Creative Commons license, combine works with different Creative Commons licenses"
+                    ]
+                  }
+                ]
+              }
+            ];
 
             return semesters;
           })()
@@ -5404,6 +7216,428 @@ const syllabusData = {
                 ]
               },
 
+            ];
+
+            // Diploma ece sem 6
+
+            semesters.sem6.theory = [
+              {
+                name: "Data Communication and Computer Networking",
+                code: "2421601",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Data Communication and Network Topology",
+                    points: [
+                      "1.1 Data communication and its characteristics, Basic block diagram of data communication system, Components of data communication: Transmitter, Receiver, Medium, Message, error, noise, Protocol. Standards, Standard organizations",
+                      "1.2 Data Transmission: Serial, Parallel, Synchronous, Asynchronous, Isochronous transmission",
+                      "1.3 Transmission characteristics: Signaling rate, data rate, bit rate, baud rate",
+                      "1.4 Need of computer networks, Network criteria, advantages of networking, Schematic diagram, working",
+                      "1.5 Network topologies: Mesh, Star, Bus, Tree, Ring and Hybrid topologies: working, disadvantages and applications.",
+                      "1.6 Network Classification: Based on Transmission Technologies: Point to-point, Multipoint; Physical size (scale): PAN, BAN, LAN, MAN, WAN, VPN; Based on Architecture: Peer to Peer, Client Server, advantages of Client Sever over Peer-to-Peer Model"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Network Models",
+                    points: [
+                      "2.1 TCP/IP protocol suite with define protocols in respective Layers: Physical layer, Data Link Layer, Network Layer, Transport Layer, and Application Layer",
+                      "2.2 Addressing in TCP/IP: Physical, logical, Port and specific",
+                      "2.3 The ISO-OSI model: Physical layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer, Application Layer"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Physical Layer",
+                    points: [
+                      "3.1 Multiplexing: Basic concept, Frequency Division Multiplexing, Wavelength Division Multiplexing, Synchronous Time-Division Multiplexing",
+                      "3.2 Transmission medium: classification based on electromagnetic wave spectrum",
+                      "3.3 Guided Media- Performance and applications: Twisted pair (UTP, STP) cable-connector, Coaxial cable-connector, Fiber-optic cable-connector",
+                      "3.4 Introduction of Unguided Media- Radio waves, microwaves, Infrared and their applications",
+                      "3.5 Modems classification: Broadband modem, DSL-ADSL, HDSL, VDSL",
+                      "3.6 Switching: Circuit-switched networks, Packet switched networks- Datagram approach, virtual circuit approach"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Data Link Layer",
+                    points: [
+                      "4.1 Framing",
+                      "4.2 Flow control",
+                      "4.3 Error control: Types of errors: Single bit and Burst errors, Error detection and correction",
+                      "4.4 Protocol: Sliding window protocol: One bit sliding window protocol",
+                      "4.5 Point to Point Protocol: service provided by PPP, Frame format PPP and Transition phases of PPP",
+                      "4.6 Ethernet and IEEE 802.3",
+                      "4.7 MAC Addresses and Switching"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Network, Transport and Application Layer",
+                    points: [
+                      "5.1 Network devices: Repeater, Hub, Bridge, Switches, Router, Gateway",
+                      "5.2 Network layer Logical addressing: IPv4 Addresses: address space notations, class-full addressing, and class-less addressing",
+                      "5.3 Network Address Translation (NAT), IPv6 addresses, Need for IPv6, Structure and address space",
+                      "5.4 Network layer-Multicast Routing Protocols: Unicast, Multicast and Broadcast routing and applications of Transport Layer",
+                      "5.5 Internet Control Message Protocol (ICMP), Address Resolution Protocol(ARP), Reverse Address Resolution Protocol (RARP)",
+                      "5.6 Process to process delivery: UDP, TCP, RTP, SCTP, ports format and uses.",
+                      "5.7 Application Layer services: Concept of DNS, FTP, HTTP/HTTPS, FTP and SMTP, DNS and DHCP.",
+                      "5.8 Network Security Protocols (SSL/TLS)",
+                      "5.9 Security services: concepts of message and entity security service, Firewall"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Embedded Systems",
+                code: "2421602",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Embedded System",
+                    points: [
+                      "1.1 Block diagram of embedded system",
+                      "1.2 Embedded system vs. General Computing system",
+                      "1.3 Harvard and Von-Neumann Architecture, RISC and CISC Processors",
+                      "1.4 Main components of an Embedded system",
+                      "1.5 Important characteristics of an embedded system: processor power, Memory, operating system, reliability, performance, power consumption, flexibility.",
+                      "1.6 Advantages & Disadvantages of an Embedded system,",
+                      "1.7 Application areas of an Embedded system"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Atmel & PIC Microcontroller IC",
+                    points: [
+                      "2.1 Atmel Microcontroller: Basics of ATMEL Microcontroller: Pin Diagram and its functions, Atmel Microcontroller family",
+                      "2.2 Arduino Microcontroller board: IDE (Integrated development Environment), Types of Arduino Board and its specifications",
+                      "2.3 PIC Microcontroller: Introduction, Pin Configuration, Architecture, Instruction Set, Application"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Programming using Embedded C",
+                    points: [
+                      "3.1 Introduction to Embedded C",
+                      "3.2 Embedded C & C Language",
+                      "3.3 Embedded C basic operators",
+                      "3.4 Instruction set of Embedded C: Arithmetic operations, Logical operations, Data transfer operation, Decision control and Looping",
+                      "3.5 Timer/Counter Programming",
+                      "3.6 Serial communication programming"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Communication Standards and Protocol",
+                    points: [
+                      "4.1 Modes of data communication: Serial, Parallel, Synchronous and Asynchronous Communication",
+                      "4.2 Serial communication standards RS 232",
+                      "4.3 Communication protocols: UART, SPI, I2C",
+                      "4.4 RTOS (Real time operating system): Basics of RTOS, Types of RTOS and Characteristics of RTOS"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Interfacing I/O Devices",
+                    points: [
+                      "5.1 I/O Interfacing with: Switch(s), Keypad, 7-segment LED display, LCD",
+                      "5.2 Interfacing with: ADC and DAC, Stepper motor, DC Motor"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Artificial Intelligence & Machine Learning",
+                code: "2421603A",
+                units: [
+                  {
+                    title: "Unit 1.0 Introduction to Artificial Intelligence",
+                    points: [
+                      "1.1 AI: Definition & Characteristics, History, Scope;",
+                      "1.2 Approaches to AI, Turing Test; Foundations of Artificial Intelligence; Goal of AI;",
+                      "1.3 Agent & Environment: Definition, Characteristics & Classification of Agents; Rational Agent & Intelligent Agent; Environment and its Properties;",
+                      "1.4 AI Ethics: Transparency, Fairness, Accountability, Privacy, Security;",
+                      "1.5 AI: Symbolic vs Sub-Symbolic AI, Importance, Limitations, Recent Advancements & Future of AI",
+                      "1.6 Importance of data analysis in AI: measurement of central tendency and deviations of a dataset, Mean, mode, median, standard deviation, variance"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Problem Solving",
+                    points: [
+                      "2.1 Problem: Definition & Characteristics; Problem Formulation;",
+                      "2.2 Search Algorithm: Definition, Types, Properties, Problem Solving Performance of a Search Algorithm",
+                      "2.3 Uninformed Search Strategies: Breadth First Search; Uniform Cost Search; Depth First Search;",
+                      "2.4 Informed (Heuristic) Search Strategies: Greedy best-first search; A* Search;",
+                      "2.5 Local Search: Local Search Algorithms and Optimisation Problems; Hill Climbing Search; Local Search in Continuous Space"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Knowledge, Reasoning & Planning",
+                    points: [
+                      "3.1 Knowledge: Definition & Types of Knowledge;",
+                      "3.2 Knowledge Representation; Knowledge Representation Techniques; Types of Knowledge;",
+                      "3.3 Knowledge based Agent in AI: Introduction; Architecture; Rules of Inference; First Order Logic; Forward Chaining & Backward Chaining;",
+                      "3.4 Reasoning: Definition & its types; Forward Reasoning & Backward Reasoning; Probabilistic Reasoning: Need, Cause of Uncertainty, Bayesian Reasoning;",
+                      "3.5 Planning: Definition; Planning Graphs"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Machine Learning",
+                    points: [
+                      "4.1 Machine Learning & Artificial Intelligence;",
+                      "4.2 Types of Machine Learning: Unsupervised, Supervised & Reinforcement Learning; Unsupervised Learning: k-means algorithm, Clustering Algorithm;",
+                      "4.3 Supervised Learning: k-nearest neighbour algorithm, Linear Regression Algorithm; Support Vector Machine Algorithm;",
+                      "4.4 Reinforcement Learning: Active Reinforcement Learning & Passive Reinforcement Learning;",
+                      "4.5 Deep Learning: Artificial Neural Network;"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Communication & Perception of AI",
+                    points: [
+                      "5.1 NLP: Language Model; Text Classification; Information Retrieval;",
+                      "5.2 Speech Recognition; Machine Translation;",
+                      "5.3 Perception: Image Formation; Object Recognition by Appearance;",
+                      "5.4 Weak AI: Artificial Narrow Intelligence;",
+                      "5.5 Strong AI: Artificial General Intelligence;"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Industrial Electronics",
+                code: "2421603B",
+                units: [
+                  {
+                    title: "Unit-1.0: Power Electronics Devices",
+                    points: [
+                      "1.1 SCR-Construction, Working principle, types of SCR and V-I Characteristics",
+                      "1.2 Rating and Protection: over voltage, over current, snubber circuit.",
+                      "1.3 Series and parallel operation of SCRs: String efficiency.",
+                      "1.4 DIAC, TRIAC: Construction, Operation, characteristics and applications.",
+                      "1.5 Power BJT, MOSFET, IGBT: Construction, Operation, characteristic curves and applications.",
+                      "1.6 SCR Turn-on methods: High Voltage triggering, thermal triggering, illumination triggering, dv/dt triggering, Gate triggering",
+                      "1.7 Gate trigger circuits: Resistance and Resistance capacitance circuits,",
+                      "1.8 SCR triggering using UJT Relaxation Oscillator and Synchronized UJT circuits.",
+                      "1.9 SCR Turn-Off methods: Natural and forced commutation,",
+                      "1.10 Class A, Class B, Class C, Class D commutation."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Phase controlled rectifier",
+                    points: [
+                      "2.1 Phase control: Firing angle, Conduction angle",
+                      "2.2 Single phase half controlled and full controlled rectifier with R, RL load: Circuit diagram, Working principle, Input-output waveform, Equation for DC output",
+                      "2.3 Single phase midpoint-controlled rectifier with R, RL load: Circuit diagram, Working principle, Input-output waveform, Equation for DC output",
+                      "2.4 Three-phase half wave converter with R load: Circuit diagram, working, input-output waveform."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Choppers",
+                    points: [
+                      "3.1 Chopper: Working Principle, applications",
+                      "3.2 Control Techniques: Constant Frequency and Variable Frequency System",
+                      "3.3 Classification of Choppers: Step Up and Step-down choppers",
+                      "3.4 Class A, Class B, Class C, Class D and Class E chopper",
+                      "3.5 Buck, Boost and Buck-boost converter",
+                      "3.6 Commutation methods of chopper: Load commutation and Auxiliary commutation"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Inverters Cycloconverter and AC Voltage Controller",
+                    points: [
+                      "4.1 Single Phase Bridge Inverter - Half and full bridge inverter with R and RL load.",
+                      "4.2 Basic series and parallel Inverter - Operation and its application.",
+                      "4.3 Voltage and Current Source Inverter",
+                      "4.4 Three phase bridge inverters: Three phase 180 Degree mode VSI Circuit diagram, working, input-output wave forms.",
+                      "4.5 Single phase Cyclo-converter: working principle of Midpoint and bridge Configuration with R load.",
+                      "4.6 Step up and step-down single phase Cyclo-converter and its applications.",
+                      "4.7 Working principle and applications of a single-phase AC voltage controller."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0-Industrial Application of Power Electronic Devices",
+                    points: [
+                      "5.1 Light dimmer circuit using DIAC-TRIAC",
+                      "5.2 Battery charger using SCR",
+                      "5.3 Emergency lighting system",
+                      "5.4 Temperature controller using SCR",
+                      "5.5 Uninterrupted Power Supply (UPS-online and offline)",
+                      "5.6 Switched Mode Power Supply (SMPS)",
+                      "5.7 Fan speed control using triac",
+                      "5.8 SCR based AC and DC circuits breaker"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Biomedical Electronics",
+                code: "2421603C",
+                units: [
+                  {
+                    title: "Unit-1.0: Overview of Human Physiology & Anatomy",
+                    points: [
+                      "1.1 Structure and function of cell",
+                      "1.2 Basic tissues and their functions",
+                      "1.3 Cardiovascular system (Only basics)",
+                      "1.4 Respiratory system (Only basics)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0: Nerve & Muscle Physiology",
+                    points: [
+                      "2.1 Nerve Physiology",
+                      "2.2 Membrane Potential - Action potential & resting potential",
+                      "2.3 Propagation of Action potential",
+                      "2.4 Function of nerve junctions",
+                      "2.5 Types of muscles: Skeleton, smooth & cardiac muscle - Structure and functions",
+                      "2.6 Cardiac rhythmic contraction",
+                      "2.7 Blood flow and arterial pressure"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Biomedical Recorders",
+                    points: [
+                      "3.1 Sources of bioelectric signals",
+                      "3.2 Electrodes: Micro, Skin-surface & Needle",
+                      "3.3 Electrocardiograph (ECG): ECG waveform, block diagram and working principle of ECG amplifier",
+                      "3.4 Electroencephalograph (EEG): EEG waveforms, block diagram and working principle of EEG amplifier",
+                      "3.5 Electromyograph (EMG) - EMG waveform, block diagram, and working principle of EMG amplifier"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Overview of Medical Equipment and Patient Monitoring System",
+                    points: [
+                      "4.1 Classification, application, and specifications of diagnostic, therapeutic, and clinical laboratory equipment",
+                      "4.2 Modern medical equipment: CT scan, MRI, pacemaker, defibrillator, ultrasound, dialyzer, incubator, and ventilator (only function)",
+                      "4.3 Working principle of pulse oximeter",
+                      "4.4 Working principle of blood oxygenation (SpO2) sensor",
+                      "4.5 Blood pressure measurement"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: Safety Aspects of Medical Instruments",
+                    points: [
+                      "5.1 Physiological Effects and Electrical Current",
+                      "5.2 Shock Hazards from Electrical Equipment",
+                      "5.3 Methods of Accident Prevention",
+                      "5.4 Medical equipment regulations (Only listing)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Elective | Advance Communication Systems",
+                code: "2421603D",
+                units: [
+                  {
+                    title: "Unit-1.0 Cellular Communication",
+                    points: [
+                      "1.1 Evolution of Mobile Radio Communication, Definition of basic terms used in mobile communication: forward channel, handoff, Mobile Station (MS), Mobile Switching Centre (MSC), reverse channel, subscriber and transceiver, mobile communication frequency bands and channel bandwidth",
+                      "1.2 Generations of mobile communication: First Generation (1G), Second Generation (2G), 2.5 G, Third Generation (3G), Fourth Generation (4G) and Fifth Generation (5G) networks",
+                      "1.3 Cell structure and its types, cluster, reuse factor, minimum reuse distance, basic cellular system: mobile station, base station, frequency reuse, channel assignment strategies",
+                      "1.4 Handoff strategies: Concept of handoff, Types of Handoffs: Hard and Soft, adaptive",
+                      "1.5 Interference: Co-Channel interference and Adjacent Channel interference"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Cellular Network Standards",
+                    points: [
+                      "2.1 Global System for Mobile (GSM): System architecture and interfaces, services and features, Handover, GSM channels, establishment of a GSM call, Channel uses during GSM call, User Validation",
+                      "2.2 CDMA Technology for Mobile: System architecture, System blocks and functions, CDMA channels, establishment of a CDMA call, User Validation"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Optical Fiber Communication System",
+                    points: [
+                      "3.1 Evolution of Fiber Optic communication, frequency bands of optical Fiber communication and their applications",
+                      "3.2 Elements of an Optical Fiber Transmission link",
+                      "3.3 Ray theory of propagation of light, refractive index, Numerical Aperture(NA), Fiber cable structure: core and cladding, modes of light transmission through fiber; step index Fiber and graded index Fiber",
+                      "3.4 Types of losses and attenuation in optical Fibers: attenuation due to absorption and scattering"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Satellite Communication",
+                    points: [
+                      "4.1 Block diagram of satellite communication link, Types of satellite: active and passive, synchronous and non-synchronous, Low Earth Orbit (LEO), Medium Earth Orbit (MEO) and Geostationary Earth Orbit (GEO) satellites",
+                      "4.2 Kepler's law of satellite motion, first, second and third law, Orbital parameters: apogee and perigee heights, satellite time period, focus of a parabola",
+                      "4.3 Transponders, Earth segment subsystem: earth station transmitter and earth station receiver block diagram, function and working"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 RADAR and its Applications",
+                    points: [
+                      "5.1 Introduction: Basic principle of RADAR, basic types of RADAR, working of RADAR, applications",
+                      "5.2 RADAR range equation and examples, factors affecting maximum range",
+                      "5.3 Pulse RADAR: block diagram, RADAR antenna, scanning and tracking methods, display methods",
+                      "5.4 Continuous Wave (CW), Doppler RADAR: Moving target indicator radar, blind speed, frequency modulated CW RADAR"
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Open Elective | Electric Vehicle (Advanced)",
+                code: "2400604G",
+                units: [
+                  {
+                    title: "Unit-1.0 Vehicle Dynamics",
+                    points: [
+                      "1.1 Vehicle Movement",
+                      "1.2 Rolling Resistance: Equation, Coefficient, factor affecting rolling resistance, typical values of rolling resistance",
+                      "1.3 Grading resistance",
+                      "1.4 Road resistance",
+                      "1.5 Acceleration resistance",
+                      "1.6 Total driving resistance",
+                      "1.7 Aerodynamic drag: Equation, typical values of the drag coefficient.",
+                      "1.8 Vehicle dynamics: Hybrid and Electric Vehicles, DC Motor Dynamics and Control, AC Motor Dynamics and Control"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Elements of Automobile",
+                    points: [
+                      "2.1 Suspension and Damping systems",
+                      "2.2 Brake system: Half-step braking, Full step Braking",
+                      "2.3 Transaxle",
+                      "2.4 Elements of Noise Vibration and Harshness Control",
+                      "2.5 Body balancing",
+                      "2.6 Tyre Technology",
+                      "2.7 AC/DC motor",
+                      "2.8 Air-conditioning and Heating System",
+                      "2.9 Lighting System",
+                      "2.10 Automotive wiring system",
+                      "2.11 Earthing and Insulation",
+                      "2.12 Charging stations – Installation and Commissioning",
+                      "2.13 Vehicle control unit"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Power Transmission System",
+                    points: [
+                      "3.1 Transmission System: Single and Multi-transmission system",
+                      "3.2 EV Power Train",
+                      "3.3 EV Power Train Components: Battery Pack, DC-AC Converter, Electric Motor, On-Board Charger.",
+                      "3.4 Battery Parameters: Voltage, Current, Charging rate, efficiency, energy density, power density, State of Charge (SoC), Depth of Discharge (DoD), State of Health (SoH), Operating Temperature, specific energy, specific power, life cycle and cost.",
+                      "3.5 Battery Assembly and Dismantling.",
+                      "3.6 Gear and Differential Assembly",
+                      "3.7 Safe disposal of used battery"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 Vehicle Control Unit (VCU)",
+                    points: [
+                      "4.1 Electronic Control Unit: Battery Management System, DC-DC Converter, Thermal Management System and Body Control Module.",
+                      "4.2 Predefined functions",
+                      "4.3 Connections with EV subsystem",
+                      "4.4 Controller Area Network (CAN) communication",
+                      "4.5 Interaction of CAN Communication with VCU.",
+                      "4.6 Troubleshooting and Assessment",
+                      "4.7 Dynamometers: Introduction",
+                      "4.8 Environmental Chambers"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 EV Charging Technologies",
+                    points: [
+                      "5.1 Charging Technology: Classification",
+                      "5.2 Grid-to-Vehicle (G2V)",
+                      "5.3 Vehicle to Grid (V2G) or Vehicle to Buildings (V2B) or Vehicle to Home(V2H).",
+                      "5.4 Bi-directional EV Charging Systems.",
+                      "5.5 Energy Management Strategies.",
+                      "5.6 Wireless Power Transfer (WPT) technique for EV Charging."
+                    ]
+                  }
+                ]
+              },
             ];
 
             return semesters;
