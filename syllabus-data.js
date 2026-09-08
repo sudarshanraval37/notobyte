@@ -131,6 +131,9 @@ const syllabusData = {
 
 
 
+    // Diploma Syllabus
+
+
     {
       id: "diploma",
       title: "Diploma",
@@ -142,6 +145,8 @@ const syllabusData = {
           icon: "fas fa-laptop-code",
           semesters: (() => {
             const semesters = syllabusEmptySemesters(6);
+
+            // Diploma cse sem 1
 
             semesters.sem1.theory = [
               {
@@ -1227,7 +1232,7 @@ const syllabusData = {
                 ]
               },
               {
-                name: "Open Elective | Introduction to Electric Vehicle",
+                name: "Open Elective | Electric Vehicle (Basic)",
                 code: "2400504G",
                 units: [
                   {
@@ -1282,7 +1287,7 @@ const syllabusData = {
                 code: "2400505",
                 units: [
                   {
-                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    title: "After completion of the course, the students will be able to",
                     points: [
                       "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
                       "1.2Innovate products and services using creativity and innovation techniques.",
@@ -2306,7 +2311,7 @@ const syllabusData = {
                 code: "2400505",
                 units: [
                   {
-                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    title: "After completion of the course, the students will be able to",
                     points: [
                       "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
                       "1.2Innovate products and services using creativity and innovation techniques.",
@@ -3433,7 +3438,7 @@ const syllabusData = {
                 code: "2400505",
                 units: [
                   {
-                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    title: "After completion of the course, the students will be able to",
                     points: [
                       "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
                       "1.2Innovate products and services using creativity and innovation techniques.",
@@ -3461,18 +3466,1951 @@ const syllabusData = {
           })()
         },
 
+
+
         {
           id: "civil",
           title: "Civil Engineering",
           icon: "fas fa-drafting-compass",
-          semesters: syllabusEmptySemesters(8)
+          semesters: (() => {
+            const semesters = syllabusEmptySemesters(6);
+
+            // Diploma civil sem 1
+
+            semesters.sem1.theory = [
+              {
+                name: "Basic Engg. Mathematics",
+                code: "2600101",
+                units: [
+                  {
+                    title: "Unit-1.0 Algebra Determinant",
+                    points: [
+                      "1.1 Concept and properties of determinant.",
+                      "1.2 Solutions of simultaneous equations in three Unknowns by Cramer's rule.",
+                      "1.3 Matrices: Algebra of matrices (Addition, Subtraction, Multiplication by Scalar, and Multiplication of Two matrices).",
+                      "1.4 Transpose, Adjoint and Inverse of Matrix.",
+                      "1.5 Solutions of simultaneous equations of a Matrix of order 3 x 3 by Inversion method.",
+                      "1.6 Vectors: Position vector.",
+                      "1.7 Algebra of Vectors (Addition, Subtraction, Scalar Multiplication with vector).",
+                      "1.8 Scalar product.",
+                      "1.9 Vector product.",
+                      "1.10 Algebra in Indian Knowledge System: Solution of simultaneous equations (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Differential Calculus",
+                    points: [
+                      "2.1 Function and Limit: Concept of function.",
+                      "2.2 Different type of functions.",
+                      "2.3 Domain and Range of Function.",
+                      "2.4 Concept of Limits and its evaluation.",
+                      "2.5 Continuity: Concept of continuity with simple problems.",
+                      "2.6 Differentiation: Differentiation by First Principle.",
+                      "2.7 Differentiation of Algebraic, trigonometric, Exponential, and Logarithmic functions.",
+                      "2.8 Differentiation of sum, product, and quotient of two functions.",
+                      "2.9 Differentiation of composite functions by Chain Rule.",
+                      "2.10 Logarithmic differentiation.",
+                      "2.11 Implicit differentiation.",
+                      "2.12 Differentiation of Parametric Functions.",
+                      "2.13 Calculus in Indian Knowledge System: The Discovery of Calculus by Indian Astronomers. (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Application of Differential Calculus",
+                    points: [
+                      "3.1 Successive differentiation up to second order.",
+                      "3.2 Rolle's Theorem and Mean Value Theorem (without proof) with examples.",
+                      "3.3 Rate of change of quantities.",
+                      "3.4 Equation of Tangent and Normal.",
+                      "3.5 Maxima and Minima.",
+                      "3.6 Radius of curvature."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Co-ordinate Geometry",
+                    points: [
+                      "4.1 Co-ordinate systems: Introduction of Co-ordinate Systems.",
+                      "4.2 Straight lines: Slope of a line, the angle between two lines.",
+                      "4.3 Various forms of Straight Lines: Point-slope form, Two-point form, Slope intercept form, Intercept form, Normal form, General form.",
+                      "4.4 Perpendicular distance of a line from a point, perpendicular distance between two parallel lines.",
+                      "4.5 Geometry in Sulabasutras in Indian Knowledge System (construction of the square, circling the square). (Indian Mathematics).",
+                      "4.6 Conic Section: Introduction of Conic-Section.",
+                      "4.7 Equation of Circle in standard form.",
+                      "4.8 Standard equation of parabola, ellipse, and hyperbola."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Probability and Statistics",
+                    points: [
+                      "5.1 Probability: Concept of Probability.",
+                      "5.2 Addition and multiplication theorems of Probability.",
+                      "5.3 The measure of Central Tendency: Mean, Median, Mode.",
+                      "5.4 Measure of Dispersion: Range, Variance, Standard Deviation.",
+                      "5.5 Coefficient of Variation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Applied Chemistry - A",
+                code: "2600103A",
+                units: [
+                  {
+                    title: "Unit-1.0 Atomic Structure and Chemical Bonding and Solutions",
+                    points: [
+                      "1.1 Atoms and its fundamental particles.",
+                      "1.2 Rutherford Model of Atom.",
+                      "1.3 Bohr's Theory, Hydrogen spectrum explanation based on Bohr's Model of Atom.",
+                      "1.4 Wave Mechanical model of atom, de Broglie relationship, Heisenberg Uncertainty Principle",
+                      "1.5 Quantum Numbers, Shapes of Atomic Orbitals.",
+                      "1.6 Pauli's Exclusion Principle, Hund's Rule of Maximum Multiplicity, Aufbau Principle, Electronic Configuration (till atomic number 30).",
+                      "1.7 Concept of Chemical bonding - Cause of chemical bonding, Types of Bonds: Ionic Bond (NaCl, CaCl2, MgO), Covalent Bond, Polar and Nonpolar Covalent Bonds (H2, F2, HF, HCl) & Co-ordinate Bond (CO, NH4+, O3, H2SO4).",
+                      "1.8 Dipole Moment (NH3, NF3), Hydrogen bonding.",
+                      "1.9 Solution- (solute, solvent) and their strength- Molarity, Normality, Molality.",
+                      "1.10 Indian Chemistry: -Philosophy of atom by Acharya Kanad. (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Water",
+                    points: [
+                      "2.1 Introduction, Sources of Water. Hardness of Water- Temporary & Permanent hardness.",
+                      "2.2 Degree of Hardness (In terms of CaCO3 equivalent), Unit of Hardness, Quantitative Measurement of Water Hardness by EDTA method.",
+                      "2.3 Municipal supply of Water, Treatment of water, Water Softening Technique-Soda Lime Process, Zeolites method and ion exchange method.",
+                      "2.4 Water Quality Index - Biological Oxygen Demand, Chemical Oxygen Demand, Determination of Dissolved Oxygen",
+                      "2.5 Indian standard specification of drinking water."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Engineering materials",
+                    points: [
+                      "3.1 Natural Occurrence of Metals- Minerals, ores.",
+                      "3.2 Metallurgy - General principles of Metallurgy, Gangue, Flux and Slag, Steps involved in metallurgy.",
+                      "3.3 Extraction of Aluminium, Iron and Copper from their important ores along with reactions, Properties and uses.",
+                      "3.4 Alloys - Definition, Purpose of alloying, Ferrous and Non-Ferrous Alloy with suitable examples, Composition, Properties, and their applications.",
+                      "3.5 Ancient Indian Metallurgy (IKS)",
+                      "3.6 Polymers-Homopolymers and Copolymers, Natural polymers and synthetic polymers, Addition and Condensation polymerization, Thermoplastic and Thermosetting plastic.",
+                      "3.7 Monomers, applications, and synthesis of Polythene, PVC, Orlon, Terylene, Nylon 66, Nylon 6, Bakelite.",
+                      "3.8 Natural Rubber and its vulcanization, advantages of vulcanized rubber.",
+                      "3.9 Cement, Average composition of Portland cement, Raw material for manufacture of cement, Setting of Cement."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Chemistry of Fuel and Lubricants",
+                    points: [
+                      "4.1 Fuels, Characteristics of an Ideal Fuel.",
+                      "4.2 Classification of Fuel- Solid, liquid and gas fuel, Calorific Values (HCV and LCV), Petroleum and its fractional distillation.",
+                      "4.3 Cracking, knocking, Fuel Rating (Octane Number, Cetane Number).",
+                      "4.4 Composition, uses, advantages and disadvantages of LPG, CNG and Biogas.",
+                      "4.5 Manures, NPK fertilizers (preparation and uses).",
+                      "4.6 Fire Extinguishers and their types.",
+                      "4.7 Lubricants- Classification of Lubricants with examples, Functions and Properties of Good Lubricant.",
+                      "4.8 Viscosity & Viscosity Index. Flash point. Fire point, Cloud & Pour point"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Electrochemistry",
+                    points: [
+                      "5.1. Introduction, Electrolyte and Nonelectrolyte, Electrolytic and Metallic Conduction, Factors affecting Electrolytic Conductance.",
+                      "5.2. Molar Conductivity and Equivalent Conductivity. Variation of Molar Conductivity, Kohlrausch's law.",
+                      "5.3. Faraday's Laws of Electrolysis.",
+                      "5.4. Galvanic Cell, Electrode Potential, Measurement of Electrode Potential SHE (Standard Hydrogen electrode), EMF, Electrochemical Series, Nernst Equation for Electrode Potential.",
+                      "5.5. Batteries, Primary Cells - Dry cell, Secondary cell - Lead storage battery, Fuel cells.",
+                      "5.6. Corrosion, their types (Dry & Wet corrosion) and prevention."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Fundamentals of Mechanical Engineering",
+                code: "2625103",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Thermodynamics",
+                    points: [
+                      "1.1 Role of thermodynamics in engineering and science,",
+                      "1.2 Types of thermodynamics systems",
+                      "1.3 Specific volume, enthalpy, pressure, temperature, thermodynamic work, thermodynamic equilibrium",
+                      "1.4 First law, second law and zeroth of thermodynamics",
+                      "1.5 Enthalpy of wet steam, superheated steam, dryness fraction, degree of superheat",
+                      "1.6 Modes of heat transfer: conduction- composite walls, combined conduction, convection, radiation, application of heat transfer modes"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Internal Combustion Engine and Refrigeration",
+                    points: [
+                      "2.1 Types of internal combustion engines- S.I. and C.I. Engines,",
+                      "2.2 Construction and working two stroke and four stroke petrol engines and two stroke and four stroke diesel engines",
+                      "2.3 BP, heat supplied and brake thermal efficiency of IC engines.",
+                      "2.4 Common faults in IC engines, remedial measures to rectify the faults",
+                      "2.5 Air pollution due to IC engines.",
+                      "2.6 Heat engine, concept of refrigeration, ton of refrigeration, unit of refrigeration, COP",
+                      "2.7 Major components of vapor compression systems, heat pump, Carnot cycle, Carnot efficiency,",
+                      "2.8 Types of refrigerants",
+                      "2.9 Types of air conditioning systems - window, package, central air-conditioning systems",
+                      "2.10 Domestic refrigerator.",
+                      "2.11 Basic fault finding in refrigerator and window air-conditioner.",
+                      "2.12 Methods of energy saving in refrigeration and air-conditioning systems."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Engineering Materials",
+                    points: [
+                      "3.1 Metallic materials: Introduction to engineering materials, classification of materials; Ferrous alloys- carbon steel, low-alloy steel, tool steel, stainless steel, cast iron; Aluminum alloys, nickel alloys, copper alloys, titanium alloys; Magnetic, dielectric and superconducting materials",
+                      "3.2 Non-metallic materials: Ceramics - types and applications; Polymers- thermoplastic polymers, thermosetting polymers, elastomers; Metallic glasses: types, glass forming ability of alloys, melt spinning process; Composites- particulate composites, fibrous composites, laminated composites",
+                      "3.3 Mechanical properties: Tensile strength, elasticity, plasticity, hardness, toughness, brittleness, stiffness, ductility, malleability, cohesion, impact strength, fatigue, creep, Hooke's law, Poisson's ratio",
+                      "3.4 Magnetic properties of materials: Intensity of magnetization, magnetic field (h) or magnetic intensity, magnetic susceptibility, retentivity, coercivity",
+                      "3.5 Optical properties of materials - elastic properties of materials, dielectric properties of materials",
+                      "3.6 Physical properties of materials: Electrical conductivity, melting temperature of material, semiconductors, thermal conductivity, fusibility, reluctance (as magnetic properties), density, melting point and boiling point."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Manufacturing Processes and Machine Tools",
+                    points: [
+                      "4.1 Basic machine tools: Introduction to lathe, drill, milling and grinding machines; Types of operations / jobs which can be performed on machine tools listed above.",
+                      "4.2 Metal joining processes: Welding- types, working set up of arc and gas welding, precautions and safety during arc and gas welding; Brazing and soldering- general set up, applications.",
+                      "4.3 Foundry- concept, process of casting a component, applications.",
+                      "4.4 Basic metal forming processes- bending, rolling, forging and extrusion- concept and its application",
+                      "4.5 Additive manufacturing techniques- introduction to various additive manufacturing processes- stereo-lithography, LOM, FDM, SLS, SLM, Binder Jet technology, Direct Energy Deposition",
+                      "4.6 FDM based 3D printer, its working and construction, Process parameters"
+                    ]
+                  },
+                  {
+                    title: "Unit-5 Power Transmission",
+                    points: [
+                      "5.1 Belt drives flat belt and v-belt drive, ropes and chain, velocity ratio slip, length of the belt, open belt and cross belt drives. Ratio of friction tensions, centrifugal tension in a belt, Power transmitted by belts and ropes, Initial tensions in the belt",
+                      "5.2 Gear drives- classification, simple, compound - reverted and epicyclic gear trains, their selection for different applications, gear trains velocity ratio, gear ratio",
+                      "5.3 Couplings- muff coupling and flange coupling joints- cotter joint and knuckle joint",
+                      "5.4 Helical springs (closed and open coil)",
+                      "5.5 Friction clutches: single plate, multi plate, cone clutch, variable speed clutch, positive drive clutches: claw and jaw clutch. (construction and working)",
+                      "5.6 Brakes: shoe brake, internal expanding and disc brakes. (construction and working)",
+                      "5.7 Fasteners: keys, nut-bolt connections, screws, rivets"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Communication Skills (English)",
+                code: "2600104",
+                units: [
+                  {
+                    title: "Unit-1.0 Communication",
+                    points: [
+                      "1.1 Communication: Role, Relevance, Elements (Context-Sender-Message-Channel-Receiver-Feedback)",
+                      "1.2 Process/Stages: Ideation - Encoding, Selecting Proper Channel, Transmission, Receiving, Decoding, Giving Feedback",
+                      "1.3 7 Cs/Principles of Effective Communication: Considerate, Correct, Concrete, Concise, Clear, Complete, Courteous",
+                      "1.4 Barriers to Communication: Physiological, Physical, Psychological, Mechanical, Semantic/Language, Cultural. Overcome/minimize Barriers.",
+                      "1.5 Case Studies from: Bhagwat Geeta's conversation between Krishna and Arjun before the war (IKS), Mahabharata the conversation between Kauravas and Pandavas in the war field (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit- 2.0 Types of Communication",
+                    points: [
+                      "2.1 Based on organizational structure: Formal (Vertical, Horizontal, Diagonal), Informal (Grapevine)",
+                      "2.2 Based on the method of expression: Verbal-Oral & Written communication. Non-verbal communication and its Codes- Kinesics, Chronemics, Proxemics, Haptics, Vocalics/Paralanguage, Artifacts, Graphic and Visual Communication",
+                      "2.3 Based on the number of people involved: Interpersonal, and Group Communication.",
+                      "2.4 Case Studies from Bhagwat Geeta's different conversations with Krishna and Arjun during the war (IKS)."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Reading Comprehension",
+                    points: [
+                      "3.0 Comprehension, vocabulary enhancement and grammar exercises based on the reading of the following texts:",
+                      "3.1 Section-1 (Prose): An Astrologer's Day by R K Narayan",
+                      "3.2 Indian Civilization and Culture by M K Gandhi",
+                      "3.3 The Secret of Work by Swami Vivekanand",
+                      "3.4 My Struggle for an Education by Booker T Washington",
+                      "3.5 Section-2 (Poetry): Where the Mind is without Fear by R N Tagore",
+                      "3.6 Ode on Solitude by Alexander Pope",
+                      "3.7 Stopping by Woods on a Snowy Evening by Robert Frost",
+                      "3.8 A Psalm of Life by H W Longfellow"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Vocabulary and Grammar",
+                    points: [
+                      "4.1 Word Formation: Prefix, Suffix, Acronym",
+                      "4.2 Synonyms, Antonyms, Homonyms, One Word Substitution, Idioms and Phrases",
+                      "4.3 Technical Jargons - Related to the respective program",
+                      "4.4 Parts of speech",
+                      "4.5 Time and Tense",
+                      "4.6 Transformation: Voice, Narration, Removal of 'Too', Question Tag",
+                      "4.7 Punctuation"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Professional Writing",
+                    points: [
+                      "5.1 Precis Writing",
+                      "5.2 Business Letters / Applications",
+                      "5.3 Drafting E-mails, Notices, Memos, Circulars",
+                      "5.4 Report Writing: Project and Event/Incident Report Writing"
+                    ]
+                  },
+                ]
+              },
+              {
+                name: "Engineering Drawing & Graphics",
+                code: "2615105",
+                units: [
+                  {
+                    title: "Unit-1.0 Basic Elements of Drawing",
+                    points: [
+                      "1.1 Methods to use different Drawing Instruments and supporting materials.",
+                      "1.2 Different lines and conventions in engineering drawing.",
+                      "1.3 Engineering scales and applications: Reduced, enlarged & full size (only Plain scale)",
+                      "1.4 Dimensioning techniques: types and applications of chain, parallel and coordinate dimensioning as per IS SP-46.",
+                      "1.5 Regular Geometrical figures, Tangency constructions.",
+                      "1.6 Engineering Curves: only Ellipse and Parabola using concentric circle method, rectangular method and Eccentricity method when focus and directrix are given."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Orthographic Projections",
+                    points: [
+                      "2.1 Concept and applications of Orthographic, Perspective, Isometric and Oblique Projections.",
+                      "2.2 Orthographic Projection: First and Third angle",
+                      "2.3 Draw orthographic views of simple 3D entities containing lines, circles and arcs with axis/orientation parallel and/or perpendicular to the projection planes only. Problems should be restricted up to three views Front view/Elevation, Top view/Plan and Side views only using First Angle Method only.",
+                      "2.4 Conversion of simple pictorial views into orthographic views. (Domain specific illustrative problems to be given by the teacher)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Isometric Projection",
+                    points: [
+                      "3.1 Introduction to isometric projection.",
+                      "3.2 Isometric scale and Natural Scale.",
+                      "3.3 Isometric view and isometric projection.",
+                      "3.4 Illustrative problems limited to Isometric projection of objects containing rectangular, circular, cylindrical shapes and slots on sloping and plane surfaces.",
+                      "3.5 Conversion of orthographic views into isometric View/projection."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Free Hand Sketches of Engineering Elements",
+                    points: [
+                      "4.1 Materials for Sketching.",
+                      "4.2 General Guidelines for Freehand Sketching.",
+                      "4.3 Freehand sketching of straight lines, square, rectangle, circles and arcs.",
+                      "4.4 Free hand sketches of orthographic views.",
+                      "4.5 Free hand sketches of isometric views.",
+                      "4.6 Freehand sketching of domain specific engineering elements/components (e.g. Bolt, Nut, Washer, Stud, Screw, simple machine parts, etc. in case of mechanical, production, automobile, electrical engineering)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Basic Computer aided Drafting",
+                    points: [
+                      "5.1 Basics of AutoCAD or any other drafting software-interface, screen layout, starting commands from menus, command line.",
+                      "5.2 Coordinate system, Angular measurements, Point specification.",
+                      "5.3 Drawing aids - Grid, Snap, Ortho, Osnap, Units, Limits, Layers, Linetype.",
+                      "5.4 Opening and Saving drawing files.",
+                      "5.5 Creating User Defined Templates.",
+                      "5.6 Methods of Selecting and deleting Objects.",
+                      "5.7 Undo and Redo.",
+                      "5.8 Creating basic drawings objects - lines, arc, circles, ellipses, polyline and polygons."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Advanced Computer aided Drafting",
+                    points: [
+                      "6.1 Modify commands - erase, copy, move, rotate, scale, stretch,",
+                      "6.2 Array: concept and applications.",
+                      "6.3 Controlling Drawing display",
+                      "6.4 Text and Dimensioning",
+                      "6.5 Layers: concept and application",
+                      "6.6 Drawing orthographic views using drafting software with principles mentioned in Unit 2.",
+                      "6.7 Drawing isometric views using drafting software with principles mentioned in Unit 3.",
+                      "6.8 Printing and plotting of drawings."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Professional Ethics",
+                code: "2600107",
+                units: [
+                  {
+                    title: "Unit-1.0 Values and Ethics in Day to Day Life",
+                    points: [
+                      "1.1 Values- Definition and examples, Ethics- definition and examples, Concept of attitude and development of attitude",
+                      "1.2 Importance of values and ethics in day to day activities and at workplace- Ethical ways of communication, environmental considerations in engineering processes, Basic concept of Carbon footprint, ethics at workplace",
+                      "1.3 Examples of situations depicting values-based decisions and ethical behavior in day to Day life"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Values and Ethics in Profession",
+                    points: [
+                      "2.1 Relevance of profession to society",
+                      "2.2 Ethical principles such as respecting others and ourselves, respecting the rights of others, keeping promises, avoiding unnecessary problems to others, avoiding cheating and dishonesty, showing gratitude towards others and encouraging them to work",
+                      "2.3 Identification of activities and related ethical and unethical behavior for professional activities in their area of work",
+                      "2.4 Examples of situations depicting values- based decisions and ethical behavior"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Sports, Yoga and Meditation",
+                code: "T2600008",
+                units: [
+                  {
+                    title: "Unit-1.0 Sports and Exercises",
+                    points: [
+                      "1.1 Historical development of physical activities and sports in India, Indian ancient games- Kho-Kho and Kabaddi, Chariot races, riding elephants and horse, swordsmanship, wrestling, boxing, atyapatya, archery, dancing, dands baithak, malkhamb, lezim, lathi etc",
+                      "1.2 Origin of traditional sports, 3rd century BCE- martial arts and archery, indoor games like Chess and Snakes & Ladders have origins in ancient India, in the form of games of Chaturanga and Gyan Chauper, Dholavira, the world's oldest terraced arena 3000 BC",
+                      "1.3 Definition of play, game, sports, exercise, psychology, sports psychology and exercise psychology, psychology and common sense.",
+                      "1.4 Mental toughness- mind, Imagery, use of imagery and imagery in sports, types of imagery (visual, kinesthetic, auditory and olfactory)",
+                      "1.5 Motivation in sport and goal setting in sports",
+                      "1.6 Arousal regulation - self-awareness of regulation, anxiety reduction techniques- somatic anxiety reduction techniques, cognitive Anxiety reduction, multimodal anxiety reduction, coping with stress. Arousal -inducing techniques. Arousal and anxiety measurement factors, Arousal and anxiety signs recognition",
+                      "1.7 Nutrition and rehabilitation, Importance of concentration and attentional focus in sports and training, Impact of health on healing from physical athletic injuries. Impact of exercise to increase mental wellness, Role of coach in sports, parents' involvement in their children's sports activities.",
+                      "1.8 Adaptation of sports and exercises for physically challenged students in all levels."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Yoga and Meditation",
+                    points: [
+                      "2.1 Origin of yoga, History and development of yoga, Adi yogi, evidences of yoga in pre-Vedic period (2700 B.C.), Vedic Period, Pre-Classical Period, Classical Period- Patanjali's period, Modern Period.",
+                      "2.2 Yoga practices and the related literature- Vedas (4), Upanishads (108), Smritis, teachings of Buddhism, Jainism, Panini, Epics (2), Puranas (18)",
+                      "2.3 Importance of Yoga & Mediation, meaning of the term Yoga and Meditation, Fundamentals Principles of Yoga & Fitness training, Eight Limbs of Yoga",
+                      "2.4 Difference between yoga asana and physical exercises, Difference between yoga and meditation",
+                      "2.5 Role of Yoga and Meditation in Purificatory Process, in character building, developing concentration, will power and discipline",
+                      "2.6 Types of Yoga Practices: Asanas, Pranayama, Meditation",
+                      "2.7 Mindfulness: knowing the mind, training the mind, feeling the mind",
+                      "2.8 Different Methods of meditation, Physiology of meditation, Mental, physical and emotional benefits of Asanas, Pranayama, Concentration and Meditation",
+                      "2.9 Bandha, Mudra and Chakra",
+                      "2.10 Effects of Asanas and pranayama on physiology of human body",
+                      "2.11 Importance of Suryanamaskar",
+                      "2.12 Adaptation of Yoga and meditations for physically challenged students in all levels.",
+                      "2.13 Yoga Asanas Do's and Don'ts for Beginners"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Fitness and Wellness",
+                    points: [
+                      "3.1 Evolution of wellness, 3,000-1,500 BC: Ayurveda -holistic system, Tailored Ayurvedic regimens as per unique constitution of each person (their nutritional, exercise, social interaction and hygiene needs) - with the goal of maintaining balance that prevents illness.",
+                      "3.2 Meaning, Importance, Definition and dimensions of Health and Wellness (WHO/Yoga)",
+                      "3.3 Factors affecting Fitness and Wellness",
+                      "3.4 Role of Physical Activities and Recreational Games in maintaining physiological and psychological wellbeing.",
+                      "3.5 Different Methods to Maintain Health, Wellness and to enhance mood",
+                      "3.6 Nutrition for Health & Wellness, Relationship between Diet and Fitness. Components of Balance Diet and its importance - Carbohydrates, Protein, Fat, Vitamins & Minerals, Water, Healthy Lifestyle through Diet and Fitness",
+                      "3.7 Anxiety, Stress and Aging- Meaning of Anxiety, Stress and Aging, Types and Causes of Stress, Stress, anxiety and depression reduction with exercise, yoga and meditation",
+                      "3.8 Energy Continuum and Recovery Process, Metabolism and exercise, Recovery from exercise, Replenishment of energy stores during recovery process, Removal of excess lactic acid produced during exercise"
+                    ]
+                  }
+                ]
+              }
+            ];
+
+            // Diploma civil sem 3
+
+            semesters.sem3.theory = [
+              {
+                name: "Basic Surveying",
+                code: "2415301",
+                units: [
+                  {
+                    title: "Unit1.0 -Overview and Classification of Survey",
+                    points: [
+                      "1.1 Survey-Purpose and Use: Types of surveying- Primary and Secondary, Classification: Plane, Geodetic. Cadastral, Hydrographic, and Aerial.",
+                      "1.2 Principles of Surveying",
+                      "1.3 Scales: Engineer's scale, Representative Fraction (RF), diagonal scale, and Vernier Scale."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Chain Survey",
+                    points: [
+                      "2.1 Instruments used in chain survey: Metric Chain, Tapes, Arrow, ranging rod, Line ranger, Offset rod, Open cross-staff, Optical square.",
+                      "2.2 Chain survey Station, Baseline, Check line, Tie line, Offset, Tie Station.",
+                      "2.3 Ranging Direct and Indirect Ranging, Method of chaining, obstacles in chaining.",
+                      "2.4 Errors in length: Instrumental error, personal error, error due to natural cause, random error, Principles of triangulation.",
+                      "2.5 Types of offsets: Perpendicular and Oblique, Conventional Signs, Recording of measurements in a field book."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Compass Survey",
+                    points: [
+                      "3.1 Compass Traversing-open, closed Traverse.",
+                      "3.2 Technical Terms: Geographic/True Meridians, Magnetic Meridians, and Bearings, Whole Circle Bearing system and Reduced Bearing system and examples on the conversion of given bearing to another bearing (from one form to another), Fore Bearing and Back Bearing, Calculation of internal and external angles from bearings at a station, Dip of Magnetic needle, Magnetic Declination.",
+                      "3.3 Components of Prismatic Compass and their functions, Methods of using Prismatic Compass- Temporary adjustments and observing bearings.",
+                      "3.4 Local attraction, Methods of correction of observed bearings - Correction at station and correction to included angles.",
+                      "3.5 Methods of plotting a traverse and closing error, Graphical adjustment of closing error"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Levelling and Contouring",
+                    points: [
+                      "4.1 Basic Terms: Level surface, Horizontal and vertical surface, Datum, Bench Mark - Permanent, Temporary, Arbitrary. Reduced Level, Rise, Fall, Back sight, Fore sight, Intermediate sight, Change point, Height of instrument, Line of collimation.",
+                      "4.2 Types of levels: Dumpy, Tilting, and Auto level, Temporary adjustments of Level.",
+                      "4.3 Types of Levelling Staff: Self-reading staff and Target staff, Reduction of level by Height of Instrument Method, and Rise and Fall Method.",
+                      "4.4 Levelling Types: Simple, Differential, Fly, Profile, and Reciprocal Levelling.",
+                      "4.5 Contour, contour intervals, horizontal equivalent, Uses of contour maps, Characteristics of contours, Methods of Contouring-Direct and indirect"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 3D Measurement of Area and Volume",
+                    points: [
+                      "5.1 Components and use of Digital planimeter.",
+                      "5.2 Measurement of the area using a digital planimeter.",
+                      "5.3 Measurement of the volume of the reservoir from the contour map."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Concrete Technology",
+                code: "2415302",
+                units: [
+                  {
+                    title: "Unit-1.0 Cement",
+                    points: [
+                      "1.1 Introduction of cement, manufacturing process of cement (Wet & Dry process).",
+                      "1.2 Composition of cement, effects of various constituent of cement on its properties, Bouge's compound and their significance, Hydration of cement.",
+                      "1.3 Physical properties of cement: fineness, standard consistency, setting time, compressive strength and soundness.",
+                      "1.4 Testing of cement: Field and Laboratory tests- fineness test, standard consistency test, setting time test, compressive strength test and soundness test.",
+                      "1.5 Types of cement with I.S. Specifications and field applications: Ordinary Portland cement (33 grades, 43 grades or 43-5 grade and 53 grades OPC), Portland pozzolana cement, Portland slag cement, Rapid hardening cement, Sulphate resisting cement, Low heat cement, High alumina cement, White cement.",
+                      "1.6 Storage of cement and its effect on the properties of cement."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Aggregates",
+                    points: [
+                      "2.1 Aggregates: Sources of aggregate, Classification according to source, size and shape.",
+                      "2.2 Properties of fine and coarse aggregates: size, shape, surface texture, specific gravity, bulk density, moisture content, surface moisture, water absorption, strength, soundness.",
+                      "2.3 Bulking of fine aggregate, Parameters for good aggregate.",
+                      "2.4 Grading and Zoning of fine and coarse aggregates as per IS code. Fineness Modulus of fine and coarse aggregate.",
+                      "2.5 Crushing value, impact value and abrasion value of coarse aggregates with Indian standard specification."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Concrete",
+                    points: [
+                      "3.1 Introduction to Concrete, Concreting Operations (Batching, mixing, transportation, placing, compaction, curing and finishing of concrete), Necessity of supervision for concreting operations.",
+                      "3.2 Grades of concrete (ordinary, standard and high strength concrete) as per IS 456, Water cement ratio and its significance.",
+                      "3.3 Properties & testing of fresh concrete: Workability, Cohesiveness, Segregation, Bleeding and Harshness; Determination of Workability by Slump test, Compaction factor test and Vee-Bee Consistometer test; Range values of workability requirements for different types of concrete works.",
+                      "3.4 Properties & testing of hardened concrete: Compressive strength, Flexural strength, Durability, Shrinkage, Impermeability and Fire resistance; Determination of compressive strength of concrete cubes at different ages, interpretation and co-relation of test results.",
+                      "3.5 Non-Destructive Testing (NDT) of hardened concrete: Purpose of NDT, methods of NDT- Rebound hammer test and Ultra pulse velocity test only."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Mix Design, Formwork and Joint",
+                    points: [
+                      "4.1 Concrete Mix Design: objective, methods of mix design, the study of procedural steps of mix design as per IS 10262:2019. (With example of M20/M25/M30 Grade)",
+                      "4.2 Formworks of concreting: Different types of formworks for columns, beams and slabs, Materials used for formworks, Requirement of good formwork, stripping time for removal of formworks as per the provision of IS 456:2000.",
+                      "4.3 Construction joints: Types of Joints, Materials used for filling joints, Method of joining."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Admixture in Concrete, Special Concrete and Extreme Weather Concreting",
+                    points: [
+                      "5.1 Admixture in Concrete: Purpose, Types of chemical and mineral admixtures such as accelerating admixtures, retarding admixtures, water reducing admixtures, super plasticizers, air entraining admixtures, fly ash, silica fume, and slag.",
+                      "5.2 Special Concrete: Properties, advantages and limitations of the following types of special concrete- Ready mix concrete, Fiber reinforced concrete, Self-compacting concrete, High-performance concrete, Lightweight concrete, Geopolymer concrete.",
+                      "5.3 Extreme weather concreting: Effects of cold and hot weather on concrete, Precautions to be taken while concreting in cold and hot weather conditions."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Strength of Material for Civil Engg.",
+                code: "2415303",
+                units: [
+                  {
+                    title: "Unit-1.0: Moment of Inertia (MOI)",
+                    points: [
+                      "1.1 Definition of Moment of Inertia of plane lamina, Radius of gyration, Section modulus, Parallel and Perpendicular axes theorems, Moment of Inertia of Rectangle, square, circle, semi-circle, quarter circle and triangle section.",
+                      "1.2 M.I. of symmetrical and unsymmetrical I-section, Channel section, T-section, Angle section, Hollow section and built-up section about centroidal axes and any other reference axis."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0: Simple Stresses and Strains",
+                    points: [
+                      "2.1 Definition of Rigid, Elastic and Plastic bodies. Definition of stress, strain, elasticity, Hooke's law, Elastic limit, Modulus of elasticity.",
+                      "2.2 Type of Stress-Normal, Direct, Bending and Shear and nature of stresses i.e., Tensile and Compressive stresses.",
+                      "2.3 Standard stress strain curve for Mild steel bar under tension, Yield stress, Proof stress, Ultimate stress, Strain at various critical points.",
+                      "2.4 Definition of various Mechanical Properties- Elasticity, Plasticity, Ductility, Brittleness, Hardness, Stiffness, Toughness, Malleability, Creep, Fatigue.",
+                      "2.5 Deformation of body due to axial force and self-weight (of uniform and tapered sections), forces applied at intermediate sections, maximum and minimum stress induced composite section under axial loading.",
+                      "2.6 Concept of temperature stresses and strain. Longitudinal, lateral and shear strain, Modulus of Rigidity, Poisson's ratio, uniaxial, Biaxial and tri-axial stresses, volumetric strain, change in volume, Bulk modulus (Introduction only). Relation between modulus of elasticity, modulus of rigidity and bulk modulus."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Principal Stresses and Principal Planes",
+                    points: [
+                      "3.1 Concept of stress transformation.",
+                      "3.2 Definition of Principal Plane & Principal stress.",
+                      "3.3 Principal Plane & Stress due to uniaxial and bi-axial stress system & due to state of simple shear (Analytical method).",
+                      "3.4 Introduction to Mohr's Circle with simple numerical problems."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Shear Force (SF) and Bending Moment (BM)",
+                    points: [
+                      "4.1 Types of Supports, Beams and Loads.",
+                      "4.2 Concept and definition of shear force and bending moment, Relation between loads, shear force and bending moment.",
+                      "4.3 Shear force and bending moment diagram for determinate beam subjected to point loads, uniformly distributed loads (UDL) and couple, point of contra flexure."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: Bending and Shear Stresses in Beams",
+                    points: [
+                      "5.1 Concept of pure bending, assumptions, flexural equation, bending stresses and their nature, bending stress distribution diagram.",
+                      "5.2 Concept of Moment of resistance (MOR) and simple numerical problems using flexural equation.",
+                      "5.3 Shear stress equation, relation between maximum and average shear stress for rectangular and circular section.",
+                      "5.4 Shear stress distribution diagram for angle sections, channel section, I-section, T section. Simple numerical problems based on shear equation."
+                    ]
+                  },
+                  {
+                    title: "Unit -6.0: Analysis of Trusses",
+                    points: [
+                      "6.1 Definition of frames and trusses, Classification of truss, perfect, imperfect, redundant and deficient truss, relation between members and joints, assumption in analysis.",
+                      "6.2 Method of joint, method of section to find nature of forces."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Building Construction & Material",
+                code: "2415304",
+                units: [
+                  {
+                    title: "Unit 1.0- Stones, Aggregate and Bricks",
+                    points: [
+                      "1.1 Stones: Stone as building material - Classification of Stones, Deterioration and Preservation of stone work",
+                      "1.2 Aggregates: Aggregates- Classification, Characteristics, Grading of Aggregates,",
+                      "1.3 Bricks: Classification - Manufacturing of clay bricks, Tests on bricks - (Dimension- Compressive Strength - Water Absorption - Efflorescence)"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0- Lime, Cement and Mortar",
+                    points: [
+                      "2.1 Lime: Lime - Properties and Classification",
+                      "2.2 Cement: Cement, Ingredients, Manufacturing of Cement, Types of Cement, Test on Cement (Consistency test, Initial and Final Setting Time, Soundness, Compressive Strength)",
+                      "2.3 Mortar: Mortar, Classification and properties of Mortar"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0- Timber and Modern Materials",
+                    points: [
+                      "3.1 Timber: Timber, Classification, Structure of Timber, Properties of Timber, Characteristics of Good Timber, Defects in Timber, Advantage and Disadvantage of Timber as an engineering material",
+                      "3.2 Modern Materials: Glass, Ferrous and Non-Ferrous Metals, Ceramics, Geotextile and Geomembrane, Fiber glass reinforced plastic"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0- Building Components",
+                    points: [
+                      "4.1 Classification of Buildings as per National Building Code Group A to I, as per Types of Constructions- Load Bearing Structure, Framed Structure, Composite Structure.",
+                      "4.2 Building Components - Building Components and their Function, Substructure - Foundation, Plinth, and Plinth Filling; Superstructure- Walls, Partition wall, Cavity Wall, Sill, Lintel, Doors and windows, Floor, roof, Column Beams and Parapet"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0- Sub-Structure and Super Structure",
+                    points: [
+                      "5.1 Job Layout and Excavation: Site clearance, Preparing job Layout, Layout for Load Bearing Structure and Framed Structure by Center Line and Face Line Method, Precautions, Excavation for Foundation, Earthwork for Embankment, Material for Plinth Filling. Tools and Plants Used for Earthwork",
+                      "5.2 Sub-Structure: Foundation-Function of Foundation, Types of Foundation- Shallow Foundation, Stepped Footing, Wall Footing, Column Footing, Isolated and Combined Column Footing, Raft Foundation, Grillage Foundation. Deep Foundation-Pile Foundation, classification based on materials and functions, Well foundation and Caissons.",
+                      "5.3 Super-Structure: Brick masonry: Terms used in brick masonry-header, stretcher, closer, quoins, course, face, back, hearting, bat bond, joints, lap, frog line, level and plumb Bonds in brick masonry- header bond, stretcher bond, English bond and Flemish bond. Requirements of good brick masonry, Junctions in brick masonry and their purpose and procedure. Precautions to be observed in Brick Masonry Construction, Comparison between stone masonry and Brick Masonry."
+                    ]
+                  },
+                  {
+                    title: "Unit 6.0: Building Communication and Ventilation",
+                    points: [
+                      "6.1 Horizontal Communication: Doors- Components of Doors, Fully Paneled situation with sketches, Doors, Partly Paneled and Glazed Doors, Flush Doors, Collapsible Doors, Rolling Shutters, Revolving Doors, Glazed Doors. Sizes of Door recommended by BIS.",
+                      "6.2 Windows: Component of windows, Types of Windows-Fully Paneled, Partly Paneled and Glazed, wooden, Steel, Aluminum windows, Sliding Windows, Louvered Window, Bay window, Corner Dormer window, Skylight. Sizes of Windows recommended by BIS. Ventilators, Cement Grills",
+                      "6.3 Vertical Communication: Stair Case, Ramps, Lift, Elevators and Escalators."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Water Resource Engg.",
+                code: "2415305",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Hydrology",
+                    points: [
+                      "1.1 Hydrology: Definition and Hydrological cycle.",
+                      "1.2 Rain Gauge: Symon's rain gauge, automatic rain gauge.",
+                      "1.3 Methods of calculating average rainfall: Arithmetic mean, Isohyet, and Theissen polygon method.",
+                      "1.4 Runoff, Factors affecting Run off, Computation of run off.",
+                      "1.5 Maximum Flood Discharge measurement: Rational and empirical methods, Simple numerical problems."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Crop Water Requirement",
+                    points: [
+                      "2.1 Irrigation and its classification: Surface irrigation, Subsurface irrigation",
+                      "2.2 Crop Water requirement: Cropping seasons, Crop period, base period, Duty, Delta, CCA, GCA, intensity of irrigation, factors affecting duty, Problems on water requirement and capacity of canal.",
+                      "2.3 Methods of application of irrigation water and its assessment: Sprinkler irrigation, Drip irrigation",
+                      "2.4 Area capacity curve."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Dam and Spillway",
+                    points: [
+                      "3.1 Dams and its classification: Earthen dams and Gravity dams (masonry and concrete).",
+                      "3.2 Earthen Dams - Components with function, typical cross section, seepage through embankment and foundation and its control.",
+                      "3.3 Methods of construction of earthen dam, types of failure of earthen dam and preventive measures.",
+                      "3.4 Gravity Dams - Forces acting on dam, Theoretical and practical profile, typical cross section, drainage gallery, joints in gravity dam, concept of high dam and low dam.",
+                      "3.5 Spillways-Definition, function, location, types and components, Energy dissipator"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Minor and Micro Irrigation",
+                    points: [
+                      "4.1 Bandhara irrigation: Layout, components, construction and working, solid and open bandhara.",
+                      "4.2 Percolation Tanks - Need, selection of site.",
+                      "4.3 Lift irrigation Scheme-Components and their functions, Lay out.",
+                      "4.4 Drip and Sprinkler Irrigation- Need, components and Layout.",
+                      "4.5 Well irrigation: types and yield of wells, advantages and disadvantages of well irrigation"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Diversion Head Work and Canal",
+                    points: [
+                      "5.1 Weirs-components, parts, types",
+                      "5.2 Diversion head works - Layout, components and their function.",
+                      "5.3 Barrages-components and their functions, Difference between weir and Barrage.",
+                      "5.4 Canals - Classification according to alignment and position in the canal network, Cross section of canal in embankment and cutting, partial embankment and cutting, balancing depth, Design of most economical canal section.",
+                      "5.5 Canal lining - Purpose, material used and its properties, advantages. Cross Drainage works- Aqueduct, siphon aqueduct, super passage, level crossing.",
+                      "5.6 Canal regulators- Head regulator, Cross regulator, Escape, Falls and Outlets."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Summer Internship - I",
+                code: "2418306",
+                units: [
+                  {
+                    title: "Internship after 2nd Semester for all branches",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+            ];
+
+            // Diploma civil sem 5
+
+            semesters.sem5.theory = [
+              {
+                name: "Hydraulics",
+                code: "T2415501",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction, Hydrostatic Pressure and Pressure Measurement",
+                    points: [
+                      "1.1 Introduction, need and importance of hydraulics in civil engineering. Technical terms used in Hydraulics - Fluid Mechanics, Hydrostatics, Hydro-kinematics, Hydro-Dynamics, Ideal and Real Fluid.",
+                      "1.2 Properties of liquid - Viscosity-Density-Specific Gravity-Surface Tension-Capillarity-Vapour Pressure-Elasticity.",
+                      "1.3 Various types of pressure - Atmospheric Pressure, Gauge Pressure, Absolute Pressure, Vacuum Pressure and Separation Pressure.",
+                      "1.4 Measurement of pressure by different methods.",
+                      "1.5 Measurement of difference of pressure using 'U' tube Manometer and inverted 'U' tube Manometer.",
+                      "1.6 Relationship between pressure and depth of liquid.",
+                      "1.7 Pressure diagram for different conditions.",
+                      "1.8 Total pressure and center of pressure.",
+                      "1.9 Computation of Total Pressure and depth of centre of pressure."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fluid Flow Parameters",
+                    points: [
+                      "2.1 Types of flow: Laminar, Turbulent, Uniform, Non-uniform, Steady, Un-steady, Rotational, irrotational, One, Two and Three Dimensional flow.",
+                      "2.2 Determine types of flow using Reynold's number.",
+                      "2.3 Continuity Equation of flow.",
+                      "2.4 Types of Energy of flowing liquid: Potential energy and kinetic energy.",
+                      "2.5 Bernoulli's Equation, assumptions and its applications.",
+                      "2.6 Momentum Equation based simple numerical."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Flow through Pipes",
+                    points: [
+                      "3.1 Characteristics of flow through pipes.",
+                      "3.2 Major head loss in pipe: Frictional loss and its computation by Darcy Weisbach equation.",
+                      "3.3 Practical examples of head loss for residential building. Major and Minor Energy (Head) losses in pipe Flow-frictional loss, loss of head at entry, exit, Sudden enlargement and contraction and at bend.",
+                      "3.4 Computation of major head by Darcy Weisbach Equation.",
+                      "3.5 Hydraulic Gradient Line (HGL) and Total Energy Line (TEL).",
+                      "3.6 Design of Pipeline-using formula & Nomogram.",
+                      "3.7 Water hammer in pipes: causes and Remedial measures.",
+                      "3.8 Use of Moody's Diagram and Nomograms for calculating diameter of pipe from the given data.",
+                      "3.9 Discharge measuring device for pipe flow: Venturimeter-construction and working.",
+                      "3.10 Definition and types of orifice. Various Hydraulic Coefficient and its relation Coefficient of Contraction, Velocity, Discharge.",
+                      "3.11 Discharge measuring for a tank: using Orifice, Hydraulic Coefficients of Orifice."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Flow through Open Channel",
+                    points: [
+                      "4.1 Characteristics of open channel flow.",
+                      "4.2 Comparison of pipe flow and channel flow.",
+                      "4.3 Field examples of open channel, Analyse uniform flow.",
+                      "4.4 Froud's number, Hydraulic mean depth- concept & computation.",
+                      "4.5 Use of Chezy's and Manning's formulae.",
+                      "4.6 Most economical sections of channel Rectangular, Trapezoidal and circular shapes.",
+                      "4.7 Specific Energy Diagram River Gauging, Measurement of mean velocity using surface float, velocity rod and current meter"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Notches and Weirs",
+                    points: [
+                      "5.1 Types of notches and weirs.",
+                      "5.2 Computation of discharge through Rectangular Notch and V-Notch.",
+                      "5.3 Computation of discharge through weirs.",
+                      "5.4 Discharge through narrow crested and broad Crested weir and Discharge through Cipolletti weir."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "RCC Structure",
+                code: "T2415502",
+                units: [
+                  {
+                    title: "Unit-1.0: Introduction to Reinforced Cement Concrete (R.C.C.) & Methods of Design",
+                    points: [
+                      "1.1 Introduction to Reinforced Cement Concrete, use of steel as Reinforcing material, grades of steel and concrete, stress strain curve for concrete and mild steel.",
+                      "1.2 Working Stress Method (WSM) of design: Assumptions, Stress block diagram, Permissible stresses, Concept of Equivalent sections.",
+                      "1.3 Analysis of singly reinforced beam using WSM, Concept of under reinforced, over reinforced and balanced section.",
+                      "1.4 Limit state and its types, Limit State Method (LSM) of design: Assumptions, Stress block diagram.",
+                      "1.5 Analysis of singly reinforced beam using LSM, Concept of under reinforced, over reinforced and balanced section.",
+                      "1.6 Simple numerical problems on ultimate moment of resistance and design of beam section (LSM & WSM)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0: Doubly Reinforced Beam and Flanged Sections (LSM)",
+                    points: [
+                      "2.1 Introduction to doubly reinforced beam. It's necessity & importance.",
+                      "2.2 Analysis of doubly reinforced section.",
+                      "2.3 Simple numerical problems on finding moment of resistance and design of doubly reinforced sections.",
+                      "2.4 Introduction to T & L section beams, advantages & uses, effective width as per IS 456-2000.",
+                      "2.5 Analysis of singly reinforced T-Beam, strain diagram & stress diagram, depth of neutral axis, moment of resistance of T-beam section with neutral axis lying within the flange only.",
+                      "2.6 Simple numerical problems on finding out effective width of flange & moment of resistance of T-beam section with N. A. lying within or upto the bottom of flange."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0: Shear, Bond and Development length in Design of RCC member",
+                    points: [
+                      "3.1 Nominal shear stress in RCC section, Design shear strength of concrete, Design of shear reinforcement, Minimum Shear Reinforcement, Provisions of IS 456, forms of shear reinforcement.",
+                      "3.2 Types of bonds, Bond stress, check for bond stress, Determination of Development length in tension and compression members and check as per codal provisions, Anchorage value of 90-degree hook, Lapping of bars.",
+                      "3.3 Simple numerical problems on Shear reinforcement, Adequacy of section for resisting shear."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0: Design of Slab (LSM)",
+                    points: [
+                      "4.1 Design of simply supported one-way slab for flexure, shear and deflection. Also check the slab as per the provisions of IS 456-2000.",
+                      "4.2 Design of one-way cantilever slab, for Flexure including checks for Development length and Shear stress.",
+                      "4.3 Design of two-way simply supported slab (IS Code method)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0: Design of Axially Loaded Column and Footing (LSM)",
+                    points: [
+                      "5.1 Assumptions in limit state of collapse compression",
+                      "5.2 Definition and classification of columns, effective length of column. IS Code provisions for minimum reinforcement; cover, maximum reinforcement, number of bars in rectangular, square and circular sections, diameter and spacing of lateral ties.",
+                      "5.3 Analysis and design of axially loaded short, square, rectangular and circular columns with lateral ties only; check for short column and check for minimum eccentricity.",
+                      "5.4 Types of footing, Design of isolated square footing for flexure and shear.",
+                      "5.5 Simple numerical problems on the design of axially loaded short columns and isolated square footing."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Estimating, Costing & Contracts",
+                code: "T2415503",
+                units: [
+                  {
+                    title: "Unit-1.0 Fundamentals of Estimating and Costing",
+                    points: [
+                      "1.1 Introduction: Need and importance of estimating and costing, Definitions of estimating and costing, Plinth area, Carpet area, administrative approval, technical sanction, Budget sanction.",
+                      "1.2 Units of measurement: Different type of estimates: Preliminary, Approximate, Abstract, Rough Cost Estimate, Plinth Area Estimate, Cube Rate Estimate, Quantity Method Estimate, Detailed Estimate or Item Rate Estimate, Supplementary Estimate, Revised Estimate, Annual Repair or Maintenance Estimate (A. R. or A. M. Estimate)",
+                      "1.3 Estimation methods: Long wall short wall method, Centre line method, partly centerline and short wall method, Rules for deductions.",
+                      "1.4 Duties of quantity surveyor, measurement of items, entry in the measurement book, calculation of various quantities, preparation of bill."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Rate Analysis",
+                    points: [
+                      "2.1 Definition and purpose of rate analysis Rate analysis procedure, task work and factors affecting it, labour required for different works and labour rates, market rate of construction materials.",
+                      "2.2 Schedule of rates (SOR), State PWD schedule of rates, CPWD DSR, CPWD Works manual, rate analysis for earthwork in excavation, cement concrete work, brick masonry work, RCC work, plastering and flooring work.",
+                      "2.3 Material requirement for different works, bricks, cement, sand, aggregate, water, steel reinforcement, flooring material and painting material.",
+                      "2.4 Costing, benefits of cost estimation and Cost control."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Contracts",
+                    points: [
+                      "3.1 Definition of contract, role of contractor.",
+                      "3.2 Types of contracts: Lump Sum contract, Schedule rate contract, Labor contract, Target contract, Material supply contract, Piece work agreement; advantage and Disadvantage of various types of contracts. Elements of contract and contract documents.",
+                      "3.3 Measurement book (MB) and nominal muster roll, Arbitration and Legislation and its importance, penalty clause of contract."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Specifications and Tenders",
+                    points: [
+                      "4.1 Specification and need of specification. Factors governing specification. Classification of specification. General specification of different type of residential buildings. Detailed Specification for earthwork excavation for foundation.",
+                      "4.2 Tender, Procedure for inviting tender. Types of Tenders. Details to be mentioned in notice inviting tenders. Technical terms related to tender: Earnest money deposit, Security money deposit, receiving and opening of tender. E-tender procedure and its limitations."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Valuation",
+                    points: [
+                      "5.1 Purpose of valuation, factors consideration for valuation; cost, price, and value. Important terms: Municipal tax, capital cost, capitalized value, year of purchase, gross income, outgoings taxes and repair, scrap value, salvage value, market value, and book value.",
+                      "5.2 Method of valuation: depreciation method of valuation, valuation based on cost, valuation based on profit, fixation of rent; method of calculation of depreciation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Elective | Electric Vehicle (Basic)",
+                code: "2400504G",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1 Review of Conventional Vehicle Engine System, Electric Vehicle (EV), The necessity of Electric Vehicle",
+                      "1.2 Types of Electric Vehicles: Plug-in hybrid, Battery electric vehicle, Hybrid electric vehicle, Fuel Cell Electric Vehicle",
+                      "1.3 Advantages of Electric Vehicles",
+                      "1.4 Electric Vehicle Components: Motor, Motor Controller, Battery, Battery Management System, and Charging System."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electric Motors used in EVs",
+                    points: [
+                      "2.1 Electric Motors for EV applications: General Characteristics of motors",
+                      "2.2 Types of Motors: DC, Brushless DC, Induction, Permanent Magnet Synchronous Motors, Switched Reluctance Motors",
+                      "2.3 Rating of Motors, Selection Criteria, Physical Location",
+                      "2.4 Connection of Motors: Mechanical Connections and Electrical Connections"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Batteries and Energy Storages",
+                    points: [
+                      "3.1 Types of Batteries: Lead Acid, Nickel Based, Lithium Based",
+                      "3.2 Battery Parameters, Charging (AC) and Discharging (DC) Process",
+                      "3.3 Lithium Ion Batteries, Fuel Cells, Fuel Cell Storage System",
+                      "3.4 Battery Condition Monitoring, Battery Management System (BMS), Need of BMS",
+                      "3.5 Block Diagram of BMS, Battery Disposal and Recycling"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 EV Charging Systems",
+                    points: [
+                      "4.1 Power electronics in EV, Power electronics components, Rectifiers",
+                      "4.2 DC to DC Converter, DC to AC Converter",
+                      "4.3 Charging System, Types of charging Systems",
+                      "4.4 Components of Charging Systems, Single line Diagram of Charging System"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 Regulatory Requirements and Policies for EV Industry",
+                    points: [
+                      "5.1 Rules and Regulations set by the Indian government for the designer/manufacturer of EVs.",
+                      "5.2 Policies in India, Global Policies for E- Vehicles.",
+                      "5.3 Carbon Footprint Issues"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Entrepreneurship Development & Start-ups ",
+                code: "2400505",
+                units: [
+                  {
+                    title: "After completion of the course, the students will be able to",
+                    points: [
+                      "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
+                      "1.2Innovate products and services using creativity and innovation techniques.",
+                      "1.3 Manage critical resources from support institutions.",
+                      "1.4 Prepare sustainable small business plans. "
+                    ]
+                  },
+                ]
+              },
+              {
+                name: "Summer Internship - II",
+                code: "2418305",
+                units: [
+                  {
+                    title: "(After 4th Sem) / Industrial Training / Common for all programmes)",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+
+            ];
+
+
+            return semesters;
+          })()
         },
+
+
         {
           id: "ece",
           title: "Electronics Engineering",
           icon: "fas fa-microchip",
-          semesters: syllabusEmptySemesters(8)
-        }
+          semesters: (() => {
+            const semesters = syllabusEmptySemesters(6);
+
+            // Diploma ece sem 1
+
+            semesters.sem1.theory = [
+              {
+                name: "Basic Engg. Mathematics",
+                code: "2600101",
+                units: [
+                  {
+                    title: "Unit-1.0 Algebra Determinant",
+                    points: [
+                      "1.1 Concept and properties of determinant.",
+                      "1.2 Solutions of simultaneous equations in three Unknowns by Cramer's rule.",
+                      "1.3 Matrices: Algebra of matrices (Addition, Subtraction, Multiplication by Scalar, and Multiplication of Two matrices).",
+                      "1.4 Transpose, Adjoint and Inverse of Matrix.",
+                      "1.5 Solutions of simultaneous equations of a Matrix of order 3 x 3 by Inversion method.",
+                      "1.6 Vectors: Position vector.",
+                      "1.7 Algebra of Vectors (Addition, Subtraction, Scalar Multiplication with vector).",
+                      "1.8 Scalar product.",
+                      "1.9 Vector product.",
+                      "1.10 Algebra in Indian Knowledge System: Solution of simultaneous equations (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Differential Calculus",
+                    points: [
+                      "2.1 Function and Limit: Concept of function.",
+                      "2.2 Different type of functions.",
+                      "2.3 Domain and Range of Function.",
+                      "2.4 Concept of Limits and its evaluation.",
+                      "2.5 Continuity: Concept of continuity with simple problems.",
+                      "2.6 Differentiation: Differentiation by First Principle.",
+                      "2.7 Differentiation of Algebraic, trigonometric, Exponential, and Logarithmic functions.",
+                      "2.8 Differentiation of sum, product, and quotient of two functions.",
+                      "2.9 Differentiation of composite functions by Chain Rule.",
+                      "2.10 Logarithmic differentiation.",
+                      "2.11 Implicit differentiation.",
+                      "2.12 Differentiation of Parametric Functions.",
+                      "2.13 Calculus in Indian Knowledge System: The Discovery of Calculus by Indian Astronomers. (Indian Mathematics). (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Application of Differential Calculus",
+                    points: [
+                      "3.1 Successive differentiation up to second order.",
+                      "3.2 Rolle's Theorem and Mean Value Theorem (without proof) with examples.",
+                      "3.3 Rate of change of quantities.",
+                      "3.4 Equation of Tangent and Normal.",
+                      "3.5 Maxima and Minima.",
+                      "3.6 Radius of curvature."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Co-ordinate Geometry",
+                    points: [
+                      "4.1 Co-ordinate systems: Introduction of Co-ordinate Systems.",
+                      "4.2 Straight lines: Slope of a line, the angle between two lines.",
+                      "4.3 Various forms of Straight Lines: Point-slope form, Two-point form, Slope intercept form, Intercept form, Normal form, General form.",
+                      "4.4 Perpendicular distance of a line from a point, perpendicular distance between two parallel lines.",
+                      "4.5 Geometry in Sulabasutras in Indian Knowledge System (construction of the square, circling the square). (Indian Mathematics).",
+                      "4.6 Conic Section: Introduction of Conic-Section.",
+                      "4.7 Equation of Circle in standard form.",
+                      "4.8 Standard equation of parabola, ellipse, and hyperbola."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Probability and Statistics",
+                    points: [
+                      "5.1 Probability: Concept of Probability.",
+                      "5.2 Addition and multiplication theorems of Probability.",
+                      "5.3 The measure of Central Tendency: Mean, Median, Mode.",
+                      "5.4 Measure of Dispersion: Range, Variance, Standard Deviation.",
+                      "5.5 Coefficient of Variation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Applied Physics - B",
+                code: "2600102B",
+                units: [
+                  {
+                    title: "Unit-1.0 Unit and Measurements",
+                    points: [
+                      "1.1 Physical quantities, fundamentals and derived units and system of units",
+                      "1.2 Accuracy, precision and errors (systematic and random) in measurements, Method of estimation of errors (absolute and relative) in measurement, propagation of errors, significant figures",
+                      "1.3 Dimensions and dimensional formulae of physical quantities, Principle of homogeneity of dimension in an equation",
+                      "1.4 Applications of dimensions: conversion from one system of units to other, corrections of equations and derivation of simple equations.",
+                      "1.5 Ancient astronomical instruments: Chakra, Dhanuryatra, Yasti and Phalaka yantra. (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Simple Harmonic and Wave Motion",
+                    points: [
+                      "2.1 Periodic and Oscillatory Motion",
+                      "2.2 Simple Harmonic Motion (SHM): Displacement, velocity, acceleration, time period, frequency and their interrelation",
+                      "2.3 Types of waves: Mechanical and Electromagnetic, Transverse and longitudinal waves, wave velocity, frequency and wave length and their relationship, wave equation, amplitude, phase, phase difference, Superposition of waves"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Electrostatics, Electromagnetism and Electric Current",
+                    points: [
+                      "3.1 Electric Charge, Coulomb's law, Electric field, Electric lines of force and their properties, Electric flux, Electric potential and potential difference, Electric dipole",
+                      "3.2 Gauss' law, electric field intensity due to straight charged conductor, charged plane sheet and charged sphere",
+                      "3.3 Dielectric, Capacitance of capacitor (parallel plate), Factor affecting capacitance of capacitors",
+                      "3.4 Magnetic field and its units, Biot Savart Law, Magnetic field due to current caring wire: straight and circular wire, Lorentz force (force on moving charge in magnetic field)",
+                      "3.5 Magnetic flux, Faraday's law of electromagnetic induction, Lenz's law, Self and Mutual induction, eddy current, motional emf",
+                      "3.6 DC and AC currents, Average, rms and Peak value of AC current"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Semiconductor Physics",
+                    points: [
+                      "4.1 Energy band and band gap, insulator, semi-conductor, conductor",
+                      "4.2 Intrinsic and Extrinsic semiconductors, Drift velocity, drift and diffusion current, Mobility, current density, law of mass action.",
+                      "4.3 Depletion layer and barrier Potential, p-n junction and V-I characteristics, Half wave and full wave rectifier",
+                      "4.4 Photocells, Solar cells; working principle and engineering applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Modern Physics",
+                    points: [
+                      "5.1 Photoelectric effect; threshold frequency, work function, Stopping Potential, Einstein's photoelectric equation.",
+                      "5.2 Lasers: Energy levels, ionization and excitation potentials; spontaneous and stimulated emission; population inversion, pumping methods, types of lasers): He Ne Laser, p-n junction diode laser, engineering and medical applications of lasers.",
+                      "5.3 Optical fibers: Total internal reflection, acceptance angle and numerical aperture, Optical fiber types, applications in telecommunication, medical and sensors.",
+                      "5.4 Nanotechnology: Properties (optical, magnetic and dielectric properties) of Nanomaterials and its application, Bhasma (Ancient Ayurveda, IKS)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Applied Chemistry - B",
+                code: "2600103B",
+                units: [
+                  {
+                    title: "Unit-1.0 Atomic Structure and Chemical Bonding and Solutions",
+                    points: [
+                      "1.1 Atoms and its fundamental particles,",
+                      "1.2 Rutherford Model of Atom,",
+                      "1.3 Bohr's Theory, Hydrogen spectrum explanation based on Bohr's Model of Atom,",
+                      "1.4 Wave Mechanical model of atom, de Broglie relationship, Heisenberg Uncertainty Principle,",
+                      "1.5 Quantum Numbers, Shapes of Atomic Orbitals,",
+                      "1.6 Pauli's Exclusion Principle, Hand's Rule of Maximum Multiplicity, Aufbau Principle, Electronic Configuration (till atomic number 30).",
+                      "1.7 Concept of Chemical bonding - Causes of chemical bonding, Types of Bonds: Ionic Bond (NaCl, CaCl2, MgO), Covalent Bond, Polar and Nonpolar Covalent Bonds (H2, F2, HF, HCl) & Co-ordinate Bond (CO, NH4+, O3, H2SO4).",
+                      "1.8 Dipole Moment (NH3, NF3), Hydrogen bonding.",
+                      "1.9 Solution- (solute, solvent) and their strength- Molarity, Normality, Molality.",
+                      "1.10 Indian Chemistry: -Philosophy of atom by Acharya Kanad. (IKS)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Water",
+                    points: [
+                      "2.1 Introduction, Sources of Water. Hardness of Water-Temporary & Permanent hardness.",
+                      "2.2 Degree of Hardness (In terms of CaCO3 equivalent), Unit of Hardness, Quantitative Measurement of Water Hardness by EDTA method.",
+                      "2.3 Municipal supply of Water, Treatment of water, Water Softening Technique-Soda Lime Process, Zeolites method and ion exchange method,",
+                      "2.4 Water Quality Index - Biological Oxygen Demand, Chemical Oxygen Demand, Determination of Dissolved Oxygen",
+                      "2.5 Indian standard specification of drinking water."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Engineering Materials",
+                    points: [
+                      "3.1 Natural Occurrence of Metals- Minerals, ores.",
+                      "3.2 Metallurgy - General principles of Metallurgy, Gangue, Flux and Slag, Steps involved in metallurgy.",
+                      "3.3 Ancient Indian Metallurgy (IKS)",
+                      "3.4 Extraction of Aluminium, Iron and Copper from their important ores along with reactions, Properties and uses.",
+                      "3.5 Alloys - Definition, Purpose of alloying, Ferrous and Non-Ferrous Alloy with suitable examples, Composition, Properties, and their applications.",
+                      "3.6 Polymers-Homopolymers and Copolymers, Natural polymers and synthetic polymers, Addition and Condensation polymerization, Thermoplastic and Thermosetting plastic.",
+                      "3.7 Monomers, applications, and synthesis of Polythene, PVC, Orlon, Terylene, Nylon 66, Nylon 6, Bakelite.",
+                      "3.8 Natural Rubber and its vulcanization, advantages of vulcanized rubber."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Solid State",
+                    points: [
+                      "4.1 General characteristics of solid state, crystalline and amorphous solid.",
+                      "4.2 Classification of crystalline solid- Molecular, ionic, metallic, covalent solids.",
+                      "4.3 Crystal lattice and unit cells- Primitive, BCC, FCC",
+                      "4.4 Imperfections of solid, Types of point defects- stoichiometric defects, impurity defects, non-stoichiometric defects.",
+                      "4.5 Electrical properties, conduction of electricity in metals and semiconductors- Band theory.",
+                      "4.6 Magnetic properties- Ferromagnetism, Paramagnetism, diamagnetism, anti-ferromagnetism and ferrimagnetism.",
+                      "4.7 General introduction to X ray diffraction method- Bragg's law.",
+                      "4.8 Melting point determination of crystalline solid by Kjeldahl method."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Electrochemistry",
+                    points: [
+                      "5.1 Introduction, Electrolyte and Nonelectrolyte, Electrolytic and Metallic Conduction, Factors affecting Electrolytic Conductance.",
+                      "5.2 Molar Conductivity and Equivalent Conductivity. Variation of Molar Conductivity, Kohlrausch's law.",
+                      "5.3 Faraday's Laws of Electrolysis.",
+                      "5.4 Galvanic Cell, Electrode Potential, Measurement of Electrode Potential SHE (Standard Hydrogen electrode), EMF, Electrochemical Series, Nernst Equation for Electrode Potential.",
+                      "5.5 Batteries, Primary Cells-Dry cell, Secondary cell -Lead storage battery, Fuel cells.",
+                      "5.6 Corrosion, their types (Dry & Wet corrosion) and prevention."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Engineering Mechanics",
+                code: "2625104",
+                units: [
+                  {
+                    title: "Unit-1.0 Mechanics and Force System",
+                    points: [
+                      "1.1 Significance and relevance: Mechanics, applied mechanics, statics and dynamics.",
+                      "1.2 Space, time, mass, particle, body, rigid body.",
+                      "1.3 Scalar and vector quantity, Units of measurement (SI units) Fundamental units and derived units.",
+                      "1.4 Force unit, representation as a vector and by Bow's notation, characteristics and effects of a force, Principle of transmissibility of force. Force system and its classification.",
+                      "1.5 Resolution of a force: Orthogonal and Non-Orthogonal components of a force, moment of a force, Varignon's Theorem.",
+                      "1.6 Composition of forces Resultant, analytical method of determination of resultant for concurrent, non-concurrent and parallel co-planar force systems - Law of triangle, Law of parallelogram and law of polygon of forces.",
+                      "1.7 Graphic statics, graphical representation of force, Space diagram, force diagram, polar diagram and funicular polygon, Graphical method of determination of resultant for concurrent and parallel co-planar force systems."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Static Equilibrium",
+                    points: [
+                      "2.1 Equilibrium and Equilibrant, Free body and Free body diagram, Analytical and graphical conditions of equilibrium.",
+                      "2.2 Equilibrium of force systems analytically",
+                      "2.3 Lami's Theorem.",
+                      "2.4 Types of beam (determinate and indeterminate), supports (simple, hinged, roller and fixed) and loads acting on beam (vertical and inclined point load, distributed load, couple), span of beam.",
+                      "2.5 Beam reaction for cantilever, simply supported beam with or without overhang - subjected to combination of Point load and UDL or Vertical Point load and couple.",
+                      "2.6 Beam reaction for simply supported beam subjected to vertical loads only."
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Friction",
+                    points: [
+                      "3.1 Friction and its relevance in engineering, types and laws of friction, limiting equilibrium, limiting friction, co-efficient of friction, angle of friction, angle of repose, relation between co-efficient of friction and angle of friction.",
+                      "3.2 Equilibrium of bodies on level surface subjected to force parallel and inclined to plane.",
+                      "3.3 Equilibrium of bodies on inclined plane subjected to force parallel to the plane only.",
+                      "3.4 FBD of ladder in friction"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Centroid, Centre of Gravity and Moment of Inertia",
+                    points: [
+                      "4.1 Introduction to Centroid, Centre of Gravity and Areas",
+                      "4.2 Centroid of geometrical plane figures (square, rectangle, triangle, circle, semi-circle, quarter circle).",
+                      "4.3 Centroid of composite figures composed of not more than three geometrical figures and centroid of perforated section, axis of symmetry",
+                      "4.4 Centre of Gravity of simple solids (Cube, cuboid, cone, cylinder, sphere, hemisphere).",
+                      "4.5 Centre of Gravity of composite solids composed of not more than two simple solids.",
+                      "4.6 Moment of inertia - Introduction, calculation of moment of inertia by integration method, theorem of perpendicular axis, theorem of parallel axis, moment of inertia of a rectangular section, hollow rectangular section, circular section, hollow circular section, triangular section"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Simple Lifting Machine",
+                    points: [
+                      "5.1 Simple lifting machine, load, effort, mechanical advantage, Applications and advantages. Velocity ratio, efficiency of machines, Law of machine.",
+                      "5.2 Ideal machine, friction in machine, maximum Mechanical advantage and efficiency, reversible and non-reversible machines, condition for reversibility",
+                      "5.3 Velocity ratios of Simple axle and wheel, Differential axle and wheel, Worm and worm wheel, Single purchase and double purchase crab winch, Screw jack, Weston's differential pulley block, geared pulley block.",
+                      "5.4 Graphs of Load verses Effort, Load verses ideal Effort, Load verses Effort lost in friction, Load verses MA, Load verses Efficiency."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Engineering Drawing & Graphics",
+                code: "2615105",
+                units: [
+                  {
+                    title: "Unit-1.0 Basic Elements of Drawing",
+                    points: [
+                      "1.1 Methods to use different Drawing Instruments and supporting materials.",
+                      "1.2 Different lines and conventions in engineering drawing.",
+                      "1.3 Engineering scales and applications: Reduced, enlarged & full size (only Plain scale)",
+                      "1.4 Dimensioning techniques: types and applications of chain, parallel and coordinate dimensioning as per IS SP-46.",
+                      "1.5 Regular Geometrical figures, Tangency constructions.",
+                      "1.6 Engineering Curves: only Ellipse and Parabola using concentric circle method, rectangular method and Eccentricity method when focus and directrix are given."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Orthographic Projections",
+                    points: [
+                      "2.1 Concept and applications of Orthographic, Perspective, Isometric and Oblique Projections.",
+                      "2.2 Orthographic Projection: First and Third angle",
+                      "2.3 Draw orthographic views of simple 3D entities containing lines, circles and arcs with axis/orientation parallel and/or perpendicular to the projection planes only. Problems should be restricted up to three views Front view/Elevation, Top view/Plan and Side views only using First Angle Method only.",
+                      "2.4 Conversion of simple pictorial views into orthographic views. (Domain specific illustrative problems to be given by the teacher)"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Isometric Projection",
+                    points: [
+                      "3.1 Introduction to isometric projection.",
+                      "3.2 Isometric scale and Natural Scale.",
+                      "3.3 Isometric view and isometric projection.",
+                      "3.4 Illustrative problems limited to Isometric projection of objects containing rectangular, circular, cylindrical shapes and slots on sloping and plane surfaces.",
+                      "3.5 Conversion of orthographic views into isometric View/projection."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Free Hand Sketches of Engineering Elements",
+                    points: [
+                      "4.1 Materials for Sketching.",
+                      "4.2 General Guidelines for Freehand Sketching.",
+                      "4.3 Freehand sketching of straight lines, square, rectangle, circles and arcs.",
+                      "4.4 Free hand sketches of orthographic views.",
+                      "4.5 Free hand sketches of isometric views.",
+                      "4.6 Freehand sketching of domain specific engineering elements/components (e.g. Bolt, Nut, Washer, Stud, Screw, simple machine parts, etc. in case of mechanical, production, automobile, electrical engineering)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Basic Computer aided Drafting",
+                    points: [
+                      "5.1 Basics of AutoCAD or any other drafting software-interface, screen layout, starting commands from menus, command line.",
+                      "5.2 Coordinate system, Angular measurements, Point specification.",
+                      "5.3 Drawing aids - Grid, Snap, Ortho, Osnap, Units, Limits, Layers, Linetype.",
+                      "5.4 Opening and Saving drawing files.",
+                      "5.5 Creating User Defined Templates.",
+                      "5.6 Methods of Selecting and deleting Objects.",
+                      "5.7 Undo and Redo.",
+                      "5.8 Creating basic drawings objects - lines, arc, circles, ellipses, polyline and polygons."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Advanced Computer aided Drafting",
+                    points: [
+                      "6.1 Modify commands - erase, copy, move, rotate, scale, stretch,",
+                      "6.2 Array: concept and applications.",
+                      "6.3 Controlling Drawing display",
+                      "6.4 Text and Dimensioning",
+                      "6.5 Layers: concept and application",
+                      "6.6 Drawing orthographic views using drafting software with principles mentioned in Unit 2.",
+                      "6.7 Drawing isometric views using drafting software with principles mentioned in Unit 3.",
+                      "6.8 Printing and plotting of drawings."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Environmental Education and Sustainable Development",
+                code: "2600006",
+                units: [
+                  {
+                    title: "Unit-1.0 Ecosystem",
+                    points: [
+                      "1.1 Aquatic & Terrestrial ecosystem",
+                      "1.2 Structure of ecosystem",
+                      "1.3 Food chain & Food web",
+                      "1.4 Carbon, Nitrogen, Sulphur & Phosphorous Cycle",
+                      "1.5 Global warming - Causes & Effects"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Air & Water Pollution",
+                    points: [
+                      "2.1 Traditional pollution issues- Air, Water, Noise",
+                      "2.2 Water pollution: 2.2.1 Sources of water pollution, 2.2.2 Effects of water pollution, 2.2.3 Control of water pollution, 2.2.4 Physical & chemical standard of domestic water as per Indian Standard",
+                      "2.3 Air pollution: 2.3.1 Sources of air pollution, 2.3.2 Air pollutants, 2.3.3 Effects of air pollution on human, plant & animal, 2.3.4 Air monitoring system, 2.3.5 Air pollution control"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Sustainability & Renewable Sources of Energy",
+                    points: [
+                      "3.1 Concept of sustainable development",
+                      "3.2 Renewable sources of energy for sustainable development",
+                      "3.3 Solar Energy: 3.3.1 Features of solar thermal & PV system, 3.3.2 Solar pond, Solar water heater, Solar dryer and Solar stills",
+                      "3.4 Wind Energy: 3.4.1 Current status & future prospects of wind energy, 3.4.2 Wind energy in India- Advantages and challenges of harnessing wind energy, 3.4.3 Environmental benefits & limitations",
+                      "3.5 Biomass: 3.5.1 Types of Biomass energy sources, 3.5.2 Energy content in Biomass of different types, 3.5.3 Biogas production",
+                      "3.6 Concept and advantages of hydroponics or aquaponics system to demonstrate soil less cultivation and integration of fish and plant cultivation.",
+                      "3.7 Water conservation and sustainable development",
+                      "3.8 New Energy Sources: Hydrogen energy, Ocean energy & Tidal energy"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Climate Change and Sustainable Development",
+                    points: [
+                      "4.1 Impact of Climate change",
+                      "4.2 Factor contributing to climate change",
+                      "4.3 Sustainable development Goals (SDGs)",
+                      "4.4 Action Plan on Climate Change- India"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Environmental legislation and Sustainable Building Practices",
+                    points: [
+                      "5.1 Environment management system and Planning",
+                      "5.2 Green Building concept",
+                      "5.3 Green and sustainable building materials - 5R concept",
+                      "5.4 Environment protection acts, legislation and Laws",
+                      "5.5 Zero carbon foot-print building for sustainable constriction."
+                    ]
+                  }
+                ]
+              }
+            ];
+
+            // Diploma ece sem 3
+
+            semesters.sem3.theory = [
+              {
+                name: "Analog Electronics",
+                code: "2421301",
+                units: [
+                  {
+                    title: "Unit-1.0 Transistor Biasing",
+                    points: [
+                      "1.1 Need for Transistor Biasing",
+                      "1.2 Transistor parameters Considered for basing",
+                      "1.3 Stabilization and Stability Factor",
+                      "1.4 Effects of Temperature on ICBO",
+                      "1.5 Transistor Biasing Methods: Base Resistor Method, Emitter Bias, Voltage Divider, Collector to base Feedback resistor biasing."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Single Stage and Multistage Transistor Amplifier",
+                    points: [
+                      "2.1 Single Stage Transistor amplifier parameters",
+                      "2.2 D.C and A.C Equivalent Circuits of Transistor Amplifier",
+                      "2.3 Load Line Analysis",
+                      "2.4 Voltage Gain of CE Transistor Amplifier, without CE, Input and Output Impedance of CE Amplifier.",
+                      "2.5 Voltage Gain Stability",
+                      "2.6 Multistage Amplifier: Effect of Rs, Ri, and Interstage Loading Coupling of transistor amplifiers, Capacitor coupling, Direct coupled amplifier",
+                      "2.7 Amplifier Gain in Decibels, frequency response, and bandwidth"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Field Effect Transistors (FET), JFET and MOSFET",
+                    points: [
+                      "3.1 Introduction to JFET: Symbol, Construction, and Working Principles of JFET, Input-output and transfer characteristics of JFET,",
+                      "3.2 Introduction to MOSFET: Symbol, Types, D-MOSFET and E-MOSFET, construction, and working principles of MOSFET, Input-output and transfer characteristics of MOSFET, applications of MOSFET",
+                      "3.3 Introduction to UJT: Equivalent circuit, operation, and its applications (relaxation oscillator)."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Power Electronics Devices",
+                    points: [
+                      "4.1 SCR: Construction, symbol, working, characteristics, and applications",
+                      "4.2 DIAC: Construction, symbol, working, and characteristics, application as a bidirectional switch",
+                      "4.3 TRIAC: Construction, symbol, working, and characteristics"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Feedback Amplifiers and Oscillators",
+                    points: [
+                      "5.1 Feedback: Negative and Positive Feedback, Derivation of Gain, Advantages, Disadvantages and Application of Feedback",
+                      "5.2 Feedback Topology: Voltage series, current Series, Voltage Shunt, Current shunt",
+                      "5.3 Calculate Gain, Input and Output Impedance",
+                      "5.4 Comparison of Topology on different Parameters",
+                      "5.5 Oscillator: Working principle, Different Types of Oscillators, RC Phase shift Oscillator, Wein Bridge Oscillator, Hartley Oscillator, Colpitt's Oscillator, Crystal Oscillator"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Measuring Instruments and Sensors",
+                code: "2421302",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Measurement and Instrumentation",
+                    points: [
+                      "1.1 Static and dynamic characteristics of measurement",
+                      "1.2 Accuracy, resolution, precision, sensitivity",
+                      "1.3 Types of error and its analysis",
+                      "1.4 Calibration: Need and procedure of calibration"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Analog and Digital Meters",
+                    points: [
+                      "2.1 Classification of instrument, Indicating and display device: D'Arsonval galvanometer, PMMC, moving iron, electro-dynamometer type, thermal type, rectifier type",
+                      "2.2 Analog and Digital meters: Types of analog and digital meters, voltmeter, ammeter, multirange voltmeter and ammeter, ohmmeter"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Potentiometer and Bridges",
+                    points: [
+                      "3.1 Classification and measurement of resistance (Low, Medium, & High)",
+                      "3.2 Basic DC slide wire potentiometer",
+                      "3.3 DC Bridges: Wheatstone and Kelvin's Double Bridge",
+                      "3.4 AC Bridges: Maxwell's Bridge, Hay's Bridge, Anderson Bridge, De-Sauty's Bridge, Wien's Bridge"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Oscilloscope and Function Generator",
+                    points: [
+                      "4.1 CRO: Block diagram of CRO, CRT, Vertical deflection system and Horizontal deflection system, Need of Delay line, Time base generator, amplitude and frequency measurement using CRO, Lissajous pattern for phase and frequency measurement.",
+                      "4.2 DSO: Block Diagram, functions, working principles, front panel operations, and applications",
+                      "4.3 Function generator: Block diagram of a function generator, working of each block, front panel controls and operations, application of function generator"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Transducers and Sensors",
+                    points: [
+                      "5.1 Basic Definition, difference between Transducer, Sensors, & Actuators",
+                      "5.2 Transducer: Need of transducer, types of transducers and their applications: Primary, secondary, Active, Passive, Analog, Digital, Resistive, Capacitive, Inductive (LVDT, RVDT), Piezoelectric transducer, strain gauge",
+                      "5.3 Sensors: Thermal, optical, magnetic, Proximity sensor, and IR Sensors.",
+                      "5.4 Temperature measurement: Thermistor, RTD, Thermocouple",
+                      "5.5 Pressure measurement: Bourdon tube, Diaphragm",
+                      "5.6 Humidity measurement: Hygrometer, pH Measurement"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Digital Electronics",
+                code: "2421303",
+                units: [
+                  {
+                    title: "Unit-1.0 Number Systems and Codes",
+                    points: [
+                      "1.1 Different number systems: Binary, Octal, Decimal, Hexadecimal; Conversion from one number system to another number systems",
+                      "1.2 Arithmetic operation: Binary, Octal, Hexadecimal number",
+                      "1.3 Complements: r's and (r-1)'s complement for all number systems",
+                      "1.4 Data Representation: Representation of negative number in 1's and 2's complement, Subtraction using 1's and 2's complement",
+                      "1.5 Codes: Gray code, BCD codes, Excess-3 Codes, ASCII, and EBCDIC"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Boolean Algebra and Logic Gates",
+                    points: [
+                      "2.1 Boolean Algebra: Rules and laws of Boolean Algebra, Duality theorem, De-Morgan's Theorem, Simplification of logical expressions using Boolean laws.",
+                      "2.2 Standard Boolean Representation: Sum of Product (SOP), Product of Sum (POS)",
+                      "2.3 Minimization: Karnaugh's Map (K-map), Simplification of Boolean expressions using K-map, Introduction of Tabulation method.",
+                      "2.4 Logic Gates and applications: AND, OR, NOT, Buffer, NAND, NOR, XOR, XNOR (Symbol, Truth table, Logic expression and its applications)",
+                      "2.5 Implementation: Implementation of Boolean expressions and logic functions using basic gates and universal gates, TTL Logic Family"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Combinational Logic Circuits",
+                    points: [
+                      "3.1 Arithmetic Circuits: Half and Full Adder, Half and Full Subtractor, Parallel and Series Adders",
+                      "3.2 Multiplexer: 2 to 1 MUX, 4 to 1 MUX, 8 to 1 MUX, Applications, Introduction to design of Multiplexer using K-map and tabulation method",
+                      "3.3 De-multiplexer: 1 to 2 DEMUX, 1 to 4 DEMUX, 1 to 8 DEMUX, Applications",
+                      "3.4 Code Converter: Binary to BCD, BCD to Excess-3, BCD to gray code",
+                      "3.5 Comparator: 1-bit comparator",
+                      "3.6 Encoder: Octal, Hexadecimal and BCD to Binary",
+                      "3.7 Decoder: Binary to Octal, Hexadecimal and BCD"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Sequential Logic Circuits",
+                    points: [
+                      "4.1 Basic Memory Cell: SR latch using NAND/NOR",
+                      "4.2 Triggering Method: Edge trigger and level trigger",
+                      "4.3 Flip-Flops: SR, JK, T, D, and JK-Master Slave",
+                      "4.4 Counters: Modulus of counter; Asynchronous Counter: Ripple up/down counter and Decade Counter; Synchronous Counter: Ring Counter and Johnson Counter.",
+                      "4.5 Shift Registers: Serial in Serial Out, Serial in Parallel Out, Parallel in Serial Out, Parallel in Parallel Out, Universal"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Data Converters & Memory Devices",
+                    points: [
+                      "5.1 Data Converters: DAC - Weighted resistor type and R-2R ladder type; ADC - Ramp type, SAR type, Flash Type, Dual Slope type",
+                      "5.2 Random Access Memory: Organization, Address Lines, Memory Size, Static RAM, Bipolar RAM Cell, Dynamic RAM, DRAM, DDR RAM",
+                      "5.3 Read Only Memory: Organization, Expanding memory, PROM, EPROM, EEPROM, Flash memory"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Principles of Electronic Communication",
+                code: "2421304",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Communication System",
+                    points: [
+                      "1.1 Basic building blocks of communication system: Transmitter, receiver, channel, antenna, multiplexer, encoder, decoder",
+                      "1.2 Electromagnetic spectrum, different frequency bands, and their applications, Concept of bandwidth",
+                      "1.3 Modes of communication: Simplex, Half duplex, and full duplex",
+                      "1.4 Examples of wired and wireless channels (basic idea only): telephone channel, coaxial cable, optical fiber cable, wireless broadcast channel",
+                      "1.5 Difference between Analog and Digital communication"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Introduction to Signals",
+                    points: [
+                      "2.1 Represent test signals like pulse, sine, cosine, gate pulses, sawtooth, triangular, and other periodic and non-periodic signals",
+                      "2.2 Classification of Signals: Continuous and Discrete signals, Deterministic and Random signals, Periodic and non-Periodic signals, Energy and Power signals, causal and non-causal signals, and Even and Odd signals (For both Continuous and Discrete signals)",
+                      "2.3 Basic Operations on Signals: Time shifting, Time scaling, Time reversal",
+                      "2.4 Fourier series and Fourier transform to analyze the basic signals"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Noise",
+                    points: [
+                      "3.1 Introduction: Noise, sources of noise, difference between noise and error",
+                      "3.2 Classification of noise: shot noise, partition noise, Flicker noise, High-frequency noise, Thermal Noise, Additive White Gaussian noise",
+                      "3.3 Relation between noise power and bandwidth, Noise bandwidth, signal-to-noise ratio, Figure of merit, Noise factor, Noise figure, Noise temperature, and equivalent noise temperature of amplifiers connected in cascade"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Analog Modulation",
+                    points: [
+                      "4.1 Concept and need for modulation",
+                      "4.2 Amplitude modulation: Simple mathematical representation of AM, DSB, SSB, efficiency and percentage of modulation, bandwidth, and power requirement in AM, DSB, SSB, generation and detection of AM (Basic idea only)",
+                      "4.3 Angle Modulation: Representation of FM signal and PM signal, Bandwidth and Power requirement in FM & PM, Principles of operation of frequency modulation using varactor diode and Voltage controlled oscillator (VCO)"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Transmitters and Receivers",
+                    points: [
+                      "5.1 Block diagram and functions of different blocks of AM and FM Transmitter",
+                      "5.2 Block diagram and function of different blocks of AM and FM Receiver",
+                      "5.3 Transmitter and receiver antenna, antenna parameters, and specifications",
+                      "5.4 Tuned Radio frequency (TRF) receiver, Super heterodyne Analog AM/FM receivers: Block diagram and the principle of operation of a superheterodyne receiver",
+                      "5.5 Receiver Characteristics & Testing: sensitivity, selectivity, and fidelity, Pre-emphasis, and de-emphasis circuits",
+                      "5.6 Generation of FM using the Direct method (Voltage Controlled Oscillator) and Indirect method (Armstrong Method)",
+                      "5.7 Demodulation of FM using Phase Locked Loop (PLL)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electronic Simulation Software Practice",
+                code: "2421305",
+                units: [
+                  {
+                    title: "Unit1.0 -Introduction to EDA/Simulation Tool",
+                    points: [
+                      "1.1 Installation of appropriate EDA/simulation tool",
+                      "1.2 Main features of EDA tools",
+                      "1.3 Different editing windows",
+                      "1.4 Draw the schematic diagram of circuits using proper connection",
+                      "1.5 Procedure of file handling"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Analog Circuits Simulation",
+                    points: [
+                      "2.1 Clipper & Clamper circuits",
+                      "2.2 Rectifiers: Half-wave Rectifiers, Centre Tapped full wave Rectifier, Full wave Bridge Rectifier",
+                      "2.3 BJT Amplifiers: CE Amplifier, CB Amplifier, CC Amplifier",
+                      "2.4 Passive Filters: Low Pass Filter, High Pass Filter, Band stop Filter, Band pass Filter",
+                      "2.5 SCR, DIAC, TRIAC"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Digital Circuits Simulation",
+                    points: [
+                      "3.1 Logic Gates",
+                      "3.2 Half Adder/Subtractor",
+                      "3.3 Full Adder/Subtractor",
+                      "3.4 Multiplexer and Demultiplexer",
+                      "3.5 Flipflops: R-S Flip Flop, J-K Flip Flop, D and T Flip flop",
+                      "3.6 ADC, DAC",
+                      "3.7 Data acquisition system"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Electrical Circuits Simulation",
+                    points: [
+                      "4.1 Concepts of Mesh and Nodal analysis",
+                      "4.2 Fundamentals of Network Theorems: Thevenin's Theorem, Norton's Theorem, Superposition Theorem",
+                      "4.3 Basics of Series AC Circuits: R-L Circuit, R-C Circuit, R-L-C Circuit"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 PCB Design using Simulation Tool",
+                    points: [
+                      "5.1 Introduction to PCB Design",
+                      "5.2 PCB design Software: Interface and Tools",
+                      "5.3 Schematic Capture: Symbols and Components for creating circuit",
+                      "5.4 PCB Layout",
+                      "5.5 PCB file formats"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Essence of Indian Knowledge System and Tradition",
+                code: "2400308",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Indian Knowledge Systems",
+                    points: [
+                      "1.1 Overview of IKS",
+                      "1.2 Organization of IKS - चतुर्दश-विद्यास्थानं",
+                      "1.3 Conception and Constitution of Knowledge in Indian Tradition",
+                      "1.4 The Oral Tradition",
+                      "1.5 Models and Strategies of IKS"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Overview of IKS Domains and Relevance in Current Technical Education System",
+                    points: [
+                      "2.1 The Vedas as the basis of IKS",
+                      "2.2 Overview of all the six Vedāngas",
+                      "2.3 Relevance of following IKS domains in present Technical Education System: Arthashastra (Indian economics and political systems), Ganita and Jyamiti (Indian Mathematics, Astronomy and Geometry), Rasayana (Indian Chemical Sciences), Ayurveda (Indian Biological Sciences / Diet & Nutrition), Jyotish Vidya (Observational astronomy and calendar systems), Prakriti Vidya (Indian system of Terrestrial/ Material Sciences/ Ecology and Atmospheric Sciences), Vastu Vidya (Indian system of Aesthetics- Iconography and built-environment /Architecture), Nyaya Shastra (Indian systems of Social Ethics, Logic and Law), Shilpa and Natya Shastra (Indian Classical Arts: Performing and Fine Arts), Sankhya and Yoga Darshna (Indian psychology, Yoga and consciousness studies), Vrikshayurveda (Plant Science / Sustainable agriculture/food preservation methods)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Summer Internship - I",
+                code: "2418306",
+                units: [
+                  {
+                    title: "Internship after 2nd Semester for all branches",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+            ];
+
+            // Diploma ece sem 5
+
+            semesters.sem5.theory = [
+              {
+                name: "Industrial Engineering & Management",
+                code: "2421501",
+                units: [
+                  {
+                    title: "Unit-1.0 Industrial Engineering",
+                    points: [
+                      "1.1 Need, role and benefits of Industrial Engineering",
+                      "1.2 Principles of Industrial Engineering and its Historical developments",
+                      "1.3 Industrial Functions-Design, Procurement, production, operation, installation, inspection, maintenance, marketing, etc.",
+                      "1.4 Types of Industries/Business units",
+                      "1.5 Plant layout and its types, Site selection",
+                      "1.6 Industrial Acts & Taxes: Salient features of various acts pertaining to industry- The Factories Act 1948. Industrial Disputes Act 1947. The Workmen's Compensation Act 1923/1956."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Work and Method Study",
+                    points: [
+                      "2.1 Productivity; Standard of living; Method of improving Productivity: Objectives",
+                      "2.2 Method Study: Definition; Objectives; Selection of a job for Method study; Basic procedure and tools to conduct Method study",
+                      "2.3 Operation process chart; Flow process chart; Two handed process chart; Man Machine chart",
+                      "2.4 String diagram and flow diagram.",
+                      "2.5 Work Measurement: Definition: Basic procedure in making a time study",
+                      "2.6 Calculation of standard time; Basic concept of Production study; Techniques of Work Measurement"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Production Planning and Control",
+                    points: [
+                      "3.1 Introduction; Major functions of Production Planning and Control",
+                      "3.2 Forecasting and Methods of forecasting: Qualitative Methods and Quantitative Methods- moving average and exponential smoothing only (Related simple numerical);",
+                      "3.3 Routing and Scheduling; Dispatching and Controlling",
+                      "3.4 Concept of Critical Path Method (CPM) and PERT; Simple related numericals",
+                      "3.5 Types of Production: Mass Production, Batch Production and Job Order Production: Characteristics",
+                      "3.6 Principles of Product Planning and Process Planning;",
+                      "3.7 Quality Control: Definition; Objectives; Types of Inspection: First piece, Floor and Centralized Inspection; Advantages and Disadvantages; Statistical Quality Control; Concept of ISO 9001:2008, Quality Management System, Registration/Certification procedure; Benefits of ISO to the organization"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Industrial Management",
+                    points: [
+                      "4.1 Concept of Management and its functions, Organization and Organizational Structure (organization chart of Govt. deptt., Industrial undertakings, private industries, etc.)",
+                      "4.2 F.W. Taylor's and Henry Fayol's Principles of Management; Functions of Supervisor/Manager",
+                      "4.3 Team Working and Leadership: Styles of Leadership; Qualities of a good leader; Motivation; Positive and Negative Motivation",
+                      "4.4 Modern Management Techniques; Just in Time; Total Quality Management (TQM); Quality circle; Zero defect concept; 5S Concept",
+                      "4.5 Human Resource Management (HRM): Objectives and Responsibility of HRMS; Selection Procedure; Training of Workers- Apprentice Training; On the Job training;",
+                      "4.6 Wages and Salary; Component of Wages, Types of wages, Payment of Wages",
+                      "4.7 Depreciation: Meaning of depreciation, Methods of calculating depreciation charges, obsolescence - definition and reasons.",
+                      "4.8 Replacement economy: Reasons for replacement, installation and removal costs."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Material Management and Industrial Safety",
+                    points: [
+                      "5.1 Material Management: Purpose. Functions of material Management, Cost Accounting- Introduction & necessity, elements of cost - direct and indirect, variable and fixed, prime cost, overhead cost, total cost, marginal costing, break-even analysis.",
+                      "5.2 Purchase: Purchase Procedures, reordering cycle system, base stock and lead-time, inventory valuation, Economic order quantity (EOQ)",
+                      "5.3 Store Management: stores procedures, layouts, safety provisions, inventory control techniques- ABC, VED, FIFO, and LIFO systems. Introduction to Material handling and material handling equipment",
+                      "5.4 Industrial Hygiene: Methods of achieving industrial hygiene.",
+                      "5.5 Industrial safety: Safety awareness of employees, use of various safety devices, responsibilities of employees and employer towards safety.",
+                      "5.6 Accident: Causes and Cost of an Accident, Accident Proneness, Prevention of Accidents",
+                      "5.7 Industrial waste control: Types of industrial waste, problem of disposal, waste control programme, recycling and power of waste."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Antennas and Microwave Engineering",
+                code: "2421502",
+                units: [
+                  {
+                    title: "Unit1.0 -Wave Propagation",
+                    points: [
+                      "1.1 Elementary concepts of propagation of Electromagnetic (EM) waves, properties of EM waves, Classification of EM waves bands, guided and unguided wave propagation",
+                      "1.2 Propagation of ground wave, space wave and sky wave",
+                      "1.3 Ionospheric layers: D, E and F layer, Skip distance, Critical frequency, Maximum Usable Frequency (MUF), Actual and Virtual height of the ionospheric layer, Multi hops and Duct propagation"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Antenna Fundamentals",
+                    points: [
+                      "2.1 Basic definition of antenna and working principle, point source, dipole antenna, Isotropic radiator",
+                      "2.2 Antenna parameters: impedance, radiation resistance, radiation pattern, beam width and beam efficiency, gain, directivity, radiation intensity, half power BW (HPBW), antenna efficiency",
+                      "2.3 Effects of antenna height on the signal reception",
+                      "2.4 Working principle, radiation pattern, and application of the following antennas: Half wave dipole, Horn, Yagi Uda, Parabolic Reflector",
+                      "2.5 Introduction and uses of Loop and Helical Antenna, Folded Dipole Antenna",
+                      "2.6 Introduction, radiation pattern, and applications of Antenna arrays: Broadside array antenna, End fire array antenna"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Transmission Line and Waveguides",
+                    points: [
+                      "3.1 Transmission Line: Basics, Equivalent circuit of transmission line, Voltage and Current relationship, Propagation Constant, Attenuation constant, Characteristic impedance, Reflection coefficient, Standing wave and VSWR, Short circuit and open circuit line, Half wave, quarter wave",
+                      "3.2 Wave guide: Working principle, Types of waveguides: Rectangular, Circular Wave Guide, Modes of propagation (basic idea only) functions, characteristics and applications",
+                      "3.3 Microwave components: E-plane, H-plane, Magic Tee, Directional Coupler, Attenuator, Isolator and Circulator"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Microwave Amplifiers and Measurement",
+                    points: [
+                      "4.1 Limitations of microwave tube at microwave frequency",
+                      "4.2 Microwave linear beam tube (O Type), Construction, working and applications of following microwave tubes amplifiers: Klystron - Two cavity and multi cavity, Travelling Wave Tube (TWT)",
+                      "4.3 Construction, working and applications of following microwave tubes oscillators: Reflex klystron, Magnetron, Backward Wave Oscillator",
+                      "4.4 Microwave cross field tube (M Type): Magnetron oscillator construction, working and applications",
+                      "4.5 Measurement: Voltage Standing Wave Ration (VSWR) measurement, microwave power, frequency and attenuation measurement"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Microwave Solid State Devices",
+                    points: [
+                      "5.1 Limitation of transistors at microwave frequencies",
+                      "5.2 Tunnel diode: working and applications",
+                      "5.3 Transferred electron device: Gunn diode (working and construction only)",
+                      "5.4 Avalanche Transit time device: IMPATT & TRAPATT (basic idea only)",
+                      "5.5 PIN diode construction, working and their applications"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Automated Control System and PLC",
+                code: "2421503",
+                units: [
+                  {
+                    title: "Unit1.0 -Basics of Control Systems",
+                    points: [
+                      "1.1 Control system - Open and closed loop, linear and nonlinear, time variant and time invariant",
+                      "1.2 Feedback and its types- Degenerative and Regenerative, effect of feedback on stability and sensitivity",
+                      "1.3 Transfer function (definition) and Transfer function of simple R-C, L-C, and R-L-C circuits",
+                      "1.4 Poles and Zeros of a Transfer function, Pole zero plot in S-plane",
+                      "1.5 Need and significance of block diagram: Represent simple physical system in terms of block diagram having various inputs and outputs.",
+                      "1.6 Control system components: Servomotors - AC and DC, Stepper motor, Error Detector- Potentiometer and Synchro, Optical encoder (Construction, working and applications) - Incremental and absolute"
+                    ]
+                  },
+                  {
+                    title: "Unit -2.0 Time Response Analysis",
+                    points: [
+                      "2.1 Transient and steady state response",
+                      "2.2 Standard Test Inputs: Step, Ramp, Parabolic, Impulse inputs, their Laplace Transform and graphical representation",
+                      "2.3 Order and type of system with standard equations and examples",
+                      "2.4 First order control system: Analysis for unit step input, concept of time constant (derivation not required)",
+                      "2.5 Second order control system: Analysis for unit step input (derivation not required), concept, effect of damping",
+                      "2.6 Time Response Specifications: Rise time, Delay time, Peak time, Settling time, Peak overshoot, steady state errors (no derivations) and simple numerical",
+                      "2.7 Stability: Concept of stability, Absolute and relative stability, root locations in S-plane, and analysis- stable, unstable, critically stable, conditionally stable system."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Process Control",
+                    points: [
+                      "3.1 Process control System: Block diagram, functions of each block",
+                      "3.2 Control actions: I. Discontinuous controller mode- Two position (ON-OFF) controllers- equation (derivation not required), neutral zone; II. Continuous controller mode- Proportional Controller- offset, Proportional band, Proportional, Integral, and Derivative controller- O/P equation, response, characteristics; III. Composite controllers' modes: PI, PD, PID, controllers- O/P equation (derivation not required), response"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Fundamentals of PLC",
+                    points: [
+                      "4.1 Industrial automation: Definition, need and significance",
+                      "4.2 PLC- Definition, Block diagram, functions of various blocks, principle of operation",
+                      "4.3 Classification (fixed and modular PLCs)",
+                      "4.4 Input and output modules: analog & digital, I/O Specifications, Examples, Sinking and sourcing concept in DC input modules",
+                      "4.5 PLC Scan cycle and speed of execution",
+                      "4.6 Advantages and applications of PLC",
+                      "4.7 PLC installation steps"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 PLC Programming and SCADA",
+                    points: [
+                      "5.1 PLC programming language: Functional Block Diagram (FBD), Instruction list, Sequential Functional Chart (SFC), Ladder programming language",
+                      "5.2 Simple Programming examples using ladder logic: Based on relay, timer- on delay, Off delay, retentive timer, counter- Up and Down, logical, comparison, arithmetic and data handling instructions, PID, Sequence instructions",
+                      "5.3 Introduction to DCS and SCADA, Typical SCADA architecture (Only block diagram representation) - Remote Terminal Units (RTUs), Master Terminal Units (MTUs), Communication system, Benefits of SCADA",
+                      "5.4 Steps in creating SCADA screen for simple object, steps for linking SCADA object (defining Tags and items)",
+                      "5.5 Application of SCADA: Traffic light control, water distribution, pipeline control",
+                      "5.6 Interfacing SCADA with PLC: Typical connection diagram, object linking, and embedding for process control (OPC) architecture"
+                    ]
+                  }
+                ]
+              },
+
+              {
+                name: "Electric Vehicles (Basic)",
+                code: "2400504G",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Electric Vehicle",
+                    points: [
+                      "1.1 Review of Conventional Vehicle Engine System, Electric Vehicle (EV), The necessity of Electric Vehicle",
+                      "1.2 Types of Electric Vehicles: Plug-in hybrid, Battery electric vehicle, Hybrid electric vehicle, Fuel Cell Electric Vehicle",
+                      "1.3 Advantages of Electric Vehicles",
+                      "1.4 Electric Vehicle Components: Motor, Motor Controller, Battery, Battery Management System, and Charging System."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Electric Motors used in EVs",
+                    points: [
+                      "2.1 Electric Motors for EV applications: General Characteristics of motors",
+                      "2.2 Types of Motors: DC, Brushless DC, Induction, Permanent Magnet Synchronous Motors, Switched Reluctance Motors",
+                      "2.3 Rating of Motors, Selection Criteria, Physical Location",
+                      "2.4 Connection of Motors: Mechanical Connections and Electrical Connections"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 EV Batteries and Energy Storages",
+                    points: [
+                      "3.1 Types of Batteries: Lead Acid, Nickel Based, Lithium Based",
+                      "3.2 Battery Parameters, Charging (AC) and Discharging (DC) Process",
+                      "3.3 Lithium Ion Batteries, Fuel Cells, Fuel Cell Storage System",
+                      "3.4 Battery Condition Monitoring, Battery Management System (BMS), Need of BMS, Block Diagram of BMS",
+                      "3.5 Battery Disposal and Recycling"
+                    ]
+                  },
+                  {
+                    title: "Unit- 4.0 EV Charging Systems",
+                    points: [
+                      "4.1 Power electronics in EV, Power electronics components, Rectifiers",
+                      "4.2 DC to DC Converter, DC to AC Converter",
+                      "4.3 Charging System, Types of charging Systems",
+                      "4.4 Components of Charging Systems, Single line Diagram of Charging System"
+                    ]
+                  },
+                  {
+                    title: "Unit- 5.0 Regulatory Requirements and Policies for EV Industry",
+                    points: [
+                      "5.1 Rules and Regulations set by the Indian government for the designer/manufacturer of EVs.",
+                      "5.2 Policies in India, Global Policies for E- Vehicles.",
+                      "5.3 Carbon Footprint Issues"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Entrepreneurship Development & Start-ups ",
+                code: "2400505",
+                units: [
+                  {
+                    title: "After completion of the course, the students will be able to",
+                    points: [
+                      "1.1Demonstrate traits of a successful intrapreneur/ entrepreneur/ start-up co-founder.",
+                      "1.2Innovate products and services using creativity and innovation techniques.",
+                      "1.3 Manage critical resources from support institutions.",
+                      "1.4 Prepare sustainable small business plans. "
+                    ]
+                  },
+                ]
+              },
+              {
+                name: "Summer Internship - II",
+                code: "2418305",
+                units: [
+                  {
+                    title: "(After 4th Sem) / Industrial Training / Common for all programmes)",
+                    points: [
+                      "Diploma students are required to give exposure of their own diploma programme related industrialhardware, software and practices,",
+                    ]
+                  },
+                ]
+              },
+
+            ];
+
+            return semesters;
+          })()
+        },
+
+
       ]
     },
     {
