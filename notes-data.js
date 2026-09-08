@@ -792,10 +792,27 @@ const notesResources = [
     subject: "Basic Engg. Mathematics",
     desc: "Previous year questions of Mathematics-I year 2022",
     size: "0.8 MB",
-    contributor: "Sudarshan Raval",
+    contributor: "Sudarshan Raval (Developer)",
     initials: "SR",
     icon: "fas fa-book",
     pdfUrl: "https://drive.google.com/file/d/1LFQeC5pI1P5j1AW1O_SD5-Miao8ToyOs/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "Mathematics-I PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "1st Year",
+    semester: "Semester 1",
+    type: "PYQ",
+    subject: "Basic Engg. Mathematics",
+    desc: "Previous year questions of Mathematics-I year 2023",
+    size: "0.8 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1ouwpB9HWQ7YRkPh1Os-O8gSnRZh6GcL_/view?usp=drive_link"
   },
 
   {
