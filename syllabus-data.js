@@ -669,6 +669,8 @@ const syllabusData = {
                 ]
               }
             ];
+
+            // Diploma cse sem 3
             semesters.sem3.theory = [
               {
                 name: "Data Structures and Algorithm",
@@ -953,6 +955,443 @@ const syllabusData = {
                   },
                 ]
               },
+            ];
+
+
+            // Diploma cse sem 4
+            semesters.sem4.theory = [
+              {
+                name: "Java Programming",
+                code: "2418401",
+                units: [
+                  {
+                    title: "Unit-1.0 Basic Syntactical Constructs in Java",
+                    points: [
+                      "1.1 Java Features and the Java Programming Environment",
+                      "1.2 Object-Oriented Paradigm: Objects & Classes, Data Abstraction, Data Encapsulation, Inheritance, Polymorphism",
+                      "1.3 Benefits of OOP",
+                      "1.4 Applications of OOP",
+                      "1.5 Java History",
+                      "1.6 Java Features: Simple small & Familiar, Compiled or Interpreted, Platform independent, Portable, Object Oriented, Robust & Secure, Distributed, Multithreaded & Interactive, Ease of development",
+                      "1.7 Java vs C",
+                      "1.8 Java vs C++",
+                      "1.9 Java Environment: Java Development Kit (JDK), Java Development Tool",
+                      "1.10 Application Programming Interface: Language Support Package, Utilities Package, Input/output Package, AWT Package, Applet Package, Networking Package",
+                      "1.11 Simple Java Program: Class Declaration, Opening & Closing Braces, Main line, Output line, Creating object",
+                      "1.12 Java Programming with multiple Statement: Application with two classes, Accessing class members, Use of Math Function, Comments",
+                      "1.13 Java Program Structure: Document Section, Package statement, Import Statement, Interface Statements, Class Definitions, Main method Class",
+                      "1.14 Java Tokens: Reserved Keywords, Identifiers, Literals, Operators, Separators",
+                      "1.15 Compiling the Program: Java Compiler javac",
+                      "1.16 Running the Program: Java Interpreter",
+                      "1.17 Java Virtual Machine: Byte Code",
+                      "1.18 Command line Arguments",
+                      "1.19 Constant & Variables",
+                      "1.20 Data Types: Primitive Data Types, Non Primitive Data Types",
+                      "1.21 Operators: Arithmetic Operators, Relational Operators, Logical Operators, Increment & Decrement, Conditional Operators, Bit wise Operator, Dot Operators, Ternary Operator",
+                      "1.22 Expressions: Operator precedence, Associativity",
+                      "1.23 Decision Statement: if statement, if else statement, nested if else statement, if else if ladder, switch statement",
+                      "1.24 Loop Statement: While statement, Do while statement, for statement, for-each statement.",
+                      "1.25 Control Statement: Break, Continue, Return statement"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Derived Syntactical Constructs in Java:",
+                    points: [
+                      "2.1 Constructors: Default, Parameterized, Non parameterized",
+                      "2.2 'this' keyword",
+                      "2.3 Command line arguments",
+                      "2.4 Varargs: variable-length arguments; Visibility Control: Public, Private, Protected, Default",
+                      "2.5 Arrays: Types of arrays, Declaration of Arrays, Creating an arrays, Initialization of Arrays",
+                      "2.6 Strings: String classes, String Buffer"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Inheritance, Interface and Package:",
+                    points: [
+                      "3.1 Inheritance: Concept of Inheritance",
+                      "3.2 Types of Inheritance: Single Inheritance, Multiple, Multilevel Inheritance, Hierarchical Inheritance",
+                      "3.3 Interface: Defining interface, Extending interface, Implementing interface",
+                      "3.4 Method overloading and overriding",
+                      "3.5 Package: Define package, Types of package, Naming and creating packages, Accessing package, Using a Package, Import statement"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Errors & Exception Handling, Multithreading:",
+                    points: [
+                      "4.1 Errors - Introduction",
+                      "4.2 Types of Errors: Compile-Time Errors, Run-Time Errors",
+                      "4.3 Exceptions: try and catch statement, nested try statement, throws and Finally statement",
+                      "4.4 Built-in exceptions",
+                      "4.5 Multithreaded Programming: Creating a Thread: By extending to thread class, Creating a thread by implementing runnable Interface",
+                      "4.6 Life cycle of thread: New State, Runnable State, Running State, Blocked State, Dead State",
+                      "4.7 Thread Methods: wait (), sleep(), notify(), resume(), suspend(), stop()"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Managing Input/Output/Files in Java:",
+                    points: [
+                      "5.1 Introduction and Concept of Streams.",
+                      "5.2 Stream Classes.",
+                      "5.3 Byte Stream Classes: Input Stream Classes, Output Stream Classes.",
+                      "5.4 Character Stream Classes: Using Reader Stream classes, Using Writer Stream classes",
+                      "5.5 Using File Class: I/O Exceptions, Creation of Files, Reading/Writing Bytes, Handling Primitive Data types."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Theory of Computation",
+                code: "2418402",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Theory of Computation",
+                    points: [
+                      "1.1 Alphabet, Languages, and Grammar: Introduction to Alphabet: Set of Symbols or Characters, Exploration of the languages: Sets of strings, Introduction to grammar: Set of rules, Structure, and formation of valid strings.",
+                      "1.2 Productions and Derivations: Productions and Derivations: Concept of production in the grammar, Explanation of the derivation to generate a string.",
+                      "1.3 Chomsky Hierarchy of Languages: Introduction to Chomsky Hierarchy, Levels of formal language category: Type-3 (Regular), Type-2 (Context-Free), Type-1 (Context-Sensitive), and Type-0 (Unrestricted)."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Regular languages and Finite Automata",
+                    points: [
+                      "2.1 Regular expressions and languages, Deterministic finite automata (DFA) and equivalence with regular expressions.",
+                      "2.2 Non-deterministic finite automata (NFA) and equivalence with DFA,",
+                      "2.3 Regular grammars and equivalence with finite automata, Properties of regular languages, Pumping lemma for regular languages,",
+                      "2.4 Minimization of finite automata.",
+                      "2.5 Mealy and Moore machine"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Context-Free Languages and Pushdown Automata",
+                    points: [
+                      "3.1 Context-free grammars (CFG) and languages (CFL)",
+                      "3.2 Chomsky and Greibach normal forms",
+                      "3.3 Non-deterministic pushdown automata (NPDA) and equivalence with CFG",
+                      "3.4 Parse trees and ambiguity in CFG",
+                      "3.5 Pumping lemma for context-free languages",
+                      "3.6 Deterministic pushdown automata and closure properties of CFLs."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Context-Sensitive Languages and Turing Machines",
+                    points: [
+                      "4.1 Context-sensitive grammars (CSG) and languages",
+                      "4.2 Linear bounded automata (LBA) and equivalence with context-sensitive grammar",
+                      "4.3 The basic model for Turing machines (TMs)",
+                      "4.4 Turing-recognizable (recursively enumerable) and Turing-decidable (recursive) languages and their closure properties",
+                      "4.5 Variants of Turing machines, including nondeterministic TMs and equivalence with deterministic TMs",
+                      "4.6 Unrestricted grammars and equivalence with Turing machines",
+                      "4.7 TMs as enumerators."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Undecidability",
+                    points: [
+                      "5.1 Church-Turing thesis and universal Turing machine",
+                      "5.2 Diagonalization languages and reduction between languages, Reduction Theorem, Properties of Reduction",
+                      "5.3 Rice's theorem and undecidable problems about languages",
+                      "5.4 P, NP, NP-complete, and NP Hard class of problems"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Database Management System",
+                code: "2418403",
+                units: [
+                  {
+                    title: "Unit-1.0 Overview of the Database Management System",
+                    points: [
+                      "1.1 Database - Concept of database, Need of Database, Advantage of database, Application of Database, Traditional Database",
+                      "1.2 Database Management System, File Processing System, Advantages of DBMS over file processing system, Characteristic of Database",
+                      "1.3 Relational Data Model - Domain, Attributes, Tuples and Relations",
+                      "1.4 Types of Database System - Centralized Database System, Parallel Database System, Client / Server Database System, Distributed Database System"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Relational Database Management System (RDBMS):",
+                    points: [
+                      "2.1 Introduction to RDBMS, RDBMS terminology, Relational Model (Instances, Schema).",
+                      "2.2 E-R model concept - Notation for E-R diagram, Component of E-R diagram, Strong Entity set, Weak Entity set, Types of Attributes, E-R design Issues",
+                      "2.3 Keys in DBMS - Primary key, Candidate key, Foreign key, Super Keys, Alternate Keys",
+                      "2.4 Integrity Constraints - Domain Constraint, Entity Integrity Constraint, Referential Integrity Constraint, Key Constraint",
+                      "2.5 Conversion of E-R diagram into Table"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Relational Database Design:",
+                    points: [
+                      "3.1 Functional Dependency, Closures of a Set of Functional Dependencies.",
+                      "3.2 Normalization & Normal forms - 1NF, 2NF, 3NF, BCNF",
+                      "3.3 Denormalization: Process, benefits and draw back."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Relational Algebra & SQL:",
+                    points: [
+                      "4.1 Concept of relational algebra",
+                      "4.2 Types of relational operations - Select operation, Project operations, Union operations, Set Intersection operations, Set Difference operations, Cartesian operations, Rename operations",
+                      "4.3 Join operations - Natural Join, Outer Join, Equi Join",
+                      "4.4 Overview of SQL - SQL Commands: Data Definition language (DDL), Data Manipulation Language (DML), Data Control Language (DCL); Select, Insert, Update, Delete SQL Statements",
+                      "4.5 SQL Clauses - Group by, Having, Order by clause",
+                      "4.6 Aggregate functions - Max, Min, Sum, Count, Avg",
+                      "4.7 SQL Join Operations: Inner join, Left join, Right join, Full join",
+                      "4.8 SQL Queries - Correlated and Nested Query",
+                      "4.9 TCL: Commit, save point, rollback, set transaction"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Other Schema Objects",
+                    points: [
+                      "5.1 Views: Concept of View, The Create and update Views, Views and Joins, Views and Sub queries, Dropping Views.",
+                      "5.2 Sequences: Concept and need of Sequence Creating Sequences, Altering Sequences, Dropping Sequences.",
+                      "5.3 Indexes: need of index, index Types, creating of an Index: Simple Unique, and Composite Index, Dropping Indexes",
+                      "5.4 Synonyms: Creating Synonyms, Dropping Synonyms."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Computer Organization and Architecture",
+                code: "2418404",
+                units: [
+                  {
+                    title: "Unit 1.0: Basic Computer Organization and Design:",
+                    points: [
+                      "1.1 Instruction Codes: 1.1.1 Stored Program Organization, 1.1.2 Instruction Set, 1.1.3 Instruction Cycle (Fetch, Decode, Execute), 1.1.4 Register Reference Instruction",
+                      "1.2 Memory Reference Instructions",
+                      "1.3 Interrupt: 1.3.1 Hardware and Software, 1.3.2 Maskable and Non-Maskable, 1.3.3 Input and Output",
+                      "1.4 Types of buses (Address, Data, Memory) and bus arbitration.",
+                      "1.5 Register, Bus, and memory transfer.",
+                      "1.6 Processor organization, general registers organization (Control Word), stack organization (Register Stack, Memory Stack)",
+                      "1.7 Addressing Modes (Direct, Indirect, Register Direct, Immediate etc.)",
+                      "1.8 Program Control: 1.8.1 Conditional Branch Instruction, 1.8.2 Subroutine call and return"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0: Arithmetic and logic unit:",
+                    points: [
+                      "2.1 Addition and Subtraction: 2.1.1 Addition and Subtraction with Signed Magnitude, 2.1.2 Hardware Implementation, 2.1.3 Addition and Subtraction with Signed 2's Complement Data",
+                      "2.2 Multiplication Algorithm: 2.2.1 Signed operand multiplication, 2.2.2 Booths algorithm and array multiplier.",
+                      "2.3 Division Algorithms: 2.3.1 Hardware Implementation for signed Magnitude data, 2.3.3 Divide Overflow",
+                      "2.4 Decimal Arithmetic Unit",
+                      "2.5 Floating point arithmetic operation: 2.5.1 Addition and Subtraction, 2.5 IEEE Standard for Fixed Point and Floating-Point Numbers"
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0: Input-Output Organization",
+                    points: [
+                      "3.1 Input Output Interface: 3.1.1 I/O Bus and Interface Module, 3.1.2 I/O versus Memory Bus, 3.1.3 Example of I/O Interface",
+                      "3.2 Asynchronous Data Transfer: 3.2.1 Asynchronous Communication Interface, 3.2.2 Handshaking",
+                      "3.3 Modes of data transfer: 3.3.1 Programmed I/O, 3.3.2 Interrupt Initiated I/O, 3.3.3 Direct Memory Access (3.3.3.1 DMA Controller, 3.3.3.2 DMA Transfer)",
+                      "3.4 Serial Communication: 3.4.1 Character Oriented Protocol, 3.4.2 Bit Oriented Protocol",
+                      "3.5 Parallel Communication",
+                      "3.6 Serial vs Parallel Communication"
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0: Memory Organization:",
+                    points: [
+                      "4.1 Basic concept and Memory Hierarchy",
+                      "4.2 Types of Memory: 4.2.1 Read Only Memory, 4.2.2 Random Access Memory, 4.2.3 Cache Memory, 4.2.4 Register Memory, 4.2.5 Auxiliary Memory (Magnetic Disk, Magnetic Tape)",
+                      "4.3 Associative Memory: 4.3.1 Hardware Organization, 4.3.2 Match Logic, 4.3.3 Read and Write Operation",
+                      "4.4 Cache Memory: 4.4.1 Associative Mapping, 4.4.2 Direct Mapping, 4.4.3 Set Associative Mapping, 4.4.4: Concept and design issues & performance, 4.4.5 Calculate Hit Ratio, Miss Ratio and Performance",
+                      "4.5 2D & 2 1/2D memory organization.",
+                      "4.6 Virtual memory: 4.7.1 Address Space and Memory Space, 4.7.2 Implementation of Virtual Memory, 4.7.3 Page Replacement (FIFO, LRU)"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0: Pipelining and Vector Processing:",
+                    points: [
+                      "5.1 Introduction to Pipelining: 5.1.1 Definition of Pipelining, 5.1.2 Need for Pipelining in modern processor",
+                      "5.2 Pipeline Stages (Fetch, Decode, Execute, Memory, Write Back)",
+                      "5.3 Pipelining Hazards (Structure Hazards, Data Hazards)",
+                      "5.4 Performance Metrics of CPU (Access Time, EMAT (Effective Memory Access Time), Scale Factor)"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Computer Troubleshooting and Maintenance",
+                code: "2418405",
+                units: [
+                  {
+                    title: "Unit-1.0: Internal components of the PC",
+                    points: [
+                      "1.1 Computers: Desktop Computers, Tablet, Laptop, Mainframe, Supercomputer.",
+                      "1.2 Features description: Hardware components of Desktop Systems, Laptops, and Tablets.",
+                      "1.3 Motherboard: Definition, parts and connections, and functioning block diagram",
+                      "1.4 Processor: Common Features, Types of Processors (Microprocessor, Microcontroller etc.). Basic Structure of CPU, Different levels of cache, system bus, clock speed; a. Multiple Core Processors: Description, two core processor architecture and multi-core processor architecture",
+                      "1.5 BIOS: Basic Input Output System Services, Bios Interaction, date and time, Boot device priority, boot setting configuration, password security.",
+                      "1.6 System Memory: definition, memory sizes, speeds, and shapes (DIP, ZIP, SIPP, SIMM, DIMM, RIMM), Memory modules (Dynamic RAM, SDRAM, DDR SDRAM, SLDRAM, DRDRAM, Fast Page Mode (FPM) DRAM, Extended Data Out (EDO) DRAM).",
+                      "1.7 Power Supply: Purpose and Features of SMPS, Working of SMPS, Fault finding in power supply, Uninterrupted Power Supply: Characteristics of UPS, Types of UPS, online and offline, Preventive Maintenance of Power Supply"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0: Input Device, Output device, and Storage Devices",
+                    points: [
+                      "2.1 Keyboard: Keyboard operation, Keyboard Type, Keyboard interfaces",
+                      "2.2 Mouse: Types, Operation, Interfaces",
+                      "2.3 Scanner: Scanner Types, Image quality measurement, Working",
+                      "2.4 Printer: Printer interface, Types of printers, Ink-jet Printer: Parts, working Principle; LaserJet Printer: Parts, working Principle.",
+                      "2.5 Monitor: Video Basics (CRT parameters), VGA monitors, Digital Display Technology - Thin Displays, Liquid Crystal Displays, Plasma Displays, Light Emitting Displays; Graphics Cards: Components of a card, Accelerated Video cards, CGA, EGA, VGA",
+                      "2.6 Hard Disk Drive: Disk Basics, Hard Disk Interfaces: EIDE, Serial ATA, SCSI, USB, and IEEE 1394 (Firewire), RAID; Solid State Drive: Types of SSD, Interface, Working Principal; Disk Geometry: Heads, Tracks, Sectors, Cylinders, Cluster, Landing zone, MBR, Zone bit recording; Disk performance Characteristics: Seeks and Latency, Data Transfer Rate, Explain the working of hard disk controller, Hard Disk Controller: Functional Blocks, HDC Functions; Pen Drive: Types of pen drive, working principle of Pen drive."
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0: Software's, Malware, Security, and Drivers",
+                    points: [
+                      "3.1 Operating System: Installation and Setup, Command-Line Usage, File System Management, User Account and Security, Networking and Connectivity, Software Updates, Customization and Personalization, Troubleshooting Scenarios",
+                      "3.2 Software Applications: Microsoft Word, Google Docs, Microsoft Excel, Google Sheets, Google Slides, Adobe Photoshop, Adobe Dreamweaver, WordPress",
+                      "3.3 Malware and Security: Basics definition of Malware, Viruses, and security threats; Methods of detecting and removing malware, viruses, and other security threats and protecting the system.",
+                      "3.4 Device Driver Software: Definition of device driver, Need and importance of driver, Installing and configuration of driver for various devices including plug and play types of drivers."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0: Network and Internet Connectivity",
+                    points: [
+                      "4.1 Introduction to Networking Devices: Switches, Routers, Types of Switches, Connectivity of switch and up linking using uplink port and using regular port, Types of Routers, Connectivity of Router and Access point, Basic router-parameter-configuration",
+                      "4.2 Internet Connectivity: Types of internet connectivity, Broadband, Leased Line connection",
+                      "4.3 Firewalls and Security: Need for firewalls and their role in network security, Types of Firewalls - hardware and software-based firewalls, Firewall Configuration and Management, Firewalls and Virtual Private Networks (VPNs), Packet Filtering, Proxy Servers"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0: Data Recovery and System Performance Optimization",
+                    points: [
+                      "5.1 Data Loss Causes: Human Error, Viruses & Malware, Power Outages, Hardware failure, Natural Disasters, Software Corruption, Migration errors",
+                      "5.2 Data Recovery Methods: File Restore, Volume Restore, Local virtualization, Cloud virtualization",
+                      "5.3 Data Backup Strategies: Types of Backups: Full backup, Incremental backup, Differential backup, Direct-to-cloud backup, cloud-to-cloud backup, and SaaS backup",
+                      "5.4 System Performance Optimization: System Performance Metrics, Registry Cleaning and Optimization, Overheating and Cooling Solutions, Hardware Upgrades for Performance, Optimize the performance of system, Managing background tasks, and upgrading hardware components."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Environmental Education and Sustainable Development",
+                code: "2400006",
+                units: [
+                  {
+                    title: "Unit-1.0 Ecosystem",
+                    points: [
+                      "1.1 Aquatic & Terrestrial ecosystem",
+                      "1.2 Structure of ecosystem",
+                      "1.3 Food chain & Food web",
+                      "1.4 Carbon, Nitrogen, Sulphur & Phosphorous Cycle",
+                      "1.5 Global warming - Causes & Effects"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Air & Water Pollution",
+                    points: [
+                      "2.1 Traditional pollution issues- Air, Water, Noise",
+                      "2.2 Water pollution: 2.2.1 Sources of water pollution, 2.2.2 Effects of water pollution, 2.2.3 Control of water pollution, 2.2.4 Physical & chemical standard of domestic water as per Indian Standard",
+                      "2.3 Air pollution: 2.3.1 Sources of air pollution, 2.3.2 Air pollutants, 2.3.3 Effects of air pollution on human, plant & animal, 2.3.4 Air monitoring system, 2.3.5 Air pollution control"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Sustainability & Renewable Sources of Energy",
+                    points: [
+                      "3.1 Concept of sustainable development",
+                      "3.2 Renewable sources of energy for sustainable development",
+                      "3.3 Solar Energy: 3.3.1 Features of solar thermal & PV system, 3.3.2 Solar pond, Solar water heater, Solar dryer and Solar stills",
+                      "3.4 Wind Energy: 3.4.1 Current status & future prospects of wind energy, 3.4.2 Wind energy in India- Advantages and challenges of harnessing wind energy, 3.4.3 Environmental benefits & limitations",
+                      "3.5 Biomass: 3.5.1 Types of Biomass energy sources, 3.5.2 Energy content in Biomass of different types, 3.5.3 Biogas production",
+                      "3.6 Concept and advantages of hydroponics or aquaponics system to demonstrate soil less cultivation and integration of fish and plant cultivation.",
+                      "3.7 Water conservation and sustainable development",
+                      "3.8 New Energy Sources: Hydrogen energy, Ocean energy & Tidal energy"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Climate Change and Sustainable Development",
+                    points: [
+                      "4.1 Impact of Climate change",
+                      "4.2 Factor contributing to climate change",
+                      "4.3 Sustainable development Goals (SDGs)",
+                      "4.4 Action Plan on Climate Change- India"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Environmental legislation and Sustainable Building Practices",
+                    points: [
+                      "5.1 Environment management system and Planning",
+                      "5.2 Green Building concept",
+                      "5.3 Green and sustainable building materials - 5R concept",
+                      "5.4 Environment protection acts, legislation and Laws",
+                      "5.5 Zero carbon foot-print building for sustainable constriction."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Employability Skills Development",
+                code: "2400408",
+                units: [
+                  {
+                    title: "Unit-1.0 Goal Setting",
+                    points: [
+                      "1.1 Career planning, SWOT",
+                      "1.2 Resume using Internet formats.",
+                      "1.3 Showcase portfolios.",
+                      "1.4 Personal grooming.",
+                      "1.5 Self-Introduction.",
+                      "1.6 Website Development."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Capacity Development",
+                    points: [
+                      "2.1 Interview Skills",
+                      "2.2 Group Discussion – Do’s & don’ts, leadership, Teamwork, how to interrupt, synthesis, and analysis of topics.",
+                      "2.3 Social Media for Personal Enrichment",
+                      "2.4 Body language",
+                      "2.5 Self-Management.",
+                      "2.6 Emotional Intelligence"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Utilizing Potential",
+                    points: [
+                      "3.1 Social Networking",
+                      "3.2 Social Engagements, Volunteering",
+                      "3.3 Collaboration& Team-work.",
+                      "3.4 QC-Tools – Check sheets, Fishbone Diagram, Histogram, Pareto chart, Control-chart, Scatter Diagram, Stratification,",
+                      "3.5 Lean Manufacturing, Kanban, Kaizen, Five S, Poka-yoke, Quality Circle"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Community/ Society Development",
+                code: "2400110",
+                units: [
+                  {
+                    title: "Unit-1.0 Community and Society Development Framework",
+                    points: [
+                      "1.1 Concept of Community/Society Development",
+                      "1.2 Difference between Rural and Urban Societies",
+                      "1.3 Characteristics of Underdevelopment and development",
+                      "1.4 Components of Community Development"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Community Development Initiatives",
+                    points: [
+                      "2.1 Community Development Programmes in India-Historical perspective",
+                      "2.2 Institutions Engaged in Community Development Programmes",
+                      "2.3 Contemporary Community Development Initiatives.",
+                      "2.4 Sustainable Community Development"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Community Development Schemes",
+                    points: [
+                      "3.1 Role of polytechnics in Community development.",
+                      "3.2 Scheme of Community Development through Polytechnics",
+                      "3.3 Unnat Bharat Abhiyan"
+                    ]
+                  }
+                ]
+              }
             ];
 
             // Diploma CSE sem 5
@@ -1615,6 +2054,10 @@ const syllabusData = {
           icon: "fas fa-bolt",
           semesters: (() => {
             const semesters = syllabusEmptySemesters(6);
+
+
+            // Diploma Electrical Sem 1
+
 
             semesters.sem1.theory = [
               {
@@ -2352,6 +2795,400 @@ const syllabusData = {
                 ]
               },
             ];
+
+            // Diploma Electrical sem 4
+
+            semesters.sem4.theory = [
+              {
+                name: "Power Electronics",
+                code: "2420401",
+                units: [
+                  {
+                    title: "Unit-1.0 Power Electronics Devices.",
+                    points: [
+                      "1.1 Silicon Controlled Rectifier (SCR): Construction, principle of operation, characteristic curve, two transistor analogy, Switching characteristics and triggering methods.",
+                      "1.2 Rating and Protection: over voltage, over current, snubber circuit.",
+                      "1.3 Series and parallel operation of SCRs: String efficiency.",
+                      "1.4 DIAC, TRIAC: Construction, Operation, characteristic curves and applications.",
+                      "1.5 Power BJT, MOSFET, IGBT: Construction, Operation, characteristic curves and applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Turn-on and Turn-off methods of Thyristors",
+                    points: [
+                      "2.1 SCR Turn-on methods: High Voltage triggering, thermal triggering, illumination triggering, dv/dt triggering, Gate triggering",
+                      "2.2 Gate trigger circuits: Resistance and Resistance capacitance circuits,",
+                      "2.3 SCR triggering using UJT Relaxation Oscillator and Synchronized UJT circuits.",
+                      "2.4 SCR Turn-Off methods: Natural and forced commutation,",
+                      "2.5 Class A, Class B, Class C, Class D commutation."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Phase Controlled Rectifier",
+                    points: [
+                      "3.1 Phase control: firing angle, conduction angle",
+                      "3.2 Single Phase Fully Controlled Half Wave Converter: With R, RL and RLE load: Circuit diagram, working, input output waveform, equations for DC outputs.",
+                      "3.3 Single-phase full-wave mid-point and bridge converter with R load, RL load, RL load with DC source: Circuit diagram, working, input output waveform, equations for DC outputs",
+                      "3.4 Single-phase semi converter with R, RL load with DC source: Circuit diagram, working, input-output waveform, equations for DC outputs",
+                      "3.5 Three-phase half wave converter with R load: Circuit diagram, working, input output waveform.",
+                      "3.6 Three-phase full wave converter with R load: Circuit diagram, working, input output waveform.",
+                      "3.7 Dual Converter."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Chopper",
+                    points: [
+                      "4.1 Chopper: Working Principle and its applications",
+                      "4.2 Control Techniques: Constant Frequency and Variable Frequency System",
+                      "4.3 Classification of Choppers: Step Up and Step-down choppers, Class A, Class B, Class C, Class D and Class E chopper",
+                      "4.4 Buck, Boost and Buck-boost converter",
+                      "4.5 Commutation methods of chopper: Load commutation and Auxiliary commutation."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Inverter, Cycloconverter and AC Voltage Controller",
+                    points: [
+                      "5.1 Single Phase Bridge Inverter - Half and full bridge inverter with R and RL load.",
+                      "5.2 Basic series and parallel Inverter - Operation and its application.",
+                      "5.3 Voltage and Current Source Inverter",
+                      "5.4 Three phase bridge inverters: Three phase 180 Degree mode VSI Circuit diagram, working, input-output wave forms.",
+                      "5.5 Three phase 120-Degree mode VSI Circuit diagram, working, input-output wave forms.",
+                      "5.6 Voltage control methods (Pulse Width Modulation techniques) of Inverter: Single pulse width modulation, Multiple pulse width modulation, Sinusoidal pulse width modulation",
+                      "5.7 Single phase Cyclo-converter: working principle of Midpoint and bridge Configuration with R load.",
+                      "5.8 Step up and step-down single phase Cyclo-converter and its applications.",
+                      "5.9 Working principle and applications of a single-phase AC voltage controller."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Microprocessor and Microcontroller",
+                code: "2420402",
+                units: [
+                  {
+                    title: "Unit1.0 - Microprocessor 8085",
+                    points: [
+                      "1.1 Evolution of Microprocessors",
+                      "1.2 Architecture and Pin Diagram of 8085",
+                      "1.3 Timing Diagram",
+                      "1.4 Memory Organization",
+                      "1.5 Interrupts"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Instruction Set and Assembly Language Programming Of 8085 Microprocessor",
+                    points: [
+                      "2.1 Instruction Set: Data transfer instructions, Control instructions, Arithmetic instructions, Logical instructions, Branching instructions",
+                      "2.2 Different types of addressing modes: Immediate addressing mode, Register addressing mode, Direct addressing mode, Indirect addressing mode, Indexed addressing mode",
+                      "2.3 Assembly Language Programming"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Interfacing with 8085 Microprocessor:",
+                    points: [
+                      "3.1 Programmable Peripheral Interface (PPI) IC-Intel 8255 (Generation of I/O Ports)",
+                      "3.2 Programmable Interval Timer ICs (Intel 8253/8254)",
+                      "3.3 Overview of memory chips and their interfaces",
+                      "3.4 Overview of other interfacing chips (Name and Application(s) only)"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Overview of Microcontroller 8051:",
+                    points: [
+                      "4.1 Comparison of Microprocessors and Microcontrollers",
+                      "4.2 Architecture of 8051 Microcontroller",
+                      "4.3 Memory organization",
+                      "4.4 Special Function Registers (SFRs)",
+                      "4.5 Port Operation",
+                      "4.6 Memory Interfacing",
+                      "4.7 I/O Interfacing",
+                      "4.8 Programming 8051 resources, interrupts",
+                      "4.9 Programmer's model of 8051",
+                      "4.10 Operand types, Operand addressing"
+                    ]
+                  },
+                  {
+                    title: "Unit 5 Programing with 8051",
+                    points: [
+                      "5.1 Instruction set",
+                      "5.2 Data transfer instructions",
+                      "5.3 Arithmetic instructions",
+                      "5.4 Logic instructions",
+                      "5.5 Control transfer instructions",
+                      "5.6 Boolean instructions",
+                      "5.7 Timer & counter programming",
+                      "5.8 Interrupt programming"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "AC Machines",
+                code: "2420403",
+                units: [
+                  {
+                    title: "Unit-1.0 Three Phase Induction Motor",
+                    points: [
+                      "1.1 Construction and working principle",
+                      "1.2 Slip and slip speed",
+                      "1.3 Types-Squirrel cage and Slip ring Induction motors",
+                      "1.4 Equivalent circuit and phasor diagram",
+                      "1.5 Torque equation, Starting, running and condition for the maximum torque (Only expression)",
+                      "1.6 Starter and its necessary",
+                      "1.7 Types of starters- DOL, Star Delta, Autotransformer and rotor resistance starter",
+                      "1.8 No load and Blocked rotor test, Losses and efficiency",
+                      "1.9 Speed control of squirrel cage and slip-ring induction motor: stator voltage, pole changing, rotor resistance and Variable Voltage and Variable Frequency (VVVF)",
+                      "1.10 Maintenance procedure, Rewinding of three phase induction motor",
+                      "1.11 Motors selection for different applications as per the load torque speed requirements"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Single Phase Induction Motor",
+                    points: [
+                      "2.1 Construction and Principle of operation: Double revolving field theory.",
+                      "2.2 Equivalent circuit.",
+                      "2.3 Starting of Single-phase Induction Motor: Split phase- Resistance start, capacitor start, capacitor start capacitor run and shaded pole Induction motor with their torque speed characteristics",
+                      "2.4 Applications of various types of single-phase induction motor.",
+                      "2.5 Maintenance of different types of single-phase motors, rewinding."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Alternators",
+                    points: [
+                      "3.1 Construction- Salient and Cylindrical rotor.",
+                      "3.2 Rotating magnetic field and working of Alternator (Synchronous generator), Synchronous speed and slip speed",
+                      "3.3 Equivalent circuit model.",
+                      "3.4 EMF equation",
+                      "3.5 Chording factor, breadth factor",
+                      "3.6 Nature of armature reaction at unity power factor, lagging and leading pf.",
+                      "3.7 Open circuit and short circuit characteristics.",
+                      "3.8 Voltage regulation-voltage regulation by synchronous impedance method.",
+                      "3.9 Operating characteristics- Power angle characteristics, effect of excitation on variable load",
+                      "3.10 Synchronization and conditions of synchronization.",
+                      "3.11 Synchronization of alternator with bus bar/alternator- two bright and one dark lamp method, synchroscope method",
+                      "3.12 Parallel operation of alternators."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Synchronous Motor",
+                    points: [
+                      "4.1 Working principle, Starting of Synchronous motor.",
+                      "4.2 Equivalent circuit, Phasor diagram.",
+                      "4.3 Power angle characteristics.",
+                      "4.4 Effect of change in excitation at constant load, 'V' and inverted 'V' curves.",
+                      "4.5 Hunting and its prevention.",
+                      "4.6 Applications of synchronous motor- synchronous phase modifier, constant speed drives."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Special Electrical Machines",
+                    points: [
+                      "5.1 Construction, working and speed-torque characteristics and applications of: [i] AC servo motor, [ii] Stepper motor, [iii] Linear Induction Motor (LIM), [iv] Reluctance motor, [v] Hysteresis motor, [vi] Universal motor",
+                      "5.2 Criteria for the selection of special motor"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Control System and PLC",
+                code: "2420404",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Control System",
+                    points: [
+                      "1.1 Control system -Open and closed loop, linear and nonlinear, time variant and time invariant",
+                      "1.2 Feedback and its types- Degenerative and Regenerative, effect of feedback on stability and sensitivity.",
+                      "1.3 Transfer function of R-C and R-L-C electrical circuits",
+                      "1.4 Pole-Zero plot in S-plane",
+                      "1.5 block diagram and its reduction techniques: Need and its Significance.",
+                      "1.6 Control system components - Servomotors -AC and DC, Stepper motor, Error Detector- Potentiometer and Synchro, Feedback Element-Optical encoder -Incremental and absolute - Construction, working, speed torque characteristics and applications"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Time Response Analysis",
+                    points: [
+                      "2.1 Time Response: Transient and steady state response",
+                      "2.2 Standard Test Inputs: step, ramp, parabolic and Impulse inputs and their Laplace Transform and their graphical representation",
+                      "2.3 Order and type of system with standard equations and examples",
+                      "2.4 First order control system: Analysis for unit step input, concept of time constant",
+                      "2.5 Second order control system: Analysis for unit step input (derivation not required), concept, effect of damping",
+                      "2.6 Time Response Specifications: Rise time, Delay time, Peak time, Settling time, Peak overshoot, steady state errors (no derivations) and simple numericals",
+                      "2.7 Steady state analysis: Type 0,1,2 systems steady state error and Steady state error constants and simple numericals"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Stability Analysis",
+                    points: [
+                      "3.1 Concept of stability, root locations in s-plane and analysis, Stable, unstable, critically and conditionally stable system, Absolute and relative stability",
+                      "3.2 Routh's stability criterion: Steps and procedures to find stability by Routh's stability criteria, numerical problems",
+                      "3.3 Routh - Hurwitz polynomials, Necessary and sufficient conditions for stability",
+                      "3.4 Frequency Response Analysis method: Concept, Advantages and Disadvantages, Frequency response specifications.",
+                      "3.5 Bode Plot: Need, Magnitude plot and phase angle plot, Bode plot for gain K, poles and zeros at origin, and 1st order system,",
+                      "3.6 Analysis of stability from Bode plot using Gain margin and Phase margin"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Process Controllers Dynamics",
+                    points: [
+                      "4.1 Process Control System: Block diagram, functions of each block",
+                      "4.2 Control Actions: i. Discontinuous Mode: ON-OFF controllers equations and neutral zone; ii. Continuous Mode: Proportional, Integral and Derivative Controllers- output equation, response and characteristics",
+                      "4.3 Composite Controllers: PI, PD and PID Controllers- Operation, output equations, response graph, comparison and applications"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Basics of PLC",
+                    points: [
+                      "5.1 Definition of industrial automation, block diagram, working of each building block",
+                      "5.2 PLC-Definition, Block diagram Parts of PLC, Principles of Operation, functions of various blocks,",
+                      "5.3 Input and output modules-: analog & digital, I/O Specifications",
+                      "5.4 Classification (fixed and modular PLCs)",
+                      "5.5 PLC Scan cycle and speed of execution",
+                      "5.6 Advantages and applications of PLC",
+                      "5.7 PLC installation"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electrical Software Lab",
+                code: "2420405",
+                units: [
+                  {
+                    title: "Unit-1.0 Symbols and Codes",
+                    points: [
+                      "1.1 ISI Symbols in electrical engineering",
+                      "1.2 Conventions for circuit and schematic representation of electrical and electronic components, instruments, and equipment",
+                      "1.3 Substation layout with circuit breaker, on-load and off-load isolators, Buchholz's relay, and other protective devices of transformers",
+                      "1.4 Plate and Pipe Earthing"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Computer Aided Electrical Drawing (CAD)",
+                    points: [
+                      "2.1 Computer-Aided Drawing: Draw command, edit command, Coordinate entry, Osnap, Layers, Dimensioning, Text in a drawing, Ortho command, Zoom T command, and plot command",
+                      "2.2 General electrical and electronic symbols, Layouts of domestic, commercial, and industrial wiring (2D only)",
+                      "2.3 Cross-Sectional view of: Fuse and cables (2D), D.C. Motor and their parts, Single-phase Transformer, Power transformer, Induction Motor, Insulators, Circuit Breakers, Lightning arresters"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 MATLAB Environment",
+                    points: [
+                      "3.1 Introduction: Features, applications, and software versions",
+                      "3.2 Getting started MATLAB: Using it as a calculator, creating variables, Overwriting variables, Error messages, and Making corrections",
+                      "3.3 M-File Script; Examples, Script side-effects M-File Functions; Anatomy of a M-File function, Input and output arguments,",
+                      "3.4 Controlling the hierarchy of operations or precedence, Controlling the appearance of floating-point numbers,",
+                      "3.5 Managing the Workspace; Matrices and Operators: Introduction, the Colon Operator, Accessing Parts of a Matrix, Combining and Transforming Matrices, Matrix Building, Input-output, Plotting, Debugging.",
+                      "3.6 Functions: Introduction, Function I/O, Formal Definition of Functions, Subfunctions, Scope, Advantages of Functions, Scripts, and Problem Solving",
+                      "3.7 Plotting: Creating simple plots, adding titles, axis labels, and annotations, Multiple data sets in one plot, specifying line styles and colors, Copy/Paste Figures, Saving Figures"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 MATLAB Programmer's Toolbox",
+                    points: [
+                      "4.1 Perform functions and operations using variables and arrays to learn about relational and logical operators.",
+                      "4.2 If-Statements, Relational and Logical Operators",
+                      "4.3 Nested If-Statements",
+                      "4.4 Variable Number of Function Arguments, Robustness",
+                      "4.5 Persistent Variables",
+                      "4.6 For-Loops, While - Loops",
+                      "4.7 Break Statements, Logical Indexing",
+                      "4.8 Data Types: Strings, Structs, Cells",
+                      "4.9 Applications of MATLAB in: Electrical circuits and networks, Electrical Machine, Power system, Control system and Power Electronics"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Simulink",
+                    points: [
+                      "5.1 Getting Started with Simulink",
+                      "5.2 Simulink Library Browser",
+                      "5.3 Connections",
+                      "5.4 Block Specification",
+                      "5.5 Toolboxes",
+                      "5.6 Building Systems",
+                      "5.7 Applications of Simulink to: Electrical Circuits and networks, Electrical Machine, Power system, Control system and Power Electronics"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Professional Ethics",
+                code: "2400107",
+                units: [
+                  {
+                    title: "Unit-1.0 Values and Ethics in Day to Day Life",
+                    points: [
+                      "1.1 Values- Definition and examples, Ethics- definition and examples, Concept of attitude and development of attitude",
+                      "1.2 Importance of values and ethics in day to day activities and at workplace- Ethical ways of communication, environmental considerations in engineering processes, Basic concept of Carbon footprint, ethics at workplace",
+                      "1.3 Examples of situations depicting values-based decisions and ethical behavior in day to Day life"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Values and Ethics in Profession",
+                    points: [
+                      "2.1 Relevance of profession to society",
+                      "2.2 ethical principles such as respecting others and ourselves, respecting the rights of others, keeping promises, avoiding unnecessary problems to others, avoiding cheating and dishonesty, showing gratitude towards others and encouraging them to work",
+                      "2.3 Identification of activities and related ethical and unethical behavior for professional activities in their area of work",
+                      "2.4 Examples of situations depicting values- based decisions and ethical behavior"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Indian Constitution",
+                code: "2400207",
+                units: [
+                  {
+                    title: "Unit-1.0 Constitution and Preamble",
+                    points: [
+                      "1.1 Meaning of the constitution of India.",
+                      "1.2 Historical perspective of the Constitution of India.",
+                      "1.3 Salient features and characteristics of the Constitution of India.",
+                      "1.4 Preamble to the Constitution of India."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fundamental Rights and Directive Principles",
+                    points: [
+                      "2.1 Fundamental Rights under Part-III.",
+                      "2.2 Fundamental duties and their significance.",
+                      "2.3 Relevance of Directive Principles of State Policy under part-IV."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Governance and Amendments",
+                    points: [
+                      "3.1 Amendment of the Constitutional Powers and Procedure",
+                      "3.2 Major Constitutional Amendment procedure - 42nd, 44th, 74th, 76th, 86th and 91st"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Essence of Indian Knowledge System and Tradition",
+                code: "2400108",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Indian Knowledge Systems",
+                    points: [
+                      "1.1 Overview of IKS",
+                      "1.2 Organization of IKS - चतुर्दश-विद्यास्थानं",
+                      "1.3 Conception and Constitution of Knowledge in Indian Tradition",
+                      "1.4 The Oral Tradition",
+                      "1.5 Models and Strategies of IKS"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Overview of IKS Domains and Relevance in Current Technical Education System.",
+                    points: [
+                      "2.1 The Vedas as the basis of IKS",
+                      "2.2 Overview of all the six Vedāngas",
+                      "2.3 Relevance of following IKS domains in present Technical Education System: Arthashastra (Indian economics and political systems), Ganita and Jyamiti (Indian Mathematics, Astronomy and Geometry, Rasayana (Indian Chemical Sciences), Ayurveda (Indian Biological Sciences / Diet & Nutrition), Jyotish Vidya (Observational astronomy and calendar systems), Prakriti Vidya (Indian system of Terrestrial/ Material Sciences/ Ecology and Atmospheric Sciences), Vastu Vidya (Indian system of Aesthetics- Iconography and built-environment /Architecture), Nyaya Shastra (Indian systems of Social Ethics, Logic and Law), Shilpa and Natya Shastra (Indian Classical Arts: Performing and Fine Arts), Sankhya and Yoga Darshna (Indian psychology, Yoga and consciousness studies), Vrikshayurveda (Plant Science / Sustainable agriculture/food preservation methods)"
+                    ]
+                  }
+                ]
+              }
+            ];
+
 
             // Diploma Electrical Sem 5
 
@@ -3928,6 +4765,322 @@ const syllabusData = {
                 ]
               },
             ];
+
+
+            // Diploma Mechanical sem 4
+
+            semesters.sem4.theory = [
+              {
+                name: "Engineering Metrology and Instrumentation",
+                code: "2425401",
+                units: [
+                  {
+                    title: "Unit-1.0 Linear and Angular Measurements",
+                    points: [
+                      "1.1 Metrology: Correlation of inspection and metrology, definition of metrology and its importance in industrial inspection, meaning of specification, Interchangeability and selective assembly,",
+                      "1.2 Terms applicable to measuring instruments: Precision and Accuracy, Sensitivity and Repeatability, Range, Threshold, Hysteresis, Calibration; Errors in Measurements: Classification of errors, Systematic and Random error.",
+                      "1.3 Linear Measurement:",
+                      "1.4 Classification of linear measurement instruments: Direct measuring instruments: Vernier caliper; Micrometer outside, inside and depth; Vernier height gauge. Indirect measuring instruments: Telescopic gauges, small hole gauges - their construction, working, specifications, applications, precautions and errors.",
+                      "1.5 Dial Gauge: classification as per IS: 2092-1962, schematic diagram, function of parts, working principle, accuracy, applications and precautions.",
+                      "1.6 Slip gauge - Classification as per IS: 2984-1966, their accuracy, applications, selection of gauge blocks, wringing, handling and precautions.",
+                      "1.7 Angle measurement: Direct angle measurement: Optical Bevel Protractor, Universal Bevel protractor",
+                      "1.8 Indirect angle measurement: Angle gauges sets, handling, method of combining, selection of angle gauge blocks for a given angle; Sine bar - types as per IS:5979-1970, specifications, handling, measuring known and unknown angles; Spirit level, Autocollimator, Angle Dekkar",
+                      "1.9 Working principle, construction, handling, applications of all above devices."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Limits, Fits, Tolerance, Measurements of Geometric Tolerances and Surface Roughness",
+                    points: [
+                      "2.1 Concept of Limits, Fits, and Tolerances; Selective Assembly; Interchangeability; Hole and Shaft Basis System.",
+                      "2.2 Taylor's Principle; Design of Plug; Ring Gauges; IS 919-1993 (Limits, Fits & Tolerances, Gauges)",
+                      "2.3 Geometric Tolerances: Concept of straightness, flatness, squareness and roundness, importance of their measurement.",
+                      "2.4 Measurement of Straightness: Straight edge method (Light gap and feeler gauge method), and Autocollimator method.",
+                      "2.5 Measurement of flatness: High spot method, Precision level method, Autocollimator method.",
+                      "2.6 Measurement of Squareness: Indicator method, Engineer's square tester, Autocollimator method.",
+                      "2.7 Measurement of Roundness: V block and Dial indicator method,",
+                      "2.8 Working principle, instruments required for each of above methods, precautions, limitations, applicability.",
+                      "2.9 Measurements of Surface Roughness: Assessment of surface roughness: Terminology associated with assessment of surface roughness (as per IS: 3073 1967) Surface roughness, primary texture (roughness), secondary texture (waviness), real surface, geometrical surface, effective surface, real profile, geometrical profile, effective profile, reference line, lay, traversing length, sampling length, spacing of irregularities, mean line of profile, centre line of profile.",
+                      "2.10 'M' and 'E' system of assessment of surface roughness, their merits and demerits, reasons for adoption of 'M' system,",
+                      "2.11 Basic units of indicating surface roughness - C.L.A. value, R.M.S. value, ten point height of irregularity, their graphical and mathematical interpretation",
+                      "2.12 Measurement of surface roughness: Stylus based instrument: Tomlinson surface meter, Taylor-Hobson Talysurf, Profilometer.",
+                      "2.13 Relationship of Machining processes and surface texture and their representation"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Screw Thread and Gear Measurements",
+                    points: [
+                      "3.1 Thread nomenclature, Various types of threads, Errors in screw threads: Error in Pitch (Progressive and periodic), effective diameter, major diameter, minor diameter and angle or form.",
+                      "3.2 Methods of measuring external screw thread elements: Pitch - Thread pitch gauge, microscope method, Pitch measuring machine; Effective diameter - Thread micrometer, two and three wire method; Minor diameter - Micrometer with two V-shaped hard steel pieces; Major diameter - Micrometer; Angle or Form - Tool room projection",
+                      "3.3 Methods of internal thread measurement: Procedure of each method, precautions to be taken, advantages and limitations. Core diameter - Wedge parallel and micrometer; Effective diameter - Optical comparator; Thread Form - Thread cast method",
+                      "3.4 Gear Measurement: Terminology associated with gear measurements, Spur gear nomenclature, Gear elements requiring measurement - gear tooth form, gear tooth thickness, pitch and eccentricity.",
+                      "3.5 Measurement of gear elements: Gear tooth form - Tool room microscope, David Brown gear tooth form testing machine; Gear tooth thickness - Chordal thickness and Constant Chord, Use of Gear tooth vernier caliper; Pitch - of Parkson gear tester.",
+                      "3.6 Procedure of all above methods, advantages and limitations."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Displacement, Speed and Temperature Measurements",
+                    points: [
+                      "4.1 Displacement and Speed measurement: Working principle & use of Potentiometer, Differential transformer (LVDT & RVDT), capacitive element & Optical encoders.",
+                      "4.2 Mechanical tachometer, Electrical Tachometer, incremental optical encoder, Eddy current drag cup tachometer.",
+                      "4.3 Magnetic pickup tachometer, Stroboscopic tachometer, Photoelectric tachometer, non-contacting electrical tachometer (inductive pick up & capacitive pick up)",
+                      "4.4 Functions, working principles, sketches, applications and limitations of above measuring devices.",
+                      "4.5 Temperature measurement: Principles of temperature measuring devices - change in physical state, expansion, electrical resistance, thermoelectric emf, intensity of radiation, change in chemical state. Construction, working, measuring range, accuracy, applications, limitations of devices operating on above principles (Bimetal thermometer, Pressure Spring thermometer, Electrical resistance thermometer, Thermister, Thermocouple, Pyrometer)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Transducers, Strain Gauges, Pressure, Flow, Force and Torque Measurements",
+                    points: [
+                      "5.1 Flow measurement: Classify flow measuring devices as Volumetric or Primary or Quantity meters and Rate of flow or Velocity or Secondary meters, their function and examples.",
+                      "5.2 Volumetric or Primary meters - Bellow type meter, Rotating impeller type meter.",
+                      "5.3 Positive displacement meter, Rotating lobe meter, Nutating disc meter",
+                      "5.4 Rate of flow or Secondary meters - Obstruction meters: Orifice, Venturimeter, Flow nozzles, Variable area meter, Pitot tube, Velocity probes, Total pressure probes, Static pressure probes, Direction sensing probes; Special meters: Turbine meter, Hot wire anemometer, Magnetic flow meter; Functions, working principles, sketches, applications and limitations of above measuring devices",
+                      "5.5 Pressure Measurement: Classify pressure measuring devices: Manometer, Elastic gauges: Diaphragm, Pressure capsules, Bellows, Pressure springs",
+                      "5.6 Electronic pressure sensors/Transducers - Resistance, Inductance and Capacitive type; Functions, working principles, sketches, applications and limitations of above pressure measuring devices.",
+                      "5.7 Low pressure gauges: McLeod Gauge, Pirani gauge.",
+                      "5.8 Measurement of Force and Torque: Force measurement: Spring Balance, Proving ring, Load cell.",
+                      "5.9 Torque measurement: Prony brake, Eddy current, Hydraulic dynamometer.",
+                      "5.10 Transducers and Strain Gauges: Introduction of Transducers, Characteristics, classification of transducers, two coil self-inductance transducer, Piezoelectric transducer.",
+                      "5.11 Strain gauges & Measurements: Strain gauge, Classification, mounting of strain gauges, Strain gauge rosettes - two and three elements."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Fluid Mechanics & Hydraulic Machinery",
+                code: "2425402",
+                units: [
+                  {
+                    title: "Unit-1.0 Properties of Fluid and Fluid Pressure",
+                    points: [
+                      "1.1 Introduction and classification of fluid.",
+                      "1.2 Fluid properties - Density, Specific gravity, specific weight, specific volume, Dynamic & Kinematic viscosity, Surface tension, Capillarity, Vapour pressure, Compressibility, Bulk modulus.",
+                      "1.3 Types of fluids: Ideal, Real, Newtonian, Non-Newtonian, Plastic",
+                      "1.4 Pressure, Fluid pressure, pressure head, Pressure Intensity, Concept of absolute Vacuum, Gauge Pressure, Atmospheric Pressure, Absolute Pressure,",
+                      "1.5 Pressure measurement - Manometer, U-tube manometer, Incline manometer, Inverted U manometer, Piezometer.",
+                      "1.6 Concept of Total pressure, Centre of pressure, Pascal's law, Hydrostatic forces on plane and curved surface immersed in liquid and simple problems on it, Metacenter"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fluid Flow",
+                    points: [
+                      "2.1 Various forms of energies applicable to fluid flow - Potential energy, Kinetic energy, Pressure energy, Total energy, Types of fluid flows - Steady, unsteady, uniform, non-uniform, laminar and turbulent flow, Path line and Stream line, Concept of datum pressure, Velocity and total head of fluid in motion.",
+                      "2.2 Continuity equation, Energy equation - Steady flow energy equation and derivation of Bernoulli Theorem and its assumption and practical application.",
+                      "2.3 Flow measurement - Construction, Working and application of Venturi meter, Orifice meter and Pitot tube, Derivations for discharge, coefficient of discharge, Vena-Contracta, coefficient of contraction and numerical problems."
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0 Flow through Pipes",
+                    points: [
+                      "3.1 Flow Through Pipes - Laminar and turbulent flows",
+                      "3.2 Viscous flow - Concept of viscosity of fluids, Reynolds number and its criteria for plate and pipes, Darcy's Weisbach equation and Chezy's equation for frictional losses, loss of head due to friction in pipe, Hagen-Poiseuille formula",
+                      "3.3 Flow through pipes - Pipes in series, Pipes in parallel, Head losses - various types of minor and major energy loss occur in fluid flow through pipes. H.G.L. and T.E.L., surge tank, water hammer and its effects."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0 Impact of jets & Hydraulic Turbines",
+                    points: [
+                      "4.1 Impact of jet on flat and curved plate in stationary and moving blades, Simple Numerical on work done and efficiency.",
+                      "4.2 Layout of hydroelectric power plant, Features of Hydroelectric power plant, Classification of hydraulic turbines,",
+                      "4.3 Functions and working principle of Impulse and reaction turbine, Comparison of impulse and reaction turbine",
+                      "4.4 Construction, function and working principle of Pelton wheel, Francis and Kaplan turbines, Draft tubes - types and construction, Concept of cavitation in turbines and benefit of draft tubes",
+                      "4.5 Calculation of Work done, Power, efficiency of turbines, and Unit quantities",
+                      "4.6 Selection of turbine on the basis of head and discharge available.",
+                      "4.7 Safety precaution on turbines"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Pumps",
+                    points: [
+                      "5.1 Centrifugal Pumps - construction, working. Principle and applications of centrifugal pump, Classification of centrifugal pump, impellers, casing,",
+                      "5.2 Concept of multistage, Priming and its methods, Cavitation, Manometric head, Work done, Manometric efficiency, Overall efficiency.",
+                      "5.3 Reciprocating Pumps - Construction, working principle and applications of single and double acting reciprocating pumps, Concept of Slip, Negative slip, Cavitation and separation. use of air vessels, Comparison of centrifugal and reciprocating pump",
+                      "5.4 Submersible pump - Construction, working principle and application of submersible pump."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Applied Thermodynamics and HVAC",
+                code: "2425403",
+                units: [
+                  {
+                    title: "Unit-1.0 Thermal Systems",
+                    points: [
+                      "1.1 Steam condenser: Function of steam condenser, Classification of steam condenser, Construction and working principle of Surface condenser & its applications.",
+                      "1.2 Steam Turbines: Function of steam turbine, Classification of steam turbine, Construction and working principle of Curtis, De Laval and Parson turbine & its applications.",
+                      "1.3 Air Compressors: Functions of air compressor, Types of air compressors, construction and working of reciprocating and rotary compressor using P-V diagram. Efficiency of compressor.",
+                      "1.4 Steam Nozzles: Function of steam nozzle, Classification of steam nozzle, Flow of steam through nozzle; Velocity of steam at the exit of nozzle in terms of heat drop."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Power Generation:",
+                    points: [
+                      "2.1 Rankine cycle: Construction and Working of Rankine cycle, their P-V & T-S diagram and its application.",
+                      "2.2 Open and closed cycle gas turbine, Brayton cycle: Construction and Working of Brayton cycle, their P-V & T-S diagram and its application.",
+                      "2.3 Jet Propulsion: Function and Working Principle of Ram Jet engine & Rocket engine and its application.",
+                      "2.4 Introduction to nuclear fission and fusion reaction. Components of nuclear reactor, pressurized water reactor and boiling water reactor.",
+                      "2.5 Working principle of hydroelectric power plant."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Refrigeration Systems:",
+                    points: [
+                      "3.1 Definition of Refrigeration; Refrigerating effect, Unit of refrigeration, standard components of refrigeration system, Coefficient of performance, Reversed Carnot Cycle: COP and Representation of this cycles, in P-V, T-S and P-H diagrams with their flow diagrams.",
+                      "3.2 Air refrigeration (Bell Coleman) cycle & its P-V & T-S diagram; Simple problems on COP.",
+                      "3.3 Vapour compression refrigeration cycle: Basic Components, Construction & working of VCR cycle and their representation on P-H & T-S Diagram. Application of VCR system.",
+                      "3.4 Vapour absorption refrigeration: Basic components of VAR system Construction and working of Simple Aqua-Ammonia VAR system and its flow diagram."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Air Conditioning & Ventilation System",
+                    points: [
+                      "4.1 Psychrometry: Definition, Properties: Specific humidity, Absolute humidity, Relative humidity, DBT, WBT, DPT, Degree of saturation.",
+                      "4.2 Psychrometric processes (six process) and its representation on chart.",
+                      "4.3 Classification of air-conditioning system, Component of air-conditioning system, Working principle of air-conditioning system and its application.",
+                      "4.4 Ventilation system - Natural Ventilation and Mechanical Ventilation, limitation for natural ventilation, Types of ventilation single sided ventilation, cross ventilation, stack ventilation.",
+                      "4.5 Duct design: Selection of material.",
+                      "4.6 Supply system: Air intake system, Filters heating & cooling equipment's, Fans, Ducts, grills, Diffusers for distribution of air at workplace."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Heat Transfer.",
+                    points: [
+                      "5.1 Definition, Modes of heat transfer, Physical mechanism of Heat transfer in Conduction, Convection and Radiation.",
+                      "5.2 Conduction: Introduction, Fourier law of heat conduction for isotropic material.",
+                      "5.3 Convection: Introduction, Newton's law of cooling.",
+                      "5.4 Radiation: Definition, Absorptivity, Reflectivity, Transmissivity, black body, White body, gray body, Emissivity; Law of radiation."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Theory of Machines",
+                code: "2425404",
+                units: [
+                  {
+                    title: "Unit-1.0 Introduction to Planar Mechanisms and Cams-Followers",
+                    points: [
+                      "1.1 Introduction to Planar Mechanisms: Kinematics of Machines: Definition of Kinematics, Dynamics, Statics, Kinetics, Kinematic link, Kinematic Pair and its types, constrained motion and its types, Kinematic chain and its types, Mechanism, Machine and Structure.",
+                      "1.2 Four link planar mechanisms and Inversions: i. Four bar chain: Locomotive coupler, Beam engine and Pantograph; ii. Single slider Crank chain: Pendulum pump, Rotary I.C. engine mechanism, Oscillating cylinder engine, Whitworth quick return Mechanism, Slotted Lever Quick return mechanism; iii. Double Slider chain: Scotch Yoke mechanism, Elliptical trammel, Oldham's Coupling.",
+                      "1.3 Cams and Followers: Cam and follower terminology. Classification of Cams and Followers. Applications of Cams and Followers.",
+                      "1.4 Types of follower motions - uniform velocity, uniform acceleration and S.H.M and their displacement, velocity and acceleration diagrams.",
+                      "1.5 Drawing of profile of a radial cam based on given motion of reciprocating knife-edge and roller follower with and without offset. (graphical method only)"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Power Transmission Elements",
+                    points: [
+                      "2.1 Types of Drives - Belt, Chain, Rope, Gear drives & their comparison;",
+                      "2.2 Belt Drives - Introduction to Flat belt, V-belt & its applications, materials used for flat and V-belts. Introduction of timing belt and pulley. Angle of lap, length of belt, Slip and creep. Determination of velocity ratio of tight side and slack side tension, centrifugal tension and initial tension, condition for maximum power transmission. Merits, demerits and selection of belts for given applications. (Simple numerical)",
+                      "2.3 Gear Drives - Spur gear terminology; Law of gearing, Types of gears and gear trains, their selection for different applications;",
+                      "2.4 Gear trains - Train value & Velocity ratio for compound, reverted and simple epicyclic gear train; Methods of lubrication;",
+                      "2.5 Chain Drives: Introduction to chain drives, Types of chains and sprockets, Methods of lubrication. Merits, demerits and selection of chains for given applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Flywheel and Governors",
+                    points: [
+                      "3.1 Flywheel: Concept, function and application of flywheel with the help of turning moment diagram for single cylinder 4-Stroke I.C. Engine (No Numerical); Co-efficient of fluctuation of energy, Coefficient of fluctuation of speed and its significance",
+                      "3.2 Governors: Terminology of Governors; Comparison between Flywheel and Governor, Types and explanation with neat sketches (Centrifugal, Watt and Porter); Concept, function and applications. Equation for lift of governors. (No derivation) Terms related to governor like Sensitivity, stability, Isochronous, Governor Effort and Power. (No derivation)"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Brakes and Clutches",
+                    points: [
+                      "4.1 Brakes: Functions, Types, Applications; Construction and working principle of: i. Shoe brake, ii. Band brake, iii. Internal expanding shoe brake, iv. Disc Brake",
+                      "4.2 Concept of Self Locking & Self energizing brakes; Numerical problems to find braking force and braking torque for shoe & band brakes. Comparison between brakes and dynamometers;",
+                      "4.3 Clutches: Classification, Functions and Applications, Construction and principle of working of: i. Single-plate clutch, ii. Multi-plate clutch, iii. Centrifugal Clutch",
+                      "4.4 Calculation of power loss assuming uniform pressure and uniform wear theory (No derivation)."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Balancing of Rotating Masses",
+                    points: [
+                      "5.1 Balancing - Need and types of balancing, Effects of unbalanced masses. Concept and terminology used in vibrations. Causes of vibrations in machines; their harmful effects and remedies (No Numerical)",
+                      "5.2 Balancing of single rotating mass in same and different plane; (Analytical Method)",
+                      "5.3 Balancing of several masses revolving in same plane (Graphical method)."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Advance Manufacturing Engineering and Cost Estimation",
+                code: "2425405",
+                units: [
+                  {
+                    title: "Unit1.0 - Advanced Casting, Welding, and Forming Manufacturing Processes",
+                    points: [
+                      "1.1 Need of advance manufacturing, manufacturing trends and challenges, non-manufacturing aspects.",
+                      "1.2 Modern Casting Methods - Principle and application of shell moulding, precision investment casting, permanent mould casting, die casting, vacuum casting, centrifugal casting, continuous casting.",
+                      "1.3 Modern Welding methods - Principle and application of electron beam welding, Orbital TIG welding, Electro slag welding, Laser beam welding, Underwater welding, Forge welding, friction welding, thermoforming.",
+                      "1.4 Advanced Metal forming - Principle and application of High energy rate forming, Electromagnetic forming, Explosive forming, Electrohydraulic forming, Stretch forming, Contour roll forming."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Non-Traditional Machining Processes",
+                    points: [
+                      "2.1 Types of non conventional machining processes and energy source utilized.",
+                      "2.2 Water jet machining: process principle, equipment, process parameter, application.",
+                      "2.3 Ultrasonic machining: process principles, equipment, process parameter, application.",
+                      "2.4 Electrochemical machining: process principle, equipment, process parameter application.",
+                      "2.5 Chemical machining: process principle, equipment, process parameter, application.",
+                      "2.6 Electrical discharge machining: process principles, equipment, process parameter, application.",
+                      "2.7 Electron beam machining: process principle, equipment, process parameter, application.",
+                      "2.8 Laser beam machining: process principle, equipment, process parameter, application.",
+                      "2.9 Estimation and costing of non-traditional machining components."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Plastic Processing, Powder Metallurgy and Superfinishing processes",
+                    points: [
+                      "3.1 Plastic processing: introduction, plastic materials, extrusion of plastics, Principle and application of injection moulding, blow moulding, compression moulding, transfer moulding and calendaring.",
+                      "3.2 Powder Metallurgy: Introduction, application, advantages and disadvantages, Powder metallurgy process: Powder making, blending, compacting, sintering, infiltration and impregnation.",
+                      "3.3 Super finishing process: introduction, principles.",
+                      "3.4 Grinder and types of grinding wheel, Types of abrasive materials and their properties, Bonding materials, Grinding wheel classification, condition for selection of grinding wheels, balancing of grinding wheels, glazing, loading dressing and Truing. Designation of grinding wheel",
+                      "3.5 Principles of working of grinding machines and functions of main parts, types of grinding processes, function of tool and work holding devices, Table drive in surface and cylindrical grinders, Types of lubricants and coolants used in Grinding.",
+                      "3.6 Finishing Processes, definition of micro finishing, honing, lapping, super finishing, polishing and buffing operations, equipment involved, materials used, Tolerances obtained, limitations and applications."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 CNC Machining",
+                    points: [
+                      "4.1 CAM - concept and definition.",
+                      "4.2 NC (Numerical Control), CNC (Computerized Numerical Control) and DNC (Direct Numerical Control) - concept, features and differences.",
+                      "4.3 Elements of CNC machines - Types, working and importance of: Slide ways; Re-circulating ball screw; Feedback devices (transducers, encoders); Automatic tool changer (ATC); Automatic pallet changer (APC);",
+                      "4.4 CNC axes and motion nomenclature.",
+                      "4.5 CNC coordinate and positioning systems.",
+                      "4.6 CNC tooling: Tool presetting - concept and importance; Qualified tools - definition need and advantages; Tool holders - types and applications.",
+                      "4.7 CNC part programming: programming format and structure of part programme.",
+                      "4.8 ISO G and M codes for turning and milling - meaning and applications of important codes.",
+                      "4.9 Simple part programming for turning using ISO format having straight turning and taper turning (linear interpolation).",
+                      "4.10 Simple part programming for milling using ISO format having linear and circular interpolations.",
+                      "4.11 Importance, types, applications and format for: Canned cycles; Macro; Do loops; Subroutine;",
+                      "4.12 CNC turning and milling part programming using canned cycles, Do loops and Subroutine.",
+                      "4.13 Need and importance of various compensations: Tool length compensation; Pitch error compensation; Tool radius compensation; Tool offset.",
+                      "4.14 Simple part programming using various compensations",
+                      "4.15 Computer assisted part programing.",
+                      "4.16 Estimation and costing of parts produced by CNC machining."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Special Purpose Machines (SPM) and Recent trends in CAM",
+                    points: [
+                      "5.1 Special Purpose machines: Concept of general-purpose machines.",
+                      "5.2 Elements of SPM.",
+                      "5.3 Special purpose lathe machine and milling machines.",
+                      "5.4 Productivity improvement by SPM.",
+                      "5.5 Recent trends in CAM: Additive manufacturing: 3D printing, Principle and types, introduction about FDM, SLA, SLS 3D Printing processes and Materials.",
+                      "5.6 Computer Integrated Manufacturing (CIM): concept, definition, areas covered, benefits.",
+                      "5.7 Group Technology: concept, basis for developing part families, part classification and coding, concept of cellular manufacturing. Advantages and limitations.",
+                      "5.8 Flexible Manufacturing System (FMS): concept, evaluation, main elements and their functions, layout and its importance, applications.",
+                      "5.9 Automation: definition, need of automation, high and low-cost automation, examples of automations. Types of Automation: Fixed (Hard) automation, programmable automations and Flexible automations (Soft).",
+                      "5.10 Robot: definition, terminology, classification and types, components of Robot: manipulator, end effectors, actuators, sensors, controller, processor, software and applications."
+                    ]
+                  }
+                ]
+              }
+            ];
+
 
             // Diploma Mechanical sem 5
 
