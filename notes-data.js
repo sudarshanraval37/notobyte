@@ -888,37 +888,40 @@ const notesResources = [
 
   {
     id: 40,
-    title: "C Programming Notes",
+    title: "Operating System MCQ",
     program: "Diploma",
     branch: "CSE",
     year: "2nd Year",
     semester: "Semester 3",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    subject: "Operating System",
+    desc: "Most important MCQ of Operating System",
+    size: "250 KB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "https://drive.google.com/file/d/1tlpu8R7wsN_8eih9rM-KhsQIFkeNVk2I/view?usp=drive_link"
   },
 
+  
   {
     id: 40,
-    title: "C Programming Notes",
+    title: "JAVA Programming MCQ",
     program: "Diploma",
     branch: "CSE",
     year: "2nd Year",
     semester: "Semester 4",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    subject: "JAVA Programming",
+    desc: "Most important MCQ of JAVA Programming By CTH Education",
+    size: "92 KB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "https://drive.google.com/file/d/1BrKill1v4f_VSWBxOTfqJAJ_Ic1pJ2u2/view?usp=drive_link"
   },
+  
+
 
   // CSE 3rd Year
 

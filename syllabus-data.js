@@ -6680,6 +6680,311 @@ const syllabusData = {
               },
             ];
 
+            // Diploma civil sem 4
+
+            semesters.sem4.theory = [
+              {
+                name: "Advance Surveying",
+                code: "2415401",
+                units: [
+                  {
+                    title: "Unit-1.0 Plane Table Surveying:",
+                    points: [
+                      "1.1 Principle of plane table survey.",
+                      "1.2 Equipment & Accessories used in plane table Survey.",
+                      "1.3 Setting of plane table; Orientation of plane table by Back sighting and Magnetic meridian method.",
+                      "1.4 Methods of plane table surveys- Radiation, Intersection, Traversing and Resection.",
+                      "1.5 Advantages and disadvantages of plane table survey."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Theodolite Surveying.",
+                    points: [
+                      "2.1 Types and uses of Theodolite, Components of transit Theodolite and their functions, Reading the Vernier of transit Theodolite. Technical terms used in Theodolite Survey-Swinging, Transiting, Face left & Face right position, Face change, telescope normal, Telescope inverted etc.",
+                      "2.2 Temporary adjustment of transit Theodolite.",
+                      "2.3 Measurement of horizontal angle-Direct and Repetition method, Reiteration method, Errors eliminated by method of repetition.",
+                      "2.4 Measurement of vertical Angle",
+                      "2.5 Traverse computation-Latitude, Departure, Consecutive coordinates, independent coordinates, balancing the traverse by Bowditch's rule and Transit rule, Gale's Traverse table computation."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Tacheometric Surveying and Curve Setting:",
+                    points: [
+                      "3.1 Principles of Tacheometry, Tacheometer and its component parts, Anallatic lens.",
+                      "3.2 Tacheometric formula for horizontal distance with telescope horizontal and staff vertical.",
+                      "3.3 Field method for determining constants of tacheometer, determining horizontal and vertical Distances with tacheometer by fixed Hair method and staff held vertical, Limitations of tacheometry.",
+                      "3.4 Types of curves used in roads and railway alignments. Designation of curves.",
+                      "3.5 Setting simple circular curve by offsets from long chord and Rankine's method of deflection angles."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Advance Surveying Equipment's:",
+                    points: [
+                      "4.1 Principle of Electronic Distance Measuring instrument (EDM). Components & use of EDM.",
+                      "4.2 Use of Electronic Digital Theodolite.",
+                      "4.3 Total Station Equipment: Use, Construction, function keys, Measurements of Horizontal angles, vertical angles, distances and coordinates using Total Station.",
+                      "4.4 Traversing, Profile Survey and Contouring with Total Station."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Remote Sensing, GPS and GIS:",
+                    points: [
+                      "5.1 Remote Sensing - Overview, Remote sensing system, Applications of remote sensing in Civil engineering.",
+                      "5.2 Use of Global Positioning System (G.P.S.) instruments.",
+                      "5.3 Geographic Information System (GIS): Over view, Components, Applications, Software for GIS.",
+                      "5.4 Introduction to Drone Surveying."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Theory of structures",
+                code: "2415402",
+                units: [
+                  {
+                    title: "Unit 1: Direct and Bending Stresses",
+                    points: [
+                      "1.1 Introduction to direct and eccentric loads, eccentricity about one principal axis, nature of stresses, maximum and minimum stresses, resultant stress distribution diagram.",
+                      "1.2 Condition for no tension or zero stress at extreme fiber, limit of eccentricity, core of section for rectangular and circular cross sections.",
+                      "1.3 Columns, pillars and chimneys of uniform section subject to lateral wind pressure, stress distribution diagram at bases."
+                    ]
+                  },
+                  {
+                    title: "Unit-2: Slope and Deflection",
+                    points: [
+                      "2.1 Concept of slope and deflection, Relation between bending moment, slope, deflection and radius of curvature.",
+                      "2.2 Double integration method, Macaulay's method and Moment area method to find slope and deflection of determinate beam subjected to point load and uniformly distributed load."
+                    ]
+                  },
+                  {
+                    title: "Unit-3: Fixed Beam",
+                    points: [
+                      "3.1 Concept of fixity and continuity, advantages and disadvantages of fixed beam. Principle of superposition.",
+                      "3.2 Fixed end moments from first principle for beam subjected to point load and uniformly distributed load over entire span."
+                    ]
+                  },
+                  {
+                    title: "Unit-4: Continuous beam",
+                    points: [
+                      "4.1 Clapeyron's theorem of three moments (no derivation). Application up to two spans and two unknown support moments only, Support at same level, subjected to concentrated loads and uniformly distributed loads over entire span.",
+                      "4.2 Drawing shear force and bending moment diagrams for fixed and continuous beams."
+                    ]
+                  },
+                  {
+                    title: "Unit-5: Moment Distribution Method",
+                    points: [
+                      "5.1 Introduction, sign convention.",
+                      "5.2 Carry over factor, stiffness factor, distribution factor.",
+                      "5.3 Application of moment distribution method for various types of continuous beams subjected to concentrated loads and uniformly distributed load over entire span having same or different moment of inertia up to three spans and two unknown support moment only, shear force and bending moment diagrams (Supports at same level)."
+                    ]
+                  },
+                  {
+                    title: "Unit-6: Columns",
+                    points: [
+                      "6.1 Definition, classification of column. Types of end conditions for column, effective length, radius of gyration, slenderness ratio. crippling load, buckling load, factor of safety, safe load.",
+                      "6.2 Euler's theory and its assumptions, Rankine's theory,",
+                      "6.3 Application of Rankine's and Euler theory for designing long and short columns."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Building Planning and Drawing with Auto CAD",
+                code: "2415403",
+                units: [
+                  {
+                    title: "Unit-1.0 Conventions and Symbols",
+                    points: [
+                      "1.1 Conventions as per IS 962-1989, symbols for different materials such as earth work, brick work, Stone work, concrete, wood work and glass.",
+                      "1.2 Graphical symbols for doors and windows, Abbreviations, symbols for sanitary and electrical installations.",
+                      "1.3 Types of lines- visible lines, centre line, hidden line, section line, dimension line, extension line, pointers, arrow head or dots. Appropriate size of lettering and numerals for titles, sub-titles notes and dimensions.",
+                      "1.4 Types of scale, criteria for proper selection of scale for various types of drawing. Sizes of drawing sheets."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Planning of Building",
+                    points: [
+                      "2.1 Principles of planning for Residential and Public building: Aspect, Prospect, Orientation, Grouping, Privacy, Elegance, Flexibility, Circulation, Furniture requirements, Sanitation, Economy.",
+                      "2.2 Space requirement and norms for minimum dimension of different units in the residential and public buildings as per IS 962-1989.",
+                      "2.3 Rules and bye-laws of sanctioning authorities for construction work.",
+                      "2.4 Terms used in building planning- Plot area, built up area, super built-up area, plinth area, carpet area, floor area and FAR (Floor Area Ratio).",
+                      "2.5 Line plans for residential building of minimum three rooms including water closet (WC), bath and stair case as per principles of planning.",
+                      "2.6 Line plans for public building-school building, primary health centre, hostel and Library."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Drawing of Load Bearing Structure",
+                    points: [
+                      "3.1 Drawing of single-story load bearing residential building (2BHK) with staircase.",
+                      "3.2 Data drawing-plan, elevation, section, site plan, schedule of openings, construction notes with specifications, area statement, Planning and design of stair case- Rise and Tread for residential and public building.",
+                      "3.3 Working drawing- Developed plan, elevation, section passing through staircase or WC and bath. Foundation plan of Load bearing structure."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Drawing of Framed Structure",
+                    points: [
+                      "4.1 Drawing of two storied framed structure (G+1), residential building (2BHK) with staircase.",
+                      "4.2 Data drawing developed plan, elevation, section, site plan, schedule of openings, construction notes with specifications, area statement.",
+                      "4.3 Working drawing of framed structure- developed plan, elevation, section passing through staircase or WC and bath.",
+                      "4.4 Foundation plan of Framed Structure.",
+                      "4.5 Details of RCC footing, Column, Beam, Chajjas, Lintel, Staircase and slab."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Perspective Drawing",
+                    points: [
+                      "5.1 Definition of terms, \"perspective drawing with its types\" including the principles used in perspective drawing.",
+                      "5.2 Realistic drawings using Two-point perspective method."
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Drawing with CAD",
+                    points: [
+                      "6.1 Introduction to Computer Aided Drawing (CAD) software, various drafting software used for civil engineering drawing such as AutoCAD, QCAD, LibreCAD, TinkerCAD, etc.",
+                      "6.2 Feature of CAD screen, Coordinate systems used in CAD.",
+                      "6.3 Drawing commands: Line, poly line, construction line, rectangle, polygon, circle, ellipse, hatch, boundary, text, arc, point.",
+                      "6.4 Modify commands: erase, copy, mirror, offset, trim, move, extend, rotate, array, lengthen, scale, chamfer, fillet, explode, stretch, join, brake and divide.",
+                      "6.5 Changing properties of entity-line, type, color, scale, font size, style.",
+                      "6.6 Layer command-Create layer within a drawing.",
+                      "6.7 Dimension command: quick dimension, linear dimension and continuous dimension; align dimension, angle dimension, radius and diameter.",
+                      "6.8 3D drawing: use of extrude, press full command."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Soil Mechanics and foundation",
+                code: "2415404",
+                units: [
+                  {
+                    title: "Unit-1.0 Overview of Soil Mechanics.",
+                    points: [
+                      "1.1 Definition of soil, soil mechanics and rock mechanics.",
+                      "1.2 Types of soil and its classification, soil formation and deposition.",
+                      "1.3 Types of rocks, its classification, and their formation. Comparison between soil and rock.",
+                      "1.4 Importance of soil in Civil Engineering as construction material.",
+                      "1.5 Brief introduction of field application of soil engineering: Foundation design, Pavement design, Design of earth retaining structures and Earthen dams."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Physical and Index Properties of Soil",
+                    points: [
+                      "2.1 Soil as a three-phase system.",
+                      "2.2 Water content, Determination of water content by oven drying method as per IS code.",
+                      "2.3 Determination of Void ratio, porosity, degree of saturation and density index.",
+                      "2.4 Unit weight of soil mass bulk unit weight, dry unit weight, unit weight of soil solids, saturated unit weight, submerged unit weight.",
+                      "2.5 Determination of bulk unit weight and dry unit weight by core cutter method and sand replacement method as per IS code.",
+                      "2.6 Specific gravity, determination of specific gravity by pycnometer.",
+                      "2.7 Consistency of soil, Atterberg's limits of consistency: Liquid limit, plastic limit, shrinkage limit and plasticity index.",
+                      "2.8 Determination of liquid limit, plastic limit and shrinkage limit as per IS code.",
+                      "2.9 Particle size distribution, mechanical sieve analysis as per IS code, particle size distribution curve, effective diameter of soil, Uniformity coefficient and coefficient of curvature."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Permeability of Soil",
+                    points: [
+                      "3.1 Definition of permeability and factors affecting permeability.",
+                      "3.2 Darcy's law of permeability, coefficient of permeability, typical values of coefficient of permeability for different soil.",
+                      "3.3 Determination of coefficient of permeability by constant head and falling head permeability tests, simple problems to determine coefficient of permeability.",
+                      "3.4 Seepage through earthen structures, seepage velocity, seepage pressure, phreatic line, flow lines and equipotential lines.",
+                      "3.5 Flow net, characteristics of flow net, application of flow net (only basic numerical Problems)."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Compaction, Consolidation and Shear Strength of Soil",
+                    points: [
+                      "4.1 Concept and purpose of compaction & consolidation with their field application.",
+                      "4.2 Standard and Modified proctor test test procedure as per IS code, Compaction curve, optimum moisture content, maximum dry density, zero air voids line.",
+                      "4.3 Field methods of compaction - rolling, ramming & vibration.",
+                      "4.6 California bearing ratio, CBR test.",
+                      "4.7 Shear failure of soil, field situation of shear failure",
+                      "4.8 Concept of shear strength of soil.",
+                      "4.9 Components of shearing resistance of soil- cohesion, internal friction.",
+                      "4.10 Mohr-coulomb failure theory, Strength envelope, strength equation for purely cohesive and cohesion less soils.",
+                      "4.11 Laboratory determination of shear strength of soil Direct shear test, Unconfined compression test & vane shear test, plotting strength envelope."
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Stabilization and Bearing Capacity of Soil",
+                    points: [
+                      "5.1 Concept of soil stabilization, necessity of soil stabilization.",
+                      "5.2 Different methods of soil stabilization Mechanical soil stabilization, lime stabilization, cement stabilization, bitumen stabilization and fly-ash stabilization",
+                      "5.3 Concept of bearing capacity, ultimate bearing capacity, safe bearing capacity and allowable bearing pressure.",
+                      "5.4 Terzaghi's analysis and assumptions.",
+                      "5.5 Effect of water table on bearing capacity.",
+                      "5.6 Field methods for determination of bearing capacity - Plate load test and standard penetration test. Test procedures as Per IS:1888 & IS:2131.",
+                      "5.7 Definition of active earth pressure and passive earth pressure, structures subjected to earth pressure in the field. Rankine's theory and assumption made for non-cohesive soils."
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Transportation Engineering",
+                code: "2415405",
+                units: [
+                  {
+                    title: "Unit 1.0 - Overview of Highway Engineering",
+                    points: [
+                      "1.1 Role of transportation in the development of nation, Scope and Importance of roads in India.",
+                      "1.2 Different modes of transportation-roadway, railway, waterway, air way. Merits and demerits of roadway and railway.",
+                      "1.3 General classification of roads as per Indian Road Congress (IRC).",
+                      "1.4 Road Alignment - Factors affecting road alignment."
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0-Geometric Design of Highway",
+                    points: [
+                      "2.1 Need and importance of geometric design",
+                      "2.2 Topography and physical feature",
+                      "2.3 Geometric design provision for various transportation facilities as per IRC guidelines,",
+                      "2.4 Geometric design elements: Road formation, Camber, Kerbs, Road margin, Right of way, Design speed.",
+                      "2.5 Standard cross section of road in embankments and cutting.",
+                      "2.6 Sight Distance and various factors affecting sight distance.",
+                      "2.7 Super elevation: Definition, need and calculation of super elevation.",
+                      "2.8 Gradient and its types.",
+                      "2.9 Horizontal and Vertical curves.",
+                      "2.10 Extra widening on curves."
+                    ]
+                  },
+                  {
+                    title: "Unit 3.0-Highway Material and Construction Technique:",
+                    points: [
+                      "3.1 Soil Sub-grade: Suitability of soil as a sub-grade material as per IRC guidelines, Group index (GI) method.",
+                      "3.2 Stone Aggregates: Types and its Suitability, Test on Aggregates: Flakiness and elongation test, Impact test, abrasion test, crushing test and absorption test.",
+                      "3.3 Bituminous Material: Bitumen and its types, properties, Test on Bitumen: Softening point test, penetration test, Ductility test, Flash and fire test.",
+                      "3.4 Portland cement and cement concrete: Properties and its requirement in pavement design.",
+                      "3.5 Pavement-Definition, Types, Structural Components of pavement and their functions.",
+                      "3.6 Flexible pavement construction: WBM road, Earthen road, Bituminous road, Merits and demerits of each type of pavements and method of construction.",
+                      "3.7 Rigid pavement construction: PCC and RCC road, Merits and demerits of each types of road and method of construction.",
+                      "3.8 Joints in Rigid pavement: Construction of joints, Filler and Sealer."
+                    ]
+                  },
+                  {
+                    title: "Unit 4.0-Basics of Railway Engineering",
+                    points: [
+                      "4.1 Classification of Indian Railways, zones of Indian Railways.",
+                      "4.2 Permanent way: Ideal requirement",
+                      "4.3 Components: Rail, Sleepers, Ballast, Formation, Fastening and Fixtures (Requirement, Types and its function)",
+                      "4.4 Gauge, types, factors affecting selection of a gauge, Importance of singular gauge",
+                      "4.5 Rail Joints -Requirements, Types",
+                      "4.6 Creep of rail: Definition causes and it's Prevention.",
+                      "4.7 Alignment: Factors governing rail alignment",
+                      "4.8 Standard cross section of single and double line in cutting and embankment."
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0-Track Geometrics, Construction and Maintenance",
+                    points: [
+                      "5.1 Railway Track Geometrics: Coning of wheels, tilting of rails, Gradient & its types, Super elevation, limits of Super elevation on curves, cant deficiency, negative cant, grade compensation on curves",
+                      "5.2 Branching of Tracks: Definition of point & crossing, Turnout, a simple split switch turnout consisting of points and crossing. Different components of Points and Crossing, their functions & working. Track junctions-Crossovers, Scissor cross-over, Diamond crossing, Track-triangle; Inspection and maintenance of points and crossings",
+                      "5.3 Railway Station: Types of railway station, Purpose, requirement of railway station, important technical terms, factors affecting site selection for railway station.",
+                      "5.4 Station yard: Classification-Passenger, goods, locomotive and marshalling yards. Function & draw backs of marshalling yards."
+                    ]
+                  }
+                ]
+              }
+            ];
+
             // Diploma civil sem 5
 
             semesters.sem5.theory = [
@@ -8107,6 +8412,421 @@ const syllabusData = {
                   },
                 ]
               },
+            ];
+
+            // Diploma ece sem 4
+
+
+            semesters.sem4.theory = [
+              {
+                name: "Linear Integrated Circuits",
+                code: "2421401",
+                units: [
+                  {
+                    title: "Unit-1.0 IC Fabrication",
+                    points: [
+                      "1.1 Advantages of ICs over discrete components",
+                      "1.2 Classification of ICs on the basis of complexity: SSI, MSI, LSI, VLSI, ULSI",
+                      "1.3 Fabrication process of monolithic ICs: Wafer Preparation, Epitaxial growth, Oxidation, Photolithography, Diffusion, Metallization, Circuit Probing, Scribing and separating into chips, Mounting and Packaging, Encapsulation",
+                      "1.4 Step by step construction procedures of monolithic bipolar transistor, diode, capacitors and Integrated resistors",
+                      "1.5 Sustainable process in IC fabrication"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Fundamentals of Operational Amplifier",
+                    points: [
+                      "2.1 Operational Amplifier: - Block diagram, Equivalent Circuit, Symbol, and basic terminology",
+                      "2.2 Op-Amp IC 741 pin diagram and description",
+                      "2.3 Op-Amp Configuration: Open Loop and Closed Loop, virtual ground concept",
+                      "2.4 Op-Amp parameters: Input offset voltage, input offset current, input bias current, input resistance, Output Resistance, Open Loop voltage gain (Differential gain), Common mode gain, Common Mode Rejection Ratio (CMRR), Maximum output voltage Swing, Slew Rate",
+                      "2.5 Parameters of Ideal and Practical Op-Amp",
+                      "2.6 Modes of operations: Inverting and Non-Inverting"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Applications of Op-Amp",
+                    points: [
+                      "3.1 Arithmetic Operations Circuit: Adder, Subtractor, Scaler, Integrator, Differentiator",
+                      "3.2 Differential amplifier, Voltage Follower (Unity Gain Amplifier)",
+                      "3.3 Op-amp as an Instrumentation amplifier: Working, Derivation of output voltage",
+                      "3.4 Voltage to Current converter with floating and grounded load",
+                      "3.5 Current to Voltage converter",
+                      "3.6 Logarithmic Amplifier and Anti-Logarithmic Amplifier using diodes",
+                      "3.7 Comparator",
+                      "3.8 Zero Crossing Detector",
+                      "3.9 Schmitt Trigger",
+                      "3.10 Peak Detector",
+                      "3.11 Sample and Hold Circuit"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Filters and Waveform Generators using Op-Amp",
+                    points: [
+                      "4.1 Filter and its classification",
+                      "4.2 Merits and demerits of active filters over passive filters",
+                      "4.3 Responses of Ideal and Practical filters",
+                      "4.4 Filters Characteristic terms: Order of filter, cutoff frequency, Passband, Stopband, Centre frequency, Bandwidth, Q factor",
+                      "4.5 Filter types and their Frequency Response: Low Pass (First Order and Second Order), High Pass (First Order and Second Order), Band Pass (Wide and Narrow), Band Reject (Wide and Narrow), All Pass filter",
+                      "4.6 Oscillators using IC 741: R-C Phase Shift Oscillator, Wein Bridge Oscillator, Colpitts Oscillator, Hartley Oscillator"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Special function ICs and their Applications",
+                    points: [
+                      "5.1 Analog multiplier: Introduction, Pin diagram and pin function of analog multiplier IC AD633",
+                      "5.2 IC-555: Functional Block diagram, Pin diagram and functions of Timer",
+                      "5.3 Multivibrators using IC-555: Astable Multivibrator, Monostable Multivibrator, Bistable Multivibrator",
+                      "5.4 Voltage Controlled Oscillator (VCO): Introduction, Pin Diagram of NE/SE566 VCO, Basic block diagram, Operation of VCO",
+                      "5.5 Phase Lock Loop (PLL): Block diagram and its operation, Lock range and capture range, Pin diagram and Function of IC 565, Applications of IC 565 PLL as a Frequency multiplier and FM Demodulator",
+                      "5.7 Introduction to OTA (IC-CA3080A) and its Applications"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Microcontroller and its Applications",
+                code: "2421402",
+                units: [
+                  {
+                    title: "Unit1.0 - Basics of Microprocessors and Microcontrollers",
+                    points: [
+                      "1.1 Evolution of Processors (Microprocessors and Microcontrollers)",
+                      "1.2 Microprocessors and Microcontrollers comparisons.",
+                      "1.3 8085 Microprocessor: 1.3.1 Architecture & Pin Diagram, 1.3.2 Register structure, 1.3.3 8085 Addressing Modes, 1.3.4 8085 Instruction set, 1.3.5 Interrupt System"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 8051 Microcontroller",
+                    points: [
+                      "2.1 Families of 8051 Microcontroller",
+                      "2.2 Criteria for choosing a microcontroller",
+                      "2.3 Block diagram representation",
+                      "2.4 Pin configuration",
+                      "2.5 Architecture",
+                      "2.6 Registers: 2.6.1 General Purpose Registers, 2.6.2 Stack Pointer and Program Counter, 2.6.3 Special Function Registers (SFRs), 2.6.4 I/O Ports Structure",
+                      "2.7 Memory Organization: 2.7.1 Internal/External RAM organization, 2.7.2 Internal/External ROM organization"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Instruction Set and Addressing Modes of 8051 Microcontroller",
+                    points: [
+                      "3.1 Instruction Set: 3.1.1 Data Transfer Instructions, 3.1.2 Conditional instructions, 3.1.3 Arithmetic instructions, 3.1.4 Logical instructions, 3.1.5 Boolean instructions",
+                      "3.2 Different types of Addressing Modes: 3.2.1 Immediate Addressing Mode, 3.2.2 Register Addressing Mode, 3.2.3 Direct Addressing Mode, 3.2.4 Indirect Addressing Mode, 3.2.5 Indexed Addressing Mode, 3.2.6 Relative Addressing Mode, 3.2.7 Bit Addressing Mode",
+                      "3.3 Timers/Counters: 3.3.1 Types of Timers/Counters, 3.3.2 TMOD Register, 3.3.3 TCON Register",
+                      "3.4 Interrupts: 3.4.1 Types of interrupts, 3.4.2 Interrupt handling"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 8051 Microcontroller Assembly Language programming",
+                    points: [
+                      "4.1 Programming in Microcontroller 8051: 4.1.1 Structure of Assembly language, 4.1.2 Low level/ High level Language, 4.1.3 Simple programming using instruction set, 4.1.4 Timer and counter programming",
+                      "4.2 Software Development Tools for 8051 Microcontroller: 4.2.1 Editor, 4.2.2 Assembler/Cross-Assembler, 4.2.3 Compiler/Cross-Compiler, 4.2.4 Debugger, 4.2.5 Simulator"
+                    ]
+                  },
+                  {
+                    title: "Unit 5.0 Interfacing of 8051 for Real Time Applications",
+                    points: [
+                      "5.1 I/O Interfacing",
+                      "5.2 ROM/RAM Interfacing",
+                      "5.3 Keypad Interfacing",
+                      "5.4 7-segment LED display interfacing",
+                      "5.5 Sensor interfacing",
+                      "5.6 LCD interfacing",
+                      "5.7 ADC and DAC interfacing",
+                      "5.8 Stepper motor interfacing"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Digital Communication",
+                code: "2421403",
+                units: [
+                  {
+                    title: "Unit 1.0 Pulse Analog Modulation Techniques",
+                    points: [
+                      "1.1 Sampling Theory: Sampling theorem in time and frequency domain, Aliasing phenomenon, Sampling techniques (Ideal, Natural, and Flat top), aperture effect and equalization",
+                      "1.2 Pulse Modulation: Pulse Amplitude Modulation (PAM), Pulse Width Modulation (PWM) and Pulse Position Modulation (PPM): Basic definition, generation and detection procedure, waveform, advantages, disadvantages and applications"
+                    ]
+                  },
+                  {
+                    title: "Unit 2.0 Pulse Digital Modulation",
+                    points: [
+                      "2.1 Advantages and Disadvantages of Digital Communication, Quantization, Uniform and Non-uniform quantization, Pulse Code Modulation (PCM): generation and detection. Noise consideration in PCM, companding",
+                      "2.2 Differential Pulse Code Modulation (DPCM), Delta Modulation (DM), Adaptive Delta Modulation (ADM) generation, detection, applications.",
+                      "2.3 Time Division Multiplexing (TDM) for pulse modulation systems."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Digital Band Pass Modulation Techniques",
+                    points: [
+                      "3.1 Principles of Amplitude Shift Keying (ASK), Frequency Shift Keying (FSK) and Phase Shift Keying (PSK) Generation and Detection, bandwidth and power requirement, coherent and non-coherent detection technique",
+                      "3.2 Concepts of binary modulation techniques, Binary ASK(BASK), Binary FSK(BFSK) and Binary PSK(BPSK)",
+                      "3.3 Comparison of ASK, FSK and PSK"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Other Digital Modulation Techniques",
+                    points: [
+                      "4.1 BPSK, DPSK, and QPSK, generation and detection",
+                      "4.2 Quadrature Amplitude Modulation (QAM) & Minimum Shift Keying (MSK)",
+                      "4.3 M-ary digital modulation scheme (M-ary PSK, M-ary-QAM, M-ary FSK) varactor diode and Voltage Controlled Oscillator (VCO)"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Spread Spectrum Modulation",
+                    points: [
+                      "5.1 Introduction to spread spectrum (SS) modulation: advantages over fixed frequency, applications of SS modulation, block diagram of spread spectrum modulation system",
+                      "5.2 Frequency Hopping Spread Spectrum, (FHSS) System, Application of FHSS, fast and low frequency hopping",
+                      "5.3 Direct Sequence Spread Spectrum (DSSS), Features, generation and detection of DSSS",
+                      "5.4 Pseudo Noise (PN) sequence: definition, generation, and maximum length sequence"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Electronic Equipment Maintenance",
+                code: "2421404",
+                units: [
+                  {
+                    title: "Unit-1.0 Basics of Maintenance and Troubleshooting of Electronic Equipment",
+                    points: [
+                      "1.1 Fundamental difference between Maintenance and troubleshoot",
+                      "1.2 Causes of failure in equipment - Improper circuit design, manufacturing deficiencies, improper or negligent handling and operating, Environmental factors",
+                      "1.3 Nature of faults, fault location procedure",
+                      "1.4 Fault finding aids - Interpretation of drawings/Block/Circuit/wiring Diagram; Dis-assembly and re-assembly of equipment, Operation/instruction manuals, Service and maintenance manuals, concept of warranty and guarantee, equipment service options",
+                      "1.5 Fault finding tools and instruments",
+                      "1.6 Troubleshooting techniques- Approaching components for tests, Grounding systems in Electronic Equipment, Temperature sensitive Intermittent problems Corrective actions, Situations where repairs should not be attempted"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Troubleshooting of Analog Circuits",
+                    points: [
+                      "2.1 Testing of passive components and circuits - Resistors, Inductors and Capacitors: Failure in resistor - fixed and variable resistors - potentiometer, LDR and thermistor, Failure, test and servicing of potentiometer; Failure in Inductors - testing, measurement, failure detection and servicing; Failure in Capacitors - Types and their performance, testing and measurement, failure detection and servicing",
+                      "2.2 General troubleshoot procedure of Passive Filters: Low Pass, High Pass, Band stop, Band pass Filter",
+                      "2.3 Failure and fault diagnosis of active components - Semiconductor devices, diodes, special types of diodes, Bipolar Junction Transistors, Field Effect Transistors, Thyristors, Operational Amplifiers",
+                      "2.4 Fault diagnosis and General troubleshoot procedure for analog circuits - Diode half-wave, Centre Tapped full wave and full wave Bridge Rectifier, BJT Amplifiers - CE, CB and CC Amplifier"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Troubleshooting of Digital Circuits",
+                    points: [
+                      "3.1 TTL and CMOS ICs",
+                      "3.2 Packages in digital ICs, IC identification, IC pin-outs, Handling ICs",
+                      "3.3 Digital troubleshooting methods - Typical faults, testing digital ICs with pulse generators, Logic clip, Logic Probe, Logic Pulser, Logic Current Tracer, Logic Comparator",
+                      "3.4 Special consideration for fault diagnosis in digital circuits",
+                      "3.5 Handling precautions for ICs, sensitive to static electricity",
+                      "3.6 Testing flip-flops, counters, registers, multiplexers and de-multiplexers, encoders and decoders; Tri-state logic",
+                      "3.7 Testing of ICs connected on given PCB"
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Troubleshooting of Surface Mount Assemblies",
+                    points: [
+                      "4.1 Surface Mount Technology (SMT) and Surface Mount Devices (SMD)",
+                      "4.2 Surface Mount Semiconductor packages - Small-outline IC (SOIC), Small-outline Transistor (SOT), Leadless Ceramic Chip Carrier (LCCC), land grid array (LGA), Ball-grid Array (BGA), Chip-on-board (COB)",
+                      "4.3 IC Packages and types - Flatpacks and Quad Packs, Cylindrical Diode Packages, Packaging of Passive Components as SMDs",
+                      "4.4 Troubleshooting techniques - Repairing Surface Mount PCBs, Rework Stations"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Maintenance and Repair of Electronic Domestic Appliances",
+                    points: [
+                      "5.1 Kitchen stoves (Cooking range), microwave ovens and induction cookers",
+                      "5.2 Battery charger, emergency light systems, Inverter",
+                      "5.3 Water level controller, Water Purifier",
+                      "5.4 Air conditioners",
+                      "5.5 Washing machines, clothes dryers, Dishwashers",
+                      "5.6 Liquid Crystal Display (LCD) Television Receiver, Light Emitting Diode (LED) Television Receiver",
+                      "5.7 Car Stereo System",
+                      "5.8 Refrigerators and Freezers"
+                    ]
+                  },
+                  {
+                    title: "Unit-6.0 Maintenance and Repairs of common Electronic Systems",
+                    points: [
+                      "6.1 Power supply Circuits - Types of Regulators, Power Supply Troubleshooting, SMPS, High Voltage DC Power supplies, UPS",
+                      "6.2 Oscilloscope - Fault Diagnosis chart, CRT replacement",
+                      "6.3 Function generator - Troubleshooting and maintenance",
+                      "6.4 Cordless Telephone - Troubleshooting and maintenance of cordless telephone",
+                      "6.5 Mobile Phone - faults in microphone, earpiece, ringer, vibrator and solutions",
+                      "6.6 Data cables and connectors - Testing and identification of different types of data cables: Ethernet cables, coaxial cable, serial and parallel cables, telephone cable, USB cable; and connectors.",
+                      "6.7 Computer System: Assembling a computer system, Maintenance and Repair procedure of computer system",
+                      "6.8 Data projectors",
+                      "6.9 Surveillance system - CCTV",
+                      "6.10 Public address (PA) system"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Python Programming",
+                code: "2418305",
+                units: [
+                  {
+                    title: "Unit 1: Fundamentals of Python Programming Syntax",
+                    points: [
+                      "1.1 Introduction to Python Character Set, Python Tokens, Variables, Lvalue and Rvalue Concepts, and the Use of Comments.",
+                      "1.2 Overview of Data Types: Number Types: Integer, Floating Point, Complex; Boolean Type; Sequence Types: String, List, Tuple; None Type; Mapping Type: Dictionary; Distinction between Mutable and Immutable Data Types",
+                      "1.3 Understanding Operators: Arithmetic Operators, Relational Operators, Logical Operators, Assignment Operator, Augmented Assignment Operators, Expressions and Statements, Type Conversion and Input/Output Mechanisms, Precedence of Operators, Expression Evaluation"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Conditional and Iterative statements",
+                    points: [
+                      "2.1 Conditional statements: simple if statement, if-else statement, if-elif-else statement",
+                      "2.2 Iterative statements: while loop, for loop, range function, break and continue statements, nested loops"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 String, List, Tuples, set and Dictionary",
+                    points: [
+                      "3.1 String: Indexing, string operations (concatenation, repetition, membership & slicing), traversing a string using loops, built-in functions.",
+                      "3.2 Lists: Introduction, Indexing in list, list operations: concatenation, repetition, membership & slicing, traversing a list, built-in list functions, linear search on list of numbers and counting the frequency of elements in a list",
+                      "3.3 Tuples: Creating, initializing, accessing elements, tuple assignment, performing operations on tuples, tuple methods and built-in functions, nested tuples",
+                      "3.4 Set: Creating set, traversing, adding, removing data in set, performing set operations like join, Union intersection, difference",
+                      "3.5 Dictionary: accessing items in a dictionary using keys, mutability of dictionary: adding a new item, modifying an existing item, built-in dictionary functions."
+                    ]
+                  },
+                  {
+                    title: "Unit-4.0 Python Functions, Modules and packages",
+                    points: [
+                      "4.1 Functions: types of function (built-in functions, functions defined in module, user defined functions), creating user defined function, arguments and parameters, default parameters, positional parameters, Lambda functions, returning value, scope of a variable: global scope, local scope",
+                      "4.2 Modules and Packages: Importing module using 'import', Regular Expressions, Exception Handling, PyPI Python Package Index, Pip Python package manager, Importing Libraries and Functions"
+                    ]
+                  },
+                  {
+                    title: "Unit-5.0 Numpy",
+                    points: [
+                      "5.1 Introduction to NumPy",
+                      "5.2 Installation of NumPy",
+                      "5.3 NumPy Arrays: Understanding the NumPy array, The fundamental data structure in NumPy, Creation of arrays using different methods: np.array(), np.zeros(), np.ones(), etc., Exploring array attributes like shape, size, and dimensions.",
+                      "5.4 Array Indexing and Slicing: Accessing elements and subarrays in NumPy arrays using indexing and slicing, Demonstration of the difference between one-dimensional and multi-dimensional array indexing.",
+                      "5.5 Array Operations: Performing element-wise operations on NumPy arrays, Exploring universal functions (ufuncs) for mathematical operations.",
+                      "5.6 Linear Algebra with NumPy: Introduction to linear algebra operations using NumPy, Matrix multiplication, determinant, inverse, and solving linear equations.",
+                      "5.7 File input and output with Numpy",
+                      "5.8 Broadcasting in Numpy"
+                    ]
+                  },
+                  {
+                    title: "Unit 6: Exception and File Handling in Python",
+                    points: [
+                      "6.1 Exception Handling: syntax errors, exceptions, need of exception handling, user-defined exceptions, raising exceptions, handling exceptions, catching exceptions, Try except - else clause, Try - finally clause, recovering and continuing with finally, built-in exception classes.",
+                      "6.2 File Handling: text file and binary file, file types, open and close files, reading and writing text files, reading and writing binary files, file access modes"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Indian Constitution",
+                code: "2400207",
+                units: [
+                  {
+                    title: "Unit-1.0 Constitution and Preamble",
+                    points: [
+                      "1.1 Meaning of the constitution of India.",
+                      "1.2 Historical perspective of the Constitution of India.",
+                      "1.3 Salient features and characteristics of the Constitution of India.",
+                      "1.4 Preamble to the Constitution of India."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Fundamental Rights and Directive Principles",
+                    points: [
+                      "2.1 Fundamental Rights under Part-III.",
+                      "2.2 Fundamental duties and their significance.",
+                      "2.3 Relevance of Directive Principles of State Policy under part-IV."
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Governance and Amendments",
+                    points: [
+                      "3.1 Amendment of the Constitutional Powers and Procedure",
+                      "3.2 Major Constitutional Amendment procedure - 42nd, 44th, 74th, 76th, 86th and 91st"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Employability Skills Development",
+                code: "2400408",
+                units: [
+                  {
+                    title: "Unit-1.0 Goal Setting",
+                    points: [
+                      "1.1 Career planning, SWOT",
+                      "1.2 Resume using Internet formats.",
+                      "1.3 Showcase portfolios.",
+                      "1.4 Personal grooming.",
+                      "1.5 Self-Introduction.",
+                      "1.6 Website Development."
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Capacity Development",
+                    points: [
+                      "2.1 Interview Skills",
+                      "2.2 Group Discussion - Do's & don'ts, leadership, Teamwork, how to interrupt, synthesis, and analysis of topics.",
+                      "2.3 Social Media for Personal Enrichment",
+                      "2.4 Body language",
+                      "2.5 Self-Management.",
+                      "2.6 Emotional Intelligence"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Utilizing Potential",
+                    points: [
+                      "3.1 Social Networking",
+                      "3.2 Social Engagements, Volunteering",
+                      "3.3 Collaboration& Team-work.",
+                      "3.4 QC-Tools - Check sheets, Fishbone Diagram, Histogram, Pareto chart, Control-chart, Scatter Diagram, Stratification,",
+                      "3.5 Lean Manufacturing, Kanban, Kaizen, Five S, Poka-yoke, Quality Circle"
+                    ]
+                  }
+                ]
+              },
+              {
+                name: "Open Educational Resources",
+                code: "2400009",
+                units: [
+                  {
+                    title: "Unit-1.0 Open Educational Resources",
+                    points: [
+                      "1.1 OER - definition",
+                      "1.2 What is NOT OER.",
+                      "1.3 Benefits of using OER - Benefits to Students - Access to Quality Education",
+                      "1.4 OER - Benefits to Faculty - Use, Improve and Share, Network and collaborate with peers, Lower Cost, Improve access to information",
+                      "1.5 Challenges of Using OER - Subject Availability, Format and Material type availability, Time and Support availability",
+                      "1.6 Evaluating OER - a) Clarity, Comprehensibility, and Readability, b) Content and Technical Accuracy, c) Adaptability and Modularity, d) Appropriateness and Fit, e) Accessibility",
+                      "1.7 Finding Open Content - OER Search Scenario Filter by Usage Rights in Google, Repositories and Search Tools, Subject-specific Repositories"
+                    ]
+                  },
+                  {
+                    title: "Unit-2.0 Copyright and Open Licensing",
+                    points: [
+                      "2.1 Copyright and what it does protect, benefits of copyright protection for creators, duration of copyright protection last, rights granted to copyright holders.",
+                      "2.2 Exceptions and limitations to copyright law, fair use/fair dealing apply to copyright",
+                      "2.3 Public domain and its relation to copyright.",
+                      "2.4 Penalties for copyright infringement",
+                      "2.5 Apply copyright to digital content and the internet",
+                      "2.6 Use of copyrighted works in education.",
+                      "2.7 Open Licenses - GNU Free Documentation license, Free Art License",
+                      "2.8 Why Free Licenses - Retain, Reuse, Revise, Remix, Redistribute"
+                    ]
+                  },
+                  {
+                    title: "Unit-3.0 Creative Common Licenses",
+                    points: [
+                      "3.1 Alternatives to copyright as Creative Commons licenses.",
+                      "3.2 Four components of creative common Licenses - Attribution, Share-Alike, Non-commercial, No Derivatives",
+                      "3.3 Choosing a Creative common licenses - Wiley's 5 Rs and Creative Common Licenses",
+                      "3.4 Four Open CC Licenses and Their Strengths and Weaknesses - (a) CC BY (b) CC BY SA (c) CC BY NC (d) CC BY NC SA",
+                      "3.5 Attribution Vs Citation - Creative Commons licensed work without giving attribution",
+                      "3.6 Apply a CC License - choose the right Creative Commons license for work, apply a Creative Commons license to existing work, Creative Commons licenses be used for commercial purposes, modify a work licensed under Creative Commons, revoke a Creative Commons license, combine works with different Creative Commons licenses"
+                    ]
+                  }
+                ]
+              }
             ];
 
             // Diploma ece sem 5
