@@ -216,6 +216,7 @@ const notesResources = [
 
   // ECE 2nd Year
 
+
   {
     id: 36,
     title: "C Programming Notes",
@@ -888,6 +889,23 @@ const notesResources = [
 
   {
     id: 40,
+    title: "Python Handbook",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "Notes",
+    subject: "Python Programming",
+    desc: "A Complete Python Handbook for programmers to learn programming as well by Code With Harry",
+    size: "1.7 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
     title: "Operating System MCQ",
     program: "Diploma",
     branch: "CSE",
@@ -903,7 +921,7 @@ const notesResources = [
     pdfUrl: "https://drive.google.com/file/d/1tlpu8R7wsN_8eih9rM-KhsQIFkeNVk2I/view?usp=drive_link"
   },
 
-  
+
   {
     id: 40,
     title: "JAVA Programming MCQ",
@@ -920,7 +938,7 @@ const notesResources = [
     icon: "fas fa-book",
     pdfUrl: "https://drive.google.com/file/d/1BrKill1v4f_VSWBxOTfqJAJ_Ic1pJ2u2/view?usp=drive_link"
   },
-  
+
 
 
   // CSE 3rd Year
@@ -960,7 +978,7 @@ const notesResources = [
   },
 
 
-  // Electronics 1st year
+  // Diploma Electronics 1st year
 
   {
     id: 41,
@@ -998,6 +1016,9 @@ const notesResources = [
 
   // Electronics 2nd Year
 
+
+
+
   {
     id: 41,
     title: "C Programming Notes",
@@ -1006,7 +1027,7 @@ const notesResources = [
     year: "2nd Year",
     semester: "Semester 3",
     type: "Notes",
-    subject: "Hydraulics",
+    subject: "none",
     desc: "Complete C programming notes",
     size: "1.8 MB",
     contributor: "Your Name",
@@ -1015,21 +1036,23 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
+
+
   {
-    id: 41,
-    title: "C Programming Notes",
+    id: 40,
+    title: "Python Handbook",
     program: "Diploma",
     branch: "Electronics",
     year: "2nd Year",
     semester: "Semester 4",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    subject: "Python Programming",
+    desc: "A Complete Python Handbook for programmers to learn programming as well by Code With Harry",
+    size: "1.7 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
   },
 
   // Electronics 3rd Year
