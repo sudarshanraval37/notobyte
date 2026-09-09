@@ -113,9 +113,173 @@ function appOpenQuiz(programId) {
     quizBackToDashboard();
 }
 
+
+/* ----------------------------------------------------------------
+   5. ANDROID SYSTEM BACK BUTTON
+   ----------------------------------------------------------------
+   Handles the physical/system Android Back button without changing
+   the existing on-screen navigation buttons.
+
+   Navigation priority:
+   - Notes: Resources → Subject → Category → Semester → Year → Branch → Home
+   - Syllabus: Subjects → Semester → Branch/Program → Home
+   - Quiz: Result → Quiz → Previous Question → Subject → Dashboard → Home
+   - Home: exit the Android app
+---------------------------------------------------------------- */
+function appExitAndroidApp() {
+    try {
+        const App = window.Capacitor?.Plugins?.App;
+        if (App?.exitApp) {
+            App.exitApp();
+            return;
+        }
+    } catch (error) {
+        console.warn('NotoByte: Unable to exit app via Capacitor.', error);
+    }
+
+    // Browser fallback: do nothing rather than accidentally leaving
+    // the app/webview when the Capacitor App plugin is unavailable.
+}
+
+function appGetActiveScreenId() {
+    const active = document.querySelector('.app-screen.active');
+    return active ? active.id : 'homeScreen';
+}
+
+function appHandleAndroidBack() {
+    const activeScreen = appGetActiveScreenId();
+
+    /* ---------------- NOTES ---------------- */
+    if (activeScreen === 'notesScreen') {
+        // Search results are rendered on Home, so normal Notes navigation
+        // can be handled entirely from notesState.
+        if (typeof notesState !== 'undefined') {
+            if (notesState.subject) {
+                notesState.subject = null;
+                notesGoToSubjects();
+                return;
+            }
+            if (notesState.resourceType) {
+                notesState.resourceType = null;
+                notesGoToTypes();
+                return;
+            }
+            if (notesState.semester) {
+                notesState.semester = null;
+                notesGoToSemesters();
+                return;
+            }
+            if (notesState.year) {
+                notesState.year = null;
+                notesGoToYears();
+                return;
+            }
+            if (notesState.branch) {
+                notesState.branch = null;
+                notesGoToBranches();
+                return;
+            }
+            if (notesState.program) {
+                notesState.program = null;
+                notesGoToPrograms();
+                return;
+            }
+        }
+
+        appShowScreen('home');
+        return;
+    }
+
+    /* ---------------- SYLLABUS ---------------- */
+    if (activeScreen === 'syllabusScreen') {
+        if (typeof syllabusState !== 'undefined') {
+            if (syllabusState.expandedSubject) {
+                syllabusState.expandedSubject = null;
+                const semester = syllabusGetSemester(syllabusState.program, syllabusState.branch, syllabusState.semester);
+                if (semester) syllabusRenderSubjectList(semester);
+                return;
+            }
+            if (syllabusState.semester) {
+                syllabusState.semester = null;
+                syllabusGoToSemesters();
+                return;
+            }
+            if (syllabusState.branch) {
+                syllabusState.branch = null;
+                syllabusGoToBranches();
+                return;
+            }
+            if (syllabusState.program) {
+                syllabusState.program = null;
+                appShowScreen('home');
+                return;
+            }
+        }
+
+        appShowScreen('home');
+        return;
+    }
+
+    /* ---------------- QUIZ ---------------- */
+    if (activeScreen === 'quizScreen') {
+        const playView = document.getElementById('quizPlayView');
+        const resultView = document.getElementById('quizResultView');
+        const subjectView = document.getElementById('quizSubjectView');
+        const dashboardView = document.getElementById('quizDashboard');
+
+        if (resultView?.classList.contains('active')) {
+            quizExitToSubject();
+            return;
+        }
+
+        if (playView?.classList.contains('active')) {
+            if (typeof quizState !== 'undefined' && quizState.currentIndex > 0) {
+                quizPrevQuestion();
+            } else {
+                quizExitToSubject();
+            }
+            return;
+        }
+
+        if (subjectView?.classList.contains('active')) {
+            quizBackToDashboard();
+            return;
+        }
+
+        if (dashboardView?.classList.contains('active')) {
+            appShowScreen('home');
+            return;
+        }
+
+        appShowScreen('home');
+        return;
+    }
+
+    /* ---------------- HOME ---------------- */
+    // Only when already at Home should the Android Back button exit.
+    appExitAndroidApp();
+}
+
+function appInitAndroidBackButton() {
+    try {
+        const App = window.Capacitor?.Plugins?.App;
+        if (!App?.addListener) {
+            console.warn('NotoByte: Capacitor App plugin not available. Android Back handler not registered.');
+            return;
+        }
+
+        App.addListener('backButton', () => {
+            appHandleAndroidBack();
+        });
+    } catch (error) {
+        console.warn('NotoByte: Android Back handler could not be registered.', error);
+    }
+}
+
 /* ----------------------------------------------------------------
    6. INITIALISE
 ---------------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
     appShowScreen('home');
+    appInitAndroidBackButton();
 });
