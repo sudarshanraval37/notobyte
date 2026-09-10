@@ -1063,23 +1063,6 @@ const notesResources = [
     program: "Diploma",
     branch: "Electronics",
     year: "3rd Year",
-    semester: "Semester 5",
-    type: "Notes",
-    subject: "C Language",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
-    icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
-  },
-
-  {
-    id: 41,
-    title: "C Programming Notes",
-    program: "Diploma",
-    branch: "Electronics",
-    year: "3rd Year",
     semester: "Semester 6",
     type: "Notes",
     subject: "Hydraulics",

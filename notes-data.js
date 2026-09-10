@@ -1065,7 +1065,7 @@ const notesResources = [
     year: "3rd Year",
     semester: "Semester 5",
     type: "Notes",
-    subject: "Hydraulics",
+    subject: "C language",
     desc: "Complete C programming notes",
     size: "1.8 MB",
     contributor: "Your Name",
