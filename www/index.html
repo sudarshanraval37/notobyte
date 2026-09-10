@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>NotoByte - Free Study Notes, PYQs & Study Materials</title>
+
+  <meta name="description"
+    content="NotoByte is a free study notes platform for students to share, browse and download notes, previous year questions, syllabus and study materials." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://notobyte.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NotoByte - Free Study Notes & PYQs" />
+  <meta property="og:description"
+    content="Free study notes, PYQs, syllabus, Diploma, Bihar Polytechnic, assignments and educational resources for students." />
+  <meta property="og:url" content="https://notobyte.vercel.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="notes.css" />
+  <link rel="stylesheet" href="syllabus.css" />
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- ============================================================
+         APP HEADER
+    ============================================================ -->
+    <header class="app-header">
+      <button class="app-logo" onclick="appShowScreen('home')">
+        <span class="app-logo-icon"><i class="fas fa-book-open"></i></span>
+        NotoByte
+      </button>
+
+      <button class="app-menu-btn" id="appMenuBtn" onclick="appToggleMenu()">
+        <i class="fas fa-ellipsis-vertical"></i>
+      </button>
+    </header>
+
+    <!-- Header dropdown menu -->
+    <div class="app-menu" id="appMenu">
+      <button onclick="appToggleTheme()"><i class="fas fa-moon" id="appThemeIcon"></i> Toggle Theme</button>
+      <a href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank"><i class="fas fa-upload"></i> Upload Notes</a>
+      <a href="mailto:sudarshanraval4@gmail.com"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="https://github.com/sudarshanraval37" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+
+    <!-- ============================================================
+         APP SCREENS (one visible at a time — see app.js)
+    ============================================================ -->
+    <main class="app-main">
+
+      <!-- ==========================================================
+           HOME SCREEN
+      ========================================================== -->
+      <section id="homeScreen" class="app-screen active">
+
+        <!-- Search -->
+        <div class="app-search-row">
+          <div class="app-search-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="notesSearchInput" placeholder="Search notes" oninput="appHandleHomeSearch()" />
+          </div>
+          <button class="app-filter-btn" onclick="appFilterTap()" title="Filters">
+            <i class="fas fa-sliders"></i>
+          </button>
+        </div>
+
+        <!-- Live search results (shown instead of the sections below
+             while the search box has text in it) -->
+        <div id="homeSearchResults" style="display:none">
+          <div class="notes-body-pad">
+            <div id="notesSearchResultsCount" style="margin-bottom:14px; color:var(--text2); font-size:.85rem;"></div>
+            <div class="notes-grid" id="notesSearchResults"></div>
+          </div>
+        </div>
+
+        <div id="homeSections">
+
+          <!-- Notes & PYQ Section -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-orange">Your Notes &amp; PYQ Section</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenNotes('btech')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenNotes('diploma')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenNotes('other')">
+                  <div class="app-tile-icon tile-cyan"><i class="fas fa-box-archive"></i></div>
+                  <span>Other</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Syllabus Hub -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-pink">Syllabus Hub</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenSyllabus('btech')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenSyllabus('diploma')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenSyllabus('competitive')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-trophy"></i></div>
+                  <span>Competitive Exams</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contribute Notes Banner -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-green">Contribute Notes To Help More Students</div>
+            <div class="app-section-body">
+              <a class="app-upload-banner" href="https://forms.gle/HyMw3zEGzqJ7rEcY9" target="_blank">
+                <span class="app-upload-banner-icon"><i class="fas fa-file-arrow-up"></i></span>
+                Click here to upload your notes here and get a shoutout!
+              </a>
+            </div>
+          </div>
+
+          <!-- Quiz Zone -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-magenta">Quiz Zone</div>
+            <div class="app-section-body">
+              <div class="app-tile-row">
+                <button class="app-tile" onclick="appOpenQuiz('btech')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-user-graduate"></i></div>
+                  <span>B-tech</span>
+                </button>
+                <button class="app-tile" onclick="appOpenQuiz('diploma')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-graduation-cap"></i></div>
+                  <span>Diploma</span>
+                </button>
+                <button class="app-tile" onclick="appOpenQuiz('competitive')">
+                  <div class="app-tile-icon tile-yellow"><i class="fas fa-trophy"></i></div>
+                  <span>Competitive Exams</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Meet The Developers -->
+          <div class="app-section-card" style="margin-bottom: 24px;">
+            <div class="app-section-header app-section-blue">Meet The Developers</div>
+            <div class="app-section-body">
+              <div class="app-dev-row">
+                <div class="developer-card">
+                  <img src="assets/images/sudarshan.jpeg" alt="Sudarshan Raval" class="dev-img"
+                    onerror="this.style.display='none'">
+                  <h3>Sudarshan Raval</h3>
+                  <p>Developer</p>
+                  <div class="dev-socials">
+                    <a href="https://sudarshanraval37.github.io/Personal-Portfolio-/" target="_blank"><i
+                        class="fa-solid fa-globe"></i></a>
+                    <a href="https://www.instagram.com/_ravvall_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sudarshan-kumar-601185300/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="developer-card">
+                  <img src="assets/images/vinit.jpeg" alt="Vinit Raj" class="dev-img"
+                    onerror="this.style.display='none'">
+                  <h3>Vinit Raj</h3>
+                  <p>UI Designer</p>
+                  <div class="dev-socials">
+                    <a href="https://www.instagram.com/vinit_5610/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vinit-raj-49b3a7311/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /homeSections -->
+
+      </section>
+
+      <!-- ==========================================================
+           NOTES SCREEN
+           (Program -> Branch -> Year -> Semester -> Category ->
+           Subject -> Resources. Rendered/driven by notes.js.)
+      ========================================================== -->
+      <section id="notesScreen" class="app-screen">
+
+        <div class="notes-breadcrumb notes-breadcrumb-orange" id="notesBreadcrumb"></div>
+
+        <div class="notes-body-pad">
+
+          <!-- Program picker (kept for internal reset fallback; Home
+               tiles jump straight past this into Branch selection) -->
+          <div class="notes-view active" id="notesProgramView">
+            <div class="notes-program-grid" id="notesProgramGrid"></div>
+          </div>
+
+          <!-- Generic level view: Branch / Year / Semester / Category / Subject -->
+          <div class="notes-view" id="notesLevelView">
+            <button class="notes-back-btn" id="notesLevelBackBtn" onclick="appShowScreen('home')">
+              <i class="fas fa-arrow-left"></i> <span id="notesLevelBackLabel">Back to Home</span>
+            </button>
+            <div class="notes-card-list-header">
+              <h2 id="notesLevelTitle"></h2>
+              <p id="notesLevelSub"></p>
+            </div>
+            <div class="notes-level-grid" id="notesLevelGrid"></div>
+          </div>
+
+          <!-- Final resources (downloadable cards) -->
+          <div class="notes-view" id="notesResourceView">
+            <button class="notes-back-btn" id="notesResourceBackBtn" onclick="notesGoToSubjects()">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <div class="notes-resource-header">
+              <h2 id="notesResourceTitle"></h2>
+            </div>
+            <div class="notes-grid" id="notesResourceGrid"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           SYLLABUS SCREEN
+           (Program -> Branch -> Semester -> Subject list with
+           expandable Units. Rendered/driven by syllabus.js.)
+      ========================================================== -->
+      <section id="syllabusScreen" class="app-screen">
+
+        <div class="notes-breadcrumb notes-breadcrumb-pink" id="syllabusBreadcrumb"></div>
+
+        <div class="notes-body-pad">
+
+          <!-- Branch list / Semester grid (same view, re-rendered by syllabus.js) -->
+          <div class="notes-view active" id="syllabusLevelView">
+            <button class="notes-back-btn" id="syllabusBackBtn" onclick="appShowScreen('home')">
+              <i class="fas fa-arrow-left"></i> <span id="syllabusBackLabel">Back to Home</span>
+            </button>
+            <div class="notes-card-list-header">
+              <h2 id="syllabusLevelTitle"></h2>
+              <p id="syllabusLevelSub" style="display:none"></p>
+            </div>
+            <div class="notes-level-grid" id="syllabusLevelGrid"></div>
+          </div>
+
+          <!-- Subject list with expandable Units -->
+          <div class="notes-view" id="syllabusSubjectView">
+            <button class="notes-back-btn" id="syllabusSubjectBackBtn" onclick="syllabusGoToSemesters()">
+              <i class="fas fa-arrow-left"></i> Back to Semesters
+            </button>
+            <h2 id="syllabusSubjectTitle" style="display:none"></h2>
+            <div id="syllabusSubjectList"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           QUIZ SCREEN
+           (Branch -> Semester tabs + quiz list -> Play -> Result.
+           Rendered/driven by quiz.js.)
+      ========================================================== -->
+      <section id="quizScreen" class="app-screen">
+
+        <div class="quiz-breadcrumb" id="quizBreadcrumb"></div>
+
+        <!-- VIEW 1 — BRANCH DASHBOARD -->
+        <div class="quiz-view active" id="quizDashboard">
+          <button class="quiz-back-btn" onclick="appShowScreen('home')">
+            <i class="fas fa-arrow-left"></i> Back to Home
+          </button>
+          <div class="quiz-subjects-grid" id="quizSubjectsGrid"></div>
+        </div>
+
+        <!-- VIEW 2 — SUBJECT VIEW (semester tabs + quiz list) -->
+        <div class="quiz-view" id="quizSubjectView">
+          <button class="quiz-back-btn" onclick="quizBackToDashboard()">
+            <i class="fas fa-arrow-left"></i> Back to Branches
+          </button>
+
+          <div class="quiz-subject-header" id="quizSubjectHeader"></div>
+          <div class="quiz-semester-tabs" id="quizSemesterTabs"></div>
+          <div class="quiz-list-grid" id="quizListGrid"></div>
+        </div>
+
+        <!-- VIEW 3 — QUIZ PLAY -->
+        <div class="quiz-view" id="quizPlayView">
+          <div class="quiz-play-topbar">
+            <button class="quiz-exit-btn" onclick="quizExitToSubject()" title="Exit quiz">
+              <i class="fas fa-xmark"></i>
+            </button>
+            <div class="quiz-play-title" id="quizPlayTitle">Quiz Title</div>
+            <div class="quiz-progress-text" id="quizProgressText">Question 1 / 20</div>
+          </div>
+
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quizProgressFill"></div>
+          </div>
+
+          <div class="quiz-question-card" id="quizQuestionCard">
+            <h3 class="quiz-question-text" id="quizQuestionText"></h3>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-explanation" id="quizExplanation"></div>
+          </div>
+
+          <div class="quiz-nav-row">
+            <button class="btn btn-outline" id="quizPrevBtn" onclick="quizPrevQuestion()">
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button class="btn btn-primary" id="quizNextBtn" onclick="quizNextQuestion()" disabled>
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- VIEW 4 — RESULT -->
+        <div class="quiz-view" id="quizResultView">
+          <div class="quiz-result-card" id="quizResultCard"></div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ============================================================
+       TOAST NOTIFICATION
+  ============================================================ -->
+  <div id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Download started!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="notes-data.js"></script>
+  <script src="notes.js"></script>
+  <script src="syllabus-data.js"></script>
+  <script src="syllabus.js"></script>
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>

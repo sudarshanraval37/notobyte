@@ -1,0 +1,732 @@
+/* ================================================================
+   style.css — NotoByte Mobile App UI
+   ----------------------------------------------------------------
+   Rebuilt to match the provided app-style design: a light, card
+   based mobile app shell (top bar, search, colour-coded section
+   banners, pill navigation lists). Notes/Quiz/Syllabus internals
+   still live in notes.css / quiz.css / syllabus.css and reuse the
+   variables defined here.
+================================================================ */
+
+
+/* ================================================================
+   1. CSS VARIABLES (THEME SYSTEM)
+   Light app theme is the default (matches the design). A dark
+   theme is available via the menu toggle for users who prefer it.
+================================================================ */
+:root {
+    /* App background */
+    --bg: linear-gradient(135deg, #ffe8dd 0%, #fef6e8 45%, #e6fbe4 100%);
+    --bg-solid: #fdf7f0;
+
+    /* Surfaces */
+    --card: #ffffff;
+    --card-soft: #f4fbf8;
+    --glass: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(20, 20, 40, 0.08);
+    --glass-hover: rgba(255, 255, 255, 0.95);
+
+    /* Text */
+    --text: #16182b;
+    --text2: #6b6f8a;
+
+    /* Brand + section accent colours (from the provided design) */
+    --header-cyan: #8fe9f2;
+    --accent: #2f6feb;
+    --accent2: #17c3a2;
+    --accent3: #00e5ff;
+
+    --orange: #f4791f;
+    --pink: #ff6fb0;
+    --green: #17b88a;
+    --magenta: #c21f8d;
+    --blue: #2f6feb;
+    --mint: #c9f7ea;
+    --mint-dark: #17324a;
+
+    /* Shape */
+    --card-shadow: 0 10px 30px rgba(20, 20, 40, 0.08);
+    --radius: 20px;
+    --radius-pill: 999px;
+    --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optional dark theme, toggled from the app menu */
+[data-theme="dark"] {
+    --bg: linear-gradient(160deg, #0d0f1e 0%, #12142a 100%);
+    --bg-solid: #0d0f1e;
+    --card: #171a30;
+    --card-soft: #1b2436;
+    --glass: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-hover: rgba(255, 255, 255, 0.1);
+    --text: #eef0ff;
+    --text2: #9a9dbd;
+    --mint: #1c3a3a;
+    --mint-dark: #bff2e4;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ================================================================
+   2. RESET & BASE
+================================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    background-attachment: fixed;
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background var(--transition), color var(--transition);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+
+/* ================================================================
+   3. APP SHELL
+================================================================ */
+.app {
+    max-width: 520px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- Top App Bar ---- */
+.app-header {
+    background: var(--header-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #10233a;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.app-logo-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: #10233a;
+    color: var(--header-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.app-menu-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(16, 35, 58, 0.12);
+    color: #10233a;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.app-menu-btn:hover {
+    background: rgba(16, 35, 58, 0.22);
+}
+
+/* ---- Dropdown menu ---- */
+.app-menu {
+    position: absolute;
+    top: 66px;
+    right: 14px;
+    background: var(--card);
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--glass-border);
+    width: 200px;
+    overflow: hidden;
+    z-index: 60;
+    display: none;
+    flex-direction: column;
+}
+
+.app-menu.open {
+    display: flex;
+}
+
+.app-menu button,
+.app-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    color: var(--text);
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background var(--transition);
+    width: 100%;
+}
+
+.app-menu button:hover,
+.app-menu a:hover {
+    background: var(--card-soft);
+}
+
+.app-menu i {
+    width: 18px;
+    color: var(--text2);
+}
+
+
+/* ---- Screens ---- */
+.app-main {
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+.app-screen {
+    display: none;
+    animation: appFadeIn .3s ease;
+}
+
+.app-screen.active {
+    display: block;
+}
+
+@keyframes appFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================================================================
+   4. HOME SCREEN
+================================================================ */
+.app-search-row {
+    display: flex;
+    gap: 12px;
+    padding: 18px 16px 6px;
+}
+
+.app-search-wrap {
+    flex: 1;
+    position: relative;
+}
+
+.app-search-wrap i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text2);
+}
+
+.app-search-wrap input {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px 0 46px;
+    border-radius: var(--radius-pill);
+    border: 1.5px solid var(--glass-border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.92rem;
+    outline: none;
+    box-shadow: var(--card-shadow);
+}
+
+.app-search-wrap input:focus {
+    border-color: var(--accent);
+}
+
+.app-filter-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1.5px solid var(--glass-border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 1.05rem;
+    cursor: pointer;
+    box-shadow: var(--card-shadow);
+    flex-shrink: 0;
+}
+
+/* ---- Section cards ---- */
+.app-section-card {
+    margin: 22px 16px 0;
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    border: 1px dashed var(--glass-border);
+}
+
+.app-section-header {
+    padding: 14px 18px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app-section-orange {
+    background: var(--orange);
+}
+
+.app-section-pink {
+    background: var(--pink);
+}
+
+.app-section-green {
+    background: var(--green);
+}
+
+.app-section-magenta {
+    background: var(--magenta);
+}
+
+.app-section-blue {
+    background: var(--blue);
+}
+
+.app-section-body {
+    padding: 20px 16px;
+}
+
+/* ---- Tile row (B-tech / Diploma / Other-style tiles) ---- */
+.app-tile-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.app-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    font-family: inherit;
+    padding: 4px 2px;
+    transition: transform var(--transition);
+}
+
+.app-tile:hover {
+    transform: translateY(-3px);
+}
+
+.app-tile-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    color: #fff;
+}
+
+.app-tile span {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+}
+
+/* per-section tile colours */
+.tile-cyan {
+    background: var(--header-cyan);
+    color: #10233a;
+}
+
+.tile-yellow {
+    background: #ffcf3f;
+    color: #6b4b00;
+}
+
+/* ---- Upload banner ---- */
+.app-upload-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--mint);
+    color: var(--mint-dark);
+    border-radius: var(--radius-pill);
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    transition: transform var(--transition);
+}
+
+.app-upload-banner:hover {
+    transform: translateY(-2px);
+}
+
+.app-upload-banner-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    color: var(--mint-dark);
+}
+
+/* ---- Meet the Developers ---- */
+.app-dev-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.developer-card {
+    background: var(--card-soft);
+    border-radius: 16px;
+    padding: 16px 12px;
+    text-align: center;
+    border: 1px solid var(--glass-border);
+}
+
+.dev-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 8px;
+    display: block;
+    background: var(--glass-border);
+}
+
+.developer-card h3 {
+    font-size: 0.88rem;
+    font-weight: 800;
+}
+
+.developer-card p {
+    font-size: 0.72rem;
+    color: var(--text2);
+    margin-bottom: 8px;
+}
+
+.dev-socials {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dev-socials a {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--card);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+    border: 1px solid var(--glass-border);
+}
+
+
+/* ================================================================
+   5. SHARED BUTTONS
+================================================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 22px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(47, 111, 235, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(47, 111, 235, 0.4);
+}
+
+.btn-outline {
+    background: var(--card);
+    color: var(--text);
+    border: 1.5px solid var(--glass-border);
+}
+
+.btn-outline:hover {
+    background: var(--card-soft);
+}
+
+
+/* ================================================================
+   6. NOTE CARDS (shared by Notes browsing, search & uncategorized)
+================================================================ */
+.notes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.note-card {
+    background: linear-gradient(160deg, #eaf1ff, #f5f2ff);
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid var(--glass-border);
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.note-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.subject-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #10233a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.note-meta {
+    text-align: right;
+}
+
+.note-sem {
+    font-size: 0.72rem;
+    color: var(--text2);
+    font-weight: 600;
+}
+
+.note-size {
+    font-size: 0.72rem;
+    color: var(--text2);
+    margin-top: 2px;
+}
+
+.note-subject {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.note-desc {
+    font-size: 0.82rem;
+    color: var(--text2);
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.note-contributor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.78rem;
+    color: var(--text2);
+    margin-bottom: 14px;
+}
+
+.contrib-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.note-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.note-category {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text2);
+    background: var(--card);
+    padding: 5px 10px;
+    border-radius: var(--radius-pill);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card);
+    color: var(--text);
+    border: none;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform var(--transition);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+.no-results {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text2);
+}
+
+.no-results i {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+    color: var(--glass-border);
+}
+
+.no-results h3 {
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+
+/* ================================================================
+   7. TOAST
+================================================================ */
+#toast {
+    position: fixed;
+    left: 50%;
+    bottom: -80px;
+    transform: translateX(-50%);
+    background: #10233a;
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: bottom .4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    max-width: 90%;
+}
+
+#toast.show {
+    bottom: 24px;
+}
+
+#toast i {
+    color: var(--accent2);
+}
+
+
+/* ================================================================
+   8. RESPONSIVE / DESKTOP FRAME
+================================================================ */
+@media (min-width: 521px) {
+    .app {
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+        border-radius: 28px;
+        margin: 20px auto;
+        overflow: hidden;
+        min-height: calc(100vh - 40px);
+    }
+}
+
+@media (max-width: 400px) {
+    .app-tile-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.15rem;
+    }
+
+    .app-section-body {
+        padding: 16px 12px;
+    }
+}

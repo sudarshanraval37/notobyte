@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notobyte.vercel.app/sitemap.xml

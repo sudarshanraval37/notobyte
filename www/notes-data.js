@@ -1014,7 +1014,7 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
-  // Diploma Electronics 2nd Year
+  // Electronics 2nd Year
 
 
 
@@ -1055,7 +1055,7 @@ const notesResources = [
     pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
   },
 
-  // Diploma Electronics 3rd Year
+  // Electronics 3rd Year
 
   {
     id: 41,
@@ -1089,24 +1089,6 @@ const notesResources = [
     initials: "YN",
     icon: "fas fa-book",
     pdfUrl: "assets/notes/c-programming.pdf"
-  },
-
-
-  {
-    id: 40,
-    title: "Python Handbook",
-    program: "Diploma",
-    branch: "Electronics",
-    year: "3rd Year",
-    semester: "Semester 6",
-    type: "Notes",
-    subject: "Python Programming",
-    desc: "A Complete Python Handbook for programmers to learn programming as well by Code With Harry",
-    size: "1.7 MB",
-    contributor: "Sudarshan Raval (Developer)",
-    initials: "SR",
-    icon: "fas fa-book",
-    pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
   },
 
 
