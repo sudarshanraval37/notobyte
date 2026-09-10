@@ -868,7 +868,7 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
-  // CSE 2nd Year
+  // Diploma CSE 2nd Year
 
   {
     id: 40,
@@ -885,6 +885,42 @@ const notesResources = [
     initials: "SR",
     icon: "fas fa-book",
     pdfUrl: "assets/notes/cse/sem3/3rd-Sem-Syllabus-Diploma-in-Computer-Science-&-Engineering.pdf"
+  },
+
+
+  {
+    id: 40,
+    title: "DSA PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "PYQs",
+    subject: "DSA",
+    desc: "Previous Year Question of year 2023 of Data Structure and Algorithms",
+    size: "1.1 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1oMy7eSVS5lhzd0YtPxyJR7JYuPFXTTQ7/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "Python PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "PYQs",
+    subject: "Python Programming",
+    desc: "Previous Year Question of year 2023 of Python",
+    size: "0.7 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1w-oJ1a-UndpkC1hlqxBz1g--8PP8WrQ9/view?usp=drive_link"
   },
 
   {
