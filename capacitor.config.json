@@ -1,5 +1,9 @@
 {
   "appId": "com.notobyte.app",
-  "appName": "NotoByte",
-  "webDir": "www"
+  "appName": "notobyte",
+  "webDir": "www",
+  "server": {
+    "url": "https://notobyte.vercel.app/",
+    "cleartext": true
+  }
 }
