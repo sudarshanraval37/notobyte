@@ -763,7 +763,7 @@ const notesResources = [
 
 
 
-  // CSE 1st year
+  // Diploma CSE 1st year
 
   {
     id: 40,
@@ -923,6 +923,59 @@ const notesResources = [
     pdfUrl: "https://drive.google.com/file/d/1w-oJ1a-UndpkC1hlqxBz1g--8PP8WrQ9/view?usp=drive_link"
   },
 
+
+  {
+    id: 40,
+    title: "Operating System PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "PYQs",
+    subject: "Operating System",
+    desc: "Previous Year Question of year 2023 of Operating System",
+    size: "0.7 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1pBDd13P--PNWpeFCMGGpi8vjBADDPGzP/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "DE&MP PYQ 2019",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "PYQs",
+    subject: "Digital Electronics and Microprocessor",
+    desc: "Previous Year Question of year 2019 of Digital Electronics and Microprocessor",
+    size: "0.8 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1BASGJP4AlK3cjH9LQxP_Bc4poqcmZLud/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "Discrete Mathematics PYQ 2022",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "PYQs",
+    subject: "Discrete Structures or Discrete Mathematics",
+    desc: "Previous Year Question of year 2022 of Discrete Structures or Discrete Mathematics",
+    size: "0.4 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1IRgTNf_ppdd_Ig_i7T4p98C9Yd6aZCt5/view?usp=drive_link"
+  },
+
+
   {
     id: 40,
     title: "Python Handbook",
@@ -939,6 +992,62 @@ const notesResources = [
     icon: "fas fa-book",
     pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
   },
+
+
+  {
+    id: 40,
+    title: "Discrete Mathematics VVI Questions",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "Notes",
+    subject: "Discrete Structures or Discrete Mathematics",
+    desc: "Most important Question of Discrete Structures or Discrete Mathematics by CTH Education",
+    size: "1.7 MB",
+    contributor: "CTH Education",
+    initials: "CE",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1ElUjagrLjAwbGjGUb9sOHMqr3a_MLFJQ/view?usp=drive_link"
+  },
+
+  
+  {
+    id: 40,
+    title: "DSA Handwritten Notes",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "Notes",
+    subject: "Data Structures and Algorithm",
+    desc: "Handwritten Notes of DSA By Code with Harry, this notes helps you to understand DSA as well",
+    size: "5 MB",
+    contributor: "Code With Harry",
+    initials: "CWH",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1Hs_Z54DQ_gl8Oo_i7LcNrPmPz8hFa0yo/view?usp=drive_link"
+  },
+
+
+    
+  {
+    id: 40,
+    title: "Python Cheatsheet",
+    program: "Diploma",
+    branch: "CSE",
+    year: "2nd Year",
+    semester: "Semester 3",
+    type: "Notes",
+    subject: "Python Programming",
+    desc: "This Python Cheatsheet helps you to code in Python",
+    size: "500 KB",
+    contributor: "Code With Harry",
+    initials: "CWH",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1CsgLnL8cOceLa_XROViWd9Vm_h8F6R_X/view?usp=drive_link"
+  },
+
 
   {
     id: 40,
@@ -1075,7 +1184,25 @@ const notesResources = [
 
 
   {
-    id: 40,
+    id: 41,
+    title: "Python PYQ 2023",
+    program: "Diploma",
+    branch: "Electronics",
+    year: "2nd Year",
+    semester: "Semester 4",
+    type: "PYQs",
+    subject: "Python Programming",
+    desc: "Previous Year Question of year 2023 of Python",
+    size: "0.7 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1w-oJ1a-UndpkC1hlqxBz1g--8PP8WrQ9/view?usp=drive_link"
+  },
+
+
+  {
+    id: 41,
     title: "Python Handbook",
     program: "Diploma",
     branch: "Electronics",
