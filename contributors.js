@@ -100,7 +100,7 @@ function startContributorAutoSlide() {
   clearInterval(slideInterval);
   slideInterval = setInterval(() => {
     moveContributorSlide(1);
-  }, 3500); // 3.5 seconds me auto-slide hoga
+  }, 2000); // 3.5 seconds me auto-slide hoga
 }
 
 function resetContributorTimer() {
