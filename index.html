@@ -193,6 +193,36 @@
             </div>
           </div>
 
+          <!-- Top Contributors Slideshow Section -->
+          <div class="app-section-card">
+            <div class="app-section-header app-section-purple">
+              <i class="fas fa-trophy" style="margin-right: 6px;"></i> Top Contributors Of The Month
+            </div>
+            <div class="app-section-body" style="padding: 16px 12px;">
+              <div class="contributor-slider-wrapper">
+
+                <!-- Left Button -->
+                <button class="contrib-nav-btn prev" onclick="moveContributorSlide(-1)" aria-label="Previous">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Slider Track / Cards Container -->
+                <div class="contributor-slider" id="contributorSlider">
+                  <!-- Javascript yaha dynamic slides render karega -->
+                </div>
+
+                <!-- Right Button -->
+                <button class="contrib-nav-btn next" onclick="moveContributorSlide(1)" aria-label="Next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+              </div>
+
+              <!-- Slider Dots Indicator -->
+              <div class="contributor-dots" id="contributorDots"></div>
+            </div>
+          </div>
+
         </div><!-- /homeSections -->
 
       </section>
@@ -360,6 +390,7 @@
   <script src="questions.js"></script>
   <script src="quiz.js"></script>
   <script src="app.js"></script>
+  <script src="contributors.js"></script>
 
 </body>
 

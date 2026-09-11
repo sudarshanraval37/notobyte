@@ -705,6 +705,135 @@ body {
     color: var(--accent2);
 }
 
+/* ---- Top Contributors Slideshow ---- */
+:root {
+  --purple: #6c5ce7;
+  --purple-soft: #f1f0fc;
+}
+
+.app-section-purple {
+  background: var(--purple);
+}
+
+.contributor-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--card-soft);
+  border: 1px solid var(--glass-border);
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+}
+
+.contributor-slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contributor-slide {
+  min-width: 100%;
+  padding: 18px 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+}
+
+.contrib-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #d63031;
+  background: #ffeaa7;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.contrib-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.contrib-sub {
+  font-size: 0.8rem;
+  color: var(--text2);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contrib-college {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--purple);
+  background: var(--card);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--glass-border);
+}
+
+/* Prev / Next Buttons */
+.contrib-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), background var(--transition);
+}
+
+.contrib-nav-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.contrib-nav-btn.prev { left: 8px; }
+.contrib-nav-btn.next { right: 8px; }
+
+/* Dots indicator */
+.contributor-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.contrib-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--glass-border);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.contrib-dot.active {
+  background: var(--purple);
+  width: 18px;
+  border-radius: var(--radius-pill);
+}
 
 /* ================================================================
    8. RESPONSIVE / DESKTOP FRAME
