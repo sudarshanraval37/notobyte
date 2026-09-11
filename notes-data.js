@@ -1011,7 +1011,7 @@ const notesResources = [
     pdfUrl: "https://drive.google.com/file/d/1ElUjagrLjAwbGjGUb9sOHMqr3a_MLFJQ/view?usp=drive_link"
   },
 
-  
+
   {
     id: 40,
     title: "DSA Handwritten Notes",
@@ -1030,7 +1030,7 @@ const notesResources = [
   },
 
 
-    
+
   {
     id: 40,
     title: "Python Cheatsheet",
@@ -1610,16 +1610,16 @@ const notesResources = [
 const notesUncategorized = [
   {
     "id": 5,
-    "title": "World History",
-    "sem": "Sem 2 | B.A",
-    "desc": "Detailed notes on modern world history from the Renaissance period to the 21st century global events.",
-    "size": "3.3 MB",
-    "contributor": "Arjun Mehta",
-    "initials": "AM",
+    "title": "Academic Calendar 2026-2027",
+    "sem": "Diploma | All Semester",
+    "desc": "Important Dates, Holidays and occassion list of session 2026-2027 by SBTE Bihar",
+    "size": "300 KB",
+    "contributor": "Sudarshan Raval Developer",
+    "initials": "SR",
     "category": "Important Downloads",
-    "icon": "fas fa-globe",
-    "pdfUrl": "assets/pdfs/world-history.pdf",
-    "reason": "Not a B.Tech/Diploma engineering resource (B.A course) — needs its own category."
+    "icon": "fas fa-calendar",
+    "pdfUrl": "https://drive.google.com/file/d/1LDDLY7iNCMOxeHM86d2WVwhKItSk_uUi/view?usp=drive_link",
+    "reason": "This is common calendar for all branches of Diploma"
   },
   {
     "id": 12,
