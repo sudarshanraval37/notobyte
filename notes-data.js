@@ -1086,40 +1086,185 @@ const notesResources = [
 
 
 
-  // CSE 3rd Year
+  // Diploma cse sem 5
 
   {
     id: 40,
-    title: "C Programming Notes",
+    title: "Data Science PYQ 2024",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Data Science and Analytics",
+    desc: "Previous Year Questions of Data Science and Analytics of year 2024",
+    size: "346 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1HWH7b2kavOSjaO_EqeTZGc-5J_s3CcLH/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2022",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2022",
+    size: "575 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1nUvCtHm2JECiSFBM3XF1X37f2DySSOsG/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2023",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2023",
+    size: "941 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1vjBtesNoc4MtmyXlfAAiULoqU2jJTGp5/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "Data Communication and Computer Network Notes",
     program: "Diploma",
     branch: "CSE",
     year: "3rd Year",
     semester: "Semester 5",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
-    size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    subject: "Data Communication and Computer Network",
+    desc: "Complete Detailed notes of Data Communication and Computer Network by Top university",
+    size: "1.9 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: "https://drive.google.com/file/d/1Z_7_Bn0lpyHY_QjN0hM-LiUeppaS8iqS/view?usp=drive_link"
   },
 
   {
     id: 40,
-    title: "C Programming Notes",
+    title: "Data Communication and Computer Network Notes-2",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "Notes",
+    subject: "Data Communication and Computer Network",
+    desc: "Complete Detailed 200+ pages notes of Data Communication and Computer Network",
+    size: "3.5 MB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1AA5c80AwOKoZR7cr4QtP4uoiDUN4niX3/view?usp=drive_link"
+  },
+
+
+
+  {
+    id: 40,
+    title: "Software Engineering Notes",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "Notes",
+    subject: "Software Engineering",
+    desc: "Complete Detailed notes of Software Engineering for CSE 5th Sem Students",
+    size: "686 KB",
+    contributor: "Sudarshan Raval (Developer)",
+    initials: "SR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/16T8G4OFMiL5ZV7jYs80VG4vYb1KRI8WL/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "Java Programming Handwritten Notes",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "Notes",
+    subject: "Advanced JAVA Programming",
+    desc: "Handwritten notes of JAVA Programming that helps you in JAVA Coding and understanding JAVA as well",
+    size: "13 MB",
+    contributor: "Code With Harry",
+    initials: "CWH",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/18mcy-yUPJ8VlMMlaCfNK3eJP0szO1Y7z/view?usp=drive_link"
+  },
+
+
+  {
+    id: 40,
+    title: "Data Science and Analytics overview",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "Notes",
+    subject: "Data Science and Analytics",
+    desc: "PPT to understand Data Science and Analytics overview",
+    size: "709 KB",
+    contributor: "Vinit Raj",
+    initials: "VR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1OYDY1tH_bwm46_VUtAL62K7VUKw1uwsD/view?usp=drive_link"
+  },
+
+
+
+  {
+    id: 40,
+    title: "Data Science and Analytics VVI Questions and Answer",
+    program: "Diploma",
+    branch: "CSE",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "Notes",
+    subject: "Data Science and Analytics",
+    desc: "Most asked and important Question and Answer of Data Science",
+    size: "1.1 MB",
+    contributor: "Vinit Raj",
+    initials: "VR",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1KDYum-kelaCUYwP8UgJZ6vOyhxVbNB1E/view?usp=drive_link"
+  },
+
+  // diploma cse sem 6
+  {
+    id: 40,
+    title: "",
     program: "Diploma",
     branch: "CSE",
     year: "3rd Year",
     semester: "Semester 6",
     type: "Notes",
-    subject: "Hydraulics",
-    desc: "Complete C programming notes",
+    subject: "",
+    desc: "",
     size: "1.8 MB",
-    contributor: "Your Name",
-    initials: "YN",
+    contributor: "",
+    initials: "",
     icon: "fas fa-book",
-    pdfUrl: "assets/notes/c-programming.pdf"
+    pdfUrl: ""
   },
 
 
@@ -1218,7 +1363,43 @@ const notesResources = [
     pdfUrl: "https://drive.google.com/file/d/161BZoSh6f4Ag3jccFKeKVd8KH9Kql1Cm/view?usp=drive_link"
   },
 
-  // Diploma Electronics 3rd Year
+  // Diploma Electronics sem 5
+
+  
+  {
+    id: 40,
+    title: "EV Basic PYQ 2022",
+    program: "Diploma",
+    branch: "Electronics",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2022",
+    size: "575 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1nUvCtHm2JECiSFBM3XF1X37f2DySSOsG/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2023",
+    program: "Diploma",
+    branch: "Electronics",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2023",
+    size: "941 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1vjBtesNoc4MtmyXlfAAiULoqU2jJTGp5/view?usp=drive_link"
+  },
+
 
   {
     id: 41,
@@ -1328,7 +1509,43 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
-  // Electrical 3rd Year
+  // Diploma Electrical sem 5 
+
+  
+  {
+    id: 40,
+    title: "EV Basic PYQ 2022",
+    program: "Diploma",
+    branch: "Electrical",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2022",
+    size: "575 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1nUvCtHm2JECiSFBM3XF1X37f2DySSOsG/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2023",
+    program: "Diploma",
+    branch: "Electrical",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2023",
+    size: "941 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1vjBtesNoc4MtmyXlfAAiULoqU2jJTGp5/view?usp=drive_link"
+  },
+
 
   {
     id: 42,
@@ -1455,7 +1672,43 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
-  // Mechanical 3rd Year
+  // diploma Mechanical sem 5 
+
+  
+  {
+    id: 40,
+    title: "EV Basic PYQ 2022",
+    program: "Diploma",
+    branch: "Mechanical",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2022",
+    size: "575 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1nUvCtHm2JECiSFBM3XF1X37f2DySSOsG/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2023",
+    program: "Diploma",
+    branch: "Mechanical",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2023",
+    size: "941 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1vjBtesNoc4MtmyXlfAAiULoqU2jJTGp5/view?usp=drive_link"
+  },
+
 
   {
     id: 43,
@@ -1564,7 +1817,43 @@ const notesResources = [
     pdfUrl: "assets/notes/c-programming.pdf"
   },
 
-  // Civil 3rd Year
+  // diploma civil sem 5
+  
+  
+  {
+    id: 40,
+    title: "EV Basic PYQ 2022",
+    program: "Diploma",
+    branch: "Civil",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2022",
+    size: "575 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1nUvCtHm2JECiSFBM3XF1X37f2DySSOsG/view?usp=drive_link"
+  },
+
+  {
+    id: 40,
+    title: "EV Basic PYQ 2023",
+    program: "Diploma",
+    branch: "Civil",
+    year: "3rd Year",
+    semester: "Semester 5",
+    type: "PYQs",
+    subject: "Electric Vehicle (Basic)",
+    desc: "Previous Year Questions of Electric Vehicle (Basic) of year 2023",
+    size: "941 KB",
+    contributor: "Team NotoByte",
+    initials: "NB",
+    icon: "fas fa-book",
+    pdfUrl: "https://drive.google.com/file/d/1vjBtesNoc4MtmyXlfAAiULoqU2jJTGp5/view?usp=drive_link"
+  },
+
 
   {
     id: 44,
