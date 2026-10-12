@@ -6,7 +6,7 @@
 const monthlyContributors = [
   {
     name: "Khushi Kumari",
-    notes: "2 Notes",
+    notes: "18 Notes",
     branch: "Mechanical Engineering",
     sem: "Alumni",
     college: "Batch 2023 G.P Banka"
